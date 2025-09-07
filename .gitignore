@@ -9,9 +9,9 @@ minecraft/screenshots/**
 minecraft/waypoints/** 
 minecraft/local/** 
 minecraft/logs/**
-minecraft/kubejs/assets/**
-minecraft/kubejs/**
-!minecraft/kubejs/assets/gtmogs/**
+minecraft/kubejs/assets/modern_industrialization
+minecraft/kubejs/assets/kubejs
+minecraft/kubejs/data/gtmogs/
 minecraft/journeymap/**
 minecraft/mods/**
 minecraft/dumps/**
