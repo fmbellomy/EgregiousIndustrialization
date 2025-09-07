@@ -164,7 +164,7 @@ key_key.immersive_aircraft.fallback_control_pull:key.keyboard.unknown
 key_key.immersive_aircraft.fallback_control_push:key.keyboard.unknown
 key_key.immersive_aircraft.fallback_use:key.keyboard.unknown
 key_key.immersive_aircraft.dismount:key.keyboard.r
-key_key.immersive_aircraft.boost:key.keyboard.b
+key_key.immersive_aircraft.boost:key.mouse.4
 key_key.aileron.smokestack_boost:key.keyboard.space
 key_key.journeymap.zoom_in:key.keyboard.equal
 key_key.journeymap.zoom_out:key.keyboard.minus
