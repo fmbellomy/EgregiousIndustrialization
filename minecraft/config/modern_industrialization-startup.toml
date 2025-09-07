@@ -23,4 +23,4 @@ defaultIndustrialistTrades = true
 	#Run MI runtime datagen on startup.
 	datagenOnStartup = true
 	#Additionally load resources in modern_industrialization/generated_resources.
-	loadRuntimeGeneratedResources = true
+	loadRuntimeGeneratedResources = false
