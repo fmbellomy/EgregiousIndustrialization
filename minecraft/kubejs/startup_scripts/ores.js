@@ -11,7 +11,8 @@ MIMaterialEvents.addMaterials((event) => {
       builder
         .hardness("average")
         .materialSet("metallic")
-        .addParts("dust", "crushed_dust");
+        .addParts("dust", "crushed_dust")
+        .customRegularPart("Washed Crushed Dust", "washed_crushed_dust");
 
       blocks.forEach((block) => {
         builder.ore({ generate: false, ore_set: ore_set }, block);
@@ -49,6 +50,13 @@ MIMaterialEvents.addMaterials((event) => {
     OVERWORLD.concat(NETHER, END),
     "iron"
   );
+  makeMetallicOre(
+    "Cassiterite",
+    "cassiterite",
+    0x7e7e7e,
+    OVERWORLD.concat(END),
+    "gold"
+  );
 });
 
 function makeVanillaNetherOre(ore, ore_set) {
@@ -85,3 +93,68 @@ const vanilla_nether = ["iron", "copper", "gold"];
 
 vanilla_end.map((ore) => makeVanillaEndOre(ore, ore));
 vanilla_nether.map((ore) => makeVanillaNetherOre(ore, ore));
+
+makeVanillaEndOre("tin", "iron");
+// redstone
+MIMaterialEvents.modifyMaterial("redstone", (event) => {
+  event.builder.ore(
+    { generate: false, ore_set: "iron", min_xp: 2, max_xp: 8 },
+    "minecraft:netherrack"
+  );
+});
+// ruby is a weird one
+MIMaterialEvents.modifyMaterial("ruby", (event) => {
+  event.builder
+    .ore(
+      { generate: false, ore_set: "copper", min_xp: 0, max_xp: 0 },
+      "minecraft:deepslate"
+    )
+    .ore(
+      { generate: false, ore_set: "copper", min_xp: 0, max_xp: 0 },
+      "minecraft:netherrack"
+    )
+    .addParts("crushed_dust")
+    .rawMetal("copper");
+});
+
+const washedVanillaOres = [
+  "iron",
+  "copper",
+  "gold",
+  "coal",
+  "lapis",
+  "redstone",
+  "diamond",
+  "emerald",
+];
+const washedMIOres = [
+  "antimony",
+  "bauxite",
+  "lead",
+  "lignite_coal",
+  "monazite",
+  "nickel",
+  "salt",
+  "tin",
+  "tungsten",
+  "uranium",
+  "ruby",
+  "platinum",
+  "iridium",
+];
+washedVanillaOres.forEach((ore) => {
+  MIMaterialEvents.modifyMaterial(ore, (event) => {
+    event.builder.customRegularPart(
+      "Washed Crushed Dust",
+      "washed_crushed_dust"
+    );
+  });
+});
+washedMIOres.forEach((ore) => {
+  MIMaterialEvents.modifyMaterial(ore, (event) => {
+    event.builder.customRegularPart(
+      "Washed Crushed Dust",
+      "washed_crushed_dust"
+    );
+  });
+});

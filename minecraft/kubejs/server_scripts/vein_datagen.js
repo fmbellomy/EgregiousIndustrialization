@@ -1,3 +1,13 @@
+function keys(obj) {
+  let keys = [];
+  for (let key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      keys.push(key);
+    }
+  }
+  return keys;
+}
+
 ServerEvents.generateData("before_mods", (_) => {
   const GTMOGS = global.GTMOGS;
   /**
@@ -27,7 +37,6 @@ ServerEvents.generateData("before_mods", (_) => {
   const classic = (vein) => {
     let ores = shallowCopy(vein.ores);
     for (let i = 0; i < ores.length; i++) {
-      console.log(ores[i]);
       if (Item.exists(`minecraft:${vein.dim.blockPrefix}${ores[i]}_ore`)) {
         ores[i] = `minecraft:${vein.dim.blockPrefix}${ores[i]}_ore`;
       } else {
@@ -44,6 +53,32 @@ ServerEvents.generateData("before_mods", (_) => {
         .setBetween(2, ores[2])
         .setSporadic(1, ores[3])
     );
+    v(vein.dim);
+  };
+
+  // this is such a mess, i truly hope i never have to change it
+  const layered = (vein) => {
+    // get block ids based on dimension and add to generator
+    let ores = shallowCopy(vein.ores.map(keys));
+    let builder = GTMOGS.VeinGenerator.LayeredVeinGenerator();
+    for (let i = 0; i < ores.length; i++) {
+      let name = ores[i][0];
+      console.log(name);
+      let currentOre = vein.ores[i][name];
+      console.log(currentOre);
+      if (Item.exists(`minecraft:${vein.dim.blockPrefix}${name}_ore`)) {
+        ores[i] = `minecraft:${vein.dim.blockPrefix}${name}_ore`;
+      } else {
+        ores[i] = `modern_industrialization:${vein.dim.blockPrefix}${name}_ore`;
+      }
+      builder.layer(
+        currentOre.minSize,
+        currentOre.maxSize,
+        ores[i],
+        currentOre.weight
+      );
+    }
+    let v = vein.generator(builder);
     v(vein.dim);
   };
   const veins = {};
@@ -81,112 +116,45 @@ ServerEvents.generateData("before_mods", (_) => {
     ores: ["chalcopyrite", "copper", "pyrite", "iron"],
     veinType: classic,
   };
+  // cassiterite
+  veins.cassiterite = {
+    generator: egregiousUniformVein("cassiterite", 100, 10, 120, 30, 36),
+    dim: GTMOGS.OVERWORLD,
+    ores: [
+      { cassiterite: { weight: 3, minSize: 2, maxSize: 4 } },
+      { tin: { weight: 1, minSize: 1, maxSize: 3 } },
+    ],
+    veinType: layered,
+  };
 
-  for (let entry in veins) {
-    // only call makeClassicVein on explicitly defined entries, not JS built-ins
-    if (veins.hasOwnProperty(entry)) {
-      let vein = veins[entry];
-      vein.veinType(vein);
-    }
-  }
+  veins.cassiterite_end = {
+    generator: egregiousUniformVein("cassiterite_end", 100, 10, 100, 30, 36),
+    dim: GTMOGS.END,
+    ores: [
+      { cassiterite: { weight: 3, minSize: 2, maxSize: 4 } },
+      { tin: { weight: 1, minSize: 1, maxSize: 3 } },
+    ],
+    veinType: layered,
+  };
+
+  // redstone
+  veins.redstone_deepslate = {
+    generator: egregiousUniformVein("redstone_deepslate", 100, -58, 5, 30, 36),
+    dim: GTMOGS.OVERWORLD_DEEPSLATE,
+    ores: ["redstone", "redstone", "redstone", "ruby"],
+    veinType: classic,
+  };
+  veins.redstone_nether = {
+    generator: egregiousUniformVein("redstone_nether", 100, 70, 120, 34, 40),
+    dim: GTMOGS.NETHER,
+    ores: ["redstone", "redstone", "ruby", "ruby"],
+    veinType: classic,
+  };
+
+  keys(veins).forEach((key) => {
+    let vein = veins[key];
+    vein.veinType(vein);
+  });
+
   JsonIO.write("kubejs/assets/gtmogs/lang/en_us.json", GTMOGS.lang);
-  /*
-  let FREAKY_ID = "freaky";
-  builder = OreVeinDefinitionBuilder(FREAKY_ID);
-  let FREAKY = builder
-    .setClusterSize(UniformInt(32, 40))
-    .setDensity(0.95)
-    .setWeight(100)
-    .setLayer("stone")
-    .setHeightRange("uniform", -55, 80)
-    .setBiomes("#minecraft:is_overworld")
-    .setDiscardChance(0.0)
-    .setDimensionFilter(["minecraft:overworld"])
-    .setGenerator(
-      VeinedVeinGenerator(-55, 80)
-        .edgeRoundoffBegin(3)
-        .maxEdgeRoundoff(0.1)
-        .maxRichness(1.0)
-        .minRichness(0.7)
-        .maxRichnessThreshold(0.175)
-        .oreBlock("minecraft:slime_block", 3)
-        .oreBlock("minecraft:honey_block", 2)
-        .veininessThreshold(0.01)
-    )
-    .build();
-
-  JsonIO.write(
-    "kubejs/data/gtmogs/gtmogs/ore_vein/" + FREAKY_ID + ".json",
-    FREAKY
-  );
-
-  let RICH_ID = "rich";
-  builder = OreVeinDefinitionBuilder(RICH_ID);
-  let RICH = builder
-    .setClusterSize(UniformInt(32, 40))
-    .setDensity(0.95)
-    .setWeight(100)
-    .setLayer("stone")
-    .setHeightRange("uniform", -55, 80)
-    .setBiomes("#minecraft:is_overworld")
-    .setDiscardChance(0.0)
-    .setDimensionFilter(["minecraft:overworld"])
-    .setGenerator(
-      DikeVeinGenerator(-55, 80)
-        .withBlock("minecraft:iron_block", -55, 30, 5)
-        .withBlock("minecraft:diamond_block", -40, 0, 1)
-        .withBlock("minecraft:lapis_block", -20, 75, 3)
-    )
-    .build();
-
-  JsonIO.write("kubejs/data/gtmogs/gtmogs/ore_vein/" + RICH_ID + ".json", RICH);
-
-  let LAYERTEST_ID = "layertest";
-  builder = OreVeinDefinitionBuilder(LAYERTEST_ID);
-  let LAYERTEST = builder
-    .setClusterSize(UniformInt(32, 40))
-    .setDensity(0.95)
-    .setWeight(100)
-    .setLayer("stone")
-    .setHeightRange("uniform", -55, 80)
-    .setBiomes("#minecraft:is_overworld")
-    .setDiscardChance(0.0)
-    .setDimensionFilter(["minecraft:overworld"])
-    .setGenerator(
-      LayeredVeinGenerator()
-        .layer(2, 4, "minecraft:redstone_block", 3)
-        .layer(1, 1, "minecraft:gold_block", 2)
-        .layer(1, 1, "minecraft:emerald_block", 1)
-    )
-    .build();
-
-  JsonIO.write(
-    "kubejs/data/gtmogs/gtmogs/ore_vein/" + LAYERTEST_ID + ".json",
-    LAYERTEST
-  );
-  let CUBOIDTEST_ID = "cuboidtest";
-  builder = OreVeinDefinitionBuilder(CUBOIDTEST_ID);
-  let CUBOIDTEST = builder
-    .setClusterSize(UniformInt(32, 40))
-    .setDensity(0.95)
-    .setWeight(100)
-    .setLayer("stone")
-    .setHeightRange("uniform", 10, 80)
-    .setBiomes("#minecraft:is_overworld")
-    .setDiscardChance(0.0)
-    .setDimensionFilter(["minecraft:overworld"])
-    .setGenerator(
-      CuboidVeinGenerator(10, 80)
-        .setBottom("minecraft:iron_block")
-        .setMiddle("minecraft:mud")
-        .setTop("minecraft:sea_lantern")
-        .setSpread("minecraft:netherite_block")
-    )
-    .build();
-
-  JsonIO.write(
-    "kubejs/data/gtmogs/gtmogs/ore_vein/" + CUBOIDTEST_ID + ".json",
-    CUBOIDTEST
-  );
-  */
 });

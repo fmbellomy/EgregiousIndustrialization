@@ -2,5 +2,9 @@
 	"ore_vein.gtmogs.nether_tetrahedrite": "Nether Tetrahedrite",
 	"ore_vein.gtmogs.end_tetrahedrite": "End Tetrahedrite",
 	"ore_vein.gtmogs.overworld_chalcopyrite": "Chalcopyrite",
-	"ore_vein.gtmogs.overworld_deepslate_chalcopyrite": "Deepslate Chalcopyrite"
+	"ore_vein.gtmogs.overworld_deepslate_chalcopyrite": "Deepslate Chalcopyrite",
+	"ore_vein.gtmogs.overworld_cassiterite": "Cassiterite",
+	"ore_vein.gtmogs.end_cassiterite_end": "End Cassiterite End",
+	"ore_vein.gtmogs.overworld_redstone_deepslate": "Redstone Deepslate",
+	"ore_vein.gtmogs.nether_redstone_nether": "Nether Redstone Nether"
 }
