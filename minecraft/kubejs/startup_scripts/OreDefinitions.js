@@ -3,6 +3,7 @@ MIMaterialEvents.addMaterials((event) => {
     if (blocks === undefined) {
       blocks = ["minecraft:stone", "minecraft:deepslate"];
     }
+
     if (ore_set === undefined) {
       ore_set = "iron";
     }
@@ -50,6 +51,7 @@ MIMaterialEvents.addMaterials((event) => {
     OVERWORLD.concat(NETHER, END),
     "iron"
   );
+  // cassiterite (tin) vein
   makeMetallicOre(
     "Cassiterite",
     "cassiterite",
@@ -57,6 +59,71 @@ MIMaterialEvents.addMaterials((event) => {
     OVERWORLD.concat(END),
     "gold"
   );
+  makeMetallicOre(
+    "Asbestos",
+    "asbestos",
+    0x7c7c7c,
+    OVERWORLD.concat(END),
+    "gold"
+  );
+  // magnetite vein
+  makeMetallicOre(
+    "Magnetite",
+    "magnetite",
+    0x1b1b1b,
+    OVERWORLD.concat(NETHER),
+    "iron"
+  );
+
+  // nickel vein
+  makeMetallicOre(
+    "Garnierite",
+    "garnierite",
+    0x207e2e,
+    OVERWORLD.concat(END),
+    "iron"
+  );
+  makeMetallicOre(
+    "Pentlandite",
+    "pentlandite",
+    0x6c6203,
+    OVERWORLD.concat(END),
+    "iron"
+  );
+  // diamond vein
+  makeMetallicOre("Graphite", "graphite", 0x444647, OVERWORLD, "iron");
+  // thorium/emerald/beryllium vein
+  makeMetallicOre(
+    "Thorium",
+    "thorium",
+    0x002700,
+    OVERWORLD.concat(END),
+    "iron"
+  );
+  // galena
+  makeMetallicOre("Galena", "galena", 0x6d416d, OVERWORLD, "iron");
+
+  // pitchblende
+  makeMetallicOre(
+    "Pitchblende",
+    "pitchblende",
+    0xb1b100,
+    OVERWORLD.concat(END),
+    "copper"
+  );
+  makeMetallicOre(
+    "Uraninite",
+    "uraninite",
+    0x1f1f1f,
+    OVERWORLD.concat(END),
+    "copper"
+  );
+  // scheelite
+  makeMetallicOre("Scheelite", "scheelite", 0xae7e12, END, "iron");
+  // ilmenite
+  makeMetallicOre("Ilmenite", "ilmenite", 0x2e2421, END, "iron");
+  makeMetallicOre("Chromite", "chromite", 0x170804, END, "copper");
+  makeMetallicOre("Uvarovite", "uvarovite", 0xa1e4a1, END, "gold");
 });
 
 function makeVanillaNetherOre(ore, ore_set) {
@@ -95,12 +162,40 @@ vanilla_end.map((ore) => makeVanillaEndOre(ore, ore));
 vanilla_nether.map((ore) => makeVanillaNetherOre(ore, ore));
 
 makeVanillaEndOre("tin", "iron");
+makeVanillaEndOre("nickel", "iron");
 // redstone
 MIMaterialEvents.modifyMaterial("redstone", (event) => {
-  event.builder.ore(
-    { generate: false, ore_set: "iron", min_xp: 2, max_xp: 8 },
-    "minecraft:netherrack"
-  );
+  event.builder
+    .ore({ generate: false, ore_set: "iron" }, "minecraft:netherrack")
+    .setMainPart("ingot")
+    .rawMetal("iron");
+});
+// lapis
+MIMaterialEvents.modifyMaterial("lapis", (event) => {
+  event.builder.setMainPart("ingot").rawMetal("copper");
+});
+// diamond
+MIMaterialEvents.modifyMaterial("diamond", (event) => {
+  event.builder.setMainPart("ingot").rawMetal("gold");
+});
+// coal
+MIMaterialEvents.modifyMaterial("coal", (event) => {
+  event.builder.setMainPart("ingot").rawMetal("iron");
+});
+// beryllium
+MIMaterialEvents.modifyMaterial("beryllium", (event) => {
+  event.builder
+    .ore({ generate: false, ore_set: "gold" }, "minecraft:stone")
+    .ore({ generate: false, ore_set: "gold" }, "minecraft:end_stone")
+    .rawMetal("gold")
+    .customRegularPart("Washed Crushed Dust", "washed_crushed_dust")
+    .addParts("crushed_dust");
+});
+// silver
+MIMaterialEvents.modifyMaterial("silver", (event) => {
+  event.builder
+    .ore({ generate: false, ore_set: "gold" }, "minecraft:stone")
+    .customRegularPart("Washed Crushed Dust", "washed_crushed_dust");
 });
 // ruby is a weird one
 MIMaterialEvents.modifyMaterial("ruby", (event) => {
@@ -115,6 +210,19 @@ MIMaterialEvents.modifyMaterial("ruby", (event) => {
     )
     .addParts("crushed_dust")
     .rawMetal("copper");
+});
+// uranium
+MIMaterialEvents.modifyMaterial("uranium", (event) => {
+  event.builder.ore(
+    { generate: false, ore_set: "copper" },
+    "minecraft:end_stone"
+  );
+});
+MIMaterialEvents.modifyMaterial("tungsten", (event) => {
+  event.builder.ore(
+    { generate: false, ore_set: "gold" },
+    "minecraft:end_stone"
+  );
 });
 
 const washedVanillaOres = [

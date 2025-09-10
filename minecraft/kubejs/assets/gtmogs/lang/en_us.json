@@ -4,7 +4,20 @@
 	"ore_vein.gtmogs.overworld_chalcopyrite": "Chalcopyrite",
 	"ore_vein.gtmogs.overworld_deepslate_chalcopyrite": "Deepslate Chalcopyrite",
 	"ore_vein.gtmogs.overworld_cassiterite": "Cassiterite",
-	"ore_vein.gtmogs.end_cassiterite_end": "End Cassiterite End",
-	"ore_vein.gtmogs.overworld_redstone_deepslate": "Redstone Deepslate",
-	"ore_vein.gtmogs.nether_redstone_nether": "Nether Redstone Nether"
+	"ore_vein.gtmogs.end_cassiterite": "End Cassiterite",
+	"ore_vein.gtmogs.overworld_tin": "Tin",
+	"ore_vein.gtmogs.overworld_deepslate_redstone": "Deepslate Redstone",
+	"ore_vein.gtmogs.nether_redstone": "Nether Redstone",
+	"ore_vein.gtmogs.overworld_pentlandite": "Pentlandite",
+	"ore_vein.gtmogs.end_pentlandite": "End Pentlandite",
+	"ore_vein.gtmogs.overworld_galena": "Galena",
+	"ore_vein.gtmogs.overworld_pitchblende": "Pitchblende",
+	"ore_vein.gtmogs.end_pitchblende": "End Pitchblende",
+	"ore_vein.gtmogs.overworld_coal": "Coal",
+	"ore_vein.gtmogs.overworld_lignite_coal": "Lignite Coal",
+	"ore_vein.gtmogs.overworld_diamond": "Diamond",
+	"ore_vein.gtmogs.end_ilmenite": "End Ilmenite",
+	"ore_vein.gtmogs.overworld_magnetite": "Magnetite",
+	"ore_vein.gtmogs.nether_magnetite": "Nether Magnetite",
+	"ore_vein.gtmogs.end_scheelite": "End Scheelite"
 }

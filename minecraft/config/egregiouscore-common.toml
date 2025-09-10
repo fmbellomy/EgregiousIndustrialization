@@ -1,0 +1,12 @@
+#The number of chunks out from the center to check when using the prospector.
+# Default: 1
+# Range: 0 ~ 4
+prospectorRadius = 3
+#The energy capacity of the prospector.
+# Default: 1048576
+# Range: 0 ~ 9223372036854775807
+prospectorEnergyCapacity = 1048576
+#How much energy the prospector should consume on each use.
+# Default: 8192
+# Range: 0 ~ 9223372036854775807
+prospectorEnergyCost = 8192

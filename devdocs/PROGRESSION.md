@@ -5,7 +5,9 @@
 Much like GTNH, early game is spent mining large GT-style ore deposits and setting up rudimentary ore processing systems.
 The steam and electric quarries have both been removed and replaced with Ore Drilling Plants [name pending. don't want to rip GT off *too* hard.]
 
-The Electric Ore Drilling plant will consume bronze drills to mine ores from whatever GT ore vein it happens to be placed within the same chunk as. Once it has no ore blocks left to mine, it will be unable to produce more ores. Later on, the Bedrock Ore Drilling Plant will become available, which takes titanium drills to generate ores matching the vein the plant is placed on.
+The Ore Drilling Plant will consume drills to mine ores out from the world underneath it. Higher tier drills have lower chance to be consumed and will produce more crushed ore per block mined, while also requiring more energy to run.
+
+The Bedrock Drilling Plant will generate ores matching the vein the multi's controller is placed closest to. Higher tier drills have lower chances to break and give more ores per recipe cycle, while also demanding more energy to run.
 
 World traversal is made difficult by highly mountainous Tectonic world generation. Before stainless steel, the best options for movement are slime sling and hang glider.
 

@@ -2,19 +2,19 @@ version:3955
 toggleCrawl:false
 ao:true
 biomeBlendRadius:2
-enableVsync:true
+enableVsync:false
 entityDistanceScaling:1.0
 entityShadows:true
 forceUnicodeFont:false
 japaneseGlyphVariants:false
-fov:0.55
+fov:0.7
 fovEffectScale:1.0
 darknessEffectScale:1.0
 glintSpeed:0.5
 glintStrength:0.75
 prioritizeChunkUpdates:0
 fullscreen:true
-gamma:0.5
+gamma:1.0
 graphicsMode:1
 guiScale:3
 maxFps:260
@@ -76,7 +76,7 @@ tutorialStep:none
 mouseWheelSensitivity:1.0
 rawMouseInput:true
 glDebugVerbosity:1
-skipMultiplayerWarning:false
+skipMultiplayerWarning:true
 hideMatchedNames:true
 joinedFirstServer:false
 hideBundleTutorial:false
@@ -201,6 +201,7 @@ key_zume.zoom_out:key.keyboard.minus
 key_key.guideme.guide:key.keyboard.g
 key_chloride.zoom:key.keyboard.unknown
 key_key.kubejs.kubedex:key.keyboard.k
+key_key.hostilenetworks.open_deep_learner:key.keyboard.u
 key_key.jade.config:key.keyboard.keypad.0
 key_key.jade.show_overlay:key.keyboard.keypad.1
 key_key.jade.toggle_liquid:key.keyboard.keypad.2
@@ -218,8 +219,8 @@ key_key.ae2.ae2wtlib_stow:key.keyboard.unknown
 key_key.ae2.portable_fluid_cell:key.keyboard.unknown
 key_key.ae2.wireless_pattern_encoding_terminal:key.keyboard.unknown
 key_key.ae2.wireless_terminal:key.keyboard.unknown
-key_key.modern_industrialization.toggle_3x3:key.keyboard.y
 key_key.modern_industrialization.toggle_flight:key.keyboard.v
+key_key.modern_industrialization.toggle_3x3:key.keyboard.y
 key_key.advanced_ae.pattern_encoder_action:key.keyboard.unknown
 key_key.advanced_ae.pick_craft:key.keyboard.unknown
 key_key.advanced_ae.portable_workbench:key.keyboard.unknown
@@ -228,6 +229,7 @@ key_key.advanced_ae.quantum_magnet_upgrade:key.keyboard.unknown
 key_key.advanced_ae.quantum_auto_stock_upgrade:key.keyboard.unknown
 key_key.advanced_ae.quantum_night_vision_upgrade:key.keyboard.unknown
 key_key.extendedae.viewpattern:key.keyboard.p
+key_key.extendedae.set_amount:key.mouse.middle
 key_key.journeypac.claim_mode:key.keyboard.u
 key_key.journeypac.forceload_mode:key.keyboard.i
 key_key.curios.open.desc:key.keyboard.g
@@ -238,8 +240,8 @@ key_key.constructionstick.open_gui:key.keyboard.unknown
 key_key.constructionstick.undo:key.keyboard.unknown
 key_key.constructionstick.show_previous:key.keyboard.unknown
 key_options.narrator:key.keyboard.b:CONTROL
-key_gui.xaero_pac_key_open_menu:key.keyboard.apostrophe
 key_key.entityculling.toggle:key.keyboard.unknown
+key_gui.xaero_pac_key_open_menu:key.keyboard.apostrophe
 soundCategory_master:0.2580849855940863
 soundCategory_music:0.0
 soundCategory_record:1.0

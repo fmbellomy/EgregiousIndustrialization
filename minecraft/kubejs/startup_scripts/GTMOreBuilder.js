@@ -480,8 +480,8 @@ GTMOGS.OreVeinDefinitionBuilder = (id) => {
     this.height_range = {
       height: {
         type: type,
-        max_inclusive: { absolute: low },
-        min_inclusive: { absolute: high },
+        max_inclusive: { absolute: high },
+        min_inclusive: { absolute: low },
       },
     };
     return this;
@@ -566,6 +566,13 @@ GTMOGS.NETHER = {
 GTMOGS.OVERWORLD = {
   name: "overworld",
   biomeTag: "#minecraft:is_overworld",
+  dimFilter: ["minecraft:overworld"],
+  layer: "stone",
+  blockPrefix: "",
+};
+GTMOGS.OVERWORLD_MOUNTAIN = {
+  name: "overworld",
+  biomeTag: "#c:is_mountain/peak",
   dimFilter: ["minecraft:overworld"],
   layer: "stone",
   blockPrefix: "",
