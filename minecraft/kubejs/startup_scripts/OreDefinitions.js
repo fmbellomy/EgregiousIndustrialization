@@ -235,6 +235,14 @@ const washedVanillaOres = [
   "diamond",
   "emerald",
 ];
+washedVanillaOres.forEach((ore) => {
+  MIMaterialEvents.modifyMaterial(ore, (event) => {
+    event.builder.customRegularPart(
+      "Washed Crushed Dust",
+      "washed_crushed_dust"
+    );
+  });
+});
 const washedMIOres = [
   "antimony",
   "bauxite",
@@ -250,14 +258,7 @@ const washedMIOres = [
   "platinum",
   "iridium",
 ];
-washedVanillaOres.forEach((ore) => {
-  MIMaterialEvents.modifyMaterial(ore, (event) => {
-    event.builder.customRegularPart(
-      "Washed Crushed Dust",
-      "washed_crushed_dust"
-    );
-  });
-});
+
 washedMIOres.forEach((ore) => {
   MIMaterialEvents.modifyMaterial(ore, (event) => {
     event.builder.customRegularPart(

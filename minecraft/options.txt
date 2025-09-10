@@ -219,8 +219,8 @@ key_key.ae2.ae2wtlib_stow:key.keyboard.unknown
 key_key.ae2.portable_fluid_cell:key.keyboard.unknown
 key_key.ae2.wireless_pattern_encoding_terminal:key.keyboard.unknown
 key_key.ae2.wireless_terminal:key.keyboard.unknown
-key_key.modern_industrialization.toggle_flight:key.keyboard.v
 key_key.modern_industrialization.toggle_3x3:key.keyboard.y
+key_key.modern_industrialization.toggle_flight:key.keyboard.v
 key_key.advanced_ae.pattern_encoder_action:key.keyboard.unknown
 key_key.advanced_ae.pick_craft:key.keyboard.unknown
 key_key.advanced_ae.portable_workbench:key.keyboard.unknown
@@ -240,8 +240,11 @@ key_key.constructionstick.open_gui:key.keyboard.unknown
 key_key.constructionstick.undo:key.keyboard.unknown
 key_key.constructionstick.show_previous:key.keyboard.unknown
 key_options.narrator:key.keyboard.b:CONTROL
-key_key.entityculling.toggle:key.keyboard.unknown
-key_gui.xaero_pac_key_open_menu:key.keyboard.apostrophe
+key_key.extended_industrialization.toggle_leggings_ability:key.keyboard.unknown
+key_key.extended_industrialization.toggle_helmet_ability:key.keyboard.unknown
+key_key.extended_industrialization.toggle_boots_ability:key.keyboard.unknown
+key_key.extended_industrialization.toggle_main_hand_ability:key.keyboard.unknown
+key_key.extended_industrialization.toggle_chestplate_ability:key.keyboard.unknown
 soundCategory_master:0.2580849855940863
 soundCategory_music:0.0
 soundCategory_record:1.0
