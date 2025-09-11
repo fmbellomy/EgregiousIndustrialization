@@ -1,5 +1,6 @@
 let ORE_WASHER;
 let CHEMICAL_BATH;
+let SIFTER;
 MIMachineEvents.registerRecipeTypes((event) => {
   ORE_WASHER = event
     .register("ore_washer")
@@ -12,6 +13,7 @@ MIMachineEvents.registerRecipeTypes((event) => {
     .withItemInputs()
     .withItemOutputs()
     .withFluidInputs();
+  SIFTER = event.register("sifter").withItemInputs().withItemOutputs();
 });
 
 // these are totally magic numbers but i'm anchoring the entire GUI on the item input slot.
@@ -39,9 +41,9 @@ MIMachineEvents.registerMachines((event) => {
         .addSlot(ANCHOR_X, ANCHOR_Y)
         .addSlots(ANCHOR_X + 63, ANCHOR_Y + 15, 2, 1),
     (fluids) => fluids.addSlot(ANCHOR_X, ANCHOR_Y + 29),
-    true,
-    true,
-    false
+    true, // front overlay
+    false, // top overlay
+    true // side overlay
   );
   event.craftingSingleBlock(
     "Chemical Bath",
@@ -63,6 +65,31 @@ MIMachineEvents.registerMachines((event) => {
         .addSlot(ANCHOR_X, ANCHOR_Y)
         .addSlots(ANCHOR_X + 63, ANCHOR_Y + 15, 2, 1),
     (fluids) => fluids.addSlot(ANCHOR_X, ANCHOR_Y + 29),
+    true,
+    true,
+    false
+  );
+  ANCHOR_Y = 40;
+  event.craftingSingleBlock(
+    "Sifter",
+    "sifter",
+    SIFTER,
+    ["steel", "electric"],
+    187,
+    event.progressBar(ANCHOR_X + 29 - 1, ANCHOR_Y - 4, "arrow"),
+    event.efficiencyBar(ANCHOR_X - 4, ANCHOR_Y + 41),
+    // similar to above, the energy bar needs to be offset by (0,-1)
+    event.energyBar(ANCHOR_X - 27, ANCHOR_Y),
+    1,
+    2,
+    1,
+    0,
+    16,
+    (items) =>
+      items
+        .addSlot(ANCHOR_X, ANCHOR_Y)
+        .addSlots(ANCHOR_X + 59, ANCHOR_Y + 18, 3, 3),
+    (fluids) => {},
     true,
     true,
     false

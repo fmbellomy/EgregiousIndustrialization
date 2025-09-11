@@ -163,6 +163,7 @@ vanilla_nether.map((ore) => makeVanillaNetherOre(ore, ore));
 
 makeVanillaEndOre("tin", "iron");
 makeVanillaEndOre("nickel", "iron");
+
 // redstone
 MIMaterialEvents.modifyMaterial("redstone", (event) => {
   event.builder
@@ -178,9 +179,42 @@ MIMaterialEvents.modifyMaterial("lapis", (event) => {
 MIMaterialEvents.modifyMaterial("diamond", (event) => {
   event.builder.setMainPart("ingot").rawMetal("gold");
 });
+// emerald
+MIMaterialEvents.modifyMaterial("emerald", (event) => {
+  event.builder.setMainPart("ingot").rawMetal("iron");
+});
+// quartz
+MIMaterialEvents.modifyMaterial("quartz", (event) => {
+  event.builder.rawMetal("copper");
+});
 // coal
 MIMaterialEvents.modifyMaterial("coal", (event) => {
   event.builder.setMainPart("ingot").rawMetal("iron");
+});
+// lignite coal
+MIMaterialEvents.modifyMaterial("lignite_coal", (event) => {
+  // apparently materials native to MI *hate* having `.setMainPart()` called on them,
+  // but this works without it so we're good...
+  event.builder.rawMetal("iron");
+});
+// salt
+MIMaterialEvents.modifyMaterial("salt", (event) => {
+  event.builder.rawMetal("iron");
+});
+// monazite
+MIMaterialEvents.modifyMaterial("monazite", (event) => {
+  event.builder.rawMetal("copper");
+});
+// sulfur
+MIMaterialEvents.modifyMaterial("sulfur", (event) => {
+  event.builder
+    .ore({ generate: false, ore_set: "copper" })
+    .setMainPart("ingot")
+    .rawMetal("copper");
+});
+// bauxite
+MIMaterialEvents.modifyMaterial("bauxite", (event) => {
+  event.builder.rawMetal("iron");
 });
 // beryllium
 MIMaterialEvents.modifyMaterial("beryllium", (event) => {
@@ -224,7 +258,6 @@ MIMaterialEvents.modifyMaterial("tungsten", (event) => {
     "minecraft:end_stone"
   );
 });
-
 const washedVanillaOres = [
   "iron",
   "copper",
@@ -234,6 +267,7 @@ const washedVanillaOres = [
   "redstone",
   "diamond",
   "emerald",
+  "quartz",
 ];
 washedVanillaOres.forEach((ore) => {
   MIMaterialEvents.modifyMaterial(ore, (event) => {
@@ -257,6 +291,10 @@ const washedMIOres = [
   "ruby",
   "platinum",
   "iridium",
+  "sulfur",
+  "titanium",
+  "chromium",
+  "manganese",
 ];
 
 washedMIOres.forEach((ore) => {
@@ -265,5 +303,27 @@ washedMIOres.forEach((ore) => {
       "Washed Crushed Dust",
       "washed_crushed_dust"
     );
+  });
+});
+
+let missingCrushedDusts = [
+  "copper",
+  "iron",
+  "gold",
+  "lead",
+  "uranium",
+  "tungsten",
+  "iridium",
+  "platinum",
+  "nickel",
+  "tin",
+  "titanium",
+  "silver",
+  "antimony",
+  "sulfur",
+];
+missingCrushedDusts.forEach((mat) => {
+  MIMaterialEvents.modifyMaterial(mat, (event) => {
+    event.builder.addParts("crushed_dust");
   });
 });

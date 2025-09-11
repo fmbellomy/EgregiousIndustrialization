@@ -1,3 +1,16 @@
+function unique(a) {
+  var prims = { boolean: {}, number: {}, string: {} },
+    objs = [];
+
+  return a.filter(function (item) {
+    var type = typeof item;
+    if (type in prims)
+      return prims[type].hasOwnProperty(item)
+        ? false
+        : (prims[type][item] = true);
+    else return objs.indexOf(item) >= 0 ? false : objs.push(item);
+  });
+}
 let items = Item.getList()
   .toArray()
   .map((item) => item.getItem().toString());
@@ -13,6 +26,10 @@ let namespacedMats = items
       .replace("_ore", "");
     return item;
   });
+namespacedMats = namespacedMats.concat([
+  "modern_industrialization:chromium",
+  "modern_industrialization:manganese",
+]);
 
 ServerEvents.tags("item", (event) => {
   namespacedMats.forEach((mat) => {
@@ -20,7 +37,7 @@ ServerEvents.tags("item", (event) => {
     let matName = mat.split(":")[1];
     let rawOre = `${namespace}:raw_${matName}`;
     event.add("c:raw_materials", rawOre);
-    event.add("c:raw_materials/" + matName, rawOre);
+    event.add(`c:raw_materials/${matName}`, rawOre);
     event.add("malum:prospectors_treasure", rawOre);
     event.add("malum:void_soulstone_material", rawOre);
 
@@ -39,7 +56,9 @@ ServerEvents.tags("item", (event) => {
     let crushedDust = `${namespace}:${matName}_crushed_dust`;
     let washedCrushedDust = `${namespace}:${matName}_washed_crushed_dust`;
     event.add("egregious:crushed_dust", crushedDust);
+    event.add(`egregious:crushed_dusts/${matName}`, crushedDust);
     event.add("egregious:washed_crushed_dust", washedCrushedDust);
+    event.add(`egregious:washed_crushed_dusts/${matName}`, washedCrushedDust);
 
     let stoneOre = `${namespace}:${matName}_ore`;
     event.add("c:ores", stoneOre);
@@ -66,7 +85,7 @@ ServerEvents.tags("item", (event) => {
   });
 });
 ServerEvents.tags("block", (event) => {
-  namespacedMats.forEach((mat) => {
+  unique(namespacedMats).forEach((mat) => {
     let namespace = mat.split(":")[0];
     let matName = mat.split(":")[1];
     let rawOre = `${namespace}:raw_${matName}`;
