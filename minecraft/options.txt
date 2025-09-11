@@ -50,7 +50,7 @@ damageTiltStrength:1.0
 highContrast:false
 narratorHotkey:true
 resourcePacks:["gtmogs:dynamic_assets","vanilla","mod_resources","file/industrialization-refreshed"]
-incompatibleResourcePacks:["file/industrialization-refreshed"]
+incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
 chatVisibility:0

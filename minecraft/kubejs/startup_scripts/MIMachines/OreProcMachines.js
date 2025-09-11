@@ -18,8 +18,8 @@ MIMachineEvents.registerRecipeTypes((event) => {
 
 // these are totally magic numbers but i'm anchoring the entire GUI on the item input slot.
 MIMachineEvents.registerMachines((event) => {
-  const ANCHOR_X = 40;
-  const ANCHOR_Y = 30;
+  let ANCHOR_X = 40;
+  let ANCHOR_Y = 30;
   event.craftingSingleBlock(
     "Ore Washer",
     "ore_washer",
@@ -49,7 +49,7 @@ MIMachineEvents.registerMachines((event) => {
     "Chemical Bath",
     "chemical_bath",
     CHEMICAL_BATH,
-    ["bronze", "steel", "electric"],
+    ["electric"],
     187,
     event.progressBar(ANCHOR_X + 31 - 1, ANCHOR_Y + 16 - 4, "arrow"),
     event.efficiencyBar(ANCHOR_X - 2, ANCHOR_Y + 56),
@@ -66,29 +66,30 @@ MIMachineEvents.registerMachines((event) => {
         .addSlots(ANCHOR_X + 63, ANCHOR_Y + 15, 2, 1),
     (fluids) => fluids.addSlot(ANCHOR_X, ANCHOR_Y + 29),
     true,
-    true,
-    false
+    false,
+    true
   );
-  ANCHOR_Y = 40;
+
+  ANCHOR_Y = 48;
   event.craftingSingleBlock(
     "Sifter",
     "sifter",
     SIFTER,
     ["steel", "electric"],
-    187,
-    event.progressBar(ANCHOR_X + 29 - 1, ANCHOR_Y - 4, "arrow"),
-    event.efficiencyBar(ANCHOR_X - 4, ANCHOR_Y + 41),
+    190,
+    event.progressBar(ANCHOR_X + 29 - 1, ANCHOR_Y - 3, "arrow"),
+    event.efficiencyBar(ANCHOR_X - 4, ANCHOR_Y + 42),
     // similar to above, the energy bar needs to be offset by (0,-1)
     event.energyBar(ANCHOR_X - 27, ANCHOR_Y),
     1,
-    2,
-    1,
+    9,
+    0,
     0,
     16,
     (items) =>
       items
         .addSlot(ANCHOR_X, ANCHOR_Y)
-        .addSlots(ANCHOR_X + 59, ANCHOR_Y + 18, 3, 3),
+        .addSlots(ANCHOR_X + 59, ANCHOR_Y - 18, 3, 3),
     (fluids) => {},
     true,
     true,

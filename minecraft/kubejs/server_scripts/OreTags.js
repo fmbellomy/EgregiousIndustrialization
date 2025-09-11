@@ -32,6 +32,11 @@ namespacedMats = namespacedMats.concat([
 ]);
 
 ServerEvents.tags("item", (event) => {
+  event.add("c:gems", "minecraft:coal");
+  event.add("c:gems/coal", "minecraft:coal");
+  event.add("c:gems", "modern_industrialization:lignite_coal");
+  event.add("c:gems/lignite_coal", "modern_industrialization:lignite_coal");
+
   namespacedMats.forEach((mat) => {
     let namespace = mat.split(":")[0];
     let matName = mat.split(":")[1];

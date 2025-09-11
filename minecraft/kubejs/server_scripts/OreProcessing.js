@@ -151,6 +151,26 @@ ServerEvents.recipes((event) => {
     type: "modern_industrialization:forge_hammer",
     input: "#c:raw_materials",
   });
+  // the like 2 or 3 chemical bath recipes:
+
+  event.recipes.modern_industrialization
+    .chemical_bath(4, 300)
+    .itemIn("modern_industrialization:tetrahedrite_crushed_dust")
+    .fluidIn("modern_industrialization:hydrochloric_acid", 100)
+    .itemOut("modern_industrialization:tetrahedrite_washed_crushed_dust")
+    .itemOut("modern_industrialization:antimony_dust", 0.35);
+  event.recipes.modern_industrialization
+    .chemical_bath(4, 300)
+    .itemIn("modern_industrialization:galena_crushed_dust")
+    .fluidIn("modern_industrialization:hydrochloric_acid", 100)
+    .itemOut("modern_industrialization:galena_washed_crushed_dust")
+    .itemOut("modern_industrialization:silver_dust", 0.35);
+  event.recipes.modern_industrialization
+    .chemical_bath(4, 300)
+    .itemIn("modern_industrialization:pitchblende_crushed_dust")
+    .fluidIn("modern_industrialization:sulfuric_acid", 100)
+    .itemOut("modern_industrialization:pitchblende_washed_crushed_dust")
+    .itemOut("modern_industrialization:uranium_dust", 0.35);
   // chromium and manganese are special cases that don't actually have ore blocks
   let chromiumSet = ORE_PRODUCTS.chromium;
   event.recipes.modern_industrialization
@@ -167,6 +187,34 @@ ServerEvents.recipes((event) => {
     .itemOut(manganeseSet.washedCrushedDust)
     .itemOut(manganeseSet.washByproduct, 0.1);
 
+  // lapis is a special case because of course it is.
+  event.recipes.modern_industrialization
+    .sifter(4, 300)
+    .itemIn(`modern_industrialization:lapis_washed_crushed_dust`)
+    .itemOut(`minecraft:lapis_lazuli`)
+    .itemOut(`minecraft:lapis_lazuli`, 0.6)
+    .itemOut(`minecraft:lapis_lazuli`, 0.5)
+    .itemOut(`minecraft:lapis_lazuli`, 0.4)
+    .itemOut(`minecraft:lapis_lazuli`, 0.3)
+    .itemOut(`minecraft:lapis_lazuli`, 0.2)
+    .itemOut(`minecraft:lapis_lazuli`, 0.1)
+    .itemOut(`minecraft:lapis_lazuli`, 0.05)
+    .itemOut(`modern_industrialization:lapis_dust`, 0.9);
+
+  // i have NO idea why quartz isn't getting caught by the tag filter below, but i'll just do it here.
+  event.recipes.modern_industrialization
+    .sifter(4, 300)
+    .itemIn(`modern_industrialization:quartz_washed_crushed_dust`)
+    .itemOut(`minecraft:quartz`)
+    .itemOut(`minecraft:quartz`, 0.6)
+    .itemOut(`minecraft:quartz`, 0.5)
+    .itemOut(`minecraft:quartz`, 0.4)
+    .itemOut(`minecraft:quartz`, 0.3)
+    .itemOut(`minecraft:quartz`, 0.2)
+    .itemOut(`minecraft:quartz`, 0.1)
+    .itemOut(`minecraft:quartz`, 0.05)
+    .itemOut(`modern_industrialization:quartz_dust`, 0.9);
+
   let seen = [];
   namespacedMats.forEach((nsMat) => {
     let namespace = nsMat.split(":")[0];
@@ -177,8 +225,23 @@ ServerEvents.recipes((event) => {
     if (seen.indexOf(mat) != -1) {
       return;
     }
+
+    // sifting
+    if (Item.getItem(`${nsMat}`).hasTag("c:gems") && mat !== "lapis") {
+      event.recipes.modern_industrialization
+        .sifter(4, 300)
+        .itemIn(`modern_industrialization:${mat}_washed_crushed_dust`)
+        .itemOut(`${nsMat}`)
+        .itemOut(`${nsMat}`, 0.6)
+        .itemOut(`${nsMat}`, 0.5)
+        .itemOut(`${nsMat}`, 0.4)
+        .itemOut(`${nsMat}`, 0.3)
+        .itemOut(`${nsMat}`, 0.2)
+        .itemOut(`${nsMat}`, 0.1)
+        .itemOut(`${nsMat}`, 0.05)
+        .itemOut(`modern_industrialization:${mat}_dust`, 0.9);
+    }
     seen.push(mat);
-    console.log(mat);
     let set = ORE_PRODUCTS[mat];
     switch (mat) {
       // abusing switch case fallthrough like a real gamer
@@ -263,4 +326,88 @@ ServerEvents.recipes((event) => {
     "modern_industrialization:manganese_crushed_dust",
     "modern_industrialization:manganese_washed_crushed_dust"
   );
+
+  event.recipes.modern_industrialization
+    .electrolyzer(16, 60)
+    .itemIn("20x modern_industrialization:tetrahedrite_dust")
+    .itemOut("15x modern_industrialization:copper_dust")
+    .itemOut("4x modern_industrialization:sulfur_dust")
+    .itemOut("modern_industrialization:antimony_dust");
+  event.recipes.modern_industrialization
+    .electrolyzer(16, 60)
+    .itemIn("4x modern_industrialization:chalcopyrite_dust")
+    .itemOut("2x modern_industrialization:sulfur_dust")
+    .itemOut("modern_industrialization:copper_dust")
+    .itemOut("modern_industrialization:iron_dust");
+  event.recipes.modern_industrialization
+    .electrolyzer(16, 60)
+    .itemIn("3x modern_industrialization:pyrite_dust")
+    .itemOut("2x modern_industrialization:sulfur_dust")
+    .itemOut("modern_industrialization:iron_dust");
+  event.recipes.modern_industrialization
+    .electrolyzer(16, 60)
+    .itemIn("3x modern_industrialization:cassiterite_dust")
+    .itemOut("modern_industrialization:tin_dust")
+    .fluidOut("modern_industrialization:oxygen", 2000);
+  event.recipes.modern_industrialization
+    .electrolyzer(16, 60)
+    .itemIn("18x modern_industrialization:asbestos_dust")
+    .itemOut("4x modern_industrialization:iron_dust")
+    .itemOut("4x modern_industrialization:silicon_dust")
+    .fluidOut("modern_industrialization:oxygen", 10000);
+  event.recipes.modern_industrialization
+    .electrolyzer(16, 60)
+    .itemIn("3x modern_industrialization:magnetite_dust")
+    .itemOut("modern_industrialization:iron_dust")
+    .fluidOut("modern_industrialization:oxygen", 2000);
+  event.recipes.modern_industrialization
+    .electrolyzer(16, 60)
+    .itemIn("7x modern_industrialization:garnierite_dust")
+    .itemOut("4x modern_industrialization:nickel_dust")
+    .itemOut("2x modern_industrialization:iron_dust")
+    .itemOut("modern_industrialization:silicon_dust");
+  event.recipes.modern_industrialization
+    .electrolyzer(16, 60)
+    .itemIn("26x modern_industrialization:pentlandite_dust")
+    .itemOut("9x modern_industrialization:nickel_dust")
+    .itemOut("9x modern_industrialization:iron_dust")
+    .itemOut("8x modern_industrialization:sulfur_dust");
+  event.recipes.modern_industrialization
+    .centrifuge(16, 80)
+    .itemIn("2x modern_industrialization:galena_dust")
+    .itemOut("modern_industrialization:lead_dust")
+    .itemOut("modern_industrialization:silver_dust");
+  event.recipes.modern_industrialization
+    .electrolyzer(16, 120)
+    .itemIn("3x modern_industrialization:pitchblende_dust")
+    .itemOut("modern_industrialization:uranium_dust")
+    .fluidOut("modern_industrialization:oxygen", 2000);
+  event.recipes.modern_industrialization
+    .electrolyzer(16, 120)
+    .itemIn("3x modern_industrialization:uraninite_dust")
+    .itemOut("modern_industrialization:uranium_dust")
+    .fluidOut("modern_industrialization:oxygen", 2000);
+  event.recipes.modern_industrialization
+    .electrolyzer(16, 120)
+    .itemIn("5x modern_industrialization:scheelite_dust")
+    .itemOut("modern_industrialization:tungsten_dust")
+    .fluidOut("modern_industrialization:oxygen", 4000);
+  event.recipes.modern_industrialization
+    .electrolyzer(16, 120)
+    .itemIn("5x modern_industrialization:ilmenite_dust")
+    .itemOut("modern_industrialization:iron_dust")
+    .itemOut("modern_industrialization:titanium_dust")
+    .fluidOut("modern_industrialization:oxygen", 3000);
+  event.recipes.modern_industrialization
+    .electrolyzer(16, 120)
+    .itemIn("7x modern_industrialization:chromite_dust")
+    .itemOut("modern_industrialization:iron_dust")
+    .itemOut("2x modern_industrialization:chromium_dust")
+    .fluidOut("modern_industrialization:oxygen", 4000);
+  event.recipes.modern_industrialization
+    .electrolyzer(16, 120)
+    .itemIn("17x modern_industrialization:uvarovite_dust")
+    .itemOut("2x modern_industrialization:chromium_dust")
+    .itemOut("3x modern_industrialization:silicon_dust")
+    .fluidOut("modern_industrialization:oxygen", 12000);
 });
