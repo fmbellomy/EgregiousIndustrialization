@@ -1,9 +1,18 @@
+let nukes = [
+  "modern_industrialization:gold_drill",
+  "modern_industrialization:gold_drill_head",
+  "modern_industrialization:steam_quarry",
+  "modern_industrialization:electric_quarry",
+];
+
 RecipeViewerEvents.removeEntriesCompletely("item", (event) => {
-  event.remove("modern_industrialization:electric_quarry");
-  event.remove("modern_industrialization:steam_quarry");
+  nukes.forEach((item) => {
+    event.remove(item);
+  });
 });
 ServerEvents.recipes((event) => {
+  nukes.forEach((item) => {
+    event.remove({ output: item });
+  });
   event.remove({ type: "modern_industrialization:quarry" });
-  event.remove({ output: "modern_industrialization:steam_quarry" });
-  event.remove({ output: "modern_industrialization:electric_quarry" });
 });

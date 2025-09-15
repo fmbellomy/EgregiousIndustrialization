@@ -4,19 +4,17 @@ LootJS.lootTables((event) => {
     if (toBeReplaced === undefined) {
       toBeReplaced = mat;
     }
+    let raw = LootEntry.of(`modern_industrialization:raw_${mat}`);
     event
       .getBlockTable(`${namespace}:${mat}_ore`)
       .modifyItemEntry((itemEntry) => {
-        if (itemEntry.item.id === `${namespace}:${toBeReplaced}`) {
-          return LootEntry.of(`modern_industrialization:raw_${mat}`);
-        }
+        return LootEntry.of(raw.item);
       });
     event
       .getBlockTable(`${namespace}:deepslate_${mat}_ore`)
+
       .modifyItemEntry((itemEntry) => {
-        if (itemEntry.item.id === `${namespace}:${toBeReplaced}`) {
-          return LootEntry.of(`modern_industrialization:raw_${mat}`);
-        }
+        return LootEntry.of(raw.item);
       });
   }
   replaceWithRaw("minecraft", "diamond");
@@ -35,8 +33,6 @@ LootJS.lootTables((event) => {
   event
     .getBlockTable("minecraft:nether_quartz_ore")
     .modifyItemEntry((itemEntry) => {
-      if (itemEntry.item.id === "minecraft:quartz") {
-        return LootEntry.of("modern_industrialization:raw_quartz");
-      }
+      return LootEntry.of("modern_industrialization:raw_quartz");
     });
 });

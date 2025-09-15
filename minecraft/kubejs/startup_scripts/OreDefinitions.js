@@ -31,24 +31,30 @@ MIMaterialEvents.addMaterials((event) => {
     "Tetrahedrite",
     "tetrahedrite",
     0xd22300,
-    END.concat(NETHER),
+    OVERWORLD.concat(NETHER),
     "copper"
   );
-  makeMetallicOre("Stibnite", "stibnite", 0x2e2e2e, END.concat(NETHER), "iron");
+  makeMetallicOre(
+    "Stibnite",
+    "stibnite",
+    0x2e2e2e,
+    OVERWORLD.concat(NETHER),
+    "iron"
+  );
 
   // chalcopyrite vein ores
   makeMetallicOre(
     "Chalcopyrite",
     "chalcopyrite",
     0x684e1a,
-    OVERWORLD.concat(NETHER, END),
+    OVERWORLD.concat(NETHER),
     "copper"
   );
   makeMetallicOre(
     "Pyrite",
     "pyrite",
     0x886c1f,
-    OVERWORLD.concat(NETHER, END),
+    OVERWORLD.concat(NETHER),
     "iron"
   );
   // cassiterite (tin) vein
@@ -56,14 +62,14 @@ MIMaterialEvents.addMaterials((event) => {
     "Cassiterite",
     "cassiterite",
     0x7e7e7e,
-    OVERWORLD.concat(END),
+    OVERWORLD.concat(NETHER),
     "gold"
   );
   makeMetallicOre(
     "Asbestos",
     "asbestos",
     0x7c7c7c,
-    OVERWORLD.concat(END),
+    OVERWORLD.concat(NETHER),
     "gold"
   );
   // magnetite vein
@@ -80,14 +86,14 @@ MIMaterialEvents.addMaterials((event) => {
     "Garnierite",
     "garnierite",
     0x207e2e,
-    OVERWORLD.concat(END),
+    OVERWORLD.concat(NETHER),
     "iron"
   );
   makeMetallicOre(
     "Pentlandite",
     "pentlandite",
     0x6c6203,
-    OVERWORLD.concat(END),
+    OVERWORLD.concat(NETHER),
     "iron"
   );
   // diamond vein
@@ -97,7 +103,7 @@ MIMaterialEvents.addMaterials((event) => {
     "Thorium",
     "thorium",
     0x002700,
-    OVERWORLD.concat(END),
+    OVERWORLD.concat(NETHER),
     "iron"
   );
   // galena
@@ -108,22 +114,24 @@ MIMaterialEvents.addMaterials((event) => {
     "Pitchblende",
     "pitchblende",
     0xb1b100,
-    OVERWORLD.concat(END),
+    OVERWORLD.concat(NETHER),
     "copper"
   );
   makeMetallicOre(
     "Uraninite",
     "uraninite",
     0x1f1f1f,
-    OVERWORLD.concat(END),
+    OVERWORLD.concat(NETHER),
     "copper"
   );
   // scheelite
-  makeMetallicOre("Scheelite", "scheelite", 0xae7e12, END, "iron");
+  makeMetallicOre("Scheelite", "scheelite", 0xae7e12, NETHER, "iron");
   // ilmenite
-  makeMetallicOre("Ilmenite", "ilmenite", 0x2e2421, END, "iron");
-  makeMetallicOre("Chromite", "chromite", 0x170804, END, "copper");
-  makeMetallicOre("Uvarovite", "uvarovite", 0xa1e4a1, END, "gold");
+  makeMetallicOre("Ilmenite", "ilmenite", 0x2e2421, NETHER, "iron");
+  makeMetallicOre("Chromite", "chromite", 0x170804, NETHER, "copper");
+  makeMetallicOre("Uvarovite", "uvarovite", 0xa1e4a1, NETHER, "gold");
+
+  makeMetallicOre("Sheldonite", "sheldonite", 0xd2d2d2, NETHER, "iron");
 });
 
 function makeVanillaNetherOre(ore, ore_set) {
@@ -138,7 +146,7 @@ function makeVanillaEndOre(ore, ore_set) {
   MIMaterialEvents.modifyMaterial(ore, (event) => {
     event.builder.ore(
       { generate: false, ore_set: ore_set },
-      "minecraft:end_stone"
+      "minecraft:netherrack"
     );
   });
 }
@@ -155,21 +163,28 @@ function makeVanillaDeepslateOre(ore, ore_set) {
     );
   });
 }
-const vanilla_end = ["iron", "copper", "gold"];
 const vanilla_nether = ["iron", "copper", "gold"];
 
-vanilla_end.map((ore) => makeVanillaEndOre(ore, ore));
 vanilla_nether.map((ore) => makeVanillaNetherOre(ore, ore));
 
-makeVanillaEndOre("tin", "iron");
-makeVanillaEndOre("nickel", "iron");
-
+makeVanillaNetherOre("tin", "iron");
+makeVanillaNetherOre("nickel", "iron");
+makeVanillaNetherOre("iridium", "iron");
+makeVanillaNetherOre("platinum", "gold");
 // redstone
 MIMaterialEvents.modifyMaterial("redstone", (event) => {
   event.builder
     .ore({ generate: false, ore_set: "iron" }, "minecraft:netherrack")
     .setMainPart("ingot")
     .rawMetal("iron");
+});
+// iridium
+MIMaterialEvents.modifyMaterial("iridium", (event) => {
+  event.builder.addParts("drill", "drill_head");
+});
+// gold
+MIMaterialEvents.modifyMaterial("gold", (event) => {
+  event.builder.addParts("fine_wire");
 });
 // lapis
 MIMaterialEvents.modifyMaterial("lapis", (event) => {
@@ -220,7 +235,7 @@ MIMaterialEvents.modifyMaterial("bauxite", (event) => {
 MIMaterialEvents.modifyMaterial("beryllium", (event) => {
   event.builder
     .ore({ generate: false, ore_set: "gold" }, "minecraft:stone")
-    .ore({ generate: false, ore_set: "gold" }, "minecraft:end_stone")
+    .ore({ generate: false, ore_set: "gold" }, "minecraft:netherrack")
     .rawMetal("gold")
     .customRegularPart("Washed Crushed Dust", "washed_crushed_dust")
     .addParts("crushed_dust");
@@ -249,13 +264,13 @@ MIMaterialEvents.modifyMaterial("ruby", (event) => {
 MIMaterialEvents.modifyMaterial("uranium", (event) => {
   event.builder.ore(
     { generate: false, ore_set: "copper" },
-    "minecraft:end_stone"
+    "minecraft:netherrack"
   );
 });
 MIMaterialEvents.modifyMaterial("tungsten", (event) => {
   event.builder.ore(
     { generate: false, ore_set: "gold" },
-    "minecraft:end_stone"
+    "minecraft:netherrack"
   );
 });
 const washedVanillaOres = [

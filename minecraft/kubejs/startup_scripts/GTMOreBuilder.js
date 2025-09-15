@@ -303,7 +303,10 @@ GTMOGS.VeinGenerator.LayeredVeinGenerator = () => {
      * @param {string} block
      * @param {integer} weight
      */
-    layer(minSize, maxSize, block, weight) {
+    layer(minSize, maxSize, block, weight, target) {
+      if (target == undefined) {
+        target = { predicate_type: "minecraft:always_true" };
+      }
       this.layer_patterns[0].push({
         max_size: maxSize,
         min_size: minSize,
@@ -313,9 +316,7 @@ GTMOGS.VeinGenerator.LayeredVeinGenerator = () => {
               state: {
                 Name: block,
               },
-              target: {
-                predicate_type: "minecraft:always_true",
-              },
+              target: target,
             },
           ],
         ],
@@ -331,12 +332,15 @@ GTMOGS.VeinGenerator.LayeredVeinGenerator = () => {
     },
   };
 };
-function makeLayer(layers, block) {
+function makeLayer(layers, block, target) {
+  if (target == undefined) {
+    target = { predicate_type: "minecraft:always_true" };
+  }
   return {
     layers: layers,
     targets: [
       {
-        target: { predicate_type: "minecraft:always_true" },
+        target: target,
         state: { Name: block },
       },
     ],
@@ -354,8 +358,8 @@ GTMOGS.VeinGenerator.ClassicVeinGenerator = () => {
      * @param {string} block
      * @returns {ClassicVeinGenerator}
      */
-    setPrimary(layers, block) {
-      this.primary = makeLayer(layers, block);
+    setPrimary(layers, block, target) {
+      this.primary = makeLayer(layers, block, target);
       return this;
     },
     /**
@@ -364,8 +368,8 @@ GTMOGS.VeinGenerator.ClassicVeinGenerator = () => {
      * @param {string} block
      * @returns {ClassicVeinGenerator}
      */
-    setSecondary(layers, block) {
-      this.secondary = makeLayer(layers, block);
+    setSecondary(layers, block, target) {
+      this.secondary = makeLayer(layers, block, target);
       return this;
     },
     /**
@@ -374,8 +378,8 @@ GTMOGS.VeinGenerator.ClassicVeinGenerator = () => {
      * @param {string} block
      * @returns {ClassicVeinGenerator}
      */
-    setBetween(layers, block) {
-      this.between = makeLayer(layers, block);
+    setBetween(layers, block, target) {
+      this.between = makeLayer(layers, block, target);
       return this;
     },
     /**
@@ -384,8 +388,8 @@ GTMOGS.VeinGenerator.ClassicVeinGenerator = () => {
      * @param {string} block
      * @returns {ClassicVeinGenerator}
      */
-    setSporadic(layers, block) {
-      this.sporadic = makeLayer(layers, block);
+    setSporadic(layers, block, target) {
+      this.sporadic = makeLayer(layers, block, target);
       return this;
     },
     /**
@@ -479,7 +483,7 @@ GTMOGS.OreVeinDefinitionBuilder = (id) => {
   function setHeightRange(type, low, high) {
     this.height_range = {
       height: {
-        type: type,
+        type: `minecraft:${type}`,
         max_inclusive: { absolute: high },
         min_inclusive: { absolute: low },
       },

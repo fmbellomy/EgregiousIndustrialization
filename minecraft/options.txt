@@ -49,7 +49,7 @@ mouseSensitivity:0.5
 damageTiltStrength:1.0
 highContrast:false
 narratorHotkey:true
-resourcePacks:[]
+resourcePacks:["gtmogs:dynamic_assets","vanilla","mod_resources","file/industrialization-refreshed"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
@@ -224,11 +224,6 @@ key_key.extendedae.viewpattern:key.keyboard.p
 key_key.extendedae.set_amount:key.mouse.middle
 key_key.modern_industrialization.toggle_flight:key.keyboard.v
 key_key.modern_industrialization.toggle_3x3:key.keyboard.y
-key_key.extended_industrialization.toggle_boots_ability:key.keyboard.unknown
-key_key.extended_industrialization.toggle_helmet_ability:key.keyboard.unknown
-key_key.extended_industrialization.toggle_main_hand_ability:key.keyboard.unknown
-key_key.extended_industrialization.toggle_chestplate_ability:key.keyboard.unknown
-key_key.extended_industrialization.toggle_leggings_ability:key.keyboard.unknown
 key_key.advanced_ae.pattern_encoder_action:key.keyboard.unknown
 key_key.advanced_ae.pick_craft:key.keyboard.unknown
 key_key.advanced_ae.portable_workbench:key.keyboard.unknown
@@ -245,6 +240,8 @@ key_key.constructionstick.open_gui:key.keyboard.unknown
 key_key.constructionstick.undo:key.keyboard.unknown
 key_key.constructionstick.show_previous:key.keyboard.unknown
 key_options.narrator:key.keyboard.b:CONTROL
+key_gui.xaero_pac_key_open_menu:key.keyboard.apostrophe
+key_key.entityculling.toggle:key.keyboard.unknown
 soundCategory_master:0.2580849855940863
 soundCategory_music:0.0
 soundCategory_record:1.0

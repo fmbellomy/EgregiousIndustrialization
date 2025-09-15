@@ -39,14 +39,18 @@ ServerEvents.generateData("before_mods", (_) => {
         ] = `modern_industrialization:${vein.dim.blockPrefix}${ores[i]}_ore`;
       }
     }
-
+    let target;
+    if (vein.dim == GTMOGS.END) {
+      target = { predicate_type: "minecraft:tag_match", tag: "c:end_stones" };
+    }
     let v = vein.generator(
       GTMOGS.VeinGenerator.ClassicVeinGenerator()
-        .setPrimary(4, ores[0])
-        .setSecondary(3, ores[1])
-        .setBetween(2, ores[2])
-        .setSporadic(1, ores[3])
+        .setPrimary(4, ores[0], target)
+        .setSecondary(3, ores[1], target)
+        .setBetween(2, ores[2], target)
+        .setSporadic(1, ores[3], target)
     );
+
     v(vein.dim);
   };
 
@@ -63,11 +67,16 @@ ServerEvents.generateData("before_mods", (_) => {
       } else {
         ores[i] = `modern_industrialization:${vein.dim.blockPrefix}${name}_ore`;
       }
+      let target;
+      if (vein.dim == GTMOGS.END) {
+        target = { predicate_type: "minecraft:tag_match", tag: "c:end_stones" };
+      }
       builder.layer(
         currentOre.minSize,
         currentOre.maxSize,
         ores[i],
-        currentOre.weight
+        currentOre.weight,
+        target
       );
     }
     let v = vein.generator(builder);
@@ -75,15 +84,15 @@ ServerEvents.generateData("before_mods", (_) => {
   };
   const veins = {};
   // tetrahedrite
-  veins.tetrahedrite_nether = {
-    generator: egregiousUniformVein("tetrahedrite", 50, 80, 120, 28, 36),
-    dim: GTMOGS.NETHER,
+  veins.tetrahedrite = {
+    generator: egregiousUniformVein("tetrahedrite", 50, 65, 120, 28, 36),
+    dim: GTMOGS.OVERWORLD,
     ores: ["tetrahedrite", "tetrahedrite", "copper", "stibnite"],
     veinType: classic,
   };
-  veins.tetrahedrite_end = {
-    generator: egregiousUniformVein("tetrahedrite", 50, 1, 120, 28, 36),
-    dim: GTMOGS.END,
+  veins.tetrahedrite_nether = {
+    generator: egregiousUniformVein("tetrahedrite", 20, 80, 120, 28, 36),
+    dim: GTMOGS.NETHER,
     ores: ["tetrahedrite", "tetrahedrite", "copper", "stibnite"],
     veinType: classic,
   };
@@ -120,9 +129,9 @@ ServerEvents.generateData("before_mods", (_) => {
     veinType: layered,
   };
 
-  veins.cassiterite_end = {
-    generator: egregiousUniformVein("cassiterite", 50, 1, 128, 30, 36),
-    dim: GTMOGS.END,
+  veins.cassiterite_nether = {
+    generator: egregiousUniformVein("cassiterite", 50, 80, 120, 30, 36),
+    dim: GTMOGS.NETHER,
     ores: [
       { cassiterite: { weight: 3, minSize: 2, maxSize: 4 } },
       { tin: { weight: 1, minSize: 1, maxSize: 3 } },
@@ -163,9 +172,9 @@ ServerEvents.generateData("before_mods", (_) => {
     ],
     veinType: layered,
   };
-  veins.pentlandite_end = {
-    generator: egregiousUniformVein("pentlandite", 50, 0, 120, 30, 36),
-    dim: GTMOGS.END,
+  veins.pentlandite_nether = {
+    generator: egregiousUniformVein("pentlandite", 50, 25, 65, 30, 36),
+    dim: GTMOGS.NETHER,
     ores: [
       { pentlandite: { weight: 3, minSize: 2, maxSize: 4 } },
       { garnierite: { weight: 2, minSize: 2, maxSize: 4 } },
@@ -186,9 +195,9 @@ ServerEvents.generateData("before_mods", (_) => {
     ores: ["pitchblende", "pitchblende", "uraninite", "uranium"],
     veinType: classic,
   };
-  veins.pitchblende_end = {
-    generator: egregiousUniformVein("pitchblende", 50, 1, 128, 32, 40),
-    dim: GTMOGS.END,
+  veins.pitchblende_nether = {
+    generator: egregiousUniformVein("pitchblende", 25, 70, 120, 32, 40),
+    dim: GTMOGS.NETHER,
     ores: ["pitchblende", "pitchblende", "uraninite", "uranium"],
     veinType: classic,
   };
@@ -211,8 +220,8 @@ ServerEvents.generateData("before_mods", (_) => {
     veinType: classic,
   };
   veins.ilmenite = {
-    generator: egregiousUniformVein("ilmenite", 50, 0, 100, 36, 40),
-    dim: GTMOGS.END,
+    generator: egregiousUniformVein("ilmenite", 50, 5, 45, 36, 40),
+    dim: GTMOGS.NETHER,
     ores: ["ilmenite", "chromite", "uvarovite", "ilmenite"],
     veinType: classic,
   };
@@ -229,9 +238,15 @@ ServerEvents.generateData("before_mods", (_) => {
     veinType: classic,
   };
   veins.scheelite = {
-    generator: egregiousUniformVein("scheelite", 50, 0, 100, 36, 40),
-    dim: GTMOGS.END,
+    generator: egregiousUniformVein("scheelite", 50, 65, 120, 36, 40),
+    dim: GTMOGS.NETHER,
     ores: ["scheelite", "scheelite", "scheelite", "tungsten"],
+    veinType: classic,
+  };
+  veins.sheldonite = {
+    generator: egregiousUniformVein("sheldonite", 25, 5, 45, 36, 40),
+    dim: GTMOGS.NETHER,
+    ores: ["sheldonite", "platinum", "sheldonite", "iridium"],
     veinType: classic,
   };
   keys(veins).forEach((key) => {

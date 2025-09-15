@@ -60,6 +60,7 @@ const ORE_PRODUCTS = {
   ilmenite: matSet("ilmenite", "iron"),
   chromite: matSet("chromite", "iron"),
   uvarovite: matSet("uvarovite", "ruby"),
+  sheldonite: matSet("sheldonite", "platinum"),
 };
 
 function unique(a) {
@@ -87,6 +88,11 @@ function keys(obj) {
 }
 
 ServerEvents.recipes((event) => {
+  event.smelting(
+    "modern_industrialization:silicon_ingot",
+    "modern_industrialization:silicon_dust"
+  );
+
   let items = Item.getList()
     .toArray()
     .map((item) => item.getItem().toString());
