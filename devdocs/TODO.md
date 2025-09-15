@@ -55,8 +55,8 @@
 ### immersive aircraft
 
 - [ ] make aircraft require MI liquid fuel
-- [ ] mi-ify recipes for aircraft upgrades
-- [ ] mi-ify recipes for aircraft themselves
+- [x] mi-ify recipes for aircraft upgrades
+- [x] mi-ify recipes for aircraft themselves
 
 ### farmers delight/brewin and chewin
 
