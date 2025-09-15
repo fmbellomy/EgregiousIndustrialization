@@ -45,7 +45,6 @@
 - [ ] nuke quantum armor
 - [ ] mi-ify "extended" items
 - [ ] mi-ify entro stuff
-- [ ] mi reaction chamber
 
 ### just hammers
 
