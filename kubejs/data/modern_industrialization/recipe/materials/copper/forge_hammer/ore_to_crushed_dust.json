@@ -1,0 +1,10 @@
+{
+    "type": "modern_industrialization:forge_hammer",
+    "ingredient": {
+        "tag": "c:ores/copper"
+    },
+    "result": {
+        "count": 2,
+        "id": "modern_industrialization:copper_crushed_dust"
+    }
+}

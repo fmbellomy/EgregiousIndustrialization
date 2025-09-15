@@ -1,0 +1,13 @@
+name = "Egregious Industrialization"
+author = "esoterica"
+version = "0.1.1_ALPHA.1"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "7eb422c25b4f0ccc264954be2dbdafab5b1cf40f5144465ecd14f596b008900c"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.206"

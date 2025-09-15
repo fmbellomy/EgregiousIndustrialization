@@ -1,0 +1,84 @@
+{
+	"biomes": "#minecraft:is_nether",
+	"cluster_size": {
+		"min_inclusive": 30,
+		"max_inclusive": 36,
+		"type": "minecraft:uniform"
+	},
+	"density": 0.75,
+	"dimension_filter": [
+		"minecraft:the_nether"
+	],
+	"discard_chance_on_air_exposure": 0.75,
+	"generator": {
+		"type": "gtmogs:layer",
+		"layer_patterns": [
+			[
+				{
+					"max_size": 4,
+					"min_size": 2,
+					"targets": [
+						[
+							{
+								"state": {
+									"Name": "modern_industrialization:netherrack_pentlandite_ore"
+								},
+								"target": {
+									"predicate_type": "minecraft:always_true"
+								}
+							}
+						]
+					],
+					"weight": 3
+				},
+				{
+					"max_size": 4,
+					"min_size": 2,
+					"targets": [
+						[
+							{
+								"state": {
+									"Name": "modern_industrialization:netherrack_garnierite_ore"
+								},
+								"target": {
+									"predicate_type": "minecraft:always_true"
+								}
+							}
+						]
+					],
+					"weight": 2
+				},
+				{
+					"max_size": 4,
+					"min_size": 2,
+					"targets": [
+						[
+							{
+								"state": {
+									"Name": "modern_industrialization:netherrack_nickel_ore"
+								},
+								"target": {
+									"predicate_type": "minecraft:always_true"
+								}
+							}
+						]
+					],
+					"weight": 1
+				}
+			]
+		]
+	},
+	"height_range": {
+		"height": {
+			"type": "minecraft:uniform",
+			"max_inclusive": {
+				"absolute": 65
+			},
+			"min_inclusive": {
+				"absolute": 25
+			}
+		}
+	},
+	"layer": "netherrack",
+	"weight": 50
+}

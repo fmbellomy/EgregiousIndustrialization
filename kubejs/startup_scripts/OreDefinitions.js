@@ -1,0 +1,344 @@
+MIMaterialEvents.addMaterials((event) => {
+  function makeMetallicOre(name, id, color, blocks, ore_set) {
+    if (blocks === undefined) {
+      blocks = ["minecraft:stone", "minecraft:deepslate"];
+    }
+
+    if (ore_set === undefined) {
+      ore_set = "iron";
+    }
+
+    event.createMaterial(name, id, color, (builder) => {
+      builder
+        .hardness("average")
+        .materialSet("metallic")
+        .addParts("dust", "crushed_dust")
+        .customRegularPart("Washed Crushed Dust", "washed_crushed_dust");
+
+      blocks.forEach((block) => {
+        builder.ore({ generate: false, ore_set: ore_set }, block);
+      });
+      builder.rawMetal(ore_set);
+    });
+  }
+
+  const OVERWORLD = ["minecraft:stone", "minecraft:deepslate"];
+  const NETHER = ["minecraft:netherrack"];
+  const END = ["minecraft:end_stone"];
+
+  // tetrahedrite vein ores
+  makeMetallicOre(
+    "Tetrahedrite",
+    "tetrahedrite",
+    0xd22300,
+    OVERWORLD.concat(NETHER),
+    "copper"
+  );
+  makeMetallicOre(
+    "Stibnite",
+    "stibnite",
+    0x2e2e2e,
+    OVERWORLD.concat(NETHER),
+    "iron"
+  );
+
+  // chalcopyrite vein ores
+  makeMetallicOre(
+    "Chalcopyrite",
+    "chalcopyrite",
+    0x684e1a,
+    OVERWORLD.concat(NETHER),
+    "copper"
+  );
+  makeMetallicOre(
+    "Pyrite",
+    "pyrite",
+    0x886c1f,
+    OVERWORLD.concat(NETHER),
+    "iron"
+  );
+  // cassiterite (tin) vein
+  makeMetallicOre(
+    "Cassiterite",
+    "cassiterite",
+    0x7e7e7e,
+    OVERWORLD.concat(NETHER),
+    "gold"
+  );
+  makeMetallicOre(
+    "Asbestos",
+    "asbestos",
+    0x7c7c7c,
+    OVERWORLD.concat(NETHER),
+    "gold"
+  );
+  // magnetite vein
+  makeMetallicOre(
+    "Magnetite",
+    "magnetite",
+    0x1b1b1b,
+    OVERWORLD.concat(NETHER),
+    "iron"
+  );
+
+  // nickel vein
+  makeMetallicOre(
+    "Garnierite",
+    "garnierite",
+    0x207e2e,
+    OVERWORLD.concat(NETHER),
+    "iron"
+  );
+  makeMetallicOre(
+    "Pentlandite",
+    "pentlandite",
+    0x6c6203,
+    OVERWORLD.concat(NETHER),
+    "iron"
+  );
+  // diamond vein
+  makeMetallicOre("Graphite", "graphite", 0x444647, OVERWORLD, "iron");
+  // thorium/emerald/beryllium vein
+  makeMetallicOre(
+    "Thorium",
+    "thorium",
+    0x002700,
+    OVERWORLD.concat(NETHER),
+    "iron"
+  );
+  // galena
+  makeMetallicOre("Galena", "galena", 0x6d416d, OVERWORLD, "iron");
+
+  // pitchblende
+  makeMetallicOre(
+    "Pitchblende",
+    "pitchblende",
+    0xb1b100,
+    OVERWORLD.concat(NETHER),
+    "copper"
+  );
+  makeMetallicOre(
+    "Uraninite",
+    "uraninite",
+    0x1f1f1f,
+    OVERWORLD.concat(NETHER),
+    "copper"
+  );
+  // scheelite
+  makeMetallicOre("Scheelite", "scheelite", 0xae7e12, NETHER, "iron");
+  // ilmenite
+  makeMetallicOre("Ilmenite", "ilmenite", 0x2e2421, NETHER, "iron");
+  makeMetallicOre("Chromite", "chromite", 0x170804, NETHER, "copper");
+  makeMetallicOre("Uvarovite", "uvarovite", 0xa1e4a1, NETHER, "gold");
+
+  makeMetallicOre("Sheldonite", "sheldonite", 0xd2d2d2, NETHER, "iron");
+});
+
+function makeVanillaNetherOre(ore, ore_set) {
+  MIMaterialEvents.modifyMaterial(ore, (event) => {
+    event.builder.ore(
+      { generate: false, ore_set: ore_set },
+      "minecraft:netherrack"
+    );
+  });
+}
+function makeVanillaEndOre(ore, ore_set) {
+  MIMaterialEvents.modifyMaterial(ore, (event) => {
+    event.builder.ore(
+      { generate: false, ore_set: ore_set },
+      "minecraft:netherrack"
+    );
+  });
+}
+function makeVanillaStoneOre(ore, ore_set) {
+  MIMaterialEvents.modifyMaterial(ore, (event) => {
+    event.builder.ore({ generate: false, ore_set: ore_set }, "minecraft:stone");
+  });
+}
+function makeVanillaDeepslateOre(ore, ore_set) {
+  MIMaterialEvents.modifyMaterial(ore, (event) => {
+    event.builder.ore(
+      { generate: false, ore_set: ore_set },
+      "minecraft:deepslate"
+    );
+  });
+}
+const vanilla_nether = ["iron", "copper", "gold"];
+
+vanilla_nether.map((ore) => makeVanillaNetherOre(ore, ore));
+
+makeVanillaNetherOre("tin", "iron");
+makeVanillaNetherOre("nickel", "iron");
+makeVanillaNetherOre("iridium", "iron");
+makeVanillaNetherOre("platinum", "gold");
+// redstone
+MIMaterialEvents.modifyMaterial("redstone", (event) => {
+  event.builder
+    .ore({ generate: false, ore_set: "iron" }, "minecraft:netherrack")
+    .setMainPart("ingot")
+    .rawMetal("iron");
+});
+// iridium
+MIMaterialEvents.modifyMaterial("iridium", (event) => {
+  event.builder.addParts("drill", "drill_head");
+});
+// gold
+MIMaterialEvents.modifyMaterial("gold", (event) => {
+  event.builder.addParts("fine_wire");
+});
+// lapis
+MIMaterialEvents.modifyMaterial("lapis", (event) => {
+  event.builder.setMainPart("ingot").rawMetal("copper");
+});
+// diamond
+MIMaterialEvents.modifyMaterial("diamond", (event) => {
+  event.builder.setMainPart("ingot").rawMetal("gold");
+});
+// emerald
+MIMaterialEvents.modifyMaterial("emerald", (event) => {
+  event.builder.setMainPart("ingot").rawMetal("iron");
+});
+// quartz
+MIMaterialEvents.modifyMaterial("quartz", (event) => {
+  event.builder.rawMetal("copper");
+});
+// coal
+MIMaterialEvents.modifyMaterial("coal", (event) => {
+  event.builder.setMainPart("ingot").rawMetal("iron");
+});
+// lignite coal
+MIMaterialEvents.modifyMaterial("lignite_coal", (event) => {
+  // apparently materials native to MI *hate* having `.setMainPart()` called on them,
+  // but this works without it so we're good...
+  event.builder.rawMetal("iron");
+});
+// salt
+MIMaterialEvents.modifyMaterial("salt", (event) => {
+  event.builder.rawMetal("iron");
+});
+// monazite
+MIMaterialEvents.modifyMaterial("monazite", (event) => {
+  event.builder.rawMetal("copper");
+});
+// sulfur
+MIMaterialEvents.modifyMaterial("sulfur", (event) => {
+  event.builder
+    .ore({ generate: false, ore_set: "copper" })
+    .setMainPart("ingot")
+    .rawMetal("copper");
+});
+// bauxite
+MIMaterialEvents.modifyMaterial("bauxite", (event) => {
+  event.builder.rawMetal("iron");
+});
+// beryllium
+MIMaterialEvents.modifyMaterial("beryllium", (event) => {
+  event.builder
+    .ore({ generate: false, ore_set: "gold" }, "minecraft:stone")
+    .ore({ generate: false, ore_set: "gold" }, "minecraft:netherrack")
+    .rawMetal("gold")
+    .customRegularPart("Washed Crushed Dust", "washed_crushed_dust")
+    .addParts("crushed_dust");
+});
+// silver
+MIMaterialEvents.modifyMaterial("silver", (event) => {
+  event.builder
+    .ore({ generate: false, ore_set: "gold" }, "minecraft:stone")
+    .customRegularPart("Washed Crushed Dust", "washed_crushed_dust");
+});
+// ruby is a weird one
+MIMaterialEvents.modifyMaterial("ruby", (event) => {
+  event.builder
+    .ore(
+      { generate: false, ore_set: "copper", min_xp: 0, max_xp: 0 },
+      "minecraft:deepslate"
+    )
+    .ore(
+      { generate: false, ore_set: "copper", min_xp: 0, max_xp: 0 },
+      "minecraft:netherrack"
+    )
+    .addParts("crushed_dust")
+    .rawMetal("copper");
+});
+// uranium
+MIMaterialEvents.modifyMaterial("uranium", (event) => {
+  event.builder.ore(
+    { generate: false, ore_set: "copper" },
+    "minecraft:netherrack"
+  );
+});
+MIMaterialEvents.modifyMaterial("tungsten", (event) => {
+  event.builder.ore(
+    { generate: false, ore_set: "gold" },
+    "minecraft:netherrack"
+  );
+});
+const washedVanillaOres = [
+  "iron",
+  "copper",
+  "gold",
+  "coal",
+  "lapis",
+  "redstone",
+  "diamond",
+  "emerald",
+  "quartz",
+];
+washedVanillaOres.forEach((ore) => {
+  MIMaterialEvents.modifyMaterial(ore, (event) => {
+    event.builder.customRegularPart(
+      "Washed Crushed Dust",
+      "washed_crushed_dust"
+    );
+  });
+});
+const washedMIOres = [
+  "antimony",
+  "bauxite",
+  "lead",
+  "lignite_coal",
+  "monazite",
+  "nickel",
+  "salt",
+  "tin",
+  "tungsten",
+  "uranium",
+  "ruby",
+  "platinum",
+  "iridium",
+  "sulfur",
+  "titanium",
+  "chromium",
+  "manganese",
+];
+
+washedMIOres.forEach((ore) => {
+  MIMaterialEvents.modifyMaterial(ore, (event) => {
+    event.builder.customRegularPart(
+      "Washed Crushed Dust",
+      "washed_crushed_dust"
+    );
+  });
+});
+
+let missingCrushedDusts = [
+  "copper",
+  "iron",
+  "gold",
+  "lead",
+  "uranium",
+  "tungsten",
+  "iridium",
+  "platinum",
+  "nickel",
+  "tin",
+  "titanium",
+  "silver",
+  "antimony",
+  "sulfur",
+];
+missingCrushedDusts.forEach((mat) => {
+  MIMaterialEvents.modifyMaterial(mat, (event) => {
+    event.builder.addParts("crushed_dust");
+  });
+});

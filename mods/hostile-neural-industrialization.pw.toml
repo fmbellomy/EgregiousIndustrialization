@@ -1,0 +1,13 @@
+name = "Hostile Neural Industrialization"
+filename = "hostile_neural_industrialization-1.0.4-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "239326f730ec7b8af79607f8cb8cad8efeba8261"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6961215
+project-id = 1312953

@@ -1,0 +1,81 @@
+{
+	"biomes": "#minecraft:is_nether",
+	"cluster_size": {
+		"min_inclusive": 28,
+		"max_inclusive": 36,
+		"type": "minecraft:uniform"
+	},
+	"density": 0.75,
+	"dimension_filter": [
+		"minecraft:the_nether"
+	],
+	"discard_chance_on_air_exposure": 0.75,
+	"generator": {
+		"type": "gtmogs:classic",
+		"primary": {
+			"layers": 4,
+			"targets": [
+				{
+					"target": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"state": {
+						"Name": "modern_industrialization:netherrack_tetrahedrite_ore"
+					}
+				}
+			]
+		},
+		"secondary": {
+			"layers": 3,
+			"targets": [
+				{
+					"target": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"state": {
+						"Name": "modern_industrialization:netherrack_tetrahedrite_ore"
+					}
+				}
+			]
+		},
+		"between": {
+			"layers": 2,
+			"targets": [
+				{
+					"target": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"state": {
+						"Name": "modern_industrialization:netherrack_copper_ore"
+					}
+				}
+			]
+		},
+		"sporadic": {
+			"layers": 1,
+			"targets": [
+				{
+					"target": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"state": {
+						"Name": "modern_industrialization:netherrack_stibnite_ore"
+					}
+				}
+			]
+		}
+	},
+	"height_range": {
+		"height": {
+			"type": "minecraft:uniform",
+			"max_inclusive": {
+				"absolute": 120
+			},
+			"min_inclusive": {
+				"absolute": 80
+			}
+		}
+	},
+	"layer": "netherrack",
+	"weight": 20
+}

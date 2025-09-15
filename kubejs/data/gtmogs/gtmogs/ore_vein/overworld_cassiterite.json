@@ -1,0 +1,84 @@
+{
+	"biomes": "#minecraft:is_overworld",
+	"cluster_size": {
+		"min_inclusive": 30,
+		"max_inclusive": 36,
+		"type": "minecraft:uniform"
+	},
+	"density": 0.75,
+	"dimension_filter": [
+		"minecraft:overworld"
+	],
+	"discard_chance_on_air_exposure": 0.75,
+	"generator": {
+		"type": "gtmogs:layer",
+		"layer_patterns": [
+			[
+				{
+					"max_size": 4,
+					"min_size": 2,
+					"targets": [
+						[
+							{
+								"state": {
+									"Name": "modern_industrialization:cassiterite_ore"
+								},
+								"target": {
+									"predicate_type": "minecraft:always_true"
+								}
+							}
+						]
+					],
+					"weight": 3
+				},
+				{
+					"max_size": 3,
+					"min_size": 1,
+					"targets": [
+						[
+							{
+								"state": {
+									"Name": "modern_industrialization:tin_ore"
+								},
+								"target": {
+									"predicate_type": "minecraft:always_true"
+								}
+							}
+						]
+					],
+					"weight": 1
+				},
+				{
+					"max_size": 2,
+					"min_size": 1,
+					"targets": [
+						[
+							{
+								"state": {
+									"Name": "modern_industrialization:asbestos_ore"
+								},
+								"target": {
+									"predicate_type": "minecraft:always_true"
+								}
+							}
+						]
+					],
+					"weight": 1
+				}
+			]
+		]
+	},
+	"height_range": {
+		"height": {
+			"type": "minecraft:uniform",
+			"max_inclusive": {
+				"absolute": 450
+			},
+			"min_inclusive": {
+				"absolute": 250
+			}
+		}
+	},
+	"layer": "stone",
+	"weight": 60
+}

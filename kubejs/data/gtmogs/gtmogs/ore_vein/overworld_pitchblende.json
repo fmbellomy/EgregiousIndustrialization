@@ -1,0 +1,81 @@
+{
+	"biomes": "#minecraft:is_overworld",
+	"cluster_size": {
+		"min_inclusive": 24,
+		"max_inclusive": 28,
+		"type": "minecraft:uniform"
+	},
+	"density": 0.75,
+	"dimension_filter": [
+		"minecraft:overworld"
+	],
+	"discard_chance_on_air_exposure": 0.75,
+	"generator": {
+		"type": "gtmogs:classic",
+		"primary": {
+			"layers": 4,
+			"targets": [
+				{
+					"target": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"state": {
+						"Name": "modern_industrialization:pitchblende_ore"
+					}
+				}
+			]
+		},
+		"secondary": {
+			"layers": 3,
+			"targets": [
+				{
+					"target": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"state": {
+						"Name": "modern_industrialization:pitchblende_ore"
+					}
+				}
+			]
+		},
+		"between": {
+			"layers": 2,
+			"targets": [
+				{
+					"target": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"state": {
+						"Name": "modern_industrialization:uraninite_ore"
+					}
+				}
+			]
+		},
+		"sporadic": {
+			"layers": 1,
+			"targets": [
+				{
+					"target": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"state": {
+						"Name": "modern_industrialization:uranium_ore"
+					}
+				}
+			]
+		}
+	},
+	"height_range": {
+		"height": {
+			"type": "minecraft:uniform",
+			"max_inclusive": {
+				"absolute": 80
+			},
+			"min_inclusive": {
+				"absolute": 15
+			}
+		}
+	},
+	"layer": "stone",
+	"weight": 25
+}
