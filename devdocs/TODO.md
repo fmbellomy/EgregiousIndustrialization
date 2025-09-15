@@ -31,24 +31,26 @@
 
 ### ae2
 
-- [ ] mi-ify controllers
-- [ ] mi-ify interfaces, pattern providers
-- [ ] mi-ify storage components/cells
-- [ ] mi-ify me drive, io port
-- [ ] mi-ify cables (rubber instead of wool)
-- [ ] mi-ify p2p, import/export bus
-- [ ] mi-ify annihilation/formation core
-- [ ] nuke all ae2 inscriber recipes
+- [x] mi-ify controllers
+- [x] mi-ify interfaces, pattern providers
+- [x] mi-ify storage components/cells
+- [x] mi-ify me drive, io port
+- [x] mi-ify cables (rubber instead of wool)
+- [x] mi-ify p2p, import/export bus
+
+### advanced ae
+
+- [x] nuke quantum armor
+- [x] nuke advanced p-providers
 
 ### extended ae
 
-- [ ] nuke quantum armor
-- [ ] mi-ify "extended" items
-- [ ] mi-ify entro stuff
+- [x] mi-ify "extended" items
+- [x] mi-ify entro stuff
 
 ### just hammers
 
-- [ ] mi-ify hammers and their upgrades
+- [x] mi-ify hammers and their upgrades
 
 ### immersive aircraft
 
@@ -58,5 +60,5 @@
 
 ### farmers delight/brewin and chewin
 
-- [ ] add cutting recipes to cutting machine
-- [ ] add powerless multiblock keg
+- [x] add cutting recipes to cutting machine
+- [ ] add powerless multiblock keg??

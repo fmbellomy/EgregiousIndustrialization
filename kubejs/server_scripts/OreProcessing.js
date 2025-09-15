@@ -162,19 +162,19 @@ ServerEvents.recipes((event) => {
   event.recipes.modern_industrialization
     .chemical_bath(4, 300)
     .itemIn("modern_industrialization:tetrahedrite_crushed_dust")
-    .fluidIn("modern_industrialization:hydrochloric_acid", 100)
+    .fluidIn("100x modern_industrialization:hydrochloric_acid")
     .itemOut("modern_industrialization:tetrahedrite_washed_crushed_dust")
     .itemOut("modern_industrialization:antimony_dust", 0.35);
   event.recipes.modern_industrialization
     .chemical_bath(4, 300)
     .itemIn("modern_industrialization:galena_crushed_dust")
-    .fluidIn("modern_industrialization:hydrochloric_acid", 100)
+    .fluidIn("100x modern_industrialization:hydrochloric_acid")
     .itemOut("modern_industrialization:galena_washed_crushed_dust")
     .itemOut("modern_industrialization:silver_dust", 0.35);
   event.recipes.modern_industrialization
     .chemical_bath(4, 300)
     .itemIn("modern_industrialization:pitchblende_crushed_dust")
-    .fluidIn("modern_industrialization:sulfuric_acid", 100)
+    .fluidIn("100x modern_industrialization:sulfuric_acid")
     .itemOut("modern_industrialization:pitchblende_washed_crushed_dust")
     .itemOut("modern_industrialization:uranium_dust", 0.35);
   // chromium and manganese are special cases that don't actually have ore blocks
@@ -182,14 +182,14 @@ ServerEvents.recipes((event) => {
   event.recipes.modern_industrialization
     .ore_washer(2, 200)
     .itemIn(chromiumSet.crushedDust)
-    .fluidIn("minecraft:water")
+    .fluidIn("1000x minecraft:water")
     .itemOut(chromiumSet.washedCrushedDust)
     .itemOut(chromiumSet.washByproduct, 0.1);
   let manganeseSet = ORE_PRODUCTS.manganese;
   event.recipes.modern_industrialization
     .ore_washer(2, 200)
     .itemIn(manganeseSet.crushedDust)
-    .fluidIn("minecraft:water")
+    .fluidIn("1000x minecraft:water")
     .itemOut(manganeseSet.washedCrushedDust)
     .itemOut(manganeseSet.washByproduct, 0.1);
 
@@ -271,7 +271,7 @@ ServerEvents.recipes((event) => {
     event.recipes.modern_industrialization
       .ore_washer(2, 200)
       .itemIn(set.crushedDust)
-      .fluidIn("minecraft:water")
+      .fluidIn("1000x minecraft:water")
       .itemOut(set.washedCrushedDust)
       .itemOut(set.washByproduct, 0.1);
     /* DISABLED UNTIL MI UPDATES AND EI ACTUALLY WORKS
@@ -354,18 +354,18 @@ ServerEvents.recipes((event) => {
     .electrolyzer(16, 60)
     .itemIn("3x modern_industrialization:cassiterite_dust")
     .itemOut("modern_industrialization:tin_dust")
-    .fluidOut("modern_industrialization:oxygen", 2000);
+    .fluidOut("2000x modern_industrialization:oxygen");
   event.recipes.modern_industrialization
     .electrolyzer(16, 60)
     .itemIn("18x modern_industrialization:asbestos_dust")
     .itemOut("4x modern_industrialization:iron_dust")
     .itemOut("4x modern_industrialization:silicon_dust")
-    .fluidOut("modern_industrialization:oxygen", 10000);
+    .fluidOut("10000x modern_industrialization:oxygen");
   event.recipes.modern_industrialization
     .electrolyzer(16, 60)
     .itemIn("3x modern_industrialization:magnetite_dust")
     .itemOut("modern_industrialization:iron_dust")
-    .fluidOut("modern_industrialization:oxygen", 2000);
+    .fluidOut("2000x modern_industrialization:oxygen");
   event.recipes.modern_industrialization
     .electrolyzer(16, 60)
     .itemIn("7x modern_industrialization:garnierite_dust")
@@ -387,33 +387,33 @@ ServerEvents.recipes((event) => {
     .electrolyzer(16, 120)
     .itemIn("3x modern_industrialization:pitchblende_dust")
     .itemOut("modern_industrialization:uranium_dust")
-    .fluidOut("modern_industrialization:oxygen", 2000);
+    .fluidOut("2000x modern_industrialization:oxygen");
   event.recipes.modern_industrialization
     .electrolyzer(16, 120)
     .itemIn("3x modern_industrialization:uraninite_dust")
     .itemOut("modern_industrialization:uranium_dust")
-    .fluidOut("modern_industrialization:oxygen", 2000);
+    .fluidOut("2000x modern_industrialization:oxygen");
   event.recipes.modern_industrialization
     .electrolyzer(16, 120)
     .itemIn("5x modern_industrialization:scheelite_dust")
     .itemOut("modern_industrialization:tungsten_dust")
-    .fluidOut("modern_industrialization:oxygen", 4000);
+    .fluidOut("4000x modern_industrialization:oxygen");
   event.recipes.modern_industrialization
     .electrolyzer(16, 120)
     .itemIn("5x modern_industrialization:ilmenite_dust")
     .itemOut("modern_industrialization:iron_dust")
     .itemOut("modern_industrialization:titanium_dust")
-    .fluidOut("modern_industrialization:oxygen", 3000);
+    .fluidOut("3000x modern_industrialization:oxygen");
   event.recipes.modern_industrialization
     .electrolyzer(16, 120)
     .itemIn("7x modern_industrialization:chromite_dust")
     .itemOut("modern_industrialization:iron_dust")
     .itemOut("2x modern_industrialization:chromium_dust")
-    .fluidOut("modern_industrialization:oxygen", 4000);
+    .fluidOut("4000x modern_industrialization:oxygen");
   event.recipes.modern_industrialization
     .electrolyzer(16, 120)
     .itemIn("17x modern_industrialization:uvarovite_dust")
     .itemOut("2x modern_industrialization:chromium_dust")
     .itemOut("3x modern_industrialization:silicon_dust")
-    .fluidOut("modern_industrialization:oxygen", 12000);
+    .fluidOut("12000x modern_industrialization:oxygen");
 });

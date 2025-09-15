@@ -342,3 +342,12 @@ missingCrushedDusts.forEach((mat) => {
     event.builder.addParts("crushed_dust");
   });
 });
+
+MIMaterialEvents.addMaterials((event) => {
+  event.createMaterial("Entro", "entro", 0x3ed19b, (builder) => {
+    builder
+      .addParts("plate")
+      .addExternalPart("ingot", "extendedae:entro_ingot")
+      .defaultRecipes();
+  });
+});

@@ -66,24 +66,47 @@ ServerEvents.recipes((event) => {
     .itemIn("ae2:ender_dust")
     .itemIn("modern_industrialization:capacitor")
     .itemIn("ae2:quartz_vibrant_glass")
-    .fluidIn("modern_industrialization:molten_redstone", 180)
+    .fluidIn("180x modern_industrialization:molten_redstone")
     .itemOut("16x hostilenetworks:prediction_matrix");
 
   event.remove({
     output: "hostile_neural_industrialization:prediction_machine_casing",
   });
+
+  event.recipes.modern_industrialization
+    .assembler(8, 200)
+    .itemIn("modern_industrialization:advanced_machine_hull")
+    .itemIn("2x modern_industrialization:electronic_circuit")
+    .itemIn("ae2:quartz_glass")
+    .itemIn("2x minecraft:glowstone_dust")
+    .itemOut("hostile_neural_industrialization:electric_simulation_chamber");
+  event.recipes.modern_industrialization
+    .assembler(8, 200)
+    .itemIn("modern_industrialization:advanced_machine_hull")
+    .itemIn("2x modern_industrialization:electronic_circuit")
+    .itemIn("ae2:quartz_glass")
+    .itemIn("2x minecraft:redstone")
+    .itemOut("hostile_neural_industrialization:mono_loot_fabricator");
   event.recipes.modern_industrialization
     .assembler(8, 200)
     .itemIn("modern_industrialization:clean_stainless_steel_machine_casing")
     .itemIn("2x modern_industrialization:emerald_dust")
-    .fluidIn("modern_industrialization:polyvinyl_chloride", 25)
+    .fluidIn("25x modern_industrialization:polyvinyl_chloride")
     .itemOut("hostile_neural_industrialization:prediction_machine_casing");
   event.recipes.modern_industrialization
-    .assembler(8, 200)
+    .assembler(8, 300)
+    .itemIn("hostile_neural_industrialization:mono_loot_fabricator")
     .itemIn("hostile_neural_industrialization:prediction_machine_casing")
     .itemIn("2x modern_industrialization:digital_circuit")
+    .fluidIn("100x modern_industrialization:soldering_alloy")
     .itemOut("hostile_neural_industrialization:large_loot_fabricator");
-
+  event.recipes.modern_industrialization
+    .assembler(8, 300)
+    .itemIn("hostile_neural_industrialization:electric_simulation_chamber")
+    .itemIn("hostile_neural_industrialization:prediction_machine_casing")
+    .itemIn("2x modern_industrialization:digital_circuit")
+    .fluidIn("100x modern_industrialization:soldering_alloy")
+    .itemOut("hostile_neural_industrialization:large_simulation_chamber");
   // crafting recipes for the models...
 
   event
