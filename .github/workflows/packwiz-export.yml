@@ -36,6 +36,8 @@ jobs:
       cancel-in-progress: true
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: true
       - name: Setup go
         uses: actions/setup-go@v6
         with:

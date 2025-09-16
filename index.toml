@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".github/workflows/packwiz-export.yml"
+hash = "a76dc4f2d9a82aaa0f1e9430ea6b3f902a2d3da4f9910d5d4d94c16ea5503406"
+
+[[files]]
 file = "README.md"
 hash = "4d8794c48d5e33bb67adce8dc76af09353c0841dc583a3de5110cb414570328c"
 
@@ -147,6 +151,34 @@ hash = "4d9bed5dbfa06cd545c9f56db4fd4f0c268651e06a5dd8039b16ba2a307f4c03"
 [[files]]
 file = "config/fml.toml"
 hash = "cc127c6067eb9e23289edc1c774afd71456456eef06c688af6731a72d3bba5e5"
+
+[[files]]
+file = "config/ftblibrary-client.snbt"
+hash = "cfdeee8aaa0189b650bf8c75459bfcd3e94f33df2cb231ddcd6926e3d2a6841d"
+
+[[files]]
+file = "config/ftbquests-client.snbt"
+hash = "83b3c8c5548b8e419f97857e0694fac7ae08442ebd894f41868db4b30ae1030f"
+
+[[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "7028df1500a2e6cb585a3b1dd7a9debc1644a4d4df4fdede8455a20b964a28c8"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/the_beginning.snbt"
+hash = "52f3b7cd897e521ef69789e30c553c45b6400a5e2da8fcfd47f4f8e0c6076465"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/the_steam_age.snbt"
+hash = "96cd575c52ae82091cec12125af886d271f41dbc2043d8fbe860a25d586aa1f1"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us.snbt"
+hash = "d8757ed757682d8d030d7d03834891e319bf702961506dc6f079e701414fd750"
 
 [[files]]
 file = "config/gtmogs.yaml"
@@ -3078,7 +3110,7 @@ hash = "15ebd1c2ee2e2edc1b1087aeb07b91059d153c1f43ae57c5aa5a94ecf562952d"
 
 [[files]]
 file = "devdocs/TODO.md"
-hash = "75bf3bb0ab77ae115c2f7fdd2a159b2792f16f09b722ae8a5f29cdfd3cd9e947"
+hash = "054f75262f504cd48f21be2a4435912bfd7be7c7c6051a1f80a714241ecaf9dd"
 
 [[files]]
 file = "kubejs/README.txt"
@@ -14494,7 +14526,7 @@ hash = "e00a67922942660d77c213379b5128a46c5abc894178b0be04006d325ff5f6b3"
 
 [[files]]
 file = "kubejs/config/probe-settings.json"
-hash = "1ecef85f75364cbf32aae7da4ef8c302f4203b94d952eae4ef211f9bc7764f84"
+hash = "0d4942787e34d32f3d61937f9ff08d0d56cdd4246c37d269619e5acd2ae13a8b"
 
 [[files]]
 file = "kubejs/config/web_server.json"
