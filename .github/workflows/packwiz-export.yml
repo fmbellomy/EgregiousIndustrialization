@@ -37,7 +37,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup go
-      - uses: actions/setup-go@v6
+        uses: actions/setup-go@v6
         with:
           go-version: ">=1.17.0"
       - run: go install github.com/packwiz/packwiz@latest
@@ -61,11 +61,12 @@ jobs:
         run: sed -i s/\"version\":\ \"development\"/\"version\":\ \"${{ inputs.version }}\"/ manifest.json
         shell: bash
       - name: Pack Client
-        if: ${{ inputs.target == "build-client" || inputs.target == "build-all"}}
+        if: ${{ inputs.target == 'build-client' || inputs.target == 'build-all' }}
         run: |
           packwiz curseforge export -s client
             - name: Pack Client
-        if: ${{ inputs.target == "build-server"  || inputs.target == "build-all"}}
+      - name: Pack Server
+        if: ${{ inputs.target == 'build-server' || inputs.target == 'build-all' }}
         run: |
           packwiz curseforge export -s server
 
