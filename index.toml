@@ -76341,11 +76341,6 @@ hash = "2ba395005bd11e12a091f2b592689c31f89d8658a781ce5cd1f2998f3ac09a61"
 metafile = true
 
 [[files]]
-file = "mods/extended-industrialization.pw.toml"
-hash = "681bfbfa393436140c5e590358907c8d4210f3ac0cca06877b7690f4fee43eb1"
-metafile = true
-
-[[files]]
 file = "mods/farmers-delight.pw.toml"
 hash = "f407238ae37effcd669f828b80a7246e805bc099b4848cd550b1d2d428fea78b"
 metafile = true
@@ -76493,11 +76488,6 @@ metafile = true
 [[files]]
 file = "mods/modern-industrialization-sound-addon.pw.toml"
 hash = "4c557784ee90df2e92054a24721501cc5ac1284828f868d6f2188b552eca32a9"
-metafile = true
-
-[[files]]
-file = "mods/modern-industrialization.pw.toml"
-hash = "0d30eb6fc9d2d34ab87102147d953085a47c49a5fb2e6387febe88038a2153e4"
 metafile = true
 
 [[files]]
