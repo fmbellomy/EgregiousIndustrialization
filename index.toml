@@ -76377,7 +76377,7 @@ metafile = true
 
 [[files]]
 file = "mods/gregtech-modern-ore-generation-standalone.pw.toml"
-hash = "6f2d4e00a5cc412af0b64e056889dddbaf8c3f65200d333f0e9a48665cfdec10"
+hash = "566bafacf222eb3351b918bf100a09163fdb9afa7b3a253270ed1bbed4476e03"
 metafile = true
 
 [[files]]
@@ -76518,11 +76518,6 @@ metafile = true
 [[files]]
 file = "mods/prickle.pw.toml"
 hash = "eab2f56ff9135b3b7253ea5a73deae2f887e2876f5f0432936044a6e926937b4"
-metafile = true
-
-[[files]]
-file = "mods/probejs.pw.toml"
-hash = "954de8ebaabe0107d952e8200cc75b93c3d10e2512fbd589a1e29b0d93fa0e7b"
 metafile = true
 
 [[files]]
