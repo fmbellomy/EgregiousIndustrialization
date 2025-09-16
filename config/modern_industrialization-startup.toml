@@ -9,18 +9,18 @@ maxDistillationTowerHeight = 9
 defaultIndustrialistTrades = true
 
 [compat]
-	#Enable bidirectional energy compatibility with NeoForge's energy system.
-	#We recommend leaving this to false unless the other mods have been balanced accordingly.
-	bidirectionalEnergyCompat = false
-	#Enable the Applied Energistics 2 integration, if present.
-	ae2Integration = true
-	#Enable the FTB Quests integration, if present.
-	ftbQuestsIntegration = true
-	#Enable the Almost Unified integration, if present.
-	almostUnifiedIntegration = true
+#Enable bidirectional energy compatibility with NeoForge's energy system.
+#We recommend leaving this to false unless the other mods have been balanced accordingly.
+bidirectionalEnergyCompat = false
+#Enable the Applied Energistics 2 integration, if present.
+ae2Integration = true
+#Enable the FTB Quests integration, if present.
+ftbQuestsIntegration = true
+#Enable the Almost Unified integration, if present.
+almostUnifiedIntegration = true
 
 [datagen]
-	#Run MI runtime datagen on startup.
-	datagenOnStartup = true
-	#Additionally load resources in modern_industrialization/generated_resources.
-	loadRuntimeGeneratedResources = false
+#Run MI runtime datagen on startup.
+datagenOnStartup = true
+#Additionally load resources in modern_industrialization/generated_resources.
+loadRuntimeGeneratedResources = true
