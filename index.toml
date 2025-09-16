@@ -2,11 +2,23 @@ hash-format = "sha256"
 
 [[files]]
 file = ".github/workflows/packwiz-export.yml"
-hash = "a76dc4f2d9a82aaa0f1e9430ea6b3f902a2d3da4f9910d5d4d94c16ea5503406"
+hash = "bf99c16cf9e420059ce71c9fd8caefcc707e848132375799e0cc0fd3e5385645"
+
+[[files]]
+file = ".github/workflows/release.yml"
+hash = "5edc2c19b287d8017ef05973a2791239ca901196e11137e132529127c65ee428"
 
 [[files]]
 file = "README.md"
 hash = "4d8794c48d5e33bb67adce8dc76af09353c0841dc583a3de5110cb414570328c"
+
+[[files]]
+file = "assets/icon_cf.png"
+hash = "da45fa729e6eca196c0be62c5730b17b3565955b21450f0f631126ad7b6fb37c"
+
+[[files]]
+file = "assets/icon_cf_2.png"
+hash = "d0ad51a990a726fbfd896355d97ffa3579507d2f13ea6016a10ab21400074f4d"
 
 [[files]]
 file = "assets/washed_crushed_dust.xcf"
@@ -76294,8 +76306,9 @@ hash = "03c4f9a926fc9bd90fc98c6dac2a39e70b28303e4f3519756a7b246444548654"
 metafile = true
 
 [[files]]
-file = "mods/egregiouscore-1.1-SNAPSHOT.jar"
-hash = "7c9f68160cef1731a7cc315a9c7dec61cc57e9a69aba99700bc04dd8d282ebc5"
+file = "mods/egregiouscore.pw.toml"
+hash = "89b7b1e9519f42382213007f093e42312e562b0f63335bb74a6effc86321d0c9"
+metafile = true
 
 [[files]]
 file = "mods/emi.pw.toml"
@@ -76371,10 +76384,6 @@ metafile = true
 file = "mods/gregtech-modern-ore-generation-standalone.pw.toml"
 hash = "6f2d4e00a5cc412af0b64e056889dddbaf8c3f65200d333f0e9a48665cfdec10"
 metafile = true
-
-[[files]]
-file = "mods/gtmogs-1.21.1-1.0.2.jar"
-hash = "14bfedf4489f167df52b77160f3fcb432391fdc7a63ca901b30bc0ecc8b0320b"
 
 [[files]]
 file = "mods/guideme.pw.toml"
