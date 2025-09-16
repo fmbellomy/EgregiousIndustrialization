@@ -41,25 +41,6 @@ jobs:
         with:
           go-version: ">=1.17.0"
       - run: go install github.com/packwiz/packwiz@latest
-      - name: Restore mods cache
-        uses: actions/cache@v4
-        with:
-          # observe if this makes broken builds due to outdated mods (server onl)
-          path: |
-            dist/mod_cache
-          key: ${{ runner.os }}-mods-${{ hashFiles('manifest.json') }}
-          restore-keys: |
-            ${{ runner.os }}-mods-
-      - name: Restore modlist cache
-        uses: actions/cache@v4
-        with:
-          path: dist/modlist.html
-          key: ${{ runner.os }}-modlist-${{ hashFiles('manifest.json') }}
-          restore-keys: |
-            ${{ runner.os }}-modlist-
-      - name: Replace manifest version
-        run: sed -i s/\"version\":\ \"development\"/\"version\":\ \"${{ inputs.version }}\"/ manifest.json
-        shell: bash
       - name: Pack Client
         if: ${{ inputs.target == 'build-client' || inputs.target == 'build-all' }}
         run: |
