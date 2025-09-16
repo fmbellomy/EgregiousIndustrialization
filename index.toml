@@ -76261,6 +76261,11 @@ hash = "c854b73ec29fc1b2af09becafc5380d24dbe91ee809bd3803166563c13d98214"
 metafile = true
 
 [[files]]
+file = "mods/chisel-reborn.pw.toml"
+hash = "53585ee2041174626662b53c08795a14d038874359079add62df022b64e6b9bd"
+metafile = true
+
+[[files]]
 file = "mods/chloride.pw.toml"
 hash = "581aaad9bdfac6a00ca50722d2a5567c68f7d3993c073b3c1d5798468ec4adb8"
 metafile = true
@@ -76288,6 +76293,11 @@ metafile = true
 [[files]]
 file = "mods/crawl.pw.toml"
 hash = "f4f8b5eb8c1427b6bd83ca70a3dbec9845b8c5a37b9ba72b9a49ee0e45136562"
+metafile = true
+
+[[files]]
+file = "mods/cryonicconfig.pw.toml"
+hash = "bcac2313df03ef454650b888a365bec9b841b32a3c73ea33b967317ac760e9ac"
 metafile = true
 
 [[files]]
@@ -76348,6 +76358,11 @@ metafile = true
 [[files]]
 file = "mods/ferritecore.pw.toml"
 hash = "942b02525962980b6176677cca162d27c1210b686985ad11db0055fe39d42a7d"
+metafile = true
+
+[[files]]
+file = "mods/framedblocks.pw.toml"
+hash = "85b6c5eed0cbc05ff50afb2d7d7dc5edcad23d04b893b80af19abe6b763bba07"
 metafile = true
 
 [[files]]
@@ -76513,6 +76528,11 @@ metafile = true
 [[files]]
 file = "mods/open-parties-and-claims.pw.toml"
 hash = "ff08130567cdfdf428a41a815467dcbe1c07929e47afaf60732b43503ea450f7"
+metafile = true
+
+[[files]]
+file = "mods/openblocks-elevator.pw.toml"
+hash = "bc3e79ec7c82f0e4b752ba7f41709e1e87e25169cf96b7c38dafefeaf876a80f"
 metafile = true
 
 [[files]]
