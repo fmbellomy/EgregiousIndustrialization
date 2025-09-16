@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = ".github/workflows/packwiz-export.yml"
-hash = "bf99c16cf9e420059ce71c9fd8caefcc707e848132375799e0cc0fd3e5385645"
+hash = "bba94d53ccab2748a3a2c2d8f172e5f90a7bf63a71a8511a022bf840e274ed49"
 
 [[files]]
 file = ".github/workflows/release.yml"
