@@ -45,7 +45,6 @@ jobs:
         if: ${{ inputs.target == 'build-client' || inputs.target == 'build-all' }}
         run: |
           packwiz curseforge export -s client -o EgregiousIndustrialization-${{inputs.version}}-client.zip
-            - name: Pack Client
       - name: Pack Server
         if: ${{ inputs.target == 'build-server' || inputs.target == 'build-all' }}
         run: |
