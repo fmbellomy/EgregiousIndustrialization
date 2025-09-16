@@ -31,9 +31,9 @@ RecipeViewerEvents.removeEntriesCompletely("item", (event) => {
   });
 });
 ServerEvents.recipes((event) => {
-  event.remove("hostilenetworks:loot_fabricator");
-  event.remove("hostilenetworks:sim_chamber");
-  event.remove("hostilenetworks:deep_learner");
+  event.remove({ output: "hostilenetworks:loot_fabricator" });
+  event.remove({ output: "hostilenetworks:sim_chamber" });
+  event.remove({ output: "hostilenetworks:deep_learner" });
   event.remove({ output: "hostilenetworks:blank_data_model" });
   event.remove({
     output: "hostile_neural_industrialization:electric_simulation_chamber",
@@ -161,7 +161,7 @@ ServerEvents.recipes((event) => {
 
     event.shapeless(
       Item.of(
-        `hostilenetworks:data_model[hostilenetworks:data_model="hostilenetworks:${modeldata[0]}"]`
+        `hostilenetworks:data_model[hostilenetworks:data_model="hostilenetworks:${modeldata[0]}",hostilenetworks:data=6]`
       ),
       recipeIngredients
     );
