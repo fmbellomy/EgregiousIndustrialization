@@ -1,21 +1,10 @@
 let items = Item.getList()
   .toArray()
   .map((item) => item.getItem().toString());
-let ores = items.filter(
-  (item) => item.includes("modern_industrialization") && item.includes("_ore")
-);
 let drills = items.filter(
   (item) => item.includes("modern_industrialization") && item.includes("drill")
 );
 ItemEvents.modifyTooltips((event) => {
-  ores.forEach((ore) => {
-    event.modify(ore, (tooltip) => {
-      for (let i = 0; i < 5; i++) {
-        tooltip.removeLine(1);
-      }
-    });
-  });
-
   let EgregiousDatamaps = Java.loadClass(
     "com.quantumgarbage.egregiouscore.EgregiousDatamaps"
   );
