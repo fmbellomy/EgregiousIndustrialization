@@ -461,6 +461,126 @@ file = "kubejs/assets/gtmogs/lang/en_us.json"
 hash = "2758e83c75df7e8af8b76a8e508c273994513d55a406721d07935364b619643a"
 
 [[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/chemical_bath/overlay_front.png"
+hash = "1994c657adebf59a0fda8ef5667b34907d666494d7c8fd8c0981a08fe8f9edb8"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/chemical_bath/overlay_front_active.png"
+hash = "0988f201b82864adb7e601a22ed55e486d3158230d1e87301ebb81fc615cf4f1"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/chemical_bath/overlay_front_active.png.mcmeta"
+hash = "c2324432f3f82c02f1d5ab8f23902081f3fb1375749a7e57b15fd23fb4a07485"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/chemical_bath/overlay_front_active_emissive.png"
+hash = "a417fd0cf85d0258c76f2acfa3b42e20c4ec700fde7af4b6d01f0815cd460070"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/chemical_bath/overlay_front_active_emissive.png.mcmeta"
+hash = "c2324432f3f82c02f1d5ab8f23902081f3fb1375749a7e57b15fd23fb4a07485"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/chemical_bath/overlay_front_emissive.png"
+hash = "7cc66b7b035bd7389b36bfd9daabfcbcc7367038bbe76af7e87f7e14615ba539"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/chemical_bath/overlay_side.png"
+hash = "5115eb0881ef5bffc6c53e71781d549a091bec563ae1ffbdeeb081faeeea4823"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/chemical_bath/overlay_side_active.png"
+hash = "ff2ad6424c900f7c18ca60fdbe7c4a601668964a18fcb4ea1cc1c142f079a548"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/chemical_bath/overlay_side_active_emissive.png"
+hash = "c937224b75db799bb73755c76c7c531247300c33cbc6dadd0d74e51128d40d7a"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/chemical_bath/overlay_side_emissive.png"
+hash = "7cc66b7b035bd7389b36bfd9daabfcbcc7367038bbe76af7e87f7e14615ba539"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/ore_washer/overlay_front.png"
+hash = "21e9f07397c7ae17ed9a80a013bbfbf07b64a069a839c5c7b0d1b32327fea195"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/ore_washer/overlay_front_active.png"
+hash = "00bda29662d9166aadfbf240a6f831dd3954ac73a9026792117b3ba7f7726c78"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/ore_washer/overlay_front_active.png.mcmeta"
+hash = "7dc16041541801a5bbfd3e98fc2e939ca860cc063a19393da16841eca4212b37"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/ore_washer/overlay_front_active_emissive.png"
+hash = "ec1cc8a5ec6c480be5e14cd3f34d0081bfd778113eb96ce1e8cc1a7c46df255d"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/ore_washer/overlay_front_active_emissive.png.mcmeta"
+hash = "7dc16041541801a5bbfd3e98fc2e939ca860cc063a19393da16841eca4212b37"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/ore_washer/overlay_front_emissive.png"
+hash = "7cc66b7b035bd7389b36bfd9daabfcbcc7367038bbe76af7e87f7e14615ba539"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/ore_washer/overlay_side.png"
+hash = "df0115c6f54101e7a36d878b3f6c69a4281205918ba881a00984ad50b723ab81"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/ore_washer/overlay_side_active.png"
+hash = "df0115c6f54101e7a36d878b3f6c69a4281205918ba881a00984ad50b723ab81"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/ore_washer/overlay_side_active_emissive.png"
+hash = "7cc66b7b035bd7389b36bfd9daabfcbcc7367038bbe76af7e87f7e14615ba539"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/ore_washer/overlay_side_emissive.png"
+hash = "7cc66b7b035bd7389b36bfd9daabfcbcc7367038bbe76af7e87f7e14615ba539"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/sifter/overlay_front.png"
+hash = "2d0def07a8b6dbe63c2e4652fab7249b9f3cb82cc89fc82c52c68ddf81fc2164"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/sifter/overlay_front_active.png"
+hash = "b4be0c19c3f28f09e6ddc946ac68720122ec2e77919d9a24c88602571cbe4397"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/sifter/overlay_front_active.png.mcmeta"
+hash = "2f9c03a1e3f53ed28e98dc7c3d1993e7d69f65e27d639641f195464d71171afb"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/sifter/overlay_front_active_emissive.png"
+hash = "6f78f29cb381bc41d840da1636df906757c29b370f6b4aeeccfea49021e3eb18"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/sifter/overlay_front_active_emissive.png.mcmeta"
+hash = "afd89f10df4b025b0d1fd8414f91bde840fe9a618aece7c5085271333b3beab3"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/sifter/overlay_front_emissive.png"
+hash = "e8a7d74196bcb6ec00a40a3d6b9b4672ad2fcecc2d9304885a804c7cf8e9ec95"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/sifter/overlay_top.png"
+hash = "22f92988cf5d4d087c6fd790d9b94c063a37a5582b9ada3d3fa9211513058c7c"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/sifter/overlay_top_active.png"
+hash = "431dbd139e460ced3ab727323f71d9a74b9142575841b4797adfd2e84d6818d1"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/sifter/overlay_top_active_emissive.png"
+hash = "a5d5189793cb1a72e05f3bff46181a58e35f20ecf2f8a4c029ed34aaf8341887"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/sifter/overlay_top_emissive.png"
+hash = "e8a7d74196bcb6ec00a40a3d6b9b4672ad2fcecc2d9304885a804c7cf8e9ec95"
+
+[[files]]
 file = "kubejs/client_scripts/jsconfig.json"
 hash = "bf3c8597df0521316f23f9412e02e076f925275dab3af1146a54fe008dfedcb1"
 
