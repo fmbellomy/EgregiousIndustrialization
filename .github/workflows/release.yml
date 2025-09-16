@@ -120,7 +120,7 @@ jobs:
           allowUpdates: true
           updateOnlyUnreleased: true
           removeArtifacts: true
-          commit: ${{ github.head_ref }}.${{ github.sha }}
+          commit: ${{ github.sha }}
 
       - name: Echo Release URL
         run: |
