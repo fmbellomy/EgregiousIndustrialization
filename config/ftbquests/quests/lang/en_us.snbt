@@ -1,0 +1,74 @@
+{
+	chapter.24020C46B71198C7.title: "The Beginning"
+	chapter.45C3E045D0DB7A19.title: "The Steam Age"
+	chapter_group.05B4EBADDE07D220.title: "Industrialization"
+	quest.18145C44D82BFCC1.quest_desc: [
+		"Here, have some free diamond hammers for the road. If you've not used one before, they mine in a &d3x3 area&r. "
+		""
+		"Make sure you &euse them wisely&r, though, since you won't be able to make new ones until you have the ability to produce &dsteel&r."
+		""
+		"Later on, you can also make upgrades for them to increase the amount of blocks they'll break at once."
+	]
+	quest.18145C44D82BFCC1.quest_subtitle: "What, did you think you would have to use a stone pickaxe?"
+	quest.1B69D979E18C44DF.quest_desc: [
+		"EMI is going to be your savior in this pack. Chances are that even if you're familiar with recipe viewer usage, EMI has features &oyou don't know about.&r"
+		""
+		"The obvious ones are that it is a recipe viewer: you can press &dR&r while hovering over an item to see it's &erecipe&r. Likewise, pressing &dU&r while hovering over an item to see it's &eusages&r."
+		""
+		"Slightly lesser known is the fact that EMI can show you more than just recipes."
+		"In this pack, you may find yourself in a situation where you know you can get an ingot from a starting input of \"Raw SOMETHING\", but you have no idea where to actually &ofind&r the ore corresponding to the material. "
+		""
+		"EMI can help you here as well. If you look up the particular ore you're searching for and view it's recipes, you'll find a recipe category for Ore Veins that will tell you precisely where to look."
+		"Similarly, if you look up the name of a dimension, you can actually see the uses of a dimension to see &oall&r ore veins in that dimension."
+		""
+		"And lastly, the most important feature: EMI's semiauto batch crafting."
+		"It's a bit too much of a process to explain in this quest entry, but it will save you a LOT of time to learn how to use &b&oEMI's recipe tree&r&r effectively. Go check it out on YouTube or something, I promise it's worth your time."
+	]
+	quest.1B69D979E18C44DF.quest_subtitle: "guys how do i make iridum pickaxe"
+	quest.1E5EAE41C6B97CBA.quest_desc: [
+		"As you may have noticed, Egregious Industrialization is currently labeled as an Alpha. This is because of a few reasons:"
+		""
+		"1. There are plans to introduce reworks to the mid-game and end-game of Modern Industrialization, adding new multiblocks, mechanics, and content along the way. None of this has even been started yet- I'm still working on the early game."
+		""
+		"2. The pack has not yet been playtested. As such, it may (probably) be full of bugs that I haven't seen. Ore generation doesn't work *quite* the way I would like, and the actual frequencies at which different ore veins spawn haven't had any real thought put into them."
+		""
+		"With any alpha playtest comes the request that you engage with the developer behind that alpha, and it is no different here. You can join my discord &9&o(Check the Curseforge/GitHub page for a link)&r&r to report bugs, keep up with dev progress, and possibly make suggestions for balancing or new mechanics/features."
+	]
+	quest.1E5EAE41C6B97CBA.quest_subtitle: "HELP THE PACK IS IN ALPHA AND HAS BUGS"
+	quest.2E59D716BFC35B25.quest_desc: [
+		"For the most part, the beginning of Egregious Industrialization will play much like vanilla minecraft. Punch trees, get some basic stone tools, find a reliable source of food, etc."
+		""
+		"The biggest change from vanilla is &l&dore generation&r&r."
+	]
+	quest.4E1F9630B410D8D9.quest_desc: [
+		"Right clicking the a block with one of these will reveal nearby ore veins and mark them on your map."
+		""
+		"Opening up JourneyMap in full screen and clicking on the Ore Icon on the right will toggle their visibility."
+		""
+		"[KNOWN BUG:] Prospected ore veins do not persist between sessions. If you want to &omake sure&r you remember where a vein is, make a waypoint."
+	]
+	quest.4E1F9630B410D8D9.quest_subtitle: "FREE PROSPECTORS HERE!!!!"
+	quest.4EF7DBFE51C3A95E.quest_desc: ["There's no getting around it- you need ores. If you can't find any, make sure you've read the quest on Ore Generation, and check EMI to see if you're searching in the right places for the ore vein you need."]
+	quest.4EF7DBFE51C3A95E.quest_subtitle: "As a child, I yearned for the mines."
+	quest.4EF7DBFE51C3A95E.title: "Find Some Ores"
+	quest.7EBEE51E2975FADC.quest_desc: [
+		"Egregious Industrialization replaces the vanilla ore generation system with it's own custom ore veins, based on the ore generation used in &9GregTech: Modern&r."
+		""
+		"If you don't know what that means, here's a rundown on &nhow it works:&r"
+		""
+		"1. The world is divided up into 48x48 block \"Ore Chunks\""
+		""
+		"2. Each ore chunk can have multiple \"layers\"- for example, the overworld has the &oStone&r and &oDeepslate&r layers."
+		""
+		"3. Every ore chunk will &l&o&cattempt&r&r&r to generate one ore vein for each layer. It is possible for an ore vein to attempt to generate above the surface, at which point it will fail to generate entirely for that chunk. "
+		""
+		"As a consequence of these mechanics, the best places to look for ores in the &oStone&r layer will be inside of &l&2mountains&r&r, where the ore veins &ocan't&r generate above the surface."
+	]
+	quest.7EBEE51E2975FADC.quest_subtitle: "Where do I find Iron?"
+	task.0E8B0E71ECBBBA81.title: "Prospecting"
+	task.2F64C07B60CA29B5.title: "Discord"
+	task.63EAE75E30A30626.title: "Just Hammers"
+	task.6592697A611A7DB1.title: "Welcome to Egregious Industrialization!"
+	task.69C09A37DAF328A9.title: "Ore Generation"
+	task.771B88DF9A34AD69.title: "USE EMI"
+}

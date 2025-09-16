@@ -1,0 +1,10 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_steam_age"
+	group: "05B4EBADDE07D220"
+	id: "45C3E045D0DB7A19"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+}

@@ -1,0 +1,168 @@
+{
+	autofocus_id: "2E59D716BFC35B25"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_beginning"
+	group: ""
+	icon: {
+		id: "justhammers:diamond_hammer"
+	}
+	id: "24020C46B71198C7"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "modern_industrialization:bronze_boiler"
+			}
+			id: "2E59D716BFC35B25"
+			tasks: [{
+				id: "6592697A611A7DB1"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E59D716BFC35B25"]
+			icon: {
+				id: "minecraft:iron_ore"
+			}
+			id: "7EBEE51E2975FADC"
+			tasks: [{
+				id: "69C09A37DAF328A9"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7EBEE51E2975FADC"]
+			icon: {
+				id: "egregiouscore:prospector"
+			}
+			id: "4E1F9630B410D8D9"
+			rewards: [{
+				id: "32D6DEBD28E3F55A"
+				item: {
+					components: {
+						"modern_industrialization:energy": 1048576L
+					}
+					count: 1
+					id: "egregiouscore:prospector"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E8B0E71ECBBBA81"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7EBEE51E2975FADC"]
+			icon: {
+				id: "justhammers:diamond_hammer"
+			}
+			id: "18145C44D82BFCC1"
+			rewards: [{
+				count: 4
+				id: "3771D69CDEAF500A"
+				item: {
+					count: 1
+					id: "justhammers:diamond_hammer"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "63EAE75E30A30626"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2E59D716BFC35B25"]
+			icon: {
+				id: "ae2:debug_card"
+			}
+			id: "1E5EAE41C6B97CBA"
+			tasks: [{
+				id: "2F64C07B60CA29B5"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2E59D716BFC35B25"]
+			icon: {
+				id: "minecraft:crafting_table"
+			}
+			id: "1B69D979E18C44DF"
+			rewards: [{
+				count: 4
+				id: "1F5CF36D3025034A"
+				item: {
+					count: 1
+					id: "minecraft:golden_carrot"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "771B88DF9A34AD69"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7EBEE51E2975FADC"]
+			id: "4EF7DBFE51C3A95E"
+			rewards: [{
+				id: "13543C49347A4346"
+				item: {
+					count: 1
+					id: "modern_industrialization:iron_hammer"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 64L
+					id: "0268B03862110192"
+					item: { count: 64, id: "modern_industrialization:raw_chalcopyrite" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "403955B79AD00234"
+					item: { count: 64, id: "modern_industrialization:raw_magnetite" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "64F2DC57094BACBC"
+					item: { count: 64, id: "modern_industrialization:raw_galena" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "12C90469636E19B5"
+					item: { count: 64, id: "modern_industrialization:raw_cassiterite" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "5285741F17DAD1F3"
+					item: { count: 64, id: "modern_industrialization:raw_coal" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -5.0d
+		}
+	]
+}
