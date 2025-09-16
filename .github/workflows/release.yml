@@ -99,7 +99,7 @@ jobs:
         run: |
           ACTION_RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           message="${{ github.event.inputs.type }} release ${{inputs.version}}.
-          The latest commit is ${{ github.head_ref }}.${{ github.sha }}.
+          The latest commit is ${{ github.sha }}.
 
           Refer to the [action run]($ACTION_RUN_URL) that created this release."
           echo "body<<EOF"$'\n'"$message"$'\n'EOF >> "$GITHUB_OUTPUT"
