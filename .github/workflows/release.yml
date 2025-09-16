@@ -1,0 +1,151 @@
+name: Build and Release
+on:
+  # checkov:skip=CKV_GHA_7
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release Version"
+        required: true
+        type: string
+      type:
+        description: "Release type"
+        required: true
+        type: choice
+        options:
+          - "Stable"
+          - "Pre-release"
+      cf_type:
+        description: "CF Release Type"
+        required: true
+        type: choice
+        options:
+          - "Release"
+          - "Beta"
+          - "Alpha"
+        default: "Beta"
+      draft:
+        description: "Draft GitHub release (CF release will always be normal)"
+        type: boolean
+        default: true
+      generate_release_notes:
+        description: "Auto generate release notes"
+        type: boolean
+        default: true
+        required: false
+      skip_build:
+        description: "Skip build/test step"
+        type: boolean
+        default: false
+      run_id:
+        description: "Run ID to grab artifacts from if skipping build"
+        type: number
+        required: false
+      skip_github_release:
+        description: "Skip GitHub release"
+        type: boolean
+        default: false
+        required: false
+      skip_cf_release:
+        description: "Skip CurseForge release"
+        type: boolean
+        default: false
+        required: false
+
+permissions: {}
+
+jobs:
+  build:
+    if: inputs.skip_build != true
+    permissions:
+      id-token: write
+      contents: read
+      packages: write
+    uses: ./.github/workflows/packwiz-export.yml
+    with:
+      target: build-all
+      version: ${{ inputs.version }}
+    secrets: inherit
+
+  release:
+    permissions:
+      contents: write
+      packages: read
+      statuses: write
+    needs: [build]
+    runs-on: ubuntu-latest
+    if: success() || needs.build.result == 'skipped'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-tags: true
+
+      - name: Download artifacts - Current Flow
+        if: ${{ inputs.skip_build == false }}
+        uses: actions/download-artifact@v4.1.8
+        with:
+          path: artifacts
+
+      - name: Download artifacts - Previous Flow
+        if: ${{ inputs.skip_build == true}}
+        uses: actions/download-artifact@v4.1.8
+        with:
+          path: artifacts
+          run-id: ${{ github.event.inputs.run_id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create body
+        id: body
+        run: |
+          ACTION_RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          message="${{ github.event.inputs.type }} release ${{inputs.version}}.
+          The latest commit is ${{ github.head_ref }}.${{ github.sha }}.
+
+          Refer to the [action run]($ACTION_RUN_URL) that created this release."
+          echo "body<<EOF"$'\n'"$message"$'\n'EOF >> "$GITHUB_OUTPUT"
+        shell: bash
+
+      - name: Create GitHub Release
+        uses: ncipollo/release-action@v1.14.0
+        id: release
+        if: ${{ inputs.skip_github_release == false }}
+        with:
+          artifacts: artifacts/build-zipzip/*
+          name: Egregious Industrialization ${{ inputs.version }}
+          tag: ${{ inputs.version }}
+          generateReleaseNotes: ${{ inputs.generate_release_notes }}
+          prerelease: ${{ github.event.inputs.type == 'Pre-release' }}
+          draft: ${{ github.event.inputs.draft }}
+          body: ${{ steps.body.outputs.body }}
+          allowUpdates: true
+          updateOnlyUnreleased: true
+          removeArtifacts: true
+          commit: ${{ github.head_ref }}.${{ github.sha }}
+
+      - name: Echo Release URL
+        run: |
+          echo "Release URL: ${{ steps.release.outputs.html_url }}"
+        shell: bash
+
+      - name: Get server and client file paths
+        id: filepaths
+        run: |
+          server_file=$(ls artifacts/build-zipzip/*server*.zip)
+          client_file=$(ls artifacts/build-zipzip/*client*.zip)
+          echo "server_file=$server_file" >> "$GITHUB_OUTPUT"
+          echo "client_file=$client_file" >> "$GITHUB_OUTPUT"
+        shell: bash
+
+      - uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
+        if: ${{ inputs.skip_cf_release == false }}
+        with:
+          api-token: ${{ secrets.RELEASE_TOKEN  }}
+          project-id: ${{secrets.CF_PROJECT_ID}}
+          modpack-path: "${{steps.filepaths.outputs.client_file}}"
+          modpack-server-path: "${{steps.filepaths.outputs.server_file}}"
+          changelog: "For a detailed changelog, see the GitHub release: ${{ steps.release.outputs.html_url }}"
+          changelog-format: "text"
+          game-version: "1.21.1"
+          display-name: "Egregious Industrialization ${{ inputs.version }}"
+          server-display-name: "Egregious Industrialization ${{ inputs.version }} Server"
+          release-type: ${{ github.event.inputs.cf_type }}
