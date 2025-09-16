@@ -1,5 +1,5 @@
 {
-  "modpackMode": false,
+  "modpackMode": true,
   "fullScreen": "WINDOWED",
   "fpsDisplayMode": "ADVANCED",
   "fpsDisplayAlign": "LEFT",

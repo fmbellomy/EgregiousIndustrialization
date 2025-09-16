@@ -15,7 +15,7 @@ allow_upgrades_in_processing_array = true
 #Default: 80
 # Default: 80
 # Range: 1 ~ 1000
-farmer_fertilizer_max_random_ticks = 80
+farmer_fertilizer_max_random_ticks = 160
 
 [batching_machines]
 	#The maximum batch size to use for the Large Electric Macerator
@@ -69,7 +69,7 @@ farmer_fertilizer_max_random_ticks = 80
 	# Range: > 1
 	range = 2
 
-	#The amount of damage dealt by the lethal tesla coil for a cable tier
+	#The amount of damage dealt vby the lethal tesla coil for a cable tier
 	#If no value is specified for a cable tier, the cable tier's EU value is divided by 16 to determine the damage dealt
 	#Range: >= 0.1
 	[lethal_tesla_coil.damage]
