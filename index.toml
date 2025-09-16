@@ -76368,6 +76368,11 @@ hash = "9aafdd83668c1b903caf0245b0bf2de3bb743befaa78d39e74a95c9933d624ac"
 metafile = true
 
 [[files]]
+file = "mods/gregtech-modern-ore-generation-standalone.pw.toml"
+hash = "6f2d4e00a5cc412af0b64e056889dddbaf8c3f65200d333f0e9a48665cfdec10"
+metafile = true
+
+[[files]]
 file = "mods/gtmogs-1.21.1-1.0.2.jar"
 hash = "14bfedf4489f167df52b77160f3fcb432391fdc7a63ca901b30bc0ecc8b0320b"
 
