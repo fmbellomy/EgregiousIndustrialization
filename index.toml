@@ -365,6 +365,10 @@ file = "config/openpartiesandclaims-server.toml"
 hash = "135495a82aa236b1585a096812419879af41bb74245b34fc88cec7584b3e0bc4"
 
 [[files]]
+file = "config/patternbetter-common.toml"
+hash = "d73a093c6bcf2dd68c60426705645ba851ee1a3bb070f0c9ff2a7e7007064eff"
+
+[[files]]
 file = "config/placebo.cfg"
 hash = "6bbc71c6dc18b1ba4952e1bc54ed2b98c3a90f04cec4257ec3f7566cdf0c0e2a"
 
@@ -767,6 +771,10 @@ hash = "456bcef3f44b48ede223cb728f14ed43975b92918a6fd9d699cbd318e1c7cea6"
 [[files]]
 file = "kubejs/server_scripts/OreTags.js"
 hash = "b0e0078e376885ab8db27e30388cc0f91d3090c2a6c9a4a70f8f9329c216bc6a"
+
+[[files]]
+file = "kubejs/server_scripts/ReplaceVanillaOreDrops.js"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
 file = "kubejs/server_scripts/VeinDatagen.js"
