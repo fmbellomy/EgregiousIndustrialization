@@ -26,7 +26,7 @@ hash = "72db653493f9c926d8f600e476f341c8cccc7dffad9ab9218aae58ff74abe731"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "8054482bf0b2797230a88f81ec8ad6c42389cfa200690081aed41352220eecb9"
+hash = "b1ef5da1168a4a6253155db05d5ddf065cb7bae02e34cc8688a598be479396e0"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -78,7 +78,7 @@ hash = "2fcf4842374ee3ed4fcccff2b309799bd973c9b87d4b6d1cd0035caf37070927"
 
 [[files]]
 file = "config/chloride-client.json"
-hash = "4f4bbbbd56364a7a2bb684f1eb563dfa33869cce0a1599f7824a1efdfefb59da"
+hash = "8c1853693fbb9fe69585cb746d14aa934809d863d098b911af6eaa60a5e0a812"
 
 [[files]]
 file = "config/configuration-options.json"
@@ -250,7 +250,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "d080e33980dc74176164d5ca54bb6d704324d5fb3da90e2ad37cdfbecfd282c7"
+hash = "161ca9320cd4a3437fd2c34c48bb24a310c74b8d0ee27bd5a532d2ccf1ae8135"
 
 [[files]]
 file = "config/jade/hide-blocks.json"
@@ -357,8 +357,244 @@ file = "config/openloader/options.json"
 hash = "aecd2d223c33257182654d3e8d5286c414508706fa0f0f33b868d4c1c9b7b786"
 
 [[files]]
-file = "config/openloader/packs/Industrialization-Refreshed.zip"
-hash = "dccc4c6f29c29f353acace7a303ae92cdf95f325fe80c31b1bb84c000d846a67"
+file = "config/openloader/packs/egregiousdata/assets/gtmogs/lang/en_us.json"
+hash = "2758e83c75df7e8af8b76a8e508c273994513d55a406721d07935364b619643a"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/nether_cassiterite.json"
+hash = "98841d526f0b217ae26cd2d4c860eedce7028888050a117b9ac24bd4ea3e4a1d"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/nether_ilmenite.json"
+hash = "18640d6e286219fd6c7d025de8ef3269a054e73dee05b37522629dff724be4be"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/nether_magnetite.json"
+hash = "e271a513ea3aa7f4ef3a9fc5921090be0be015bf0dd4d723ec7c246356358eb9"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/nether_pentlandite.json"
+hash = "b6eb51e3b85614349a8a13bc8c0bec5bf0349aa4a6f6c9bfe743017bc7669714"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/nether_pitchblende.json"
+hash = "2e25f5de5b19cb9d5877f54efc4ac3576755bd0f3dcef3bdcfd6a910fb094e20"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/nether_redstone.json"
+hash = "82a79866435fc5a79fa0237f6426ef142b2fc8e32007b5a5da8931aef536ea98"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/nether_scheelite.json"
+hash = "add7bdbc9e4d2a678a47bf6173fc543f199f33af23d8f100f5d0917b493a722c"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/nether_sheldonite.json"
+hash = "bb29971175df79b4edf76c0031c77faa821135904945b7ee0078186ebd370c9c"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/nether_tetrahedrite.json"
+hash = "aa8a50e4bf95a7610397cc7ceae276b4c2762c1c14ad41a47a7c38b866ceab56"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/overworld_cassiterite.json"
+hash = "a19c4063ff5aa5dcb080c23f56c63cdf98d584fe621b736dcc06cef0d985c011"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/overworld_chalcopyrite.json"
+hash = "07f552de7f4e08d5cb83d3b8bc8bc0d12f32b36c53bb4ca33d5ec299ca30de06"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/overworld_coal.json"
+hash = "f8a8bad6a92e9fe65553bb3104329aec834066d15f0475195b53164c94c6fa0f"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/overworld_deepslate_chalcopyrite.json"
+hash = "e16c7e82a9caded9795342b4892d86eb42d2afe0c69f4a5c1b62aac1325971d8"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/overworld_deepslate_redstone.json"
+hash = "39270a0669cd634d70bf341a38157c1bfec7bbae42c91b432a3a34f9b43aacfd"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/overworld_diamond.json"
+hash = "e8d06127fe57dee097ae332ef33ac92b61fba544199d023540eb861787e662da"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/overworld_galena.json"
+hash = "8bde79c1b79abd905fcba6e974623dff6e46d37462d448e91e51ede05d072308"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/overworld_lignite_coal.json"
+hash = "e935cb7281461ff6bb470ad77cbad7856bbe6f6e22056102f40230a7ab2f8c09"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/overworld_magnetite.json"
+hash = "33a2d9897cb88d1aa7e2b73c1f312f7cade036196f47c414a919baa4c0ec36c3"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/overworld_pentlandite.json"
+hash = "2a98287089477f19d5292502b06a375ba3b26001632cc04a793790543014c39e"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/overworld_pitchblende.json"
+hash = "03aedfbebfadb1b67cf23bf662491cc2646585472ac37fa2bff13c9d6ffdac3d"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/overworld_tetrahedrite.json"
+hash = "679f8f39008a4f87b817d5c14f431281ca50b34c28345ca2b9c481020e5ee0a2"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/overworld_tin.json"
+hash = "b3fa1a55def2de8f91607574308799fbac7a685fda337dc69e29c9824da33575"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/immersive_aircraft/airship.json"
+hash = "42ae40e271dd17fb3ba1f5a772cbcc38b0d5b02042781bc502c0bac2ece29459"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/immersive_aircraft/bamboo_hopper.json"
+hash = "f240e8c7ef2cabe5a735da3ed89e6e3478157dadef5ed9641d3fd382c7fd1f71"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/immersive_aircraft/biplane.json"
+hash = "696ec350868a7e91ebb1869c6fbd94aecdecfd1124a9f97c909a007cf2b3ad8d"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/immersive_aircraft/cargo_airship.json"
+hash = "6596c02d7e4b03d0deb2b0f91cdb979865565bc908cd4ea5d7bfa3ff6b263d5f"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/immersive_aircraft/gyrodyne.json"
+hash = "faa6738d37079f32f8bcc958f88a91d5d60a2196e059eb105183e2b5e6db4a8a"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/immersive_aircraft/quadrocopter.json"
+hash = "4ece20905fecff3da8278d200f0a8685ee6893f663452d661b19be41ab6dc5b6"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/immersive_aircraft/warship.json"
+hash = "22533fcf24bdc35dc4b2ff20189f0eaabe09a21f5a3aab5fef420a62d3808f4f"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/malum/worldgen/configured_feature/azure_runewood_tree.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/malum/worldgen/configured_feature/blazing_quartz_ore.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/malum/worldgen/configured_feature/brilliant_ore.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/malum/worldgen/configured_feature/cthonic_gold_ore.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/malum/worldgen/configured_feature/natural_quartz_ore.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/malum/worldgen/configured_feature/quartz_geode.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/malum/worldgen/configured_feature/runewood_tree.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/malum/worldgen/configured_feature/soulstone_ore.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/malum/worldgen/configured_feature/soulwood_tree.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/deepslate_ore_generator_antimony.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/deepslate_ore_generator_bauxite.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/deepslate_ore_generator_lead.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/deepslate_ore_generator_lignite_coal.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/deepslate_ore_generator_monazite.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/deepslate_ore_generator_nickel.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/deepslate_ore_generator_salt.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/deepslate_ore_generator_tin.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/deepslate_ore_generator_tungsten.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/deepslate_ore_generator_uranium.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/ore_generator_antimony.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/ore_generator_bauxite.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/ore_generator_lead.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/ore_generator_lignite_coal.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/ore_generator_monazite.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/ore_generator_nickel.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/ore_generator_salt.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/ore_generator_tin.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/ore_generator_tungsten.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/modern_industrialization/worldgen/configured_feature/ore_generator_uranium.json"
+hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/pack.mcmeta"
+hash = "e718f143f31a606b4b688689a10f8883bcef567ea55da6560e18a3f3ac972ed8"
 
 [[files]]
 file = "config/openpartiesandclaims-server.toml"
@@ -455,10 +691,6 @@ hash = "054f75262f504cd48f21be2a4435912bfd7be7c7c6051a1f80a714241ecaf9dd"
 [[files]]
 file = "kubejs/README.txt"
 hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
-
-[[files]]
-file = "kubejs/assets/gtmogs/lang/en_us.json"
-hash = "2758e83c75df7e8af8b76a8e508c273994513d55a406721d07935364b619643a"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/block/machines/chemical_bath/overlay_front.png"
@@ -605,158 +837,6 @@ file = "kubejs/config/web_server.json"
 hash = "bdfc2d5fbe14b78dfeadc04a3ca4e3b5a74dde9e13a786005e2399ca84bb251f"
 
 [[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/nether_cassiterite.json"
-hash = "98841d526f0b217ae26cd2d4c860eedce7028888050a117b9ac24bd4ea3e4a1d"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/nether_ilmenite.json"
-hash = "18640d6e286219fd6c7d025de8ef3269a054e73dee05b37522629dff724be4be"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/nether_magnetite.json"
-hash = "e271a513ea3aa7f4ef3a9fc5921090be0be015bf0dd4d723ec7c246356358eb9"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/nether_pentlandite.json"
-hash = "b6eb51e3b85614349a8a13bc8c0bec5bf0349aa4a6f6c9bfe743017bc7669714"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/nether_pitchblende.json"
-hash = "2e25f5de5b19cb9d5877f54efc4ac3576755bd0f3dcef3bdcfd6a910fb094e20"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/nether_redstone.json"
-hash = "82a79866435fc5a79fa0237f6426ef142b2fc8e32007b5a5da8931aef536ea98"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/nether_scheelite.json"
-hash = "add7bdbc9e4d2a678a47bf6173fc543f199f33af23d8f100f5d0917b493a722c"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/nether_sheldonite.json"
-hash = "bb29971175df79b4edf76c0031c77faa821135904945b7ee0078186ebd370c9c"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/nether_tetrahedrite.json"
-hash = "aa8a50e4bf95a7610397cc7ceae276b4c2762c1c14ad41a47a7c38b866ceab56"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/overworld_cassiterite.json"
-hash = "a19c4063ff5aa5dcb080c23f56c63cdf98d584fe621b736dcc06cef0d985c011"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/overworld_chalcopyrite.json"
-hash = "07f552de7f4e08d5cb83d3b8bc8bc0d12f32b36c53bb4ca33d5ec299ca30de06"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/overworld_coal.json"
-hash = "f8a8bad6a92e9fe65553bb3104329aec834066d15f0475195b53164c94c6fa0f"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/overworld_deepslate_chalcopyrite.json"
-hash = "e16c7e82a9caded9795342b4892d86eb42d2afe0c69f4a5c1b62aac1325971d8"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/overworld_deepslate_redstone.json"
-hash = "39270a0669cd634d70bf341a38157c1bfec7bbae42c91b432a3a34f9b43aacfd"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/overworld_diamond.json"
-hash = "e8d06127fe57dee097ae332ef33ac92b61fba544199d023540eb861787e662da"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/overworld_galena.json"
-hash = "8bde79c1b79abd905fcba6e974623dff6e46d37462d448e91e51ede05d072308"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/overworld_lignite_coal.json"
-hash = "e935cb7281461ff6bb470ad77cbad7856bbe6f6e22056102f40230a7ab2f8c09"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/overworld_magnetite.json"
-hash = "33a2d9897cb88d1aa7e2b73c1f312f7cade036196f47c414a919baa4c0ec36c3"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/overworld_pentlandite.json"
-hash = "2a98287089477f19d5292502b06a375ba3b26001632cc04a793790543014c39e"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/overworld_pitchblende.json"
-hash = "03aedfbebfadb1b67cf23bf662491cc2646585472ac37fa2bff13c9d6ffdac3d"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/overworld_tetrahedrite.json"
-hash = "679f8f39008a4f87b817d5c14f431281ca50b34c28345ca2b9c481020e5ee0a2"
-
-[[files]]
-file = "kubejs/data/gtmogs/gtmogs/ore_vein/overworld_tin.json"
-hash = "b3fa1a55def2de8f91607574308799fbac7a685fda337dc69e29c9824da33575"
-
-[[files]]
-file = "kubejs/data/immersive_aircraft/airship.json"
-hash = "42ae40e271dd17fb3ba1f5a772cbcc38b0d5b02042781bc502c0bac2ece29459"
-
-[[files]]
-file = "kubejs/data/immersive_aircraft/bamboo_hopper.json"
-hash = "f240e8c7ef2cabe5a735da3ed89e6e3478157dadef5ed9641d3fd382c7fd1f71"
-
-[[files]]
-file = "kubejs/data/immersive_aircraft/biplane.json"
-hash = "696ec350868a7e91ebb1869c6fbd94aecdecfd1124a9f97c909a007cf2b3ad8d"
-
-[[files]]
-file = "kubejs/data/immersive_aircraft/cargo_airship.json"
-hash = "6596c02d7e4b03d0deb2b0f91cdb979865565bc908cd4ea5d7bfa3ff6b263d5f"
-
-[[files]]
-file = "kubejs/data/immersive_aircraft/gyrodyne.json"
-hash = "faa6738d37079f32f8bcc958f88a91d5d60a2196e059eb105183e2b5e6db4a8a"
-
-[[files]]
-file = "kubejs/data/immersive_aircraft/quadrocopter.json"
-hash = "4ece20905fecff3da8278d200f0a8685ee6893f663452d661b19be41ab6dc5b6"
-
-[[files]]
-file = "kubejs/data/immersive_aircraft/warship.json"
-hash = "22533fcf24bdc35dc4b2ff20189f0eaabe09a21f5a3aab5fef420a62d3808f4f"
-
-[[files]]
-file = "kubejs/data/malum/worldgen/configured_feature/azure_runewood_tree.json"
-hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
-
-[[files]]
-file = "kubejs/data/malum/worldgen/configured_feature/blazing_quartz_ore.json"
-hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
-
-[[files]]
-file = "kubejs/data/malum/worldgen/configured_feature/brilliant_ore.json"
-hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
-
-[[files]]
-file = "kubejs/data/malum/worldgen/configured_feature/cthonic_gold_ore.json"
-hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
-
-[[files]]
-file = "kubejs/data/malum/worldgen/configured_feature/natural_quartz_ore.json"
-hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
-
-[[files]]
-file = "kubejs/data/malum/worldgen/configured_feature/quartz_geode.json"
-hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
-
-[[files]]
-file = "kubejs/data/malum/worldgen/configured_feature/runewood_tree.json"
-hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
-
-[[files]]
-file = "kubejs/data/malum/worldgen/configured_feature/soulstone_ore.json"
-hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
-
-[[files]]
-file = "kubejs/data/malum/worldgen/configured_feature/soulwood_tree.json"
-hash = "ea7264356b67359e9f9951341e916a724554c903a6f36b06e7da9ce7b44bbebe"
-
-[[files]]
 file = "kubejs/server_scripts/BlockLoot.js"
 hash = "60cbcf33b66716891560766ba2aed17f5b66c218758929a14f8d66ce4251cecd"
 
@@ -778,7 +858,7 @@ hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
 file = "kubejs/server_scripts/VeinDatagen.js"
-hash = "409ee55c49cb3b8ec73a40325a3f34be5c184f6f8eedb8caacdb158ff8bb2e87"
+hash = "4455ce86fe00bc24821081eec756d0dccf4f74d04d81d028b6f9b8ae9989b9b1"
 
 [[files]]
 file = "kubejs/server_scripts/jsconfig.json"
@@ -789,12 +869,16 @@ file = "kubejs/server_scripts/mods/AE2.js"
 hash = "f6dba9aa721074e04e6993bd2608418c5f499b20915e4f49cae10ce1087db65a"
 
 [[files]]
+file = "kubejs/server_scripts/mods/Core.js"
+hash = "0cabb38231bd5e01490c3da5cc37e3b79844ebff9a502cfdb6402bf4987b1336"
+
+[[files]]
 file = "kubejs/server_scripts/mods/ExtendedAE.js"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
 file = "kubejs/server_scripts/mods/FarmersDelight.js"
-hash = "ee17541831f35cdfcccd5e5044ea4c1779f84fdb87ebfb7f567ba822c016891d"
+hash = "68fbbf4c8955a0fac778cb357756e60b0189f3faeef75eaf8df45498dfb23f7b"
 
 [[files]]
 file = "kubejs/server_scripts/mods/FunctionalStorage.js"
@@ -814,7 +898,7 @@ hash = "e385c706b4c72210fac6c15516e446b55827f3e9c3e9b00c694b84fca3e03c1b"
 
 [[files]]
 file = "kubejs/server_scripts/mods/SophisticatedBackpacks.js"
-hash = "9f3791de0007ebcc80ae39c73b6c796c0d5def2a5841835db977e05263ed4e01"
+hash = "428caa0712617cf39e00fe17b051bcec5ef1030be09159347647c8bb92348758"
 
 [[files]]
 file = "kubejs/server_scripts/nukes/Quarry.js"
@@ -826,7 +910,7 @@ hash = "d67e44af84e58b413d034632f994946b1c90eafef73ac3bbb9a2ab3af94fd7c0"
 
 [[files]]
 file = "kubejs/startup_scripts/GTMOreBuilder.js"
-hash = "23744af932214f311084c493db3046d1a3561b2bf8507d99cc60a52d278753f6"
+hash = "a58025a05793c04631f996a088a7ed5c4d681360336e79e42cd688a994839ea0"
 
 [[files]]
 file = "kubejs/startup_scripts/MIMachines/OreProcMachines.js"
@@ -851,6 +935,10 @@ hash = "6e3dc39ac0ef853820988890772b0a83d24a5b4d9262068a03ccf157038614bb"
 [[files]]
 file = "modern_industrialization/extra_datagen_resources/assets/modern_industrialization/textures/materialsets/common/washed_crushed_dust.png"
 hash = "ebf4debcd4eb811aa3b49a3e967830dd261283fd0651cb5e8271354cb21814b3"
+
+[[files]]
+file = "modern_industrialization/extra_datagen_resources/assets/modern_industrialization/textures/materialsets/shiny/plate_overlay.png"
+hash = "bcee8b15e4890d90044b84c6bc7e2f4e9cca75bb3d32f0a174412d4f632e6183"
 
 [[files]]
 file = "mods/Modern-Industrialization-2.3.19.jar"
@@ -962,6 +1050,11 @@ hash = "f92e7a06645e41ea1934dc420eb2772edb1708c0d71cb427baef8cf753acb934"
 metafile = true
 
 [[files]]
+file = "mods/cyclops-core.pw.toml"
+hash = "32360d0998a4da82fed533e0253707c03aa8657547b008bfe051bbb5075f8821"
+metafile = true
+
+[[files]]
 file = "mods/distant-horizons.pw.toml"
 hash = "aa0c2ab534fe56d93d1fb1d25be0a3613c9b05a1cbd5d3be9b72f10179c56232"
 metafile = true
@@ -1014,6 +1107,11 @@ metafile = true
 [[files]]
 file = "mods/ferritecore.pw.toml"
 hash = "942b02525962980b6176677cca162d27c1210b686985ad11db0055fe39d42a7d"
+metafile = true
+
+[[files]]
+file = "mods/forgeshot.pw.toml"
+hash = "373f1f55c25072c96604c45b4b0cf58b6db79b3f11019f78678a4066f5973622"
 metafile = true
 
 [[files]]
