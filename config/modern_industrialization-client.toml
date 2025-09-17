@@ -2,7 +2,7 @@
 	#Enable login message when EMI, JEI and REI are all missing.
 	missingRecipeViewerMessage = true
 	#Display when a new version is available
-	newVersionMessage = true
+	newVersionMessage = false
 
 [rendering]
 	#Space between the top of the screen and the jetpack/GraviChestPlate overlay text.
@@ -24,4 +24,4 @@
 	#Enable the default ore generation tooltips.
 	#These tooltips show how each MI ore generates, based on the default ore generation settings in MI.
 	#Set this to false if you change the ore features in a datapack.
-	defaultOreGenTooltips = true
+	defaultOreGenTooltips = false
