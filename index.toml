@@ -318,7 +318,7 @@ hash = "81580029a6050e283392e7280e3481aa0f3ec2f885cb9cfa0706a327ccff0726"
 
 [[files]]
 file = "config/mi_tweaks-startup.toml"
-hash = "f0c2a8efbe85a47aeb8d807708e51b292bea2929172732bca6cf9fe649212fa9"
+hash = "509547923788b90440f5d28db794080789c2a305e0ced432d968debdd8d54789"
 
 [[files]]
 file = "config/midnightlib.json"
@@ -326,7 +326,7 @@ hash = "42faf0eb11129840e29860526868d355161154abe8cd4217e4d4e50d6a069cbb"
 
 [[files]]
 file = "config/modern_industrialization-client.toml"
-hash = "2b4c722f4cd3614bdb1dc8ec5bb4e79978ea4068bfa63ba1f1c2ac84f6a6d5fd"
+hash = "93428c9815c11a875e5f9ef5344e2497b13c8b4685c4ab86098a724cf6c315bc"
 
 [[files]]
 file = "config/modern_industrialization-server.toml"
@@ -609,6 +609,26 @@ file = "config/openloader/packs/egregiousdata/pack.mcmeta"
 hash = "1ef377d020e1d694d44bcacc62b29a1e105ddb9cf7fe642df59088cf7ba2671f"
 
 [[files]]
+file = "config/openloader/packs/egregioustextures/assets/functionalstorage/lang/en_us.json"
+hash = "762c26d7ff8397f4621d468e47d7f785662895c5b1517bf42b144accf81831cf"
+
+[[files]]
+file = "config/openloader/packs/egregioustextures/assets/functionalstorage/textures/item/copper_upgrade.png"
+hash = "74a3624b4303ccc158327919f9e784641cf20cfe6fcbcc5a0d125d93019dcb89"
+
+[[files]]
+file = "config/openloader/packs/egregioustextures/assets/functionalstorage/textures/item/gold_upgrade.png"
+hash = "d835c9596cfa77a483df7661b20419355fc791dcea956f9bd0f5f621555160d0"
+
+[[files]]
+file = "config/openloader/packs/egregioustextures/assets/functionalstorage/textures/item/iron_upgrade.png"
+hash = "9f30fa7f48356f02409f8c75e1b60e6d76ad332ef5421bf31dac4b1ffb5f114b"
+
+[[files]]
+file = "config/openloader/packs/egregioustextures/assets/functionalstorage/textures/item/netherite_upgrade.png"
+hash = "44c24f7c976b1efc20fdc2293a5605afcf1c8df25e2201db41b957f1f6b5dbd6"
+
+[[files]]
 file = "config/openpartiesandclaims-server.toml"
 hash = "35801652b70e4f78316205d4429a9c48aa89fb1c8680b858971662c6252d4dcb"
 
@@ -829,6 +849,10 @@ file = "kubejs/client_scripts/jsconfig.json"
 hash = "15819f9ec7a0bf3942d68235eb67e657ed759634ebbeb5fb84f26d58f8390790"
 
 [[files]]
+file = "kubejs/client_scripts/main.js"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
 file = "kubejs/config/client.json"
 hash = "1da20962c2e5aea9da57ccfefdd7ccd5a8ab0204e89de8bafb429115637a18cc"
 
@@ -857,6 +881,10 @@ file = "kubejs/server_scripts/OreTags.js"
 hash = "74b25d472ca12b373488aa65eff96912fbe1f6dc190f7fa5c77c42b7b92442ef"
 
 [[files]]
+file = "kubejs/server_scripts/VanillaRecipes.js"
+hash = "356927933c39fae111759c02c68a201a8a6e81fc519ccc2d7e7c8eb84d699fec"
+
+[[files]]
 file = "kubejs/server_scripts/VeinDatagen.js"
 hash = "467b83bfe99849fd5360335e0d83035122394c8f95a63b5eb1045001f4cb4f09"
 
@@ -871,6 +899,10 @@ hash = "31fb808f90367e2526f4efc6e0dd8441653acbd663f734c523abcdd6977a01ef"
 [[files]]
 file = "kubejs/server_scripts/mods/Core.js"
 hash = "6211cf18a49a85d7090902f66cb0c91e8e00c629a14b0ff42705840cf23d55f9"
+
+[[files]]
+file = "kubejs/server_scripts/mods/DrillTooltips.js"
+hash = "2ec608c93a28d57348da7c6cf06a156d0469455dbb55b5332d8f7456da72917f"
 
 [[files]]
 file = "kubejs/server_scripts/mods/ExtendedAE.js"
@@ -898,7 +930,7 @@ hash = "fc4007392e86d950e942885d3cc8db7463afeda4439c8be82af57fb76c122539"
 
 [[files]]
 file = "kubejs/server_scripts/mods/SophisticatedBackpacks.js"
-hash = "b9884bcfe721f79c9d2db83af4a0a6ab6470862e027312c421b590d4929d9561"
+hash = "a8ae9c9d51d6dfc5d1236b6959f95878bd2ce2ce70a5df43b20bd80c311007d7"
 
 [[files]]
 file = "kubejs/server_scripts/nukes/Quarry.js"
