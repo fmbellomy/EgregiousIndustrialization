@@ -250,10 +250,26 @@ ServerEvents.generateData("before_mods", (_) => {
     ores: ["sheldonite", "platinum", "sheldonite", "iridium"],
     veinType: classic,
   };
+  veins.beryllium = {
+    generator: egregiousUniformVein("beryllium", 25, 5, 45, 36, 40),
+    dim: GTMOGS.NETHER,
+    ores: ["beryllium", "emerald", "emerald", "thorium"],
+    veinType: classic,
+  };
+  veins.lapis = {
+    generator: egregiousUniformVein("lapis", 35, 50, 100, 32, 36),
+    dim: GTMOGS.OVERWORLD,
+    ores: ["lapis", "lapis", "sodalite", "lazurite"],
+    veinType: classic,
+  };
+
   keys(veins).forEach((key) => {
     let vein = veins[key];
     vein.veinType(vein);
   });
 
-  JsonIO.write("config/openloader/packs/egregiousdata/assets/gtmogs/lang/en_us.json", GTMOGS.lang);
+  JsonIO.write(
+    "config/openloader/packs/egregiousdata/assets/gtmogs/lang/en_us.json",
+    GTMOGS.lang
+  );
 });

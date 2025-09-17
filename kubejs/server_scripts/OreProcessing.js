@@ -61,6 +61,8 @@ const ORE_PRODUCTS = {
   chromite: matSet("chromite", "iron"),
   uvarovite: matSet("uvarovite", "ruby"),
   sheldonite: matSet("sheldonite", "platinum"),
+  sodalite: matSet("sodalite", "lazurite"),
+  lazurite: matSet("lazurite", "lapis"),
 };
 
 function unique(a) {
@@ -334,86 +336,110 @@ ServerEvents.recipes((event) => {
   );
 
   event.recipes.modern_industrialization
-    .electrolyzer(16, 60)
+    .electrolyzer(16, 500)
     .itemIn("20x modern_industrialization:tetrahedrite_dust")
     .itemOut("15x modern_industrialization:copper_dust")
     .itemOut("4x modern_industrialization:sulfur_dust")
     .itemOut("modern_industrialization:antimony_dust");
   event.recipes.modern_industrialization
-    .electrolyzer(16, 60)
+    .electrolyzer(16, 200)
     .itemIn("4x modern_industrialization:chalcopyrite_dust")
     .itemOut("2x modern_industrialization:sulfur_dust")
     .itemOut("modern_industrialization:copper_dust")
     .itemOut("modern_industrialization:iron_dust");
   event.recipes.modern_industrialization
-    .electrolyzer(16, 60)
+    .electrolyzer(16, 200)
     .itemIn("3x modern_industrialization:pyrite_dust")
     .itemOut("2x modern_industrialization:sulfur_dust")
     .itemOut("modern_industrialization:iron_dust");
   event.recipes.modern_industrialization
-    .electrolyzer(16, 60)
+    .electrolyzer(16, 200)
     .itemIn("3x modern_industrialization:cassiterite_dust")
     .itemOut("modern_industrialization:tin_dust")
     .fluidOut("2000x modern_industrialization:oxygen");
   event.recipes.modern_industrialization
-    .electrolyzer(16, 60)
+    .electrolyzer(16, 200)
     .itemIn("18x modern_industrialization:asbestos_dust")
     .itemOut("4x modern_industrialization:iron_dust")
     .itemOut("4x modern_industrialization:silicon_dust")
     .fluidOut("10000x modern_industrialization:oxygen");
   event.recipes.modern_industrialization
-    .electrolyzer(16, 60)
+    .electrolyzer(16, 200)
     .itemIn("3x modern_industrialization:magnetite_dust")
     .itemOut("modern_industrialization:iron_dust")
     .fluidOut("2000x modern_industrialization:oxygen");
   event.recipes.modern_industrialization
-    .electrolyzer(16, 60)
+    .electrolyzer(16, 200)
     .itemIn("7x modern_industrialization:garnierite_dust")
     .itemOut("4x modern_industrialization:nickel_dust")
     .itemOut("2x modern_industrialization:iron_dust")
     .itemOut("modern_industrialization:silicon_dust");
   event.recipes.modern_industrialization
-    .electrolyzer(16, 60)
+    .electrolyzer(16, 280)
     .itemIn("26x modern_industrialization:pentlandite_dust")
     .itemOut("9x modern_industrialization:nickel_dust")
     .itemOut("9x modern_industrialization:iron_dust")
     .itemOut("8x modern_industrialization:sulfur_dust");
   event.recipes.modern_industrialization
-    .centrifuge(16, 80)
+    .centrifuge(16, 200)
     .itemIn("2x modern_industrialization:galena_dust")
     .itemOut("modern_industrialization:lead_dust")
     .itemOut("modern_industrialization:silver_dust");
   event.recipes.modern_industrialization
-    .electrolyzer(16, 120)
+    .electrolyzer(16, 3000)
     .itemIn("3x modern_industrialization:pitchblende_dust")
     .itemOut("modern_industrialization:uranium_dust")
     .fluidOut("2000x modern_industrialization:oxygen");
   event.recipes.modern_industrialization
-    .electrolyzer(16, 120)
+    .electrolyzer(16, 3000)
     .itemIn("3x modern_industrialization:uraninite_dust")
     .itemOut("modern_industrialization:uranium_dust")
     .fluidOut("2000x modern_industrialization:oxygen");
   event.recipes.modern_industrialization
-    .electrolyzer(16, 120)
+    .electrolyzer(16, 3600)
     .itemIn("5x modern_industrialization:scheelite_dust")
     .itemOut("modern_industrialization:tungsten_dust")
     .fluidOut("4000x modern_industrialization:oxygen");
   event.recipes.modern_industrialization
-    .electrolyzer(16, 120)
+    .electrolyzer(16, 3600)
     .itemIn("5x modern_industrialization:ilmenite_dust")
     .itemOut("modern_industrialization:iron_dust")
     .itemOut("modern_industrialization:titanium_dust")
     .fluidOut("3000x modern_industrialization:oxygen");
   event.recipes.modern_industrialization
-    .electrolyzer(16, 120)
+    .electrolyzer(16, 2400)
     .itemIn("7x modern_industrialization:chromite_dust")
     .itemOut("modern_industrialization:iron_dust")
     .itemOut("2x modern_industrialization:chromium_dust")
     .fluidOut("4000x modern_industrialization:oxygen");
   event.recipes.modern_industrialization
-    .electrolyzer(16, 120)
+    .electrolyzer(16, 2800)
     .itemIn("17x modern_industrialization:uvarovite_dust")
     .itemOut("2x modern_industrialization:chromium_dust")
     .itemOut("3x modern_industrialization:silicon_dust")
     .fluidOut("12000x modern_industrialization:oxygen");
+  event.recipes.modern_industrialization
+    .electrolyzer(16, 2800)
+    .itemIn("11x modern_industrialization:sodalite_dust")
+    .itemOut("3x modern_industrialization:aluminum_dust")
+    .itemOut("3x modern_industrialization:silicon_dust")
+    .itemOut("4x modern_industrialization:sodium_dust")
+    .fluidOut("1000x modern_industrialization:chlorine");
+  event.recipes.modern_industrialization
+    .electrolyzer(16, 2800)
+    .itemIn("14x modern_industrialization:lazurite_dust")
+    .itemOut("3x modern_industrialization:aluminum_dust")
+    .itemOut("3x modern_industrialization:silicon_dust")
+    .itemOut("4x modern_industrialization:sulfur_dust")
+    .itemOut("4x modern_industrialization:sodium_dust");
+
+  event.shapeless(Item.of("minecraft:blue_dye"), [
+    "modern_industrialization:lapis_dust",
+  ]);
+  event.shapeless(Item.of("minecraft:blue_dye"), [
+    "modern_industrialization:sodalite_dust",
+  ]);
+  event.shapeless(Item.of("minecraft:blue_dye"), [
+    "modern_industrialization:lazurite_dust",
+  ]);
 });

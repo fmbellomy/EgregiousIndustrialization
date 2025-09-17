@@ -106,6 +106,7 @@ MIMaterialEvents.addMaterials((event) => {
     OVERWORLD.concat(NETHER),
     "iron"
   );
+
   // galena
   makeMetallicOre("Galena", "galena", 0x6d416d, OVERWORLD, "iron");
 
@@ -132,6 +133,9 @@ MIMaterialEvents.addMaterials((event) => {
   makeMetallicOre("Uvarovite", "uvarovite", 0xa1e4a1, NETHER, "gold");
 
   makeMetallicOre("Sheldonite", "sheldonite", 0xd2d2d2, NETHER, "iron");
+
+  makeMetallicOre("Sodalite", "sodalite", 0x0e0eb7, OVERWORLD, "gold");
+  makeMetallicOre("Lazurite", "lazurite", 0x4a59be, OVERWORLD, "copper");
 });
 
 function makeVanillaNetherOre(ore, ore_set) {
@@ -171,6 +175,8 @@ makeVanillaNetherOre("tin", "iron");
 makeVanillaNetherOre("nickel", "iron");
 makeVanillaNetherOre("iridium", "iron");
 makeVanillaNetherOre("platinum", "gold");
+makeVanillaNetherOre("emerald", "gold");
+
 // redstone
 MIMaterialEvents.modifyMaterial("redstone", (event) => {
   event.builder
