@@ -1,5 +1,3 @@
-console.log("I EXIST I SWEAR");
-
 ServerEvents.recipes((event) => {
   function changeBackpackMaterial(original, replacement, previous) {
     event.remove({ output: `sophisticatedbackpacks:${original}_backpack` });
