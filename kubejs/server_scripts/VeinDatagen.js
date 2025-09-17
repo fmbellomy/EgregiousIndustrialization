@@ -255,5 +255,5 @@ ServerEvents.generateData("before_mods", (_) => {
     vein.veinType(vein);
   });
 
-  JsonIO.write("kubejs/assets/gtmogs/lang/en_us.json", GTMOGS.lang);
+  JsonIO.write("config/openloader/packs/egregiousdata/assets/gtmogs/lang/en_us.json", GTMOGS.lang);
 });

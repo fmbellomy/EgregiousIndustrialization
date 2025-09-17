@@ -627,7 +627,7 @@ GTMOGS.makeVeinTemplate = (density, heightRangeType, discardChance) => {
         }
 
         GTMOGS.lang[`ore_vein.gtmogs.${id}`] = titleCase(displayName);
-        JsonIO.write(`kubejs/data/gtmogs/gtmogs/ore_vein/${id}.json`, vein);
+        JsonIO.write(`config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/${id}.json`, vein);
       };
     };
   };
