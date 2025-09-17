@@ -250,11 +250,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-<<<<<<< HEAD
-hash = "f9993f75e86f7bb13428db20f35801425c8fad5b4104bdeadf4282c414901296"
-=======
 hash = "d080e33980dc74176164d5ca54bb6d704324d5fb3da90e2ad37cdfbecfd282c7"
->>>>>>> origin/packwiz
 
 [[files]]
 file = "config/jade/hide-blocks.json"
