@@ -798,7 +798,7 @@ hash = "ee17541831f35cdfcccd5e5044ea4c1779f84fdb87ebfb7f567ba822c016891d"
 
 [[files]]
 file = "kubejs/server_scripts/mods/FunctionalStorage.js"
-hash = "6a927add30bcc16eaff5ff3d3d3b88b890ab964bfb1cf3a66eebf34cbfbca5b8"
+hash = "541d16330db1a7583d11e0afa46db142a4f5724c524c28fb361e7d28738fd8da"
 
 [[files]]
 file = "kubejs/server_scripts/mods/HostileNeuralNetworks.js"
@@ -811,6 +811,10 @@ hash = "b85ffcd440264ac79addcf98099246b802d2e870f9a2cbc65f14f755388f5d1a"
 [[files]]
 file = "kubejs/server_scripts/mods/JustHammers.js"
 hash = "e385c706b4c72210fac6c15516e446b55827f3e9c3e9b00c694b84fca3e03c1b"
+
+[[files]]
+file = "kubejs/server_scripts/mods/SophisticatedBackpacks.js"
+hash = "9f3791de0007ebcc80ae39c73b6c796c0d5def2a5841835db977e05263ed4e01"
 
 [[files]]
 file = "kubejs/server_scripts/nukes/Quarry.js"
