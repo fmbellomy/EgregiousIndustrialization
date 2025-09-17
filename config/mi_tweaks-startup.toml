@@ -28,7 +28,7 @@
 	#Default: 1.0
 	# Default: 1.0
 	# Range: 0.1 ~ 1.7976931348623157E308
-	conversion_rate = 1.0
+	conversion_rate = 4.0
 	#The max FE extractable at a time for the Flux Transformer
 	#Default: 9223372036854775807
 	# Default: 9223372036854775807

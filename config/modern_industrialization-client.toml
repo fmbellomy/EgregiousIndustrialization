@@ -14,13 +14,13 @@
 	#Show valid positions in multiblocks when holding a hatch.
 	hatchPlacementOverlay = true
 	#Enable connected textures between machines that have the same casing. (Requires a suitable resource pack)
-	interMachineConnectedTextures = false
+	interMachineConnectedTextures = true
 
 [tooltips]
 	#Add the total EU value of fuel items to their tooltips.
 	fuelTooltips = true
 	#Add item tags to item tooltips.
-	itemTagTooltips = false
+	itemTagTooltips = true
 	#Enable the default ore generation tooltips.
 	#These tooltips show how each MI ore generates, based on the default ore generation settings in MI.
 	#Set this to false if you change the ore features in a datapack.
