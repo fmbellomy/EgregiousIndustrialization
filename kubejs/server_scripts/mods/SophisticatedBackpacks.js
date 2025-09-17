@@ -1,32 +1,21 @@
-ServerEvents.recipes ((event) => {
-    event.replaceInput(
-        {mod:"sophisticatedbackpacks"},
-        "minecraft:copper_ingot",
-        'modern_industrialization:bronze_plate'
+console.log("I EXIST I SWEAR");
+
+ServerEvents.recipes((event) => {
+  function changeBackpackMaterial(original, replacement, previous) {
+    event.remove({ output: `sophisticatedbackpacks:${original}_backpack` });
+    event.shaped(
+      `sophisticatedbackpacks:${original}_backpack`,
+      ["TTT", "TBT", "TTT"],
+      {
+        T: `modern_industrialization:${replacement}_plate`,
+        B: `sophisticatedbackpacks:${previous}backpack`,
+      }
     );
-    event.replaceInput(
-        {mod:"sophisticatedbackpacks"},
-        'minecraft:iron_ingot',
-        'modern_industrialization:steel_plate'
-    );
-    event.replaceInput(
-        {mod:"sophisticatedbackpacks"},
-        'minecraft:gold_ingot',
-        'modern_industrialization:aluminum_plate'
-    );
-    event.replaceInput(
-        {mod:"sophisticatedbackpacks"},
-        "minecraft:diamond",
-        'modern_industrialization:stainless_steel_plate'
-    );
-    event.remove( {output: 'sophisticatedbackpacks:iron_backpack'})
-    event.shaped('sophisticatedbackpacks:iron_backpack', ["SSS", "SBS", "SSS"], {
-        S: 'modern_industrialization:steel_plate',
-        B: 'sophisticatedbackpacks:copper_backpack',
-    });
-       event.remove( {output: 'sophisticatedbackpacks:netherite_backpack'})
-    event.shaped('sophisticatedbackpacks:netherite_backpack', ["TTT", "TBT", "TTT"], {
-        T: 'modern_industrialization:titanium_plate',
-        B: 'sophisticatedbackpacks:diamond_backpack',
-    });
+  }
+
+  changeBackpackMaterial("copper", "bronze", "");
+  changeBackpackMaterial("iron", "steel", "copper_");
+  changeBackpackMaterial("gold", "aluminum", "iron_");
+  changeBackpackMaterial("diamond", "stainless_steel", "gold_");
+  changeBackpackMaterial("netherite", "titanium", "diamond_");
 });
