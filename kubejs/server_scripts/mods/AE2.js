@@ -1,7 +1,5 @@
 // base ae2
-RecipeViewerEvents.removeEntriesCompletely("item", (event) => {
-  event.remove("ae2:silicon");
-});
+RecipeViewerEvents.removeEntriesCompletely("item", (event) => {});
 ServerEvents.recipes((event) => {
   event.recipes.modern_industrialization
     .packer(8, 200)
