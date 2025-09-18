@@ -33,13 +33,15 @@ ServerEvents.generateData("before_mods", (_) => {
     for (let i = 0; i < ores.length; i++) {
       if (Item.exists(`minecraft:${vein.dim.blockPrefix}${ores[i]}_ore`)) {
         ores[i] = `minecraft:${vein.dim.blockPrefix}${ores[i]}_ore`;
+      } else if (Item.exists(`malum:${vein.dim.blockPrefix}${ores[i]}_ore`)) {
+        ores[i] = `malum:${vein.dim.blockPrefix}${ores[i]}_ore`;
       } else {
         ores[
           i
         ] = `modern_industrialization:${vein.dim.blockPrefix}${ores[i]}_ore`;
       }
     }
-    let target;
+    let target = { predicate_type: "minecraft:always_true" };
     if (vein.dim == GTMOGS.END) {
       target = { predicate_type: "minecraft:tag_match", tag: "c:end_stones" };
     }
@@ -262,11 +264,57 @@ ServerEvents.generateData("before_mods", (_) => {
     ores: ["lapis", "lapis", "sodalite", "lazurite"],
     veinType: classic,
   };
+  veins.lapis = {
+    generator: egregiousUniformVein("lapis", 35, 50, 100, 32, 36),
+    dim: GTMOGS.OVERWORLD,
+    ores: ["lapis", "lapis", "sodalite", "lazurite"],
+    veinType: classic,
+  };
 
   keys(veins).forEach((key) => {
     let vein = veins[key];
     vein.veinType(vein);
   });
+
+  {
+    // NETHER QUARTZ VEIN
+    let ores = [
+      "minecraft:nether_quartz_ore",
+      "minecraft:nether_quartz_ore",
+      "malum:blazing_quartz_ore",
+      "malum:blazing_quartz_ore",
+    ];
+    let vein = egregiousUniformVein("quartz", 50, 70, 120, 34, 38);
+    let target = { predicate_type: "minecraft:always_true" };
+
+    let generator = vein(
+      GTMOGS.VeinGenerator.ClassicVeinGenerator()
+        .setPrimary(4, ores[0], target)
+        .setSecondary(3, ores[1], target)
+        .setBetween(2, ores[2], target)
+        .setSporadic(1, ores[3], target)
+    );
+    generator(GTMOGS.NETHER);
+  }
+  {
+    // Soulstone, Cthonic Gold, Brilliance
+    let ores = [
+      "malum:soulstone_ore",
+      "malum:cthonic_gold_ore",
+      "malum:brilliant_stone",
+      "malum:brilliant_stone",
+    ];
+    let vein = egregiousUniformVein("soulstone", 50, 70, 180, 34, 38);
+    let target = { predicate_type: "minecraft:always_true" };
+    let generator = vein(
+      GTMOGS.VeinGenerator.ClassicVeinGenerator()
+        .setPrimary(4, ores[0], target)
+        .setSecondary(4, ores[1], target)
+        .setBetween(2, ores[2], target)
+        .setSporadic(1, ores[3], target)
+    );
+    generator(GTMOGS.OVERWORLD);
+  }
 
   JsonIO.write(
     "config/openloader/packs/egregiousdata/assets/gtmogs/lang/en_us.json",

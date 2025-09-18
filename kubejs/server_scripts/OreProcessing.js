@@ -222,7 +222,17 @@ ServerEvents.recipes((event) => {
     .itemOut(`minecraft:quartz`, 0.1)
     .itemOut(`minecraft:quartz`, 0.05)
     .itemOut(`modern_industrialization:quartz_dust`, 0.9);
-
+  // malum maceration recipes
+  event.recipes.modern_industrialization
+    .macerator(2, 100)
+    .itemIn("malum:raw_brilliance")
+    .itemOut("malum:crushed_brilliance")
+    .itemOut("malum:crushed_brilliance", 0.25);
+  event.recipes.modern_industrialization
+    .macerator(2, 100)
+    .itemIn("malum:raw_soulstone")
+    .itemOut("malum:crushed_soulstone")
+    .itemOut("malum:crushed_soulstone", 0.25);
   let seen = [];
   namespacedMats.forEach((nsMat) => {
     let namespace = nsMat.split(":")[0];

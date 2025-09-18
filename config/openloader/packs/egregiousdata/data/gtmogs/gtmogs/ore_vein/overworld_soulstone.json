@@ -1,0 +1,81 @@
+{
+	"biomes": "#minecraft:is_overworld",
+	"cluster_size": {
+		"min_inclusive": 34,
+		"max_inclusive": 38,
+		"type": "minecraft:uniform"
+	},
+	"density": 0.75,
+	"dimension_filter": [
+		"minecraft:overworld"
+	],
+	"discard_chance_on_air_exposure": 0.75,
+	"generator": {
+		"type": "gtmogs:classic",
+		"primary": {
+			"layers": 4,
+			"targets": [
+				{
+					"target": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"state": {
+						"Name": "malum:soulstone_ore"
+					}
+				}
+			]
+		},
+		"secondary": {
+			"layers": 4,
+			"targets": [
+				{
+					"target": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"state": {
+						"Name": "malum:cthonic_gold_ore"
+					}
+				}
+			]
+		},
+		"between": {
+			"layers": 2,
+			"targets": [
+				{
+					"target": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"state": {
+						"Name": "malum:brilliant_stone"
+					}
+				}
+			]
+		},
+		"sporadic": {
+			"layers": 1,
+			"targets": [
+				{
+					"target": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"state": {
+						"Name": "malum:brilliant_stone"
+					}
+				}
+			]
+		}
+	},
+	"height_range": {
+		"height": {
+			"type": "minecraft:uniform",
+			"max_inclusive": {
+				"absolute": 180
+			},
+			"min_inclusive": {
+				"absolute": 70
+			}
+		}
+	},
+	"layer": "stone",
+	"weight": 50
+}
