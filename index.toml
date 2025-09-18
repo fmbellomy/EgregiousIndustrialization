@@ -1106,7 +1106,7 @@ metafile = true
 
 [[files]]
 file = "mods/egregiouscore.pw.toml"
-hash = "89b7b1e9519f42382213007f093e42312e562b0f63335bb74a6effc86321d0c9"
+hash = "87cf3d3323ff52b02f5069ef53e70faf18dc021996b138a614e6c22a67bae047"
 metafile = true
 
 [[files]]
@@ -1136,7 +1136,7 @@ metafile = true
 
 [[files]]
 file = "mods/ex-pattern-provider.pw.toml"
-hash = "2ba395005bd11e12a091f2b592689c31f89d8658a781ce5cd1f2998f3ac09a61"
+hash = "6a3031ac8680313be0bc93d60bb42c74d3e1621aa15ad359f5f85e69a33d8b96"
 metafile = true
 
 [[files]]
@@ -1196,7 +1196,7 @@ metafile = true
 
 [[files]]
 file = "mods/gregtech-modern-ore-generation-standalone.pw.toml"
-hash = "566bafacf222eb3351b918bf100a09163fdb9afa7b3a253270ed1bbed4476e03"
+hash = "690d78dc93a3e06ebc545d4ca46e69c3f6454f9c9cb1950c7bdb77cb99c57075"
 metafile = true
 
 [[files]]
@@ -1396,7 +1396,7 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "ef74dd5337e23809fb5de70de1103fc7cc8107b19d7b7662039c0fe4f31f2d5d"
+hash = "eefbe58427557eaa001cdee171868890319af65fa4795a7b357d4b9e1b0b8e74"
 metafile = true
 
 [[files]]
