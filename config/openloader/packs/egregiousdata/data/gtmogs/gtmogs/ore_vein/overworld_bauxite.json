@@ -1,13 +1,13 @@
 {
-	"biomes": "#minecraft:is_nether",
+	"biomes": "#minecraft:is_overworld",
 	"cluster_size": {
-		"min_inclusive": 34,
-		"max_inclusive": 38,
+		"min_inclusive": 30,
+		"max_inclusive": 34,
 		"type": "minecraft:uniform"
 	},
 	"density": 0.75,
 	"dimension_filter": [
-		"minecraft:the_nether"
+		"minecraft:overworld"
 	],
 	"discard_chance_on_air_exposure": 0.75,
 	"generator": {
@@ -20,7 +20,7 @@
 						"predicate_type": "minecraft:always_true"
 					},
 					"state": {
-						"Name": "minecraft:nether_quartz_ore"
+						"Name": "modern_industrialization:deepslate_bauxite_ore"
 					}
 				}
 			]
@@ -33,7 +33,7 @@
 						"predicate_type": "minecraft:always_true"
 					},
 					"state": {
-						"Name": "minecraft:nether_quartz_ore"
+						"Name": "modern_industrialization:deepslate_bauxite_ore"
 					}
 				}
 			]
@@ -46,7 +46,7 @@
 						"predicate_type": "minecraft:always_true"
 					},
 					"state": {
-						"Name": "malum:blazing_quartz_ore"
+						"Name": "minecraft:deepslate_iron_ore"
 					}
 				}
 			]
@@ -59,7 +59,7 @@
 						"predicate_type": "minecraft:always_true"
 					},
 					"state": {
-						"Name": "malum:blazing_quartz_ore"
+						"Name": "modern_industrialization:deepslate_ilmenite_ore"
 					}
 				}
 			]
@@ -69,13 +69,13 @@
 		"height": {
 			"type": "minecraft:uniform",
 			"max_inclusive": {
-				"absolute": 120
+				"absolute": -10
 			},
 			"min_inclusive": {
-				"absolute": 70
+				"absolute": -60
 			}
 		}
 	},
-	"layer": "netherrack",
-	"weight": 50
+	"layer": "deepslate",
+	"weight": 30
 }

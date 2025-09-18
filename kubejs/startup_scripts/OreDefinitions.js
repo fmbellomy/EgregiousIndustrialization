@@ -128,7 +128,13 @@ MIMaterialEvents.addMaterials((event) => {
   // scheelite
   makeMetallicOre("Scheelite", "scheelite", 0xae7e12, NETHER, "iron");
   // ilmenite
-  makeMetallicOre("Ilmenite", "ilmenite", 0x2e2421, NETHER, "iron");
+  makeMetallicOre(
+    "Ilmenite",
+    "ilmenite",
+    0x2e2421,
+    NETHER.concat(OVERWORLD),
+    "iron"
+  );
   makeMetallicOre("Chromite", "chromite", 0x170804, NETHER, "copper");
   makeMetallicOre("Uvarovite", "uvarovite", 0xa1e4a1, NETHER, "gold");
 
