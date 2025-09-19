@@ -54,7 +54,7 @@
 
 ### immersive aircraft
 
-- [ f] make aircraft require MI liquid fuel
+- [ ] make aircraft require MI liquid fuel
 - [x] mi-ify recipes for aircraft upgrades
 - [x] mi-ify recipes for aircraft themselves
 
