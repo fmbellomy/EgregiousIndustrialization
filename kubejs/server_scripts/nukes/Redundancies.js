@@ -5,10 +5,10 @@ RecipeViewerEvents.removeEntriesCompletely("item", (event) => {
   //HNN nuking unused data models
   function nukeHNNdataPredictions(mob) {
     event.remove(
-      `hostilenetworks:data_model[hostilenetworks:data_model="hostilenetworks:${mob}`
+      `hostilenetworks:data_model[hostilenetworks:data_model="hostilenetworks:${mob}"]`
     );
     event.remove(
-      `hostilenetworks:prediction[hostilenetworks:data_model="hostilenetworks:${mob}`
+      `hostilenetworks:prediction[hostilenetworks:data_model="hostilenetworks:${mob}"]`
     );
   }
 
