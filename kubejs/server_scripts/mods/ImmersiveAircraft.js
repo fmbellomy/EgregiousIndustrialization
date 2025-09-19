@@ -8,7 +8,6 @@ ServerEvents.recipes((event) => {
     .itemIn("3x modern_industrialization:stainless_steel_rod")
     .fluidIn("200x modern_industrialization:polyethylene")
     .itemOut("immersive_aircraft:hull");
-
   event.recipes.modern_industrialization
     .assembler(8, 100)
     .itemIn("5x modern_industrialization:stainless_steel_plate")
@@ -17,7 +16,6 @@ ServerEvents.recipes((event) => {
     .itemIn("2x modern_industrialization:rubber_sheet")
     .fluidIn("100x modern_industrialization:lubricant")
     .itemOut("immersive_aircraft:engine");
-
   event.recipes.modern_industrialization
     .assembler(8, 100)
     .itemIn("2x #minecraft:planks")
@@ -25,7 +23,6 @@ ServerEvents.recipes((event) => {
     .itemIn("2x #minecraft:wool")
     .fluidIn("2000x modern_industrialization:nylon")
     .itemOut("immersive_aircraft:sail");
-
   event.recipes.modern_industrialization
     .assembler(8, 100)
     .itemIn("2x modern_industrialization:stainless_steel_rotor")
@@ -33,7 +30,6 @@ ServerEvents.recipes((event) => {
     .itemIn("modern_industrialization:stainless_steel_ring")
     .fluidIn("100x modern_industrialization:lubricant")
     .itemOut("immersive_aircraft:propeller");
-
   event.recipes.modern_industrialization
     .assembler(8, 100)
     .itemIn("modern_industrialization:bronze_boiler")
@@ -181,5 +177,4 @@ ServerEvents.recipes((event) => {
     .itemIn("6x minecraft:bamboo_block")
     .itemIn("immersive_aircraft:engine")
     .itemOut("immersive_aircraft:bamboo_hopper");
-  event.recipes.modern_industrialization;
 });
