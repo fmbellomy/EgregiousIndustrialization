@@ -1,4 +1,8 @@
 // base ae2
+ServerEvents.tags("worldgen/biome", (event) => {
+  event.removeAll("ae2:has_meteorites");
+});
+
 RecipeViewerEvents.removeEntriesCompletely("item", (event) => {});
 ServerEvents.recipes((event) => {
   event.recipes.modern_industrialization
@@ -205,13 +209,17 @@ RecipeViewerEvents.removeEntriesCompletely("item", (event) => {
   event.remove("extendedae:infinity_cobblestone_cell");
 });
 ServerEvents.recipes((event) => {
-  event.remove("extendedae:quartz_blend");
+  event.remove({ output: "extendedae:quartz_blend" });
   event.remove("extendedae:silicon_block");
   event.recipes.modern_industrialization
     .macerator(2, 100)
     .itemIn("extendedae:entro_crystal")
     .itemOut("extendedae:entro_dust");
 
+  event.remove({
+    type: "extendedae:crystal_fixer",
+    output: "ae2:flawless_budding_quartz",
+  });
   // infinite cells
   event.replaceInput(
     { output: "extendedae:infinity_water_cell" },
