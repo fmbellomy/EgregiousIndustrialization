@@ -46,7 +46,7 @@
 						"predicate_type": "minecraft:always_true"
 					},
 					"state": {
-						"Name": "malum:blazing_quartz_ore"
+						"Name": "minecraft:nether_quartz_ore"
 					}
 				}
 			]
@@ -59,7 +59,7 @@
 						"predicate_type": "minecraft:always_true"
 					},
 					"state": {
-						"Name": "malum:blazing_quartz_ore"
+						"Name": "minecraft:nether_quartz_ore"
 					}
 				}
 			]

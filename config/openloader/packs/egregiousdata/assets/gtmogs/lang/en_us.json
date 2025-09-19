@@ -16,6 +16,7 @@
 	"ore_vein.gtmogs.overworld_coal": "Coal",
 	"ore_vein.gtmogs.overworld_lignite_coal": "Lignite Coal",
 	"ore_vein.gtmogs.overworld_diamond": "Diamond",
+	"ore_vein.gtmogs.overworld_bauxite": "Bauxite",
 	"ore_vein.gtmogs.nether_ilmenite": "Nether Ilmenite",
 	"ore_vein.gtmogs.overworld_magnetite": "Magnetite",
 	"ore_vein.gtmogs.nether_magnetite": "Nether Magnetite",
@@ -23,7 +24,5 @@
 	"ore_vein.gtmogs.nether_sheldonite": "Nether Sheldonite",
 	"ore_vein.gtmogs.nether_beryllium": "Nether Beryllium",
 	"ore_vein.gtmogs.overworld_lapis": "Lapis",
-	"ore_vein.gtmogs.nether_nether_quartz": "Nether Nether Quartz",
-	"ore_vein.gtmogs.overworld_soulstone": "Soulstone",
 	"ore_vein.gtmogs.nether_quartz": "Nether Quartz"
 }

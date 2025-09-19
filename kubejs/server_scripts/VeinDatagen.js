@@ -222,6 +222,12 @@ ServerEvents.generateData("before_mods", (_) => {
     ores: ["graphite", "graphite", "diamond", "coal"],
     veinType: classic,
   };
+  veins.bauxite = {
+    generator: egregiousUniformVein("bauxite", 30, -60, -10, 30, 34),
+    dim: GTMOGS.OVERWORLD_DEEPSLATE,
+    ores: ["bauxite", "bauxite", "iron", "ilmenite"],
+    veinType: classic,
+  };
   veins.ilmenite = {
     generator: egregiousUniformVein("ilmenite", 50, 5, 45, 36, 40),
     dim: GTMOGS.NETHER,
@@ -277,12 +283,12 @@ ServerEvents.generateData("before_mods", (_) => {
   });
 
   {
-    // NETHER QUARTZ VEIN
+    // NETHER QUARTZ VEIN (add certus later?)
     let ores = [
       "minecraft:nether_quartz_ore",
       "minecraft:nether_quartz_ore",
-      "malum:blazing_quartz_ore",
-      "malum:blazing_quartz_ore",
+      "minecraft:nether_quartz_ore",
+      "minecraft:nether_quartz_ore",
     ];
     let vein = egregiousUniformVein("quartz", 50, 70, 120, 34, 38);
     let target = { predicate_type: "minecraft:always_true" };
@@ -295,25 +301,6 @@ ServerEvents.generateData("before_mods", (_) => {
         .setSporadic(1, ores[3], target)
     );
     generator(GTMOGS.NETHER);
-  }
-  {
-    // Soulstone, Cthonic Gold, Brilliance
-    let ores = [
-      "malum:soulstone_ore",
-      "malum:cthonic_gold_ore",
-      "malum:brilliant_stone",
-      "malum:brilliant_stone",
-    ];
-    let vein = egregiousUniformVein("soulstone", 50, 70, 180, 34, 38);
-    let target = { predicate_type: "minecraft:always_true" };
-    let generator = vein(
-      GTMOGS.VeinGenerator.ClassicVeinGenerator()
-        .setPrimary(4, ores[0], target)
-        .setSecondary(4, ores[1], target)
-        .setBetween(2, ores[2], target)
-        .setSporadic(1, ores[3], target)
-    );
-    generator(GTMOGS.OVERWORLD);
   }
 
   JsonIO.write(

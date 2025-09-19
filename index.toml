@@ -78,7 +78,11 @@ hash = "3d07a74a30da227095f0510d41700b383223514da1a6947a58afc101f5fe79ad"
 
 [[files]]
 file = "config/chloride-client.json"
+<<<<<<< HEAD
 hash = "669ebc2caf02db8aa309de7ab9983f6c5e753f68d6aae3a29e71edd355004039"
+=======
+hash = "8fbc2155b4dc71bcdeabddbe35970c8d9bf8236ac0b95d14d1f00df32786d7fa"
+>>>>>>> 98008cdf300bd3f94d63e8ac7bd4fc3331346b5b
 
 [[files]]
 file = "config/configuration-options.json"
@@ -107,6 +111,10 @@ hash = "1a3bee95a96f082b8e97cccbce30c1efe1352b616c78e06d5884fd4475668add"
 [[files]]
 file = "config/cyclopscore-common.toml"
 hash = "fede2239a8566281381e13f863d6a30a326ea4a89bca5c7b5badad75f9536fd4"
+
+[[files]]
+file = "config/databank-client.toml"
+hash = "f81175924941621df32734377dcf9701d13b0f5b7ef9d86bc5d3b64dc2eaf766"
 
 [[files]]
 file = "config/egregiouscore-common.toml"
@@ -345,6 +353,10 @@ file = "config/modernfix-mixins.properties"
 hash = "609f804690652d9d477abcc7a4c918276f89b3724edb2635495aa3daf5eb82e6"
 
 [[files]]
+file = "config/modonomicon-client.toml"
+hash = "0249260b8d14a9341be9a512be7eddacf6f2b2b8b8461fb80793cee1f09bf8b9"
+
+[[files]]
 file = "config/neoforge-client.toml"
 hash = "d58d93e2c429410d0abf25507d1679f732e1023b03bb52414348efcf5cf3ddb0"
 
@@ -362,7 +374,11 @@ hash = "42c95dc71f71e1432eb1920d9cb1efdfc89c0b135a1928ece9dfa64fd6cbe1cd"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/assets/gtmogs/lang/en_us.json"
+<<<<<<< HEAD
 hash = "db7d03f9924542cad4ea5227d62a7a8c90b99ed3b21e5e5800baf3d7dc9a43c4"
+=======
+hash = "e029cd223e32f35cc433f0e48a30ed61c9f9d3de00b629cb7f50198e2aac9662"
+>>>>>>> 98008cdf300bd3f94d63e8ac7bd4fc3331346b5b
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/nether_beryllium.json"
@@ -397,6 +413,10 @@ file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/nether
 hash = "de025da7fff1a6a6c460af3bdcd1a7f6d89f6df104b81118d8a346f5528a543b"
 
 [[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/nether_quartz.json"
+hash = "b7783e4ebc442c6288a7d79cadff24061958d6d62bee121f8bf3f5d7b2a8b8b4"
+
+[[files]]
 file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/nether_redstone.json"
 hash = "3f6203a5e3ff490de22d778e881ba1ce038c62ed839338f9422b583e1da7b1e4"
 
@@ -411,6 +431,10 @@ hash = "f9712a5d876c3da2745411fa40761ead21a243e79c30aeb73eb10cb7056f9810"
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/nether_tetrahedrite.json"
 hash = "58242e62cfb53e49d0b177b64c5bcebd57fbb2ff4c47228b3d7d1d8e9882e8fa"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/overworld_bauxite.json"
+hash = "5fb40c3646fa54f59571252abe32fec52aea8d4453f0079606f47f11c29dee92"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/overworld_cassiterite.json"
@@ -651,6 +675,10 @@ hash = "d429ebd8ab6fb6cb4b093cfb4c49b2f4bb1ca1f30792c81d82a11f4224e4e09e"
 [[files]]
 file = "config/openpartiesandclaims-server.toml"
 hash = "35801652b70e4f78316205d4429a9c48aa89fb1c8680b858971662c6252d4dcb"
+
+[[files]]
+file = "config/pastel.json5"
+hash = "3d5ef5fe7196355a86fe3b1d6e477136f739e28bc5f794c82dfb427af499f780"
 
 [[files]]
 file = "config/patternbetter-common.toml"
@@ -894,7 +922,11 @@ hash = "8f7d8b49910abaf8f833eb9be2313e26b771ced8480a177780c02168a4800b99"
 
 [[files]]
 file = "kubejs/server_scripts/OreProcessing.js"
+<<<<<<< HEAD
 hash = "80d69a5d5c9cc8b282560cbbc8bfa3b997534801c2d795eda22875401e9210bf"
+=======
+hash = "bcfd1528c0837db1a2967bb7d01a0e075354b9cac3224a2b41171ae43a06dff7"
+>>>>>>> 98008cdf300bd3f94d63e8ac7bd4fc3331346b5b
 
 [[files]]
 file = "kubejs/server_scripts/OreTags.js"
@@ -906,7 +938,11 @@ hash = "356927933c39fae111759c02c68a201a8a6e81fc519ccc2d7e7c8eb84d699fec"
 
 [[files]]
 file = "kubejs/server_scripts/VeinDatagen.js"
+<<<<<<< HEAD
 hash = "83df1ef00ff1eb923d1987cc977472f15c7cba81be133c4a397ff63335007cba"
+=======
+hash = "9aa42c2fff3da2583e51e9f12efdc76e20c35c3bfef60cb12de54b7d82bae698"
+>>>>>>> 98008cdf300bd3f94d63e8ac7bd4fc3331346b5b
 
 [[files]]
 file = "kubejs/server_scripts/jsconfig.json"
@@ -970,7 +1006,11 @@ hash = "05c7f1283a37ccd28d3e92f510b9310ff9bf0d1501a6e15d76d306e857314d09"
 
 [[files]]
 file = "kubejs/startup_scripts/OreDefinitions.js"
+<<<<<<< HEAD
 hash = "a8eba8f0bb6f5a0a812a6b75c6a1ae6fcf8ec0f84cdd720a5fd34036a178e10b"
+=======
+hash = "8536f266ca04babb32912afe3a52010d7efadd21ccd77358643326863e676fc3"
+>>>>>>> 98008cdf300bd3f94d63e8ac7bd4fc3331346b5b
 
 [[files]]
 file = "kubejs/startup_scripts/jsconfig.json"
@@ -1198,7 +1238,11 @@ metafile = true
 
 [[files]]
 file = "mods/geckolib.pw.toml"
+<<<<<<< HEAD
 hash = "1889eceeb354da6115f8ffe177d716000365b310acf03b664b4ef5a604819c92"
+=======
+hash = "74adfcb4a066f83b8630768d4bfa3f44b53649f27b521cc64a23e5cf7781eebd"
+>>>>>>> 98008cdf300bd3f94d63e8ac7bd4fc3331346b5b
 metafile = true
 
 [[files]]
@@ -1403,12 +1447,20 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
+<<<<<<< HEAD
 hash = "a229720adabbe3d6869f3047cb3bf52c5af278db00c68cd2436aa9bcd0df569e"
+=======
+hash = "76a6bcba491f07bf52850ab10a1a20b974565f50cebfd17cf54857a7af52cd6a"
+>>>>>>> 98008cdf300bd3f94d63e8ac7bd4fc3331346b5b
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
+<<<<<<< HEAD
 hash = "8064a4a95842a6fdecf29c7e94e634d20311d188fe9f8cc34beb0eb75edce9ef"
+=======
+hash = "7393039adddc170dcb916a61f5f572fe1efbc03242da04ee30274afec83b61f7"
+>>>>>>> 98008cdf300bd3f94d63e8ac7bd4fc3331346b5b
 metafile = true
 
 [[files]]
@@ -1418,7 +1470,11 @@ metafile = true
 
 [[files]]
 file = "mods/tesseract-api-neoforge.pw.toml"
+<<<<<<< HEAD
 hash = "6f8d96258fdb6893015bb529960620faab54b569dfdd077f8c6d5e9d652dfd1f"
+=======
+hash = "42f634cc421bdc97f7df3d96ed5a0d9301433499830c24e8449a99ab328c683d"
+>>>>>>> 98008cdf300bd3f94d63e8ac7bd4fc3331346b5b
 metafile = true
 
 [[files]]
