@@ -62,3 +62,9 @@
 
 - [x] add cutting recipes to cutting machine
 - [ ] add powerless multiblock keg??
+
+## HELD BY NEEDING EXTENDED INDUSTRIALIZATION
+
+- [ ] distilled water ore washer recipes
+- [ ] blazing essence eye of ender
+- [ ] alloy smelter recipe for phantom membrane from ender dust+leather
