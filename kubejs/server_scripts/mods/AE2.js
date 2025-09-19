@@ -127,6 +127,22 @@ ServerEvents.recipes((event) => {
     .itemIn("minecraft:redstone")
     .itemIn("minecraft:glowstone_dust")
     .itemOut("8x ae2:fluix_smart_dense_cable");
+
+  //Adding processor press recipes
+  function addPackerPress(output) {
+    event.recipes.modern_industrialization
+      .packer(16, 200)
+      .itemIn("modern_industrialization:aluminum_block")
+      .itemIn("#ae2:knife", 0)
+      .itemOut(`ae2:${output}_press`);
+  }
+  let presses = [
+    "calculation_processor",
+    "engineering_processor",
+    "logic_processor",
+    "silicon",
+  ];
+  presses.forEach(addPackerPress);
 });
 
 // ADVANCED AE NUKING
