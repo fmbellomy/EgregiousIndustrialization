@@ -1,4 +1,8 @@
 // base ae2
+ServerEvents.tags("worldgen/biome", (event) => {
+  event.removeAll("ae2:has_meteorites");
+});
+
 RecipeViewerEvents.removeEntriesCompletely("item", (event) => {});
 ServerEvents.recipes((event) => {
   event.recipes.modern_industrialization
