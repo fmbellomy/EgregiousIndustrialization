@@ -286,7 +286,7 @@ ServerEvents.generateData("before_mods", (_) => {
     // NETHER QUARTZ VEIN (add certus later?)
     let ores = [
       "minecraft:nether_quartz_ore",
-      "minecraft:nether_quartz_ore",
+      "modern_industrialization:netherrack_certus_quartz_ore",
       "minecraft:nether_quartz_ore",
       "minecraft:nether_quartz_ore",
     ];

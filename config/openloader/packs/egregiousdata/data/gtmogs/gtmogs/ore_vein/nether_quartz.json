@@ -33,7 +33,7 @@
 						"predicate_type": "minecraft:always_true"
 					},
 					"state": {
-						"Name": "minecraft:nether_quartz_ore"
+						"Name": "modern_industrialization:netherrack_certus_quartz_ore"
 					}
 				}
 			]
