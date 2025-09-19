@@ -63,6 +63,9 @@ const ORE_PRODUCTS = {
   sheldonite: matSet("sheldonite", "platinum"),
   sodalite: matSet("sodalite", "lazurite"),
   lazurite: matSet("lazurite", "lapis"),
+
+  // OTHER
+  certus_quartz: matSet("certus_quartz", "quartz", "ae2:certus_quartz"),
 };
 
 function unique(a) {
@@ -94,22 +97,6 @@ ServerEvents.recipes((event) => {
     "modern_industrialization:silicon_ingot",
     "modern_industrialization:silicon_dust"
   );
-
-  let items = Item.getList()
-    .toArray()
-    .map((item) => item.getItem().toString());
-
-  let namespacedMats = items
-    .filter((item) => item.includes("_ore") && !item.includes("washer"))
-    .map((item) => {
-      item = item
-        .replace("deepslate_", "")
-        .replace("end_stone_", "")
-        .replace("netherrack_", "")
-        .replace("nether_", "")
-        .replace("_ore", "");
-      return item;
-    });
   event.remove({
     type: "modern_industrialization:macerator",
     input: "#c:raw_materials",
@@ -223,6 +210,22 @@ ServerEvents.recipes((event) => {
     .itemOut(`minecraft:quartz`, 0.05)
     .itemOut(`modern_industrialization:quartz_dust`, 0.9);
 
+  let items = Item.getList()
+    .toArray()
+    .map((item) => item.getItem().toString());
+
+  let namespacedMats = items
+    .filter((item) => item.includes("_ore") && !item.includes("washer"))
+    .map((item) => {
+      item = item
+        .replace("deepslate_", "")
+        .replace("end_stone_", "")
+        .replace("netherrack_", "")
+        .replace("nether_", "")
+        .replace("_ore", "");
+      return item;
+    });
+
   let seen = [];
   namespacedMats.forEach((nsMat) => {
     let namespace = nsMat.split(":")[0];
@@ -230,6 +233,47 @@ ServerEvents.recipes((event) => {
       return;
     }
     let mat = nsMat.split(":")[1];
+    let set = ORE_PRODUCTS[mat];
+
+    if (mat == "certus_quartz") {
+      event.recipes.modern_industrialization
+        .sifter(4, 300)
+        .itemIn(`modern_industrialization:${mat}_washed_crushed_dust`)
+        .itemOut(`ae2:${mat}_crystal`)
+        .itemOut(`ae2:${mat}_crystal`, 0.6)
+        .itemOut(`ae2:${mat}_crystal`, 0.5)
+        .itemOut(`ae2:${mat}_crystal`, 0.4)
+        .itemOut(`ae2:${mat}_crystal`, 0.3)
+        .itemOut(`ae2:${mat}_crystal`, 0.2)
+        .itemOut(`ae2:${mat}_crystal`, 0.1)
+        .itemOut(`ae2:${mat}_crystal`, 0.05)
+        .itemOut(`ae2:${mat}_dust`, 0.9);
+
+      event.recipes.modern_industrialization
+        .ore_washer(2, 200)
+        .itemIn(set.crushedDust)
+        .fluidIn("1000x minecraft:water")
+        .itemOut(set.washedCrushedDust)
+        .itemOut(set.washByproduct, 0.1);
+
+      event.recipes.modern_industrialization
+        .macerator(2, 100)
+        .itemIn(set.washedCrushedDust)
+        .itemOut(`ae2:${mat}_dust`)
+        .itemOut(`ae2:${mat}_dust`, 0.25);
+
+      event.smelting(
+        `2x ${set.smeltsTo}_crystal`,
+        `modern_industrialization:raw_certus_quartz`
+      );
+      event.blasting(
+        `2x ${set.smeltsTo}_crystal`,
+        `modern_industrialization:raw_certus_quartz`
+      );
+
+      return;
+    }
+
     if (seen.indexOf(mat) != -1) {
       return;
     }
@@ -250,7 +294,6 @@ ServerEvents.recipes((event) => {
         .itemOut(`modern_industrialization:${mat}_dust`, 0.9);
     }
     seen.push(mat);
-    let set = ORE_PRODUCTS[mat];
     switch (mat) {
       // abusing switch case fallthrough like a real gamer
       case "iron":

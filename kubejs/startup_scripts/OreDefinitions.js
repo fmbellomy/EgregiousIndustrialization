@@ -183,6 +183,25 @@ makeVanillaNetherOre("iridium", "iron");
 makeVanillaNetherOre("platinum", "gold");
 makeVanillaNetherOre("emerald", "gold");
 
+// certus quartz
+MIMaterialEvents.addMaterials((event) => {
+  event.createMaterial(
+    "Certus Quartz",
+    "certus_quartz",
+    0x8abacc,
+    (builder) => {
+      builder
+        .addParts("crushed_dust")
+        .addExternalPart("gem", "ae2:certus_quartz")
+        .addExternalPart("dust", "ae2:certus_quartz_dust")
+        .customRegularPart("Washed Crushed Dust", "washed_crushed_dust")
+        .ore({ generate: false, ore_set: "iron" }, "minecraft:netherrack")
+        .setMainPart("ingot")
+        .rawMetal("iron");
+    }
+  );
+});
+
 // redstone
 MIMaterialEvents.modifyMaterial("redstone", (event) => {
   event.builder
