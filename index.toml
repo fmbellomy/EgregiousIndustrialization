@@ -993,6 +993,10 @@ file = "kubejs/startup_scripts/GTMOreBuilder.js"
 hash = "a58025a05793c04631f996a088a7ed5c4d681360336e79e42cd688a994839ea0"
 
 [[files]]
+file = "kubejs/startup_scripts/MIMachines/Keg.js"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
 file = "kubejs/startup_scripts/MIMachines/OreProcMachines.js"
 hash = "b6ba0acbcdb55b8eb7291f1c84de2e55b77d51e642feece8f1ebb9cd3ec182b9"
 
@@ -1245,6 +1249,11 @@ hash = "aee98cc4dacd56f788b7a7f024943e5a3ccf83bfe37d1104ea9d05b508d74369"
 metafile = true
 
 [[files]]
+file = "mods/hang-glider.pw.toml"
+hash = "70112a7b08034441ac4d4d97a41b9efe45e52dbdae7f1cc65979ab48e9fe74f7"
+metafile = true
+
+[[files]]
 file = "mods/hostile-neural-industrialization.pw.toml"
 hash = "a221c495e2684e0a089dac835b61a9c578b1c6b6d114201efa7fbd0e6b2f4ffd"
 metafile = true
@@ -1330,11 +1339,6 @@ hash = "7dca27f7b07c71ceb69bd4dc4639e23abc23072c09bbae272718b952341ec344"
 metafile = true
 
 [[files]]
-file = "mods/malum.pw.toml"
-hash = "8e856852abeefc7dfb7b3af0c81ca1f878cd9bec0cfe3a47218a4e8d1f1bff0d"
-metafile = true
-
-[[files]]
 file = "mods/mi-tweaks.pw.toml"
 hash = "32027a300782c810fd4b551c6345e126542bca97d29e7aabce6255d52f6f8276"
 metafile = true
@@ -1355,6 +1359,11 @@ hash = "252659cbaad2f31f723bf31d8ede250dc4b9c821c469f47b77d74e23864b4b45"
 metafile = true
 
 [[files]]
+file = "mods/modonomicon.pw.toml"
+hash = "5fac1da5aa2701c81ee3a93be467c8812e3a15f9ce6bfc654719aa7b3e18f328"
+metafile = true
+
+[[files]]
 file = "mods/mouse-tweaks.pw.toml"
 hash = "2bdee19bd39b4bd411d7c858a7978ca9d2bdda41c1cf15920ea6be0014663f79"
 metafile = true
@@ -1372,6 +1381,11 @@ metafile = true
 [[files]]
 file = "mods/openblocks-elevator.pw.toml"
 hash = "bc3e79ec7c82f0e4b752ba7f41709e1e87e25169cf96b7c38dafefeaf876a80f"
+metafile = true
+
+[[files]]
+file = "mods/pastel.pw.toml"
+hash = "ef39803bc82cbd30c1f0447898baaf1aca7b97e7b253e70acfd77f361266b41d"
 metafile = true
 
 [[files]]
@@ -1473,7 +1487,3 @@ metafile = true
 file = "mods/zume.pw.toml"
 hash = "7d24b0c83c5abbbe68ad6aea7e7e48191025492503c73de750f436f3afbffd92"
 metafile = true
-
-[[files]]
-file = "options.txt"
-hash = "1c3fcd91e0cca79ed84687415e768342e1c35d1ba759cc85fbb601bfbadc2751"
