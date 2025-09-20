@@ -1084,6 +1084,11 @@ hash = "e5664943a2c175b7771737f227346aec7d1d5882aa2dfccfd5cda484d3a7ada5"
 metafile = true
 
 [[files]]
+file = "mods/corpse.pw.toml"
+hash = "d4e404f869a1ac64ca8447681c2e6c3c7c64c7b186aa2f9c929693d4db23cb47"
+metafile = true
+
+[[files]]
 file = "mods/crawl.pw.toml"
 hash = "58d126c6ad01428ed0732b950955c1dee09d6dfeae07989ff31e697b5008ccf6"
 metafile = true
