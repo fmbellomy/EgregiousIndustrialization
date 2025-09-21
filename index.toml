@@ -78,7 +78,7 @@ hash = "2fcf4842374ee3ed4fcccff2b309799bd973c9b87d4b6d1cd0035caf37070927"
 
 [[files]]
 file = "config/chloride-client.json"
-hash = "8fbc2155b4dc71bcdeabddbe35970c8d9bf8236ac0b95d14d1f00df32786d7fa"
+hash = "3ae37351a26e4ccfb728c5b1a74678a83c883a3f6760c87dee8be35379200990"
 
 [[files]]
 file = "config/configuration-options.json"
@@ -210,7 +210,7 @@ hash = "7028df1500a2e6cb585a3b1dd7a9debc1644a4d4df4fdede8455a20b964a28c8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/the_beginning.snbt"
-hash = "52f3b7cd897e521ef69789e30c553c45b6400a5e2da8fcfd47f4f8e0c6076465"
+hash = "f973b848001d9ee944d697ffcc3f0b57744bbe561887ec292cbcd7c55188ae75"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/the_steam_age.snbt"
@@ -222,7 +222,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "d8757ed757682d8d030d7d03834891e319bf702961506dc6f079e701414fd750"
+hash = "246775b66435c188f0872c520cdb22f89c59c62e7340ca8140e4ded3621b7f05"
 
 [[files]]
 file = "config/functionalstorage/functionalstorage-client.toml"
@@ -909,6 +909,10 @@ file = "kubejs/server_scripts/mods/DrillTooltips.js"
 hash = "32a2e89879be3be1e45f85657dd407f98a46a05e28ab3ce3b3282db175a3b706"
 
 [[files]]
+file = "kubejs/server_scripts/mods/Egregious.js"
+hash = "269ec526b418dc58aed04520f8939826def1b4dd5ac6f708ef32d703ee23a4ac"
+
+[[files]]
 file = "kubejs/server_scripts/mods/Elevators.js"
 hash = "0c5bc9f2b0a3a3f635bdc604d59fadf2e90ea6f705323f7cf0e773e0cf5caa4f"
 
@@ -1470,3 +1474,7 @@ metafile = true
 file = "mods/zume.pw.toml"
 hash = "7d24b0c83c5abbbe68ad6aea7e7e48191025492503c73de750f436f3afbffd92"
 metafile = true
+
+[[files]]
+file = "options.txt"
+hash = "48cba8429a5ad41b62cfb8ed24108bb88a9e593062575f3bd7a2363f321c6763"
