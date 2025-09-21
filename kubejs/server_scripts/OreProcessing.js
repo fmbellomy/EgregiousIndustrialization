@@ -93,47 +93,45 @@ function keys(obj) {
 }
 
 ServerEvents.recipes((event) => {
-  event.smelting(
-    "modern_industrialization:silicon_ingot",
-    "modern_industrialization:silicon_dust"
-  );
-  event.remove({
-    type: "modern_industrialization:macerator",
-    input: "#c:raw_materials",
-  });
-  event.remove({
-    type: "minecraft:blasting",
-    input: "#c:raw_materials",
-  });
-  event.remove({
-    type: "minecraft:smelting",
-    input: "#c:raw_materials",
-  });
-  event.remove({
-    type: "minecraft:blasting",
-    input: "#c:dusts",
-  });
-  event.remove({
-    type: "minecraft:smelting",
-    input: "#c:dusts",
-  });
-  event.remove({
-    type: "minecraft:blasting",
-    input: "#c:ores",
-  });
-  event.remove({
-    type: "minecraft:smelting",
-    input: "#c:ores",
-  });
-  event.remove({
-    type: "minecraft:blasting",
-    input: "#egregious:crushed_dust",
-  });
-  event.remove({
-    type: "minecraft:smelting",
-    input: "#egregious:crushed_dust",
-  });
+  // crafting recipes for the egregious oreproc machines
 
+  // a lot of nuking
+  event.remove({
+    type: "modern_industrialization:macerator",
+    input: "#c:raw_materials",
+  });
+  event.remove({
+    type: "minecraft:blasting",
+    input: "#c:raw_materials",
+  });
+  event.remove({
+    type: "minecraft:smelting",
+    input: "#c:raw_materials",
+  });
+  event.remove({
+    type: "minecraft:blasting",
+    input: "#c:dusts",
+  });
+  event.remove({
+    type: "minecraft:smelting",
+    input: "#c:dusts",
+  });
+  event.remove({
+    type: "minecraft:blasting",
+    input: "#c:ores",
+  });
+  event.remove({
+    type: "minecraft:smelting",
+    input: "#c:ores",
+  });
+  event.remove({
+    type: "minecraft:blasting",
+    input: "#egregious:crushed_dust",
+  });
+  event.remove({
+    type: "minecraft:smelting",
+    input: "#egregious:crushed_dust",
+  });
   event.remove({
     type: "modern_industrialization:macerator",
     input: "#c:ores",
@@ -146,6 +144,36 @@ ServerEvents.recipes((event) => {
     type: "modern_industrialization:forge_hammer",
     input: "#c:raw_materials",
   });
+  // re add alloy dust smelting recipes
+  let MISmeltableDusts = [
+    "bronze",
+    "battery_alloy",
+    "invar",
+    "electrum",
+    "cupronickel",
+    "silicon",
+    "steel",
+    "cadmium",
+  ];
+  MISmeltableDusts.forEach((mat) => {
+    event.smelting(
+      `modern_industrialization:${mat}_ingot`,
+      `modern_industrialization:${mat}_dust`
+    );
+    event.blasting(
+      `modern_industrialization:${mat}_ingot`,
+      `modern_industrialization:${mat}_dust`
+    );
+  });
+  event.smelting(
+    `modern_industrialization:fire_clay_brick`,
+    `modern_industrialization:fire_clay_dust`
+  );
+  event.blasting(
+    `modern_industrialization:fire_clay_brick`,
+    `modern_industrialization:fire_clay_dust`
+  );
+
   // the like 2 or 3 chemical bath recipes:
 
   event.recipes.modern_industrialization
