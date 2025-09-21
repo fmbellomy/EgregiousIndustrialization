@@ -119,4 +119,20 @@ ServerEvents.recipes((event) => {
     .itemIn("modern_industrialization:basic_machine_hull")
     .itemIn("modern_industrialization:electronic_circuit")
     .itemOut("modern_industrialization:chemical_bath");
+
+  //Steel upgrade for custom ore washer
+  event.shapeless("modern_industrialization:steel_ore_washer", [
+    "modern_industrialization:bronze_ore_washer",
+    "modern_industrialization:steel_upgrade",
+  ]);
+  event.recipes.modern_industrialization
+    .unpacker(2, 100)
+    .itemIn("modern_industrialization:steel_ore_washer")
+    .itemOut("modern_industrialization:bronze_ore_washer")
+    .itemOut("modern_industrialization:steel_upgrade");
+  event.recipes.modern_industrialization
+    .packer(2, 100)
+    .itemIn("modern_industrialization:bronze_ore_washer")
+    .itemIn("modern_industrialization:steel_upgrade")
+    .itemOut("modern_industrialization:steel_ore_washer");
 });
