@@ -43,6 +43,7 @@
 				id: "egregiouscore:prospector"
 			}
 			id: "4E1F9630B410D8D9"
+			optional: true
 			rewards: [{
 				id: "32D6DEBD28E3F55A"
 				item: {
@@ -67,15 +68,26 @@
 				id: "justhammers:diamond_hammer"
 			}
 			id: "18145C44D82BFCC1"
-			rewards: [{
-				count: 4
-				id: "3771D69CDEAF500A"
-				item: {
-					count: 1
-					id: "justhammers:diamond_hammer"
+			rewards: [
+				{
+					count: 4
+					id: "3771D69CDEAF500A"
+					item: {
+						count: 1
+						id: "justhammers:diamond_hammer"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 2
+					id: "20034AB59CB3E28F"
+					item: {
+						count: 1
+						id: "elevatorid:elevator_white"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "63EAE75E30A30626"
 				type: "checkmark"
@@ -103,11 +115,11 @@
 			}
 			id: "1B69D979E18C44DF"
 			rewards: [{
-				count: 4
+				count: 16
 				id: "1F5CF36D3025034A"
 				item: {
 					count: 1
-					id: "minecraft:golden_carrot"
+					id: "minecraft:torch"
 				}
 				type: "item"
 			}]
@@ -133,36 +145,59 @@
 				{
 					count: 64L
 					id: "0268B03862110192"
-					item: { count: 64, id: "modern_industrialization:raw_chalcopyrite" }
+					item: { count: 1, id: "minecraft:copper_ingot" }
 					type: "item"
 				}
 				{
 					count: 64L
 					id: "403955B79AD00234"
-					item: { count: 64, id: "modern_industrialization:raw_magnetite" }
+					item: { count: 1, id: "minecraft:iron_ingot" }
 					type: "item"
 				}
 				{
 					count: 64L
 					id: "64F2DC57094BACBC"
-					item: { count: 64, id: "modern_industrialization:raw_galena" }
+					item: { count: 1, id: "modern_industrialization:lead_ingot" }
 					type: "item"
 				}
 				{
 					count: 64L
 					id: "12C90469636E19B5"
-					item: { count: 64, id: "modern_industrialization:raw_cassiterite" }
+					item: { count: 1, id: "modern_industrialization:tin_ingot" }
 					type: "item"
 				}
 				{
 					count: 64L
 					id: "5285741F17DAD1F3"
-					item: { count: 64, id: "modern_industrialization:raw_coal" }
+					item: { count: 1, id: "minecraft:coal" }
 					type: "item"
 				}
 			]
 			x: 0.0d
 			y: -5.0d
+		}
+		{
+			dependencies: ["2E59D716BFC35B25"]
+			icon: {
+				id: "sophisticatedbackpacks:backpack"
+			}
+			id: "083137342EEFE44E"
+			rewards: [{
+				count: 4
+				id: "110B44BA6E4EF082"
+				item: {
+					count: 1
+					id: "minecraft:string"
+				}
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "46EABCB8B2850841"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.0d
 		}
 	]
 }
