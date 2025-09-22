@@ -234,7 +234,7 @@ hash = "b662e890f6c9042543eac4cb672a09a78164abfbf790f8d139cdc7de52c59111"
 
 [[files]]
 file = "config/functionalstorage/functionalstorage-common.toml"
-hash = "17d2b12e9fbb5f811850b5a772b6c5e59c352ba8dd87957abdace159656e7771"
+hash = "03c1da18e660c0802ced976596105c2dfbbb75e01a706e946beadebb8c0634b8"
 
 [[files]]
 file = "config/gtmogs.yaml"
@@ -1107,11 +1107,6 @@ metafile = true
 [[files]]
 file = "mods/corpse.pw.toml"
 hash = "d4e404f869a1ac64ca8447681c2e6c3c7c64c7b186aa2f9c929693d4db23cb47"
-metafile = true
-
-[[files]]
-file = "mods/cosmetic-armor-reworked.pw.toml"
-hash = "b65ee01fec17228645121952de6dec75053b0b4c59a8c8036d6fa7829819f3f9"
 metafile = true
 
 [[files]]

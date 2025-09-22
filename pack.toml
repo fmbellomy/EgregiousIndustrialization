@@ -1,12 +1,12 @@
 name = "Egregious Industrialization"
 author = "esoterica"
-version = "0.3.6"
+version = "0.3.7"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "d1c10826191eca7f55311508f2ed855a6e3069de41edf795954d9e57bbf53689"
+hash = "039a41edcd289f2414dd73cd67e1f01e0203fc3d37180c167b52a14a41b23f5d"
 
 [versions]
 minecraft = "1.21.1"
