@@ -10,7 +10,7 @@ hash = "5edc2c19b287d8017ef05973a2791239ca901196e11137e132529127c65ee428"
 
 [[files]]
 file = "README.md"
-hash = "4d8794c48d5e33bb67adce8dc76af09353c0841dc583a3de5110cb414570328c"
+hash = "f27fe815174a6c3c7a9b65e1d49cbb57cf392a4fca09a1aaeffe64ebe934babc"
 
 [[files]]
 file = "assets/icon_cf.png"
@@ -71,10 +71,6 @@ hash = "1bb070627f60188b5924bd27f1e7fbf0b4cfe573c8a1f54bf7927c3c4d437f05"
 [[files]]
 file = "config/brewinandchewin-common.toml"
 hash = "cf7e8f3ae75a942e0c8b62f14fa68df3963b47c9c38895c2d7ba59c2bcb079ab"
-
-[[files]]
-file = "config/c2me.toml"
-hash = "2fcf4842374ee3ed4fcccff2b309799bd973c9b87d4b6d1cd0035caf37070927"
 
 [[files]]
 file = "config/chloride-client.json"
@@ -198,7 +194,7 @@ hash = "d378c529cc11bc4b4e2a7209126d4990e3cc20416f4ff1406cedf798e0784482"
 
 [[files]]
 file = "config/ftbchunks-world.snbt"
-hash = "a64373ebdb446c57fea95650598ffe0d052ab2503adce21838a0602a2f9d1556"
+hash = "c10c06139660bf3922fb3547fe187d225911e9a05288ed8fd6a9a4db368e08f0"
 
 [[files]]
 file = "config/ftblibrary-client.snbt"
@@ -321,20 +317,12 @@ file = "config/lodestone-client.toml"
 hash = "59f5173fd496c98f70ae63c226920b4e13f435885b80bc4de6e925237a7ddf40"
 
 [[files]]
-file = "config/malum-client.toml"
-hash = "151664b747dea14496dbfd5b7b078729defaa19274d9d56869b796a69c029338"
-
-[[files]]
-file = "config/malum-common.toml"
-hash = "a70a1cd3991e4ef7e8b4e2990b95f5845ec8f0a763e441a7e85470535723d24d"
-
-[[files]]
 file = "config/mi_sound_addon-common.toml"
 hash = "64f14d0b29fb848a62a87e50d470e09359f6ba722dbd860ad04989ed8621fa59"
 
 [[files]]
 file = "config/mi_tweaks-startup.toml"
-hash = "10b6a5395a53a34ea9065e5af78b803e9ad5966394201cea9469287256130eb6"
+hash = "22f74af9e2d933017dcde93f6798fba397b8106b3b3c440966f5afa28c088de0"
 
 [[files]]
 file = "config/midnightlib.json"
@@ -639,10 +627,6 @@ hash = "135495a82aa236b1585a096812419879af41bb74245b34fc88cec7584b3e0bc4"
 [[files]]
 file = "config/pastel.json5"
 hash = "3d5ef5fe7196355a86fe3b1d6e477136f739e28bc5f794c82dfb427af499f780"
-
-[[files]]
-file = "config/patternbetter-common.toml"
-hash = "d73a093c6bcf2dd68c60426705645ba851ee1a3bb070f0c9ff2a7e7007064eff"
 
 [[files]]
 file = "config/placebo.cfg"
@@ -1070,6 +1054,11 @@ hash = "1b71b694a3f9998d0e98ec6af0325490e1773e4e1b65f2b82b5bc7d43b73408b"
 metafile = true
 
 [[files]]
+file = "mods/c2me.pw.toml"
+hash = "3af907cf922d61a52ac9752b2b37fec990f298e367baf23ccd7622796e98dd92"
+metafile = true
+
+[[files]]
 file = "mods/chisel-reborn.pw.toml"
 hash = "53585ee2041174626662b53c08795a14d038874359079add62df022b64e6b9bd"
 metafile = true
@@ -1077,6 +1066,11 @@ metafile = true
 [[files]]
 file = "mods/chloride.pw.toml"
 hash = "581aaad9bdfac6a00ca50722d2a5567c68f7d3993c073b3c1d5798468ec4adb8"
+metafile = true
+
+[[files]]
+file = "mods/chunky-pregenerator-forge.pw.toml"
+hash = "7be63eaec6a70605f2f21cc30f0889fb27978c2e2fe62ee4584210502289e77d"
 metafile = true
 
 [[files]]
@@ -1136,7 +1130,7 @@ metafile = true
 
 [[files]]
 file = "mods/distant-horizons.pw.toml"
-hash = "aa0c2ab534fe56d93d1fb1d25be0a3613c9b05a1cbd5d3be9b72f10179c56232"
+hash = "922d5c801be36e0a9bf89a6f484e037af0911239db9060a19611c24c98d7038b"
 metafile = true
 
 [[files]]
@@ -1362,6 +1356,11 @@ metafile = true
 [[files]]
 file = "mods/mouse-tweaks.pw.toml"
 hash = "2bdee19bd39b4bd411d7c858a7978ca9d2bdda41c1cf15920ea6be0014663f79"
+metafile = true
+
+[[files]]
+file = "mods/noisium.pw.toml"
+hash = "c39f473bc613a79aaf8717ced14f9e081451118cd53521ac5d6e6cdd469a3f59"
 metafile = true
 
 [[files]]
