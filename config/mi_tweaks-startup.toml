@@ -1,7 +1,7 @@
 [tweaks]
 	#Whether water pumps require a water biome (river or ocean) to operate
 	#Default: false
-	require_water_biome_for_pump = true
+	require_water_biome_for_pump = false
 	#Whether item fuels should be blocked in multiblock boilers
 	#Default: false
 	disable_item_fuel_in_multiblock_boilers = true
