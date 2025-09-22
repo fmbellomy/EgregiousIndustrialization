@@ -28,7 +28,6 @@ RecipeViewerEvents.removeEntriesCompletely("item", (event) => {
     "snow_golem",
     "vindicator",
     "warden",
-    "zombified_piglin",
     "polar_bear",
   ];
   mobs.forEach(nukeHNNdataPredictions);

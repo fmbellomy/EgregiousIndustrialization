@@ -123,6 +123,7 @@ ServerEvents.recipes((event) => {
     C: "modern_industrialization:analog_circuit",
     D: "ae2:fluix_dust",
   });
+
 });
 
 // here's hoping that monifactory's script just works here...
@@ -139,10 +140,11 @@ ServerEvents.recipes((event) => {
     ["slime", "minecraft:slime_ball", "overworld", false],
     ["spider", "minecraft:spider_eye", "overworld", true],
     ["witch", "minecraft:glass_bottle", "overworld", true],
-    ["wither", "minecraft:nether_star", "nether", false],
+    ["wither", "minecraft:nether_star", "nether", true],
     ["wither_skeleton", "minecraft:wither_skeleton_skull", "nether", true],
     ["zombie", "minecraft:rotten_flesh", "overworld", false],
     ["drowned", "minecraft:sponge", "overworld", false],
+    ["zombified_piglin", "minecraft:gold_ingot", "nether", false]
     // animals for food
     ["pig", "minecraft:porkchop", "overworld", false],
     ["cow", "minecraft:beef", "overworld", false],
