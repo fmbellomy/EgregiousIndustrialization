@@ -60,17 +60,6 @@ ServerEvents.recipes((event) => {
     .itemOut("modern_industrialization:bronze_ore_washer");
 
   event.shaped(
-    "modern_industrialization:steel_ore_washer",
-    ["PRP", "GCG", "PPP"],
-    {
-      R: "modern_industrialization:bronze_rotor",
-      G: "modern_industrialization:bronze_gear",
-      C: "modern_industrialization:steel_machine_casing",
-      P: "#modern_industrialization:fluid_pipes",
-    }
-  );
-
-  event.shaped(
     "modern_industrialization:electric_ore_washer",
     ["URU", "PCP", "PAP"],
     {
