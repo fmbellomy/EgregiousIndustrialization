@@ -1,0 +1,26 @@
+{
+  "entity": "minecraft:zombified_piglin",
+  "name": {
+    "translate": "entity.minecraft.zombified_piglin",
+    "color": "#00916464"
+  },
+  "display": {},
+  "sim_cost": 64,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix"
+  },
+  "base_drop": {
+    "id": "hostilenetworks:overworld_prediction"
+  },
+  "trivia": "hostilenetworks.trivia.zombie",
+  "fabricator_drops": [
+    {
+      "id": "minecraft:rotten_flesh",
+      "count": 24
+    },
+    {
+      "id": "minecraft:gold_ingot",
+      "count": 8
+    }
+  ]
+}
