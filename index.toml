@@ -1056,6 +1056,11 @@ hash = "4696bddb459f4dade3c1be79d05e53566a975ae675d2e80a6e2760edbe223a45"
 metafile = true
 
 [[files]]
+file = "mods/balm.pw.toml"
+hash = "0c81a337b7e2d0a915b0789af42e5e044d6c04555c84606e305fd698d5fd4e00"
+metafile = true
+
+[[files]]
 file = "mods/bookshelf.pw.toml"
 hash = "1b71b694a3f9998d0e98ec6af0325490e1773e4e1b65f2b82b5bc7d43b73408b"
 metafile = true
@@ -1118,6 +1123,11 @@ metafile = true
 [[files]]
 file = "mods/cyclops-core.pw.toml"
 hash = "32360d0998a4da82fed533e0253707c03aa8657547b008bfe051bbb5075f8821"
+metafile = true
+
+[[files]]
+file = "mods/default-options.pw.toml"
+hash = "539513ed35cebfaa099397dde2d1936d38489c8685e96a902211f60cecee82c4"
 metafile = true
 
 [[files]]
