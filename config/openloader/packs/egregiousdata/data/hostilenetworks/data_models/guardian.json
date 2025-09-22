@@ -9,6 +9,7 @@
   "base_drop": {
     "id": "hostilenetworks:overworld_prediction"
   },
+  "trivia": "hostilenetworks.trivia.guardian",
   "fabricator_drops": [
     {
       "id": "minecraft:prismarine_shard",
