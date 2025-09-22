@@ -60,25 +60,6 @@ ServerEvents.recipes((event) => {
     .itemOut("modern_industrialization:bronze_ore_washer");
 
   event.shaped(
-    "modern_industrialization:steel_ore_washer",
-    ["PRP", "GCG", "PPP"],
-    {
-      R: "modern_industrialization:bronze_rotor",
-      G: "modern_industrialization:bronze_gear",
-      C: "modern_industrialization:steel_machine_casing",
-      P: "#modern_industrialization:fluid_pipes",
-    }
-  );
-
-  event.recipes.modern_industrialization
-    .assembler(8, 200)
-    .itemIn("modern_industrialization:bronze_rotor")
-    .itemIn("2x modern_industrialization:bronze_gear")
-    .itemIn("modern_industrialization:steel_machine_casing")
-    .itemIn("5x #modern_industrialization:fluid_pipes")
-    .itemOut("modern_industrialization:steel_ore_washer");
-
-  event.shaped(
     "modern_industrialization:electric_ore_washer",
     ["URU", "PCP", "PAP"],
     {
@@ -119,4 +100,20 @@ ServerEvents.recipes((event) => {
     .itemIn("modern_industrialization:basic_machine_hull")
     .itemIn("modern_industrialization:electronic_circuit")
     .itemOut("modern_industrialization:chemical_bath");
+
+  //Steel upgrade for custom ore washer
+  event.shapeless("modern_industrialization:steel_ore_washer", [
+    "modern_industrialization:bronze_ore_washer",
+    "modern_industrialization:steel_upgrade",
+  ]);
+  event.recipes.modern_industrialization
+    .unpacker(2, 100)
+    .itemIn("modern_industrialization:steel_ore_washer")
+    .itemOut("modern_industrialization:bronze_ore_washer")
+    .itemOut("modern_industrialization:steel_upgrade");
+  event.recipes.modern_industrialization
+    .packer(2, 100)
+    .itemIn("modern_industrialization:bronze_ore_washer")
+    .itemIn("modern_industrialization:steel_upgrade")
+    .itemOut("modern_industrialization:steel_ore_washer");
 });
