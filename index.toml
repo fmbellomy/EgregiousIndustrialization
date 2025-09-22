@@ -122,7 +122,7 @@ hash = "3861e1c9b5383e73030e33a4e00c34f64bce7a0f3f38dfb2be9c5ddedd2a7123"
 
 [[files]]
 file = "config/emi.css"
-hash = "ef29ffa364bb9d68611e126c57a99c3a0aa29f3c080dd935ffbcd66cf17691e6"
+hash = "adc61f17c2ed78facc55d3a075629b1ec4060a21fd0ebb5b61255cdc38428df5"
 
 [[files]]
 file = "config/emi_ores-client.json"
@@ -1021,6 +1021,11 @@ hash = "60ba2222fe00fe82a2ae4b24d9303ffff2d8570c53925a320b36d3f0c616a639"
 metafile = true
 
 [[files]]
+file = "mods/amplified-nether.pw.toml"
+hash = "9b2257b34a427ab6043af2f743f6c4e79920d6376f6cf2a214e18987381a055b"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "4ca8b963965342aafdfe251e5306259eb9cf459d43e46d9695974dcff01465aa"
 metafile = true
@@ -1053,11 +1058,6 @@ metafile = true
 [[files]]
 file = "mods/bookshelf.pw.toml"
 hash = "1b71b694a3f9998d0e98ec6af0325490e1773e4e1b65f2b82b5bc7d43b73408b"
-metafile = true
-
-[[files]]
-file = "mods/brewin-and-chewin.pw.toml"
-hash = "c854b73ec29fc1b2af09becafc5380d24dbe91ee809bd3803166563c13d98214"
 metafile = true
 
 [[files]]
