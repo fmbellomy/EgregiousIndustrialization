@@ -1,3 +1,4 @@
 config/iris.properties
 **.zip
 !config/openloader/packs/industrializationrefreshed.zip
+config/DistantHorizons.toml
