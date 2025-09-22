@@ -113,6 +113,10 @@ file = "config/databank-client.toml"
 hash = "f81175924941621df32734377dcf9701d13b0f5b7ef9d86bc5d3b64dc2eaf766"
 
 [[files]]
+file = "config/defaultoptions/keybindings.txt"
+hash = "56b1e6732e141ad6c9433de5ea08f19b929646aa8ecba326601feaa7ca589c3c"
+
+[[files]]
 file = "config/egregiouscore-common.toml"
 hash = "25b8632f221351713102b589b9c6633a7abb3180630a492171d2b1096fb707c5"
 
@@ -910,7 +914,7 @@ hash = "32a2e89879be3be1e45f85657dd407f98a46a05e28ab3ce3b3282db175a3b706"
 
 [[files]]
 file = "kubejs/server_scripts/mods/Egregious.js"
-hash = "269ec526b418dc58aed04520f8939826def1b4dd5ac6f708ef32d703ee23a4ac"
+hash = "3635fa88f23a2677018e7288d1da40bc15875c6378d15c8636a548317569ab44"
 
 [[files]]
 file = "kubejs/server_scripts/mods/Elevators.js"
@@ -1489,7 +1493,3 @@ metafile = true
 file = "mods/zume.pw.toml"
 hash = "7d24b0c83c5abbbe68ad6aea7e7e48191025492503c73de750f436f3afbffd92"
 metafile = true
-
-[[files]]
-file = "options.txt"
-hash = "48cba8429a5ad41b62cfb8ed24108bb88a9e593062575f3bd7a2363f321c6763"
