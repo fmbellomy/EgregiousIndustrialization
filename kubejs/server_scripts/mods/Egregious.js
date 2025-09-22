@@ -70,14 +70,6 @@ ServerEvents.recipes((event) => {
     }
   );
 
-  event.recipes.modern_industrialization
-    .assembler(8, 200)
-    .itemIn("modern_industrialization:bronze_rotor")
-    .itemIn("2x modern_industrialization:bronze_gear")
-    .itemIn("modern_industrialization:steel_machine_casing")
-    .itemIn("5x #modern_industrialization:fluid_pipes")
-    .itemOut("modern_industrialization:steel_ore_washer");
-
   event.shaped(
     "modern_industrialization:electric_ore_washer",
     ["URU", "PCP", "PAP"],
