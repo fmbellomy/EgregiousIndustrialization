@@ -1,0 +1,32 @@
+{
+  "entity": "minecraft:skeleton",
+  "variants": ["minecraft:stray"],
+  "name": { "translate": "entity.minecraft.skeleton", "color": "#00A5A5A5" },
+  "display": {},
+  "sim_cost": 64,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix"
+  },
+  "base_drop": {
+    "id": "hostilenetworks:overworld_prediction"
+  },
+  "trivia": "hostilenetworks.trivia.skeleton",
+  "fabricator_drops": [
+    {
+      "id": "minecraft:arrow",
+      "count": 64
+    },
+    {
+      "id": "minecraft:bone",
+      "count": 64
+    },
+    {
+      "id": "minecraft:skeleton_skull",
+      "count": 4
+    },
+    {
+      "id": "modern_industrialization:tin_ingot",
+      "count": 8
+    }
+  ]
+}

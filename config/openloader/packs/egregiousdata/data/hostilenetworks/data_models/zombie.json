@@ -1,0 +1,36 @@
+{
+  "entity": "minecraft:zombie",
+  "variants": ["minecraft:husk", "minecraft:zombie_villager"],
+  "name": { "translate": "entity.minecraft.zombie", "color": "#00345629" },
+  "display": {},
+  "sim_cost": 64,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix"
+  },
+  "base_drop": {
+    "id": "hostilenetworks:overworld_prediction"
+  },
+  "trivia": "hostilenetworks.trivia.zombie",
+  "fabricator_drops": [
+    {
+      "id": "minecraft:rotten_flesh",
+      "count": 24
+    },
+    {
+      "id": "minecraft:iron_ingot",
+      "count": 8
+    },
+    {
+      "id": "minecraft:carrot",
+      "count": 32
+    },
+    {
+      "id": "minecraft:potato",
+      "count": 32
+    },
+    {
+      "id": "minecraft:zombie_head",
+      "count": 6
+    }
+  ]
+}

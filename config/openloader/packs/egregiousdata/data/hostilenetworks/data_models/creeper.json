@@ -1,0 +1,29 @@
+{
+  "entity": "minecraft:creeper",
+  "name": { "translate": "entity.minecraft.creeper", "color": "#0062C152" },
+  "display": {
+    "scale": 0.8
+  },
+  "sim_cost": 64,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix"
+  },
+  "base_drop": {
+    "id": "hostilenetworks:overworld_prediction"
+  },
+  "trivia": "hostilenetworks.trivia.creeper",
+  "fabricator_drops": [
+    {
+      "id": "minecraft:gunpowder",
+      "count": 32
+    },
+    {
+      "id": "minecraft:creeper_head",
+      "count": 6
+    },
+    {
+      "id": "minecraft:coal",
+      "count": 32
+    }
+  ]
+}

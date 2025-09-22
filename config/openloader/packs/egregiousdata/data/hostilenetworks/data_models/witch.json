@@ -1,0 +1,29 @@
+{
+  "entity": "minecraft:witch",
+  "name": { "translate": "entity.minecraft.witch", "color": "#0030144D" },
+  "display": {
+    "scale": 0.8
+  },
+  "sim_cost": 512,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix"
+  },
+  "base_drop": {
+    "id": "hostilenetworks:overworld_prediction"
+  },
+  "trivia": "hostilenetworks.trivia.witch",
+  "fabricator_drops": [
+    {
+      "id": "minecraft:redstone",
+      "count": 16
+    },
+    {
+      "id": "minecraft:glowstone_dust",
+      "count": 16
+    },
+    {
+      "id": "minecraft:sugar",
+      "count": 16
+    }
+  ]
+}

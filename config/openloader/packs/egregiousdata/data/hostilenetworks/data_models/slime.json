@@ -1,0 +1,23 @@
+{
+  "entity": "minecraft:slime",
+  "name": { "translate": "entity.minecraft.slime", "color": "#004B7B3C" },
+  "display": { "scale": 2 },
+  "sim_cost": 64,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix"
+  },
+  "base_drop": {
+    "id": "hostilenetworks:overworld_prediction"
+  },
+  "trivia": "hostilenetworks.trivia.slime",
+  "fabricator_drops": [
+    {
+      "id": "minecraft:slime_ball",
+      "count": 32
+    },
+    {
+      "id": "modern_industrialization:nickel_ingot",
+      "count": 4
+    }
+  ]
+}

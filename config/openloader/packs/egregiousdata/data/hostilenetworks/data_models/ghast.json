@@ -1,0 +1,25 @@
+{
+  "entity": "minecraft:ghast",
+  "name": { "translate": "entity.minecraft.ghast", "color": "#00D3D3D3" },
+  "display": {
+    "scale": 0.25
+  },
+  "sim_cost": 1024,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix"
+  },
+  "base_drop": {
+    "id": "hostilenetworks:nether_prediction"
+  },
+  "trivia": "hostilenetworks.trivia.ghast",
+  "fabricator_drops": [
+    {
+      "id": "minecraft:ghast_tear",
+      "count": 2
+    },
+    {
+      "id": "modern_industrialization:silver_ingot",
+      "count": 12
+    }
+  ]
+}
