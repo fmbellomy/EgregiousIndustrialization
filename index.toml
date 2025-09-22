@@ -25,10 +25,6 @@ file = "assets/washed_crushed_dust.xcf"
 hash = "72db653493f9c926d8f600e476f341c8cccc7dffad9ab9218aae58ff74abe731"
 
 [[files]]
-file = "config/DistantHorizons.toml"
-hash = "76fe3cc955c43e017005070e7ab35133aeeabc6a3c0a53dbdc2b5aedb85e601d"
-
-[[files]]
 file = "config/MouseTweaks.cfg"
 hash = "4069ce1a439d8c37453c1b1e9f2037e0942674c7e48723a39b37eab245792ad4"
 
@@ -122,7 +118,7 @@ hash = "3861e1c9b5383e73030e33a4e00c34f64bce7a0f3f38dfb2be9c5ddedd2a7123"
 
 [[files]]
 file = "config/emi.css"
-hash = "adc61f17c2ed78facc55d3a075629b1ec4060a21fd0ebb5b61255cdc38428df5"
+hash = "9fa24b9307a960428865fddf89bf18ad0659141055e918cd113a3e510a2d2b7f"
 
 [[files]]
 file = "config/emi_ores-client.json"
@@ -475,6 +471,58 @@ hash = "679f8f39008a4f87b817d5c14f431281ca50b34c28345ca2b9c481020e5ee0a2"
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/overworld_tin.json"
 hash = "b3fa1a55def2de8f91607574308799fbac7a685fda337dc69e29c9824da33575"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/blaze.json"
+hash = "94d957878b0523190fe619b9bcaf0cc9d7c7192dd5a13b3556a672cdf90ee44a"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/creeper.json"
+hash = "5ea8ab11a60144ee2eec09a7d5817517d7cdcc3810bda5f228e4ad8391a56737"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/drowned.json"
+hash = "42935690bdf8125f64988c70dee20106da364e08d15eb2edbc86de34e6dbfdf5"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/enderman.json"
+hash = "66d584d5a4d010f001f4098a48ea356d4b3d5c5495275fa2be13b7295c779a05"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/ghast.json"
+hash = "fbc98380399983a28aab3f934c2cf65f19fee8991946e0e64843417c08df7a02"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/guardian.json"
+hash = "a6e768f898571fcc4a8b6cdc7d849f2d2c85205dc3dfc2eff1356697e9a3091b"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/shulker.json"
+hash = "a3860230ba50918ca92cd49c14c2d3fa804bb9ab103b0e3d15db44afdb5bc062"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/skeleton.json"
+hash = "60ae77a7f1569f8b648a83051c8e68e0b162ae0caf413d0bf7d7d397452ed2d5"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/slime.json"
+hash = "c6399d5677bbb361433b0fc82c01078dea903c1829e9ab764c62792eba7cffb6"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/spider.json"
+hash = "c9e6d0caa507fc6b9c33cfd7a227ad116d4b72508befbffbbf1a89cea20fcfaf"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/witch.json"
+hash = "01903b8f2f4d508eeb7cd1078e1f0839577591f044ce491a27eb2d5d39ec1091"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/wither_skeleton.json"
+hash = "ed52a49557f14488662d0371d86a6c047948921ca0fd4c01a1e1804d0c3b622b"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/zombie.json"
+hash = "2b3aebf787cfbd2d796d3c8fc700573767bf9ddd74f18287a38770de2775ef59"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/immersive_aircraft/airship.json"
@@ -1070,7 +1118,7 @@ metafile = true
 
 [[files]]
 file = "mods/chunky-pregenerator-forge.pw.toml"
-hash = "7be63eaec6a70605f2f21cc30f0889fb27978c2e2fe62ee4584210502289e77d"
+hash = "6f3b2586044baf55d5b1cb07752c9def847208270480bf9d893c803277493c1f"
 metafile = true
 
 [[files]]
