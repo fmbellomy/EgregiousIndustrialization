@@ -1,0 +1,27 @@
+{
+  "entity": "minecraft:blaze",
+  "name": { "translate": "entity.minecraft.blaze", "color": "#00E0BB23" },
+  "display": {},
+  "sim_cost": 1024,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix"
+  },
+  "base_drop": {
+    "id": "hostilenetworks:nether_prediction"
+  },
+  "trivia": "hostilenetworks.trivia.blaze",
+  "fabricator_drops": [
+    {
+      "id": "minecraft:blaze_rod",
+      "count": 10
+    },
+    {
+      "id": "modern_industrialization:sulfur_dust",
+      "count": 16
+    },
+    {
+      "id": "minecraft:magma_block",
+      "count": 32
+    }
+  ]
+}

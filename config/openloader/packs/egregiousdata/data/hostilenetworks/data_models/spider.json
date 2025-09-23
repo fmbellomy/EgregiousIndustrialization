@@ -1,0 +1,28 @@
+{
+  "entity": "minecraft:spider",
+  "variants": ["minecraft:cave_spider"],
+  "name": { "translate": "entity.minecraft.spider", "color": "#002C2621" },
+  "display": {},
+  "sim_cost": 64,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix"
+  },
+  "base_drop": {
+    "item": "hostilenetworks:overworld_prediction"
+  },
+  "trivia": "hostilenetworks.trivia.spider",
+  "fabricator_drops": [
+    {
+      "id": "minecraft:string",
+      "count": 32
+    },
+    {
+      "id": "minecraft:spider_eye",
+      "count": 16
+    },
+    {
+      "id": "minecraft:copper_ingot",
+      "count": 12
+    }
+  ]
+}

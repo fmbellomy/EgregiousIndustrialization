@@ -10,7 +10,7 @@ hash = "5edc2c19b287d8017ef05973a2791239ca901196e11137e132529127c65ee428"
 
 [[files]]
 file = "README.md"
-hash = "4d8794c48d5e33bb67adce8dc76af09353c0841dc583a3de5110cb414570328c"
+hash = "f27fe815174a6c3c7a9b65e1d49cbb57cf392a4fca09a1aaeffe64ebe934babc"
 
 [[files]]
 file = "assets/icon_cf.png"
@@ -23,10 +23,6 @@ hash = "d0ad51a990a726fbfd896355d97ffa3579507d2f13ea6016a10ab21400074f4d"
 [[files]]
 file = "assets/washed_crushed_dust.xcf"
 hash = "72db653493f9c926d8f600e476f341c8cccc7dffad9ab9218aae58ff74abe731"
-
-[[files]]
-file = "config/DistantHorizons.toml"
-hash = "76fe3cc955c43e017005070e7ab35133aeeabc6a3c0a53dbdc2b5aedb85e601d"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -71,10 +67,6 @@ hash = "1bb070627f60188b5924bd27f1e7fbf0b4cfe573c8a1f54bf7927c3c4d437f05"
 [[files]]
 file = "config/brewinandchewin-common.toml"
 hash = "cf7e8f3ae75a942e0c8b62f14fa68df3963b47c9c38895c2d7ba59c2bcb079ab"
-
-[[files]]
-file = "config/c2me.toml"
-hash = "2fcf4842374ee3ed4fcccff2b309799bd973c9b87d4b6d1cd0035caf37070927"
 
 [[files]]
 file = "config/chloride-client.json"
@@ -126,7 +118,7 @@ hash = "3861e1c9b5383e73030e33a4e00c34f64bce7a0f3f38dfb2be9c5ddedd2a7123"
 
 [[files]]
 file = "config/emi.css"
-hash = "adc61f17c2ed78facc55d3a075629b1ec4060a21fd0ebb5b61255cdc38428df5"
+hash = "9fa24b9307a960428865fddf89bf18ad0659141055e918cd113a3e510a2d2b7f"
 
 [[files]]
 file = "config/emi_ores-client.json"
@@ -198,7 +190,7 @@ hash = "d378c529cc11bc4b4e2a7209126d4990e3cc20416f4ff1406cedf798e0784482"
 
 [[files]]
 file = "config/ftbchunks-world.snbt"
-hash = "a64373ebdb446c57fea95650598ffe0d052ab2503adce21838a0602a2f9d1556"
+hash = "c10c06139660bf3922fb3547fe187d225911e9a05288ed8fd6a9a4db368e08f0"
 
 [[files]]
 file = "config/ftblibrary-client.snbt"
@@ -321,20 +313,12 @@ file = "config/lodestone-client.toml"
 hash = "59f5173fd496c98f70ae63c226920b4e13f435885b80bc4de6e925237a7ddf40"
 
 [[files]]
-file = "config/malum-client.toml"
-hash = "151664b747dea14496dbfd5b7b078729defaa19274d9d56869b796a69c029338"
-
-[[files]]
-file = "config/malum-common.toml"
-hash = "a70a1cd3991e4ef7e8b4e2990b95f5845ec8f0a763e441a7e85470535723d24d"
-
-[[files]]
 file = "config/mi_sound_addon-common.toml"
 hash = "64f14d0b29fb848a62a87e50d470e09359f6ba722dbd860ad04989ed8621fa59"
 
 [[files]]
 file = "config/mi_tweaks-startup.toml"
-hash = "10b6a5395a53a34ea9065e5af78b803e9ad5966394201cea9469287256130eb6"
+hash = "22f74af9e2d933017dcde93f6798fba397b8106b3b3c440966f5afa28c088de0"
 
 [[files]]
 file = "config/midnightlib.json"
@@ -489,6 +473,58 @@ file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/overwo
 hash = "b3fa1a55def2de8f91607574308799fbac7a685fda337dc69e29c9824da33575"
 
 [[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/blaze.json"
+hash = "94d957878b0523190fe619b9bcaf0cc9d7c7192dd5a13b3556a672cdf90ee44a"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/creeper.json"
+hash = "5ea8ab11a60144ee2eec09a7d5817517d7cdcc3810bda5f228e4ad8391a56737"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/drowned.json"
+hash = "42935690bdf8125f64988c70dee20106da364e08d15eb2edbc86de34e6dbfdf5"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/enderman.json"
+hash = "66d584d5a4d010f001f4098a48ea356d4b3d5c5495275fa2be13b7295c779a05"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/ghast.json"
+hash = "fbc98380399983a28aab3f934c2cf65f19fee8991946e0e64843417c08df7a02"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/guardian.json"
+hash = "a6e768f898571fcc4a8b6cdc7d849f2d2c85205dc3dfc2eff1356697e9a3091b"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/shulker.json"
+hash = "a3860230ba50918ca92cd49c14c2d3fa804bb9ab103b0e3d15db44afdb5bc062"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/skeleton.json"
+hash = "60ae77a7f1569f8b648a83051c8e68e0b162ae0caf413d0bf7d7d397452ed2d5"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/slime.json"
+hash = "c6399d5677bbb361433b0fc82c01078dea903c1829e9ab764c62792eba7cffb6"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/spider.json"
+hash = "c9e6d0caa507fc6b9c33cfd7a227ad116d4b72508befbffbbf1a89cea20fcfaf"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/witch.json"
+hash = "01903b8f2f4d508eeb7cd1078e1f0839577591f044ce491a27eb2d5d39ec1091"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/wither_skeleton.json"
+hash = "ed52a49557f14488662d0371d86a6c047948921ca0fd4c01a1e1804d0c3b622b"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/zombie.json"
+hash = "2b3aebf787cfbd2d796d3c8fc700573767bf9ddd74f18287a38770de2775ef59"
+
+[[files]]
 file = "config/openloader/packs/egregiousdata/data/immersive_aircraft/airship.json"
 hash = "42ae40e271dd17fb3ba1f5a772cbcc38b0d5b02042781bc502c0bac2ece29459"
 
@@ -639,10 +675,6 @@ hash = "135495a82aa236b1585a096812419879af41bb74245b34fc88cec7584b3e0bc4"
 [[files]]
 file = "config/pastel.json5"
 hash = "3d5ef5fe7196355a86fe3b1d6e477136f739e28bc5f794c82dfb427af499f780"
-
-[[files]]
-file = "config/patternbetter-common.toml"
-hash = "d73a093c6bcf2dd68c60426705645ba851ee1a3bb070f0c9ff2a7e7007064eff"
 
 [[files]]
 file = "config/placebo.cfg"
@@ -1070,6 +1102,11 @@ hash = "1b71b694a3f9998d0e98ec6af0325490e1773e4e1b65f2b82b5bc7d43b73408b"
 metafile = true
 
 [[files]]
+file = "mods/c2me.pw.toml"
+hash = "3af907cf922d61a52ac9752b2b37fec990f298e367baf23ccd7622796e98dd92"
+metafile = true
+
+[[files]]
 file = "mods/chisel-reborn.pw.toml"
 hash = "53585ee2041174626662b53c08795a14d038874359079add62df022b64e6b9bd"
 metafile = true
@@ -1077,6 +1114,11 @@ metafile = true
 [[files]]
 file = "mods/chloride.pw.toml"
 hash = "581aaad9bdfac6a00ca50722d2a5567c68f7d3993c073b3c1d5798468ec4adb8"
+metafile = true
+
+[[files]]
+file = "mods/chunky-pregenerator-forge.pw.toml"
+hash = "6f3b2586044baf55d5b1cb07752c9def847208270480bf9d893c803277493c1f"
 metafile = true
 
 [[files]]
@@ -1136,7 +1178,7 @@ metafile = true
 
 [[files]]
 file = "mods/distant-horizons.pw.toml"
-hash = "aa0c2ab534fe56d93d1fb1d25be0a3613c9b05a1cbd5d3be9b72f10179c56232"
+hash = "922d5c801be36e0a9bf89a6f484e037af0911239db9060a19611c24c98d7038b"
 metafile = true
 
 [[files]]
@@ -1365,6 +1407,11 @@ hash = "2bdee19bd39b4bd411d7c858a7978ca9d2bdda41c1cf15920ea6be0014663f79"
 metafile = true
 
 [[files]]
+file = "mods/noisium.pw.toml"
+hash = "c39f473bc613a79aaf8717ced14f9e081451118cd53521ac5d6e6cdd469a3f59"
+metafile = true
+
+[[files]]
 file = "mods/open-loader.pw.toml"
 hash = "a1d44e226b57ca9d8dc4129d1e9c4a3def96bf677c432f9b6d897085030e434f"
 metafile = true
@@ -1472,6 +1519,11 @@ metafile = true
 [[files]]
 file = "mods/tmrv.pw.toml"
 hash = "923dd26fd6e03736046cd5e449a27552ac077348bc96f14cea54fcb4949f2d35"
+metafile = true
+
+[[files]]
+file = "mods/toast-control.pw.toml"
+hash = "29d1e04030fcbdad4ee91eb9bc0b0d6b8907ffe967c9bd0543e8bb7e3dab5282"
 metafile = true
 
 [[files]]

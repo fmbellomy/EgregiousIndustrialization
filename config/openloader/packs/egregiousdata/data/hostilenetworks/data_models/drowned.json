@@ -1,0 +1,23 @@
+{
+  "entity": "minecraft:drowned",
+  "name": { "translate": "entity.minecraft.drowned", "color": "#0034565C" },
+  "display": {},
+  "sim_cost": 64,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix"
+  },
+  "base_drop": {
+    "id": "hostilenetworks:overworld_prediction"
+  },
+  "trivia": "hostilenetworks.trivia.zombie",
+  "fabricator_drops": [
+    {
+      "id": "minecraft:rotten_flesh",
+      "count": 40
+    },
+    {
+      "id": "minecraft:copper_ingot",
+      "count": 12
+    }
+  ]
+}

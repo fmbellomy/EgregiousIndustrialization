@@ -1,0 +1,25 @@
+{
+  "entity": "minecraft:enderman",
+  "name": { "translate": "entity.minecraft.enderman", "color": "#00131313" },
+  "display": {
+    "scale": 0.75
+  },
+  "sim_cost": 2048,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix"
+  },
+  "base_drop": {
+    "id": "hostilenetworks:end_prediction"
+  },
+  "trivia": "hostilenetworks.trivia.enderman",
+  "fabricator_drops": [
+    {
+      "id": "minecraft:ender_pearl",
+      "count": 6
+    },
+    {
+      "id": "minecraft:emerald",
+      "count": 6
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "entity": "minecraft:wither_skeleton",
+  "name": {
+    "translate": "entity.minecraft.wither_skeleton",
+    "color": "#002E2E2E"
+  },
+  "display": {},
+  "sim_cost": 1024,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix"
+  },
+  "base_drop": {
+    "id": "hostilenetworks:nether_prediction"
+  },
+  "fabricator_drops": [
+    {
+      "id": "minecraft:wither_skeleton_skull",
+      "count": 4
+    },
+    {
+      "id": "modern_industrialization:lead_ingot",
+      "count": 12
+    }
+  ]
+}
