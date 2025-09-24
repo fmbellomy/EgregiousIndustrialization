@@ -218,7 +218,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "246775b66435c188f0872c520cdb22f89c59c62e7340ca8140e4ded3621b7f05"
+hash = "6aea43c0c5dce2c51a813871af530c7015c7a000ae377700206903005c0d5111"
 
 [[files]]
 file = "config/functionalstorage/functionalstorage-client.toml"
@@ -889,12 +889,12 @@ file = "kubejs/assets/modern_industrialization/textures/block/machines/sifter/ov
 hash = "e8a7d74196bcb6ec00a40a3d6b9b4672ad2fcecc2d9304885a804c7cf8e9ec95"
 
 [[files]]
-file = "kubejs/client_scripts/jsconfig.json"
-hash = "bf3c8597df0521316f23f9412e02e076f925275dab3af1146a54fe008dfedcb1"
+file = "kubejs/client_scripts/Lang.js"
+hash = "895804d889ae06c813a14a190059afb30adfa21952d54b098572784a4b4f332f"
 
 [[files]]
-file = "kubejs/client_scripts/main.js"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+file = "kubejs/client_scripts/jsconfig.json"
+hash = "bf3c8597df0521316f23f9412e02e076f925275dab3af1146a54fe008dfedcb1"
 
 [[files]]
 file = "kubejs/config/client.json"
@@ -923,6 +923,10 @@ hash = "70253551a2fc19660019a0aa35189aa0a1de782a567cd7a866166eb8f55f1c39"
 [[files]]
 file = "kubejs/server_scripts/OreTags.js"
 hash = "b0e0078e376885ab8db27e30388cc0f91d3090c2a6c9a4a70f8f9329c216bc6a"
+
+[[files]]
+file = "kubejs/server_scripts/PeacefulAdapatations.js"
+hash = "714512f28992eb70b30a8063a6a6770a355039bf4505368de748c796445bd2ad"
 
 [[files]]
 file = "kubejs/server_scripts/VanillaRecipes.js"
@@ -974,7 +978,7 @@ hash = "728f90d70ab5387fba5a9f2af498589d33b498a7c4a00d1181dfd59bb065e63f"
 
 [[files]]
 file = "kubejs/server_scripts/mods/HostileNeuralNetworks.js"
-hash = "fffe426cf1623fe8b248ec9231a264363873582f6feefde40bac13f2f509b268"
+hash = "2fed71948c8cd9cf9724012cbc7e46beb20dcdacdc5a7949cf00fa95d0532515"
 
 [[files]]
 file = "kubejs/server_scripts/mods/ImmersiveAircraft.js"
@@ -983,6 +987,10 @@ hash = "990c968e14a2ace7e1c00edb2c8bbcd62a93e0f79b3d5c84803925666ad0dc3f"
 [[files]]
 file = "kubejs/server_scripts/mods/JustHammers.js"
 hash = "e385c706b4c72210fac6c15516e446b55827f3e9c3e9b00c694b84fca3e03c1b"
+
+[[files]]
+file = "kubejs/server_scripts/mods/Pastel.js"
+hash = "4e0fff7a1cb4f64be9b1ae177b99f2cfb5aa90d6f83b3382df5278173bb5a75d"
 
 [[files]]
 file = "kubejs/server_scripts/mods/SophisticatedBackpacks.js"
