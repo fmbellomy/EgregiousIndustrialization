@@ -219,7 +219,7 @@ ServerEvents.generateData("before_mods", (_) => {
   veins.sulfur_nether = {
     generator: egregiousUniformVein("sulfur", 25, 100, 130, 40, 44),
     dim: GTMOGS.NETHER,
-    ores: ["sulfur", "sulfur", "pyrite", "sphalerite"],
+    ores: ["sulfur", "sulfur", "pyrite", "pentlandite"],
     veinType: classic,
   };
   veins.diamond = {

@@ -266,7 +266,7 @@ MIMaterialEvents.modifyMaterial("bauxite", (event) => {
 // beryllium
 MIMaterialEvents.modifyMaterial("beryllium", (event) => {
   event.builder
-    .ore({ generate: false, ore_set: "gold" }, "minecraft:stone")
+    .ore({ generate: false, ore_set: "gold" })
     .ore({ generate: false, ore_set: "gold" }, "minecraft:netherrack")
     .rawMetal("gold")
     .customRegularPart("Washed Crushed Dust", "washed_crushed_dust")

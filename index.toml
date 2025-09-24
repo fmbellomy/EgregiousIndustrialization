@@ -494,7 +494,7 @@ hash = "fbc98380399983a28aab3f934c2cf65f19fee8991946e0e64843417c08df7a02"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/guardian.json"
-hash = "a6e768f898571fcc4a8b6cdc7d849f2d2c85205dc3dfc2eff1356697e9a3091b"
+hash = "f0e1de645fe2ce3caf572a8573a8df9d159774457cda1a246a3e1382f082f512"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/shulker.json"
@@ -518,11 +518,15 @@ hash = "01903b8f2f4d508eeb7cd1078e1f0839577591f044ce491a27eb2d5d39ec1091"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/wither_skeleton.json"
-hash = "ed52a49557f14488662d0371d86a6c047948921ca0fd4c01a1e1804d0c3b622b"
+hash = "e6223cf9675f7c928775d3d53fd4d0b91888c13a038213f09dbc17e3abe04a9a"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/zombie.json"
 hash = "2b3aebf787cfbd2d796d3c8fc700573767bf9ddd74f18287a38770de2775ef59"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/zombified_piglin.json"
+hash = "18c4af805053da06a95a2fe8c244297a20102f0238762726fed855208b44c0d0"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/immersive_aircraft/airship.json"
@@ -926,7 +930,7 @@ hash = "9ca09c6d4ad296623611f49e3f3c642b4d630ddc130421f700f4e65d3cece53e"
 
 [[files]]
 file = "kubejs/server_scripts/VeinDatagen.js"
-hash = "652e4c207a39ef34fcfcccf97b15395e063cc8c5e27b00f951cd7f0bd140bc0e"
+hash = "d0265ba8f0d2a5282d03a88459701aa507dbb13a28defaabfaddf3ba3a2436fd"
 
 [[files]]
 file = "kubejs/server_scripts/jsconfig.json"
@@ -970,7 +974,7 @@ hash = "728f90d70ab5387fba5a9f2af498589d33b498a7c4a00d1181dfd59bb065e63f"
 
 [[files]]
 file = "kubejs/server_scripts/mods/HostileNeuralNetworks.js"
-hash = "95f7c53fe355dbaa1fd98b2d6ea749d77be7ebf7ea0220b2938ea93f4adca9ac"
+hash = "fffe426cf1623fe8b248ec9231a264363873582f6feefde40bac13f2f509b268"
 
 [[files]]
 file = "kubejs/server_scripts/mods/ImmersiveAircraft.js"
@@ -994,7 +998,7 @@ hash = "4d0ef9d3cf6eb5fbfe07cc9f4d27bed63ee368e43f95450bdda67be69d60ce6e"
 
 [[files]]
 file = "kubejs/server_scripts/nukes/Redundancies.js"
-hash = "5aa785f0e7ca99a2af201512e6d3ba3f693fb021f52a37f8223cf5c4b66dc02a"
+hash = "053e5af201ff05ce29ef3e8f92d57900feff20be59080f9f0f9ae9395ad26c52"
 
 [[files]]
 file = "kubejs/startup_scripts/GTMOreBuilder.js"
@@ -1010,7 +1014,7 @@ hash = "b6ba0acbcdb55b8eb7291f1c84de2e55b77d51e642feece8f1ebb9cd3ec182b9"
 
 [[files]]
 file = "kubejs/startup_scripts/OreDefinitions.js"
-hash = "291c1cf2ab5255f225b4f293ab156c440dfbeb7189341c1dbc17500b2c888a63"
+hash = "67632dbf42b5904573f60171e4040ab57fe85bb40554ad6e48de945e51bf588e"
 
 [[files]]
 file = "kubejs/startup_scripts/jsconfig.json"
@@ -1118,7 +1122,7 @@ metafile = true
 
 [[files]]
 file = "mods/chunky-pregenerator-forge.pw.toml"
-hash = "7be63eaec6a70605f2f21cc30f0889fb27978c2e2fe62ee4584210502289e77d"
+hash = "6f3b2586044baf55d5b1cb07752c9def847208270480bf9d893c803277493c1f"
 metafile = true
 
 [[files]]
