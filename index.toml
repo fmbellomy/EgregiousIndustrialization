@@ -1152,6 +1152,11 @@ hash = "d4e404f869a1ac64ca8447681c2e6c3c7c64c7b186aa2f9c929693d4db23cb47"
 metafile = true
 
 [[files]]
+file = "mods/crafting-station.pw.toml"
+hash = "d6700b6bf1e49d97bd3c140692b20c0c0f2300e1f0590f71a8a3ccab94b404f8"
+metafile = true
+
+[[files]]
 file = "mods/crawl.pw.toml"
 hash = "f4f8b5eb8c1427b6bd83ca70a3dbec9845b8c5a37b9ba72b9a49ee0e45136562"
 metafile = true
