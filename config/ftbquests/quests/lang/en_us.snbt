@@ -57,7 +57,7 @@
 		"The biggest change from vanilla is &l&dore generation&r&r."
 	]
 	quest.4E1F9630B410D8D9.quest_desc: [
-		"Right clicking the a block with one of these will reveal nearby ore veins and mark them on your map."
+		"Right clicking a block with one of these will reveal nearby ore veins and mark them on your map."
 		""
 		"Opening up JourneyMap in full screen and clicking on the Ore Icon on the right will toggle their visibility."
 		""
