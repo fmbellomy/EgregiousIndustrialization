@@ -254,6 +254,7 @@ MIMaterialEvents.modifyMaterial("monazite", (event) => {
 // sulfur
 MIMaterialEvents.modifyMaterial("sulfur", (event) => {
   event.builder
+    .ore({ generate: false, ore_set: "copper" }, "minecraft:netherrack") // nether and overworld ores
     .ore({ generate: false, ore_set: "copper" })
     .setMainPart("ingot")
     .rawMetal("copper");

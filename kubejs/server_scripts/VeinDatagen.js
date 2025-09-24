@@ -207,13 +207,19 @@ ServerEvents.generateData("before_mods", (_) => {
   veins.coal = {
     generator: egregiousUniformVein("coal", 55, 80, 200, 32, 40),
     dim: GTMOGS.OVERWORLD,
-    ores: ["coal", "coal", "coal", "lignite_coal"],
+    ores: ["coal", "coal", "lignite_coal", "graphite"],
     veinType: classic,
   };
   veins.lignite_coal = {
     generator: egregiousUniformVein("lignite_coal", 30, 5, 250, 32, 40),
     dim: GTMOGS.OVERWORLD,
-    ores: ["lignite_coal", "lignite_coal", "lignite_coal", "coal"],
+    ores: ["lignite_coal", "sulfur", "lignite_coal", "coal"],
+    veinType: classic,
+  };
+  veins.sulfur_nether = {
+    generator: egregiousUniformVein("sulfur", 25, 100, 130, 40, 44),
+    dim: GTMOGS.NETHER,
+    ores: ["sulfur", "sulfur", "pyrite", "sphalerite"],
     veinType: classic,
   };
   veins.diamond = {
@@ -258,9 +264,15 @@ ServerEvents.generateData("before_mods", (_) => {
     ores: ["sheldonite", "platinum", "sheldonite", "iridium"],
     veinType: classic,
   };
-  veins.beryllium = {
+  veins.beryllium_nether = {
     generator: egregiousUniformVein("beryllium", 25, 5, 45, 36, 40),
     dim: GTMOGS.NETHER,
+    ores: ["beryllium", "emerald", "emerald", "thorium"],
+    veinType: classic,
+  };
+  veins.beryllium = {
+    generator: egregiousUniformVein("beryllium", 25, -60, 10, 36, 40),
+    dim: GTMOGS.OVERWORLD_DEEPSLATE,
     ores: ["beryllium", "emerald", "emerald", "thorium"],
     veinType: classic,
   };
