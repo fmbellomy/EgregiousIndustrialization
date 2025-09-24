@@ -218,7 +218,7 @@ hash = "d7dd511fa89cc9066374f537d8e9259d6caff8fe7db0a0a04db3af393100e0a4"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "246775b66435c188f0872c520cdb22f89c59c62e7340ca8140e4ded3621b7f05"
+hash = "6aea43c0c5dce2c51a813871af530c7015c7a000ae377700206903005c0d5111"
 
 [[files]]
 file = "config/functionalstorage/functionalstorage-client.toml"
@@ -494,7 +494,7 @@ hash = "fbc98380399983a28aab3f934c2cf65f19fee8991946e0e64843417c08df7a02"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/guardian.json"
-hash = "a6e768f898571fcc4a8b6cdc7d849f2d2c85205dc3dfc2eff1356697e9a3091b"
+hash = "f0e1de645fe2ce3caf572a8573a8df9d159774457cda1a246a3e1382f082f512"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/shulker.json"
@@ -518,11 +518,15 @@ hash = "01903b8f2f4d508eeb7cd1078e1f0839577591f044ce491a27eb2d5d39ec1091"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/wither_skeleton.json"
-hash = "ed52a49557f14488662d0371d86a6c047948921ca0fd4c01a1e1804d0c3b622b"
+hash = "e6223cf9675f7c928775d3d53fd4d0b91888c13a038213f09dbc17e3abe04a9a"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/zombie.json"
 hash = "2b3aebf787cfbd2d796d3c8fc700573767bf9ddd74f18287a38770de2775ef59"
+
+[[files]]
+file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/zombified_piglin.json"
+hash = "18c4af805053da06a95a2fe8c244297a20102f0238762726fed855208b44c0d0"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/immersive_aircraft/airship.json"
@@ -885,12 +889,12 @@ file = "kubejs/assets/modern_industrialization/textures/block/machines/sifter/ov
 hash = "e8a7d74196bcb6ec00a40a3d6b9b4672ad2fcecc2d9304885a804c7cf8e9ec95"
 
 [[files]]
-file = "kubejs/client_scripts/jsconfig.json"
-hash = "bf3c8597df0521316f23f9412e02e076f925275dab3af1146a54fe008dfedcb1"
+file = "kubejs/client_scripts/Lang.js"
+hash = "895804d889ae06c813a14a190059afb30adfa21952d54b098572784a4b4f332f"
 
 [[files]]
-file = "kubejs/client_scripts/main.js"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+file = "kubejs/client_scripts/jsconfig.json"
+hash = "bf3c8597df0521316f23f9412e02e076f925275dab3af1146a54fe008dfedcb1"
 
 [[files]]
 file = "kubejs/config/client.json"
@@ -921,12 +925,16 @@ file = "kubejs/server_scripts/OreTags.js"
 hash = "b0e0078e376885ab8db27e30388cc0f91d3090c2a6c9a4a70f8f9329c216bc6a"
 
 [[files]]
+file = "kubejs/server_scripts/PeacefulAdapatations.js"
+hash = "714512f28992eb70b30a8063a6a6770a355039bf4505368de748c796445bd2ad"
+
+[[files]]
 file = "kubejs/server_scripts/VanillaRecipes.js"
 hash = "9ca09c6d4ad296623611f49e3f3c642b4d630ddc130421f700f4e65d3cece53e"
 
 [[files]]
 file = "kubejs/server_scripts/VeinDatagen.js"
-hash = "652e4c207a39ef34fcfcccf97b15395e063cc8c5e27b00f951cd7f0bd140bc0e"
+hash = "d0265ba8f0d2a5282d03a88459701aa507dbb13a28defaabfaddf3ba3a2436fd"
 
 [[files]]
 file = "kubejs/server_scripts/jsconfig.json"
@@ -970,7 +978,7 @@ hash = "728f90d70ab5387fba5a9f2af498589d33b498a7c4a00d1181dfd59bb065e63f"
 
 [[files]]
 file = "kubejs/server_scripts/mods/HostileNeuralNetworks.js"
-hash = "95f7c53fe355dbaa1fd98b2d6ea749d77be7ebf7ea0220b2938ea93f4adca9ac"
+hash = "2fed71948c8cd9cf9724012cbc7e46beb20dcdacdc5a7949cf00fa95d0532515"
 
 [[files]]
 file = "kubejs/server_scripts/mods/ImmersiveAircraft.js"
@@ -979,6 +987,10 @@ hash = "990c968e14a2ace7e1c00edb2c8bbcd62a93e0f79b3d5c84803925666ad0dc3f"
 [[files]]
 file = "kubejs/server_scripts/mods/JustHammers.js"
 hash = "e385c706b4c72210fac6c15516e446b55827f3e9c3e9b00c694b84fca3e03c1b"
+
+[[files]]
+file = "kubejs/server_scripts/mods/Pastel.js"
+hash = "4e0fff7a1cb4f64be9b1ae177b99f2cfb5aa90d6f83b3382df5278173bb5a75d"
 
 [[files]]
 file = "kubejs/server_scripts/mods/SophisticatedBackpacks.js"
@@ -994,7 +1006,7 @@ hash = "4d0ef9d3cf6eb5fbfe07cc9f4d27bed63ee368e43f95450bdda67be69d60ce6e"
 
 [[files]]
 file = "kubejs/server_scripts/nukes/Redundancies.js"
-hash = "5aa785f0e7ca99a2af201512e6d3ba3f693fb021f52a37f8223cf5c4b66dc02a"
+hash = "053e5af201ff05ce29ef3e8f92d57900feff20be59080f9f0f9ae9395ad26c52"
 
 [[files]]
 file = "kubejs/startup_scripts/GTMOreBuilder.js"
@@ -1010,7 +1022,7 @@ hash = "b6ba0acbcdb55b8eb7291f1c84de2e55b77d51e642feece8f1ebb9cd3ec182b9"
 
 [[files]]
 file = "kubejs/startup_scripts/OreDefinitions.js"
-hash = "291c1cf2ab5255f225b4f293ab156c440dfbeb7189341c1dbc17500b2c888a63"
+hash = "67632dbf42b5904573f60171e4040ab57fe85bb40554ad6e48de945e51bf588e"
 
 [[files]]
 file = "kubejs/startup_scripts/jsconfig.json"
@@ -1149,6 +1161,11 @@ metafile = true
 [[files]]
 file = "mods/corpse.pw.toml"
 hash = "d4e404f869a1ac64ca8447681c2e6c3c7c64c7b186aa2f9c929693d4db23cb47"
+metafile = true
+
+[[files]]
+file = "mods/crafting-station.pw.toml"
+hash = "d6700b6bf1e49d97bd3c140692b20c0c0f2300e1f0590f71a8a3ccab94b404f8"
 metafile = true
 
 [[files]]

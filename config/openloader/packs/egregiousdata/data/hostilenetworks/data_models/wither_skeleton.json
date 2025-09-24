@@ -12,6 +12,7 @@
   "base_drop": {
     "id": "hostilenetworks:nether_prediction"
   },
+  "trivia": "hostilenetworks.trivia.wither_skeleton",
   "fabricator_drops": [
     {
       "id": "minecraft:wither_skeleton_skull",
