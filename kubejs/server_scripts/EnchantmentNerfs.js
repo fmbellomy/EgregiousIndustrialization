@@ -1,7 +1,10 @@
-MoreJSEvents.filterEnchantedBookTrade((event) => {
-  event.remove("minecraft:mending"); // mending gtfo
+// remove mending from villager trades
+/*MoreJS.filterEnchantedBookTrade((event) => {
+  event.remove("minecraft:mending");
 });
-MoreJSEvents.enchantmentTableChanged((event) => {
+*/
+// remove fortune from valid hammer enchants
+MoreJS.enchantmentTableChanged((event) => {
   // if the item isn't from justhammers, ignore it
   if (event.item.toString().indexOf("justhammers") == -1) {
     return;
@@ -12,6 +15,6 @@ MoreJSEvents.enchantmentTableChanged((event) => {
     slot.removeEnchantments((enchantment, level) => {
       return enchantment == "minecraft:fortune";
     });
-    slot.updateClue();
+    slot.randomClue();
   }
 });
