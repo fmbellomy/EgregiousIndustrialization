@@ -918,7 +918,7 @@ hash = "60cbcf33b66716891560766ba2aed17f5b66c218758929a14f8d66ce4251cecd"
 
 [[files]]
 file = "kubejs/server_scripts/OreProcessing.js"
-hash = "70253551a2fc19660019a0aa35189aa0a1de782a567cd7a866166eb8f55f1c39"
+hash = "b06a85a03dc296f61b0ecabe712286e6486b12a4c55600330fb8a95de011ea01"
 
 [[files]]
 file = "kubejs/server_scripts/OreTags.js"
@@ -926,7 +926,7 @@ hash = "b0e0078e376885ab8db27e30388cc0f91d3090c2a6c9a4a70f8f9329c216bc6a"
 
 [[files]]
 file = "kubejs/server_scripts/PeacefulAdapatations.js"
-hash = "714512f28992eb70b30a8063a6a6770a355039bf4505368de748c796445bd2ad"
+hash = "bd5b7863272d9be14afa16ef33a502da777236b05af581d485a30193947070a1"
 
 [[files]]
 file = "kubejs/server_scripts/VanillaRecipes.js"
@@ -934,7 +934,7 @@ hash = "9ca09c6d4ad296623611f49e3f3c642b4d630ddc130421f700f4e65d3cece53e"
 
 [[files]]
 file = "kubejs/server_scripts/VeinDatagen.js"
-hash = "d0265ba8f0d2a5282d03a88459701aa507dbb13a28defaabfaddf3ba3a2436fd"
+hash = "dceb2f71f60b31e161ebe790e9a17debe75ac7b84b12064d34cdfb1563a3dc0f"
 
 [[files]]
 file = "kubejs/server_scripts/jsconfig.json"
@@ -954,7 +954,7 @@ hash = "32a2e89879be3be1e45f85657dd407f98a46a05e28ab3ce3b3282db175a3b706"
 
 [[files]]
 file = "kubejs/server_scripts/mods/Egregious.js"
-hash = "3635fa88f23a2677018e7288d1da40bc15875c6378d15c8636a548317569ab44"
+hash = "c46349a773cd242712ca26ae956d9be40d196aba57d711902c2964a2e3c4fc2f"
 
 [[files]]
 file = "kubejs/server_scripts/mods/Elevators.js"
@@ -1007,6 +1007,10 @@ hash = "4d0ef9d3cf6eb5fbfe07cc9f4d27bed63ee368e43f95450bdda67be69d60ce6e"
 [[files]]
 file = "kubejs/server_scripts/nukes/Redundancies.js"
 hash = "053e5af201ff05ce29ef3e8f92d57900feff20be59080f9f0f9ae9395ad26c52"
+
+[[files]]
+file = "kubejs/startup_scripts/Fluids.js"
+hash = "2b1582dcc6eb16b34b63887c4c302724365b245e74383d66b03d2f4eddcf4027"
 
 [[files]]
 file = "kubejs/startup_scripts/GTMOreBuilder.js"
@@ -1416,6 +1420,11 @@ metafile = true
 [[files]]
 file = "mods/modonomicon.pw.toml"
 hash = "5fac1da5aa2701c81ee3a93be467c8812e3a15f9ce6bfc654719aa7b3e18f328"
+metafile = true
+
+[[files]]
+file = "mods/morejs.pw.toml"
+hash = "b1a1157abdc88e4b6e86f4ea3df6dc41f3e7c5aebd763b5fc7604d1704628886"
 metafile = true
 
 [[files]]
