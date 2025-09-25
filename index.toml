@@ -934,7 +934,7 @@ hash = "bd5b7863272d9be14afa16ef33a502da777236b05af581d485a30193947070a1"
 
 [[files]]
 file = "kubejs/server_scripts/VanillaRecipes.js"
-hash = "4fe8095256ab3fc5e2af731b5ad1ae03901a0153142dad064e9b0f5116c62ed2"
+hash = "7f5f462b78a890da66ecc5ef7279af84c7c2f2927e7ff1971c18872cd04c94ff"
 
 [[files]]
 file = "kubejs/server_scripts/VeinDatagen.js"
@@ -1474,6 +1474,11 @@ metafile = true
 [[files]]
 file = "mods/pastel.pw.toml"
 hash = "ef39803bc82cbd30c1f0447898baaf1aca7b97e7b253e70acfd77f361266b41d"
+metafile = true
+
+[[files]]
+file = "mods/patchouli.pw.toml"
+hash = "b7fec81bc4939896a1feb78c16cb17fd3140092e7ceca993bf982387e6b7bdca"
 metafile = true
 
 [[files]]
