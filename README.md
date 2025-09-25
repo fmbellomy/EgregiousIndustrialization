@@ -8,9 +8,9 @@ The pack is in fairly early stages of development still, and many mods still nee
 
 ## A Note for Server Admins
 
-Distant Horizons is not included in the server pack by default, to allow for using C2ME and Chunky on the server. World generation is particularly slow due in part to the increased world height in our Tectonic configuration.
+Distant Horizons is not included in the server pack by default, to allow for using C2ME and Chunky on the server. World generation is particularly slow due in part to the increased world height in our Tectonic configuration. Unless C2ME causes problems, I would personally suggest that you keep it instead of using Distant Horizons on the server. C2ME already supports extended render distances out of the box, and in my experience has worked more consistently than server-side Distant Horizons.
 
-If you want to use Distant Horizons server side, it is recommended that you
+If you still want to use Distant Horizons server side, it is recommended that you
 
 1.  Perform any desired Chunk Pregeneration w/ C2ME+Chunky
 2.  Remove C2ME+Chunky
