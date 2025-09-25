@@ -10,7 +10,7 @@ hash = "5edc2c19b287d8017ef05973a2791239ca901196e11137e132529127c65ee428"
 
 [[files]]
 file = "README.md"
-hash = "f27fe815174a6c3c7a9b65e1d49cbb57cf392a4fca09a1aaeffe64ebe934babc"
+hash = "478dc5d53d8658c0bc46afaed2749d6cd2c7ca503b9426ef53729405bfe36c12"
 
 [[files]]
 file = "assets/icon_cf.png"
@@ -917,6 +917,10 @@ file = "kubejs/server_scripts/BlockLoot.js"
 hash = "60cbcf33b66716891560766ba2aed17f5b66c218758929a14f8d66ce4251cecd"
 
 [[files]]
+file = "kubejs/server_scripts/EnchantmentNerfs.js"
+hash = "64a7cf4f87ef3d336185e4643a2460b3720ad614883ba8ca196b8ad92a32adbf"
+
+[[files]]
 file = "kubejs/server_scripts/OreProcessing.js"
 hash = "b06a85a03dc296f61b0ecabe712286e6486b12a4c55600330fb8a95de011ea01"
 
@@ -930,7 +934,7 @@ hash = "bd5b7863272d9be14afa16ef33a502da777236b05af581d485a30193947070a1"
 
 [[files]]
 file = "kubejs/server_scripts/VanillaRecipes.js"
-hash = "9ca09c6d4ad296623611f49e3f3c642b4d630ddc130421f700f4e65d3cece53e"
+hash = "e768916c33396661cd704e3dc0d6a685dc3abf87d6b4ec5780733f5d5335d273"
 
 [[files]]
 file = "kubejs/server_scripts/VeinDatagen.js"
@@ -986,7 +990,7 @@ hash = "990c968e14a2ace7e1c00edb2c8bbcd62a93e0f79b3d5c84803925666ad0dc3f"
 
 [[files]]
 file = "kubejs/server_scripts/mods/JustHammers.js"
-hash = "e385c706b4c72210fac6c15516e446b55827f3e9c3e9b00c694b84fca3e03c1b"
+hash = "da7d149437935b2e91e7c9b857522a56710eb02499e3219c9b24ad564cc8a84c"
 
 [[files]]
 file = "kubejs/server_scripts/mods/Pastel.js"
