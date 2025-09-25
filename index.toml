@@ -118,7 +118,7 @@ hash = "3861e1c9b5383e73030e33a4e00c34f64bce7a0f3f38dfb2be9c5ddedd2a7123"
 
 [[files]]
 file = "config/emi.css"
-hash = "9fa24b9307a960428865fddf89bf18ad0659141055e918cd113a3e510a2d2b7f"
+hash = "adc61f17c2ed78facc55d3a075629b1ec4060a21fd0ebb5b61255cdc38428df5"
 
 [[files]]
 file = "config/emi_ores-client.json"
@@ -294,7 +294,7 @@ hash = "53a75e746d4e4ffc891189f38b031a262936749061ab85bfc037b78bbc55f8d7"
 
 [[files]]
 file = "config/justhammers.json"
-hash = "8beb976cccdb18afdf50b327cbfc109aef189a17be5b9989310353d4573edd57"
+hash = "09c27d23148b91ca99ae73dc4a2e61cb532eab3ab05ff8252296aa116b2fa315"
 
 [[files]]
 file = "config/leavesbegone-server.toml"
@@ -922,7 +922,7 @@ hash = "64a7cf4f87ef3d336185e4643a2460b3720ad614883ba8ca196b8ad92a32adbf"
 
 [[files]]
 file = "kubejs/server_scripts/OreProcessing.js"
-hash = "b06a85a03dc296f61b0ecabe712286e6486b12a4c55600330fb8a95de011ea01"
+hash = "0c9bea5943b4e4e580d8ed0aa092b40275a1e7908a5a463a4ef931968a3947a4"
 
 [[files]]
 file = "kubejs/server_scripts/OreTags.js"
@@ -934,7 +934,7 @@ hash = "bd5b7863272d9be14afa16ef33a502da777236b05af581d485a30193947070a1"
 
 [[files]]
 file = "kubejs/server_scripts/VanillaRecipes.js"
-hash = "e768916c33396661cd704e3dc0d6a685dc3abf87d6b4ec5780733f5d5335d273"
+hash = "4fe8095256ab3fc5e2af731b5ad1ae03901a0153142dad064e9b0f5116c62ed2"
 
 [[files]]
 file = "kubejs/server_scripts/VeinDatagen.js"
@@ -1099,6 +1099,21 @@ metafile = true
 [[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "6d3a1c92eee4dd671253c41ec000ae48064a33c45263d6adce5cad466395169d"
+metafile = true
+
+[[files]]
+file = "mods/ars-additions.pw.toml"
+hash = "967449279987357bbdd339b391dc4271bed832a161be61fcb964057af7943f72"
+metafile = true
+
+[[files]]
+file = "mods/ars-caelum.pw.toml"
+hash = "8a31276591786ef98f0052095a342649b3d55842d1544d9b8e9e82c21ad12c26"
+metafile = true
+
+[[files]]
+file = "mods/ars-nouveau.pw.toml"
+hash = "ac1e99c85e3033176eb9a2b9e1ef2c01d6e8353fc2dac96242bb76cb22eff410"
 metafile = true
 
 [[files]]
