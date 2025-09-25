@@ -100,6 +100,8 @@ ServerEvents.recipes((event) => {
     type: "modern_industrialization:macerator",
     input: "#c:raw_materials",
   });
+  event.remove({ input: "#c:raw_materials", output: "#c:storage_blocks" });
+  event.remove({ output: "#c:raw_materials", input: "#c:storage_blocks" });
   event.remove({
     type: "modern_industrialization:macerator",
     input: "#egregious:crushed_dust",
@@ -257,7 +259,15 @@ ServerEvents.recipes((event) => {
         .replace("_ore", "");
       return item;
     });
-
+  let rawifiedVanillaMats = [
+    "emerald",
+    "lapis",
+    "diamond",
+    "redstone",
+    "coal",
+    "quartz",
+  ];
+  let vanillaRawOres = ["iron", "copper", "gold"];
   let seen = [];
   namespacedMats.forEach((nsMat) => {
     let namespace = nsMat.split(":")[0];
@@ -266,6 +276,34 @@ ServerEvents.recipes((event) => {
     }
     let mat = nsMat.split(":")[1];
     let set = ORE_PRODUCTS[mat];
+
+    if (seen.indexOf(mat) != -1) {
+      return;
+    }
+    seen.push(mat);
+
+    if (vanillaRawOres.includes(mat)) {
+      event.shapeless(Item.of(`minecraft:raw_${mat}_block`), [
+        `9x minecraft:raw_${mat}`,
+      ]);
+      event.shapeless(Item.of(`minecraft:raw_${mat}`, 9), [
+        `minecraft:raw_${mat}_block`,
+      ]);
+    } else if (!rawifiedVanillaMats.includes(mat)) {
+      event.shapeless(Item.of(`${namespace}:raw_${mat}_block`), [
+        `9x modern_industrialization:raw_${mat}`,
+      ]);
+      event.shapeless(Item.of(`modern_industrialization:raw_${mat}`, 9), [
+        `${namespace}:raw_${mat}_block`,
+      ]);
+    } else {
+      event.shapeless(Item.of(`modern_industrialization:raw_${mat}_block`), [
+        `9x modern_industrialization:raw_${mat}`,
+      ]);
+      event.shapeless(Item.of(`modern_industrialization:raw_${mat}`, 9), [
+        `modern_industrialization:raw_${mat}_block`,
+      ]);
+    }
 
     if (mat == "certus_quartz") {
       event.recipes.modern_industrialization
@@ -306,10 +344,6 @@ ServerEvents.recipes((event) => {
       return;
     }
 
-    if (seen.indexOf(mat) != -1) {
-      return;
-    }
-
     // sifting
     if (Item.getItem(`${nsMat}`).hasTag("c:gems") && mat !== "lapis") {
       event.recipes.modern_industrialization
@@ -325,7 +359,6 @@ ServerEvents.recipes((event) => {
         .itemOut(`${nsMat}`, 0.05)
         .itemOut(`modern_industrialization:${mat}_dust`, 0.9);
     }
-    seen.push(mat);
     switch (mat) {
       // abusing switch case fallthrough like a real gamer
       case "iron":
