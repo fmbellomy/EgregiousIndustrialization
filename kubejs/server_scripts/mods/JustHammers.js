@@ -1,10 +1,5 @@
 ServerEvents.recipes((event) => {
   event.replaceInput(
-    { mod: "justhammers" },
-    "minecraft:stick",
-    "modern_industrialization:steel_rod"
-  );
-  event.replaceInput(
     { mod: "justhammers", output: "justhammers:impact_core" },
     "minecraft:redstone",
     "modern_industrialization:steel_plate"
