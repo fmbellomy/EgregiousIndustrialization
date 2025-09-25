@@ -9,10 +9,9 @@ ServerEvents.recipes((event) => {
 
   // diamond tools/armor
   event.remove([
-    { input: "minecraft:iron_ingot", output: "#c:armors" },
     { input: "minecraft:gold_ingot", output: "#c:armors" },
     { input: "minecraft:diamond", output: "#c:armors" },
-    { input: "minecraft:diamond", output: "c:tools" },
+    { input: "minecraft:diamond", output: "#c:tools" },
   ]);
   // replace diamond plate recipe
   event.remove({ output: "modern_industrialization:diamond_plate" });
@@ -30,38 +29,38 @@ ServerEvents.recipes((event) => {
     "modern_industrialization:iron_plate"
   );
   // GOLD
-  event.shaped("minecraft:gold_helmet", ["PPP", "POP", "   "], {
+  event.shaped("minecraft:golden_helmet", ["PPP", "POP", "   "], {
     P: "modern_industrialization:gold_plate",
     O: "minecraft:iron_helmet",
   });
-  event.shaped("minecraft:gold_chestplate", ["POP", "PPP", "PPP"], {
+  event.shaped("minecraft:golden_chestplate", ["POP", "PPP", "PPP"], {
     P: "modern_industrialization:gold_plate",
     O: "minecraft:iron_chestplate",
   });
-  event.shaped("minecraft:gold_leggings", ["PPP", "POP", "P P"], {
+  event.shaped("minecraft:golden_leggings", ["PPP", "POP", "P P"], {
     P: "modern_industrialization:gold_plate",
     O: "minecraft:iron_leggings",
   });
-  event.shaped("minecraft:gold_boots", ["P P", "POP", "   "], {
+  event.shaped("minecraft:golden_boots", ["P P", "POP", "   "], {
     P: "modern_industrialization:gold_plate",
     O: "minecraft:iron_boots",
   });
   // DIAMOND
   event.shaped("minecraft:diamond_helmet", ["PPP", "POP", "   "], {
     P: "modern_industrialization:diamond_plate",
-    O: "minecraft:gold_helmet",
+    O: "minecraft:golden_helmet",
   });
   event.shaped("minecraft:diamond_chestplate", ["POP", "PPP", "PPP"], {
     P: "modern_industrialization:diamond_plate",
-    O: "minecraft:gold_chestplate",
+    O: "minecraft:golden_chestplate",
   });
   event.shaped("minecraft:diamond_leggings", ["PPP", "POP", "P P"], {
     P: "modern_industrialization:diamond_plate",
-    O: "minecraft:gold_leggings",
+    O: "minecraft:golden_leggings",
   });
   event.shaped("minecraft:diamond_boots", ["POP", "P P", "   "], {
     P: "modern_industrialization:diamond_plate",
-    O: "minecraft:gold_boots",
+    O: "minecraft:golden_boots",
   });
 
   // tools
