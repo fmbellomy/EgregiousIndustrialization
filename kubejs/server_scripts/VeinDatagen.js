@@ -89,13 +89,13 @@ ServerEvents.generateData("before_mods", (_) => {
   veins.tetrahedrite = {
     generator: egregiousUniformVein("tetrahedrite", 50, 65, 120, 28, 36),
     dim: GTMOGS.OVERWORLD,
-    ores: ["tetrahedrite", "tetrahedrite", "copper", "stibnite"],
+    ores: ["tetrahedrite", "copper", "stibnite", "tetrahedrite"],
     veinType: classic,
   };
   veins.tetrahedrite_nether = {
     generator: egregiousUniformVein("tetrahedrite", 20, 80, 120, 28, 36),
     dim: GTMOGS.NETHER,
-    ores: ["tetrahedrite", "tetrahedrite", "copper", "stibnite"],
+    ores: ["tetrahedrite", "copper", "stibnite", "tetrahedrite"],
     veinType: classic,
   };
 
