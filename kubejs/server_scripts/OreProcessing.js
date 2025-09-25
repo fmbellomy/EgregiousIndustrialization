@@ -42,7 +42,7 @@ const ORE_PRODUCTS = {
   manganese: matSet("manganese", "nickel"),
 
   // egregious materials
-  tetrahedrite: matSet("tetrahedrite", "copper", "minecraft:copper_ingot"), // bathe for antimony
+  tetrahedrite: matSet("tetrahedrite", "antimony", "minecraft:copper_ingot"), // bathe for antimony
   stibnite: matSet("stibnite", "antimony", `${MI}:antimony_ingot`),
   chalcopyrite: matSet("chalcopyrite", "pyrite", "minecraft:copper_ingot"),
   pyrite: matSet("pyrite", "chalcopyrite", "minecraft:iron_ingot"),
@@ -99,6 +99,10 @@ ServerEvents.recipes((event) => {
   event.remove({
     type: "modern_industrialization:macerator",
     input: "#c:raw_materials",
+  });
+  event.remove({
+    type: "modern_industrialization:macerator",
+    input: "#egregious:crushed_dust",
   });
   event.remove({
     type: "minecraft:blasting",
@@ -181,19 +185,19 @@ ServerEvents.recipes((event) => {
     .itemIn("modern_industrialization:tetrahedrite_crushed_dust")
     .fluidIn("100x modern_industrialization:hydrochloric_acid")
     .itemOut("modern_industrialization:tetrahedrite_washed_crushed_dust")
-    .itemOut("modern_industrialization:antimony_dust", 0.35);
+    .itemOut("modern_industrialization:antimony_dust", 0.75);
   event.recipes.modern_industrialization
     .chemical_bath(4, 300)
     .itemIn("modern_industrialization:galena_crushed_dust")
     .fluidIn("100x modern_industrialization:hydrochloric_acid")
     .itemOut("modern_industrialization:galena_washed_crushed_dust")
-    .itemOut("modern_industrialization:silver_dust", 0.35);
+    .itemOut("modern_industrialization:silver_dust", 0.75);
   event.recipes.modern_industrialization
     .chemical_bath(4, 300)
     .itemIn("modern_industrialization:pitchblende_crushed_dust")
     .fluidIn("100x modern_industrialization:sulfuric_acid")
     .itemOut("modern_industrialization:pitchblende_washed_crushed_dust")
-    .itemOut("modern_industrialization:uranium_dust", 0.35);
+    .itemOut("modern_industrialization:uranium_dust", 0.75);
   // chromium and manganese are special cases that don't actually have ore blocks
   let chromiumSet = ORE_PRODUCTS.chromium;
   event.recipes.modern_industrialization
@@ -352,7 +356,7 @@ ServerEvents.recipes((event) => {
       .ore_washer(2, 80)
       .itemIn(set.crushedDust)
       .fluidIn("extendedindustrialization:distilled_water")
-      .itemOut(set.washByproduct, 0.25);
+      .itemOut(set.washByproduct, 0.3);
       */
     if (mat !== "redstone") {
       event.recipes.modern_industrialization
@@ -360,12 +364,22 @@ ServerEvents.recipes((event) => {
         .itemIn(set.washedCrushedDust)
         .itemOut(set.dust)
         .itemOut(set.dust, 0.25);
+      event.recipes.modern_industrialization
+        .macerator(2, 100)
+        .itemIn(set.crushedDust)
+        .itemOut(set.dust)
+        .itemOut(set.dust, 0.5);
     } else {
       event.recipes.modern_industrialization
         .macerator(2, 100)
         .itemIn(set.washedCrushedDust)
         .itemOut("minecraft:redstone")
         .itemOut("minecraft:redstone", 0.25);
+      event.recipes.modern_industrialization
+        .macerator(2, 100)
+        .itemIn(set.crushedDust)
+        .itemOut("minecraft:redstone")
+        .itemOut("minecraft:redstone", 0.5);
     }
 
     let smeltNamespace = "modern_industrialization";

@@ -1,4 +1,16 @@
 ServerEvents.recipes((event) => {
+  // replace battery alloy dust mixer recipe
+  event.remove({
+    mod: "modern_industrialization",
+    output: "modern_industrialization:battery_alloy_dust",
+    input: "modern_industrialization:lead_dust",
+  });
+  event.recipes.modern_industrialization
+    .mixer(2, 100)
+    .itemIn("2x modern_industrialization:lead_dust")
+    .itemIn("modern_industrialization:antimony_dust")
+    .itemOut("3x modern_industrialization:battery_alloy_dust");
+
   // sifters
   event.recipes.modern_industrialization
     .assembler(8, 200)
