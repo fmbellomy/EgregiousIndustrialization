@@ -89,30 +89,33 @@ ServerEvents.recipes((event) => {
     P: "modern_industrialization:diamond_plate",
     S: "minecraft:stick",
   });
-  event.shaped("justhammers:diamond_hammer", ["PSP", " S ", " S "], {
+
+  // just hammers stuff
+  event.remove({ mod: "justhammers", output: "#justhammers:hammer" });
+  event.shaped("justhammers:diamond_hammer", ["PPP", "PPP", " S "], {
     P: "modern_industrialization:diamond_plate",
     S: "modern_industrialization:steel_rod",
   });
-  event.shaped("justhammers:diamond_impact_hammer", ["PCP", " S ", " S "], {
+  event.shaped("justhammers:diamond_impact_hammer", ["PCP", "PPP", " S "], {
     P: "modern_industrialization:diamond_large_plate",
     C: "justhammers:impact_core",
     S: "modern_industrialization:steel_rod",
   });
-  event.shaped("justhammers:diamond_reinforced_hammer", ["PCP", " S ", " S "], {
+  event.shaped("justhammers:diamond_reinforced_hammer", ["PCP", "PPP", " S "], {
     P: "modern_industrialization:diamond_large_plate",
     C: "justhammers:reinforced_core",
     S: "modern_industrialization:steel_rod",
   });
   event.shaped(
     "justhammers:diamond_reinforced_impact_hammer",
-    ["PCP", " S ", " S "],
+    ["PCP", "PPP", " S "],
     {
       P: "modern_industrialization:diamond_large_plate",
       C: "justhammers:reinforced_impact_core",
       S: "modern_industrialization:steel_rod",
     }
   );
-  event.shaped("justhammers:diamond_destructor_hammer", ["PCP", " S ", " S "], {
+  event.shaped("justhammers:diamond_destructor_hammer", ["PCP", "PPP", " S "], {
     P: "modern_industrialization:diamond_large_plate",
     C: "justhammers:destructor_core",
     S: "modern_industrialization:steel_rod",
