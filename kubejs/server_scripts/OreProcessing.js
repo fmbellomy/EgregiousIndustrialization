@@ -318,14 +318,22 @@ ServerEvents.recipes((event) => {
         .itemOut(`ae2:${mat}_crystal`, 0.1)
         .itemOut(`ae2:${mat}_crystal`, 0.05)
         .itemOut(`ae2:${mat}_dust`, 0.9);
-
+      event.recipes.modern_industrialization
+        .macerator(2, 100)
+        .itemIn(`modern_industrialization:raw_${mat}`)
+        .itemOut(`modern_industrialization:${mat}_crushed_dust`)
+        .itemOut(`modern_industrialization:${mat}_crushed_dust`, 0.25);
+      event.recipes.modern_industrialization
+        .macerator(2, 100)
+        .itemIn(`modern_industrialization:${mat}_crushed_dust`)
+        .itemOut(`ae2:${mat}_dust`)
+        .itemOut(`ae2:${mat}_dust`, 0.5);
       event.recipes.modern_industrialization
         .ore_washer(2, 200)
         .itemIn(set.crushedDust)
         .fluidIn("1000x minecraft:water")
         .itemOut(set.washedCrushedDust)
         .itemOut(set.washByproduct, 0.1);
-
       event.recipes.modern_industrialization
         .macerator(2, 100)
         .itemIn(set.washedCrushedDust)
