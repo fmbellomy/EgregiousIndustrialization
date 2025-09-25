@@ -33,7 +33,7 @@
 						"predicate_type": "minecraft:always_true"
 					},
 					"state": {
-						"Name": "modern_industrialization:tetrahedrite_ore"
+						"Name": "minecraft:copper_ore"
 					}
 				}
 			]
@@ -46,7 +46,7 @@
 						"predicate_type": "minecraft:always_true"
 					},
 					"state": {
-						"Name": "minecraft:copper_ore"
+						"Name": "modern_industrialization:stibnite_ore"
 					}
 				}
 			]
@@ -59,7 +59,7 @@
 						"predicate_type": "minecraft:always_true"
 					},
 					"state": {
-						"Name": "modern_industrialization:stibnite_ore"
+						"Name": "modern_industrialization:tetrahedrite_ore"
 					}
 				}
 			]

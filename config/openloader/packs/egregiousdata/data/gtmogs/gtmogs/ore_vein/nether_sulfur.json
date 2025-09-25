@@ -1,8 +1,8 @@
 {
 	"biomes": "#minecraft:is_nether",
 	"cluster_size": {
-		"min_inclusive": 28,
-		"max_inclusive": 36,
+		"min_inclusive": 40,
+		"max_inclusive": 44,
 		"type": "minecraft:uniform"
 	},
 	"density": 0.75,
@@ -20,7 +20,7 @@
 						"predicate_type": "minecraft:always_true"
 					},
 					"state": {
-						"Name": "modern_industrialization:netherrack_tetrahedrite_ore"
+						"Name": "modern_industrialization:netherrack_sulfur_ore"
 					}
 				}
 			]
@@ -33,7 +33,7 @@
 						"predicate_type": "minecraft:always_true"
 					},
 					"state": {
-						"Name": "modern_industrialization:netherrack_copper_ore"
+						"Name": "modern_industrialization:netherrack_sulfur_ore"
 					}
 				}
 			]
@@ -46,7 +46,7 @@
 						"predicate_type": "minecraft:always_true"
 					},
 					"state": {
-						"Name": "modern_industrialization:netherrack_stibnite_ore"
+						"Name": "modern_industrialization:netherrack_pyrite_ore"
 					}
 				}
 			]
@@ -59,7 +59,7 @@
 						"predicate_type": "minecraft:always_true"
 					},
 					"state": {
-						"Name": "modern_industrialization:netherrack_tetrahedrite_ore"
+						"Name": "modern_industrialization:netherrack_pentlandite_ore"
 					}
 				}
 			]
@@ -69,13 +69,13 @@
 		"height": {
 			"type": "minecraft:uniform",
 			"max_inclusive": {
-				"absolute": 120
+				"absolute": 130
 			},
 			"min_inclusive": {
-				"absolute": 80
+				"absolute": 100
 			}
 		}
 	},
 	"layer": "netherrack",
-	"weight": 20
+	"weight": 25
 }

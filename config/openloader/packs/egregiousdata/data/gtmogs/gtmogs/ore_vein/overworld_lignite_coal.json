@@ -33,7 +33,7 @@
 						"predicate_type": "minecraft:always_true"
 					},
 					"state": {
-						"Name": "modern_industrialization:lignite_coal_ore"
+						"Name": "modern_industrialization:sulfur_ore"
 					}
 				}
 			]
