@@ -1,13 +1,13 @@
 name = "EgregiousCore"
-filename = "egregiouscore-1.1-SNAPSHOT.jar"
+filename = "egregiouscore-1.2-SNAPSHOT.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "1405db6dae03184b38b25b6e650c086f71972b92"
+hash = "65d6a2f7cc6df6ca1eae0e0b0b66e688520acc62"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7007415
+file-id = 7035712
 project-id = 1347929
