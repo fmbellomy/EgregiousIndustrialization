@@ -1,7 +1,16 @@
 RecipeViewerEvents.removeEntriesCompletely("item", (event) => {
+  let hammerTiers = ["stone", "gold"];
+  hammerTiers.forEach((tier) => {
+    event.remove(`justhammers:${tier}_hammer`);
+    event.remove(`justhammers:${tier}_impact_hammer`);
+    event.remove(`justhammers:${tier}_reinforced_hammer`);
+    event.remove(`justhammers:${tier}_reinforced_impact_hammer`);
+    event.remove(`justhammers:${tier}_destructor_hammer`);
+  });
+
   event.remove("minecraft:nether_gold_ore");
   event.remove("sophisticatedbackpacks:stack_upgrade_starter_tier");
-  
+
   //HNN nuking unused data models
   function nukeHNNdataPredictions(mob) {
     event.remove(

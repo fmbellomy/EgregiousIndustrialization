@@ -1,4 +1,12 @@
 MIMaterialEvents.addMaterials((event) => {
+  event.createMaterial("Netherite", "netherite", 0x4c484c, (builder) => {
+    builder
+      .addParts("plate", "large_plate", "dust")
+      .addExternalPart("block", "minecraft:netherite_block")
+      .addExternalPart("ingot", "minecraft:netherite_ingot")
+      .defaultRecipes();
+  });
+
   function makeMetallicOre(name, id, color, blocks, ore_set) {
     if (blocks === undefined) {
       blocks = ["minecraft:stone", "minecraft:deepslate"];
