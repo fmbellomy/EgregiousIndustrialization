@@ -101,6 +101,10 @@ file = "config/ars_nouveau-startup.toml"
 hash = "21b99b581a62a108511ce874e18fc64c6f02be0642e257bebee7740fe8ef22a8"
 
 [[files]]
+file = "config/ars_nouveau/doc_data.json"
+hash = "081b1b98b191d81c4ff5b49760b51f491bb330a6ac45dfac831a3a6313cb072f"
+
+[[files]]
 file = "config/ars_nouveau/glyph_accelerate.toml"
 hash = "1a00f7fa7cdb3667f85dd61f913d1a57455f6688f506cf5b90b854e4a33411ad"
 
@@ -1438,7 +1442,7 @@ hash = "990c968e14a2ace7e1c00edb2c8bbcd62a93e0f79b3d5c84803925666ad0dc3f"
 
 [[files]]
 file = "kubejs/server_scripts/mods/JustHammers.js"
-hash = "da7d149437935b2e91e7c9b857522a56710eb02499e3219c9b24ad564cc8a84c"
+hash = "786f78ec75a43d41cdf4784ce1aa09b2c6df3d54a459050543b5308557206857"
 
 [[files]]
 file = "kubejs/server_scripts/mods/Pastel.js"
