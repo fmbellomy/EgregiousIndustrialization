@@ -1370,7 +1370,7 @@ hash = "60cbcf33b66716891560766ba2aed17f5b66c218758929a14f8d66ce4251cecd"
 
 [[files]]
 file = "kubejs/server_scripts/EnchantmentNerfs.js"
-hash = "64a7cf4f87ef3d336185e4643a2460b3720ad614883ba8ca196b8ad92a32adbf"
+hash = "cb1c75873b886be19b13effac4c01c39fdd7f5707b69bd88bc376bd78ff9acb7"
 
 [[files]]
 file = "kubejs/server_scripts/OreProcessing.js"
@@ -1694,6 +1694,11 @@ hash = "08b5fe6bbf5980820af8addc37e5ee41e48756400d86f9f554222f27b3ccecb5"
 metafile = true
 
 [[files]]
+file = "mods/enchantmentdisabler.pw.toml"
+hash = "68f2fbbf02b06c8a852082bd6bc71f3ed23bfab80b9b26e6d2a8dab1cc2bc0b3"
+metafile = true
+
+[[files]]
 file = "mods/entity-model-features.pw.toml"
 hash = "0042336abc94bae434faa534e9c2e1d1e477d5f984f9f993d92aa856143f3379"
 metafile = true
@@ -1756,6 +1761,11 @@ metafile = true
 [[files]]
 file = "mods/functional-storage.pw.toml"
 hash = "201b5f2a7c20c5f71b248b6dad8ce3e69a3bea07fc7a8f0fd0f7e8b2d494d8e4"
+metafile = true
+
+[[files]]
+file = "mods/fzzy-config.pw.toml"
+hash = "2c5b7fa8d10dfc8b515ee54050811b9f81cbf5d9058d0fc9f35294f334d70f74"
 metafile = true
 
 [[files]]

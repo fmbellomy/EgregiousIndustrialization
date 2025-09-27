@@ -1,9 +1,8 @@
 // remove mending from villager trades
-/*MoreJS.filterEnchantedBookTrade((event) => {
-  event.remove("minecraft:mending");
+ServerEvents.tags("enchantment", (event) => {
+  event.remove("minecraft:tradeable", "minecraft:mending");
 });
-*/
-// remove fortune from valid hammer enchants
+// remove fortune from appearing in hammer enchants
 MoreJS.enchantmentTableChanged((event) => {
   // if the item isn't from justhammers, ignore it
   if (event.item.toString().indexOf("justhammers") == -1) {
