@@ -4,5 +4,10 @@
 
 modern_industrialization/generated_resources/**
 modern_industrialization/runtime_datagen/**
+
 config/iris.properties
+config/ars_nouveau/search_index/**
+
 packwiz.exe
+config/ars_caelum-server-1.toml.bak
+config/DistantHorizons.toml
