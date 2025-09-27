@@ -30,11 +30,16 @@ RecipeViewerEvents.removeEntriesCompletely("item", (event) => {
     event.remove(item);
   });
 });
+RecipeViewerEvents.removeCategories((event) => {
+  event.remove("hostilenetworks:loot_fabricator");
+  event.remove("hostilenetworks:sim_chamber");
+});
 ServerEvents.recipes((event) => {
   event.remove({ output: "hostilenetworks:loot_fabricator" });
   event.remove({ output: "hostilenetworks:sim_chamber" });
   event.remove({ output: "hostilenetworks:deep_learner" });
   event.remove({ output: "hostilenetworks:blank_data_model" });
+
   event.remove({
     output: "hostile_neural_industrialization:electric_simulation_chamber",
   });
