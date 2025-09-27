@@ -9,5 +9,5 @@ config/iris.properties
 config/ars_nouveau/search_index/**
 
 packwiz.exe
-config/ars_caelum-server-1.toml.bak
 config/DistantHorizons.toml
+config/*.toml.bak
