@@ -8,7 +8,7 @@
     "item": "hostilenetworks:prediction_matrix"
   },
   "base_drop": {
-    "item": "hostilenetworks:overworld_prediction"
+    "id": "hostilenetworks:overworld_prediction"
   },
   "trivia": "hostilenetworks.trivia.spider",
   "fabricator_drops": [
