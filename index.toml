@@ -461,20 +461,20 @@ file = "config/ars_nouveau/rewind.toml"
 hash = "cfba46b855cf3bef2c4792b313eb9bdfc28ecdf29792ab8996fb44840d8b3009"
 
 [[files]]
-file = "config/ars_nouveau/search_index/_16.cfe"
-hash = "df7b3917d3b8497b08164571b9faa16ebbedba7a1c928d82ef63bb7bfc471774"
+file = "config/ars_nouveau/search_index/_1i.cfe"
+hash = "aed31fa03c17594d056908479a2439467ac80c6fce715c7ed7f6053df1f42b44"
 
 [[files]]
-file = "config/ars_nouveau/search_index/_16.cfs"
-hash = "92ae99fa7f7cdb73a4a31488ffd30be20f795ca2148da336a12a66a76244737b"
+file = "config/ars_nouveau/search_index/_1i.cfs"
+hash = "809468e3ad4052ed6158900f62fa78eddfb38719d2119c412c8d7a8fc9a6582a"
 
 [[files]]
-file = "config/ars_nouveau/search_index/_16.si"
-hash = "049384c0cf8f9816d0e35e773492c444136cf71c29616f8ddcd752dbfd014c5a"
+file = "config/ars_nouveau/search_index/_1i.si"
+hash = "d395c7f5909d0839483a10a09552c83952546635afba38e484e89df0efc5c45c"
 
 [[files]]
-file = "config/ars_nouveau/search_index/segments_17"
-hash = "352cae7f581fd07ddddea7a0aa6967fe980bed83ee9f3d70a6a0caa574909287"
+file = "config/ars_nouveau/search_index/segments_1j"
+hash = "8f69f3725d071b9c962e635edc266ef14db73373e5ddda08c8fa6d9d5874e4d8"
 
 [[files]]
 file = "config/ars_nouveau/search_index/write.lock"
@@ -1241,6 +1241,54 @@ file = "kubejs/README.txt"
 hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/cpu_chip.png"
+hash = "9bb4bee886e5ad9711172d9e8d52c1ff4bf729991065bdc1a18e730f2df3fee8"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/cpu_wafer.png"
+hash = "f5f350e101d141014991e5416daf75a122a583ecfee569934811925f6611f65c"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/ilc_chip.png"
+hash = "eaac965cb575139643631389b12fc600445d80f8af83fe945a4b90e3695311cd"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/ilc_wafer.png"
+hash = "03b2cb22fc67d21df22d62c0b44569bbd5fd22807a8d5f1ef031faddc0c8dbbc"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/nand_chip.png"
+hash = "3c086d208f19ef32062ec9f0056b03bf6ad8cc715abb7eed36ff9239415decb9"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/nand_wafer.png"
+hash = "769b83a67de6078b88538129f695c7c5facc8548369ce2479341d109bb5e37b3"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/nor_chip.png"
+hash = "dbadad62bbc77aef3519f266fc0f06bee033e2d7ca1634975be2b6df2a094ae1"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/nor_wafer.png"
+hash = "1c509806188c16de20be5c236fb7cd2ba5d246876de57e69edfedeeda5f4fb4a"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/ram_chip.png"
+hash = "93c53de2ec089ef8a3a29dda74fad7057ece4f039b2bff6aef328f78b36ecc4b"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/ram_wafer.png"
+hash = "f140a1d43c0d60cbc87a1d09b2597f1d9cd7fef8eb29307b31d375e3c0bdf7a1"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/soc_chip.png"
+hash = "7ee068464aa2e8fa77dbac5dd2107a62851e083b9b3adf13e274c315684cc220"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/soc_wafer.png"
+hash = "49b91eead481d583a102950b85e26df4c21cf68cafe34a42f6c211cdff552cbc"
+
+[[files]]
 file = "kubejs/assets/modern_industrialization/textures/block/machines/chemical_bath/overlay_front.png"
 hash = "1994c657adebf59a0fda8ef5667b34907d666494d7c8fd8c0981a08fe8f9edb8"
 
@@ -1327,6 +1375,54 @@ hash = "da110756154418c09c36121dae0eea6194f3bc0a46bf535d8ab45fecb466a2af"
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/block/machines/circuit_assembler/overlay_top_emissive.png"
 hash = "db874d828d9e42057ca9107cba88c88452d77600698683abfc58e71c1b5f23dc"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/extruder/overlay_front.png"
+hash = "e74886230a760b60faf87467208deb7b193cc69ca60fb5d50ab98e96e65454b5"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/extruder/overlay_front_active.png"
+hash = "75e0eb4545dd0f0f264dc68ae1ef3b425969353df8a208321daae1e7baf3faae"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/extruder/overlay_front_active.png.mcmeta"
+hash = "8ec147b373aa21e7d3639246eef81e83d9c64e6377cb8e7d67be2b38c882046b"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/extruder/overlay_front_active_emissive.png"
+hash = "109673256dd82f95f44bfe58d77c8b485d0c832cacab6d2b0fb79598aaa2fc19"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/extruder/overlay_front_active_emissive.png.mcmeta"
+hash = "8ec147b373aa21e7d3639246eef81e83d9c64e6377cb8e7d67be2b38c882046b"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/extruder/overlay_front_emissive.png"
+hash = "7cc66b7b035bd7389b36bfd9daabfcbcc7367038bbe76af7e87f7e14615ba539"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/extruder/overlay_top.png"
+hash = "b1c8e0178510b031aea894bb81effd1055ff09b69831b6a362b19fc6a4b64f76"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/extruder/overlay_top_active.png"
+hash = "f63527163046400c53bd9589a37bc41bed1801e08a74e797ee65e4fcfde33ddf"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/extruder/overlay_top_active_emissive.png"
+hash = "1ff116cc7a92bebf6786f052fb125286f304aa2ddf6ff9c0ed5cf6eb2903fae0"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/extruder/overlay_top_emissive.png"
+hash = "29523b5ff46678ca6ee086b7a35fd47fa0b263bfb53edea512e619d25c8bdbe9"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/extruder/overlay_top_paused.png"
+hash = "28559d62f7a1146e63c0f38b38e2a340a80acf499b02469bbff860085ace4266"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/extruder/overlay_top_paused_emissive.png"
+hash = "ade6e723693b5360b3328e76d5f6030c1bc63e8aaba9f2a73d5f4b8243a0d7ed"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/block/machines/laser_engraver/overlay_front.png"
@@ -1474,7 +1570,7 @@ hash = "0c9bea5943b4e4e580d8ed0aa092b40275a1e7908a5a463a4ef931968a3947a4"
 
 [[files]]
 file = "kubejs/server_scripts/OreTags.js"
-hash = "b0e0078e376885ab8db27e30388cc0f91d3090c2a6c9a4a70f8f9329c216bc6a"
+hash = "6ab928dd39e8b45723b6bd7003f8802b25bfacb3510d9b5b7dba2c0718e65e5f"
 
 [[files]]
 file = "kubejs/server_scripts/PeacefulAdapatations.js"
@@ -1494,7 +1590,7 @@ hash = "1778d6abd082c6415b1ca62125411c83422bf410514a4e39bb58b6c8040cef56"
 
 [[files]]
 file = "kubejs/server_scripts/egregious/Misc.js"
-hash = "fdb13a26fd9413e4cd043a987c3d736040e78553dd8bde652ceefe71704d26e1"
+hash = "f3c91b8dc98a56cca7fb1769f18a2ac71818b424b7ca5058863f641541b8ca71"
 
 [[files]]
 file = "kubejs/server_scripts/jsconfig.json"
@@ -1570,7 +1666,7 @@ hash = "9239d96f6cbff3310882dc598dedb70c01d54a2271fa862328f7778df1d4f79d"
 
 [[files]]
 file = "kubejs/startup_scripts/EgregiousStartup.js"
-hash = "7cb37c11ea1e4db8bec3f7a57ef44c97b310110203bb06945dc25f4656168420"
+hash = "fb2ea474dd62074d69daecaca7bce89ceb204f2dc151563cba161c9b841518d5"
 
 [[files]]
 file = "kubejs/startup_scripts/Fluids.js"
@@ -1582,11 +1678,15 @@ hash = "a58025a05793c04631f996a088a7ed5c4d681360336e79e42cd688a994839ea0"
 
 [[files]]
 file = "kubejs/startup_scripts/MIMachines/CircuitMachines.js"
-hash = "0e5fbf8c604ce511a0500bf51cebf606505298f9d61cf3259386fe695d2e5804"
+hash = "2a90be565d8ebeb1e619c5ea54756af4f928302bdcaae1b3cdcd2c4f9acbbce1"
 
 [[files]]
 file = "kubejs/startup_scripts/MIMachines/Keg.js"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "kubejs/startup_scripts/MIMachines/MiscMachines.js"
+hash = "e88b8055c208778701956bd97a979007a4cf0f5a6c85f776fc4587c70d6b7f69"
 
 [[files]]
 file = "kubejs/startup_scripts/MIMachines/OreProcMachines.js"
