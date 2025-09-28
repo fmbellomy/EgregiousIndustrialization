@@ -223,7 +223,7 @@ MIMaterialEvents.modifyMaterial("iridium", (event) => {
 });
 // gold
 MIMaterialEvents.modifyMaterial("gold", (event) => {
-  event.builder.addParts("fine_wire");
+  event.builder.addParts("wire", "fine_wire").cable("mv").defaultRecipes();
 });
 // lapis
 MIMaterialEvents.modifyMaterial("lapis", (event) => {
