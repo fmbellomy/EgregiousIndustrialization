@@ -243,13 +243,13 @@ ServerEvents.generateData("before_mods", (_) => {
   veins.magnetite = {
     generator: egregiousUniformVein("magnetite", 75, 100, 300, 36, 40),
     dim: GTMOGS.OVERWORLD,
-    ores: ["magnetite", "magnetite", "iron", "gold"],
+    ores: ["magnetite", "iron", "gold", "gold"],
     veinType: classic,
   };
   veins.magnetite_nether = {
     generator: egregiousUniformVein("magnetite", 50, 70, 120, 34, 40),
     dim: GTMOGS.NETHER,
-    ores: ["magnetite", "magnetite", "iron", "gold"],
+    ores: ["magnetite", "iron", "gold", "gold"],
     veinType: classic,
   };
   veins.scheelite = {
