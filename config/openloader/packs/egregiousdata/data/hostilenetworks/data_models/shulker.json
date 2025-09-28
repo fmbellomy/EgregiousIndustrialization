@@ -2,7 +2,7 @@
   "entity": "minecraft:shulker",
   "name": { "translate": "entity.minecraft.shulker", "color": "#00855B85" },
   "display": {},
-  "sim_cost": 512,
+  "sim_cost": 128,
   "input": {
     "item": "hostilenetworks:prediction_matrix"
   },

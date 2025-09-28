@@ -2,7 +2,7 @@
   "entity": "minecraft:guardian",
   "name": { "translate": "entity.minecraft.guardian", "color": "#006A9583" },
   "display": {},
-  "sim_cost": 1024,
+  "sim_cost": 128,
   "input": {
     "item": "hostilenetworks:prediction_matrix"
   },

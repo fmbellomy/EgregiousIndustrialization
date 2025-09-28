@@ -5,7 +5,7 @@
     "y_offset": 4.0,
     "scale": 0.25
   },
-  "sim_cost": 1024,
+  "sim_cost": 128,
   "input": {
     "item": "hostilenetworks:prediction_matrix"
   },

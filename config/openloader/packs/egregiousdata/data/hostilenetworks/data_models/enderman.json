@@ -4,7 +4,7 @@
   "display": {
     "scale": 0.75
   },
-  "sim_cost": 2048,
+  "sim_cost": 128,
   "input": {
     "item": "hostilenetworks:prediction_matrix"
   },
