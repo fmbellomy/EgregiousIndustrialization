@@ -8,8 +8,10 @@ If EgInd is to include even a single additional circuit tier, let alone two, it 
 ## Implementation
 
 Early game manual circuit crafting will be left the same.
-The first divergence from base MI will be the addition of the Circuit Assembler, a machine dedicated to the many circuit recipes of the pack.
+The first divergence from base MI will be the addition of the Circuit Assembler in MV, a machine dedicated to the many circuit recipes of the pack.
 
 Normal MI progression provides one circuit recipe for each tier of circuit.
 
 In EgInd, once you are (N+2 tiers) beyond a given circuit, you unlock a new recipe for it. I.E, once you have Silicon Wafers, you can etch them in a laser engraver to be sent into a circuit assembler as part of a recipe to make 4 analog circuits at a time.
+
+- TODO: Make silicon wafers available sooner- they're currently gated behind kanthal coils and stainless steel, but I'd prefer that they be made available mid to late MV. Basically, remove their dependence on iridium tiny dust, and add slower non argon recipes for smelting them

@@ -23,21 +23,6 @@
 - [ ] Bedrock Ore Drilling Plant Multiblock
 - [x] Tiered drill recipes for each multi, costing more energy but breaking less often and giving more crushed ore per block mined.
 
-### HNN
-
-- [x] remove base hnn machines
-- [x] mi-ify HNI machine recipes
-- [x] mi-ify prediction matrices and data models
-
-### ae2
-
-- [x] mi-ify controllers
-- [x] mi-ify interfaces, pattern providers
-- [x] mi-ify storage components/cells
-- [x] mi-ify me drive, io port
-- [x] mi-ify cables (rubber instead of wool)
-- [x] mi-ify p2p, import/export bus
-
 ### advanced ae
 
 - [x] nuke quantum armor
@@ -45,18 +30,12 @@
 
 ### extended ae
 
-- [x] mi-ify "extended" items
-- [x] mi-ify entro stuff
-
-### just hammers
-
-- [x] mi-ify hammers and their upgrades
+- [ ] fix extended import bus recipe not existing
 
 ### immersive aircraft
 
 - [ ] make aircraft require MI liquid fuel
-- [x] mi-ify recipes for aircraft upgrades
-- [x] mi-ify recipes for aircraft themselves
+- [ ] make hulls cost aluminum instead of stainless steel because some of the stuff in this mod is garbage and shouldn't be gated behind HV
 
 ### farmers delight/brewin and chewin
 
@@ -68,3 +47,18 @@
 - [ ] distilled water ore washer recipes
 - [ ] blazing essence eye of ender
 - [ ] alloy smelter recipe for phantom membrane from ender dust+leather
+
+## MID GAME
+
+### Circuits
+
+- [ ] Circuit Assembler Machine
+- [ ] Laser Engraver Machine
+- [ ] Rebalance Boule Recipe
+- [ ] SMD Components behind HV assembler
+- [ ] Circuit Assembler recipes for each Circuit tier
+- [ ] Standalone circuit recipes for each tier gated behind tier+1 (once you are in HV, you can make electronic circuits without needing analog circuits)
+
+### Misc Tweaks
+
+- [ ] Change Machine Hull recipes to not require previous tiers of hull.
