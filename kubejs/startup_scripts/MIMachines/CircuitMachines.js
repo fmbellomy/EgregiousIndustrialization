@@ -14,6 +14,8 @@ MIMachineEvents.registerRecipeTypes((event) => {
 });
 
 MIMachineEvents.registerMachines((event) => {
+  let ANCHOR_X = 40;
+  let ANCHOR_Y = 30;
   event.craftingSingleBlock(
     /* GENERAL PARAMETERS FIRST */
     // English name, internal name, recipe type (see above), list of tiers (can be bronze/steel/electric)
@@ -38,7 +40,7 @@ MIMachineEvents.registerMachines((event) => {
     // Slot positions: items and fluids.
     // Explanation: 3x3 grid of item slots starting at position (42, 27), then 1x3 grid of item slots starting at position (139, 27).
     (items) => items.addSlots(42, 27, 3, 3).addSlots(139, 27, 1, 3),
-    (fluids) => fluids.addSlot(100, 27), // i am completely guessing for this position but we'll see
+    (fluids) => fluids.addSlot(108, 27), // i am completely guessing for this position but we'll see
     /* MODEL CONFIGURATION */
     // front overlay?, top overlay?, side overlay?
     true,
@@ -64,7 +66,7 @@ MIMachineEvents.registerMachines((event) => {
     16,
     (items) =>
       items
-        .addSlots(ANCHOR_X, ANCHOR_Y, 2, 1)
+        .addSlots(ANCHOR_X + 10, ANCHOR_Y + 10, 1, 2)
         .addSlot(ANCHOR_X + 63, ANCHOR_Y + 15),
     (fluids) => {},
     true,
