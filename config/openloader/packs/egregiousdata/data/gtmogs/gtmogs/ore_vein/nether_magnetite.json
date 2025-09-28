@@ -33,7 +33,7 @@
 						"predicate_type": "minecraft:always_true"
 					},
 					"state": {
-						"Name": "modern_industrialization:netherrack_magnetite_ore"
+						"Name": "modern_industrialization:netherrack_iron_ore"
 					}
 				}
 			]
@@ -46,7 +46,7 @@
 						"predicate_type": "minecraft:always_true"
 					},
 					"state": {
-						"Name": "modern_industrialization:netherrack_iron_ore"
+						"Name": "modern_industrialization:netherrack_gold_ore"
 					}
 				}
 			]

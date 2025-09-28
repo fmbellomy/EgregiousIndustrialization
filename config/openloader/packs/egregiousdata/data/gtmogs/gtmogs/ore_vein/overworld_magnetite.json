@@ -33,7 +33,7 @@
 						"predicate_type": "minecraft:always_true"
 					},
 					"state": {
-						"Name": "modern_industrialization:magnetite_ore"
+						"Name": "minecraft:iron_ore"
 					}
 				}
 			]
@@ -46,7 +46,7 @@
 						"predicate_type": "minecraft:always_true"
 					},
 					"state": {
-						"Name": "minecraft:iron_ore"
+						"Name": "minecraft:gold_ore"
 					}
 				}
 			]
