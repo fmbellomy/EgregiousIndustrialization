@@ -40,7 +40,7 @@ MIMachineEvents.registerMachines((event) => {
     // Slot positions: items and fluids.
     // Explanation: 3x3 grid of item slots starting at position (42, 27), then 1x3 grid of item slots starting at position (139, 27).
     (items) => items.addSlots(42, 27, 3, 3).addSlots(139, 27, 1, 3),
-    (fluids) => fluids.addSlot(108, 27), // i am completely guessing for this position but we'll see
+    (fluids) => fluids.addSlot(107, 27), // i am completely guessing for this position but we'll see
     /* MODEL CONFIGURATION */
     // front overlay?, top overlay?, side overlay?
     true,
@@ -55,7 +55,7 @@ MIMachineEvents.registerMachines((event) => {
     LASER_ENGRAVER,
     ["electric"],
     187,
-    event.progressBar(ANCHOR_X + 31 - 1, ANCHOR_Y + 16 - 4, "arrow"),
+    event.progressBar(ANCHOR_X + 34, ANCHOR_Y + 16 - 4, "arrow"),
     event.efficiencyBar(ANCHOR_X - 2, ANCHOR_Y + 56),
     // similar to above, the energy bar needs to be offset by (0,-1)
     event.energyBar(ANCHOR_X - 22, ANCHOR_Y + 15 - 1),
@@ -66,7 +66,7 @@ MIMachineEvents.registerMachines((event) => {
     16,
     (items) =>
       items
-        .addSlots(ANCHOR_X + 10, ANCHOR_Y + 10, 1, 2)
+        .addSlots(ANCHOR_X + 10, ANCHOR_Y + 7, 1, 2)
         .addSlot(ANCHOR_X + 63, ANCHOR_Y + 15),
     (fluids) => {},
     true,

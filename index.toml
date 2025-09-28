@@ -38,7 +38,7 @@ hash = "dec3ed1e7f0287f5ce5c4a28e8800cc85adf1957268559c9fa656aa71ba6732f"
 
 [[files]]
 file = "config/ae2-client.toml"
-hash = "106de6d815eb9c053f98f21af51c53ee9b238ec5fcfb09e7d582b84ba38fc45b"
+hash = "9c9fa0dd4dbbf2180719d536a6fd3f3a491ceeb57895d8b222f4f366c22afc8b"
 
 [[files]]
 file = "config/ae2-common.toml"
@@ -79,6 +79,26 @@ hash = "63298a2985af66e6cd850a50fb3cacc0dca4f6761c8082dbfd3dbae6d232157c"
 [[files]]
 file = "config/ars_additions/glyph_retaliate.toml"
 hash = "5d9c69c46f4eab88bf13cdc9b23027b474e6751f1dab970c263e51aa28e9f315"
+
+[[files]]
+file = "config/ars_caelum-server-1.toml.bak"
+hash = "9f680ce184e3ce63f86282e879ca76dae8ad810150afa8bfff30fcdc902f3231"
+
+[[files]]
+file = "config/ars_caelum-server-2.toml.bak"
+hash = "9f680ce184e3ce63f86282e879ca76dae8ad810150afa8bfff30fcdc902f3231"
+
+[[files]]
+file = "config/ars_caelum-server-3.toml.bak"
+hash = "9f680ce184e3ce63f86282e879ca76dae8ad810150afa8bfff30fcdc902f3231"
+
+[[files]]
+file = "config/ars_caelum-server-4.toml.bak"
+hash = "9f680ce184e3ce63f86282e879ca76dae8ad810150afa8bfff30fcdc902f3231"
+
+[[files]]
+file = "config/ars_caelum-server-5.toml.bak"
+hash = "9f680ce184e3ce63f86282e879ca76dae8ad810150afa8bfff30fcdc902f3231"
 
 [[files]]
 file = "config/ars_caelum-server.toml"
@@ -441,20 +461,20 @@ file = "config/ars_nouveau/rewind.toml"
 hash = "cfba46b855cf3bef2c4792b313eb9bdfc28ecdf29792ab8996fb44840d8b3009"
 
 [[files]]
-file = "config/ars_nouveau/search_index/_0.cfe"
-hash = "e50be3638c85f176d84a3216308358aa70c46f3d04df4e06e1e726b36d054df4"
+file = "config/ars_nouveau/search_index/_16.cfe"
+hash = "df7b3917d3b8497b08164571b9faa16ebbedba7a1c928d82ef63bb7bfc471774"
 
 [[files]]
-file = "config/ars_nouveau/search_index/_0.cfs"
-hash = "ab7f531875f63aef4a9b335f730114c42975c2703c728f194d4d9a89d70c9b87"
+file = "config/ars_nouveau/search_index/_16.cfs"
+hash = "92ae99fa7f7cdb73a4a31488ffd30be20f795ca2148da336a12a66a76244737b"
 
 [[files]]
-file = "config/ars_nouveau/search_index/_0.si"
-hash = "3cdf25eaf3ee1ea948d44ee61885369089857b4df5d5a0f7f4bf02f66adecf3b"
+file = "config/ars_nouveau/search_index/_16.si"
+hash = "049384c0cf8f9816d0e35e773492c444136cf71c29616f8ddcd752dbfd014c5a"
 
 [[files]]
-file = "config/ars_nouveau/search_index/segments_1"
-hash = "0091c78bbd1c8607f33e82d6086eb7047c9d41950a96881dd83c803f9c93752d"
+file = "config/ars_nouveau/search_index/segments_17"
+hash = "352cae7f581fd07ddddea7a0aa6967fe980bed83ee9f3d70a6a0caa574909287"
 
 [[files]]
 file = "config/ars_nouveau/search_index/write.lock"
@@ -482,7 +502,7 @@ hash = "cf7e8f3ae75a942e0c8b62f14fa68df3963b47c9c38895c2d7ba59c2bcb079ab"
 
 [[files]]
 file = "config/chloride-client.json"
-hash = "3ae37351a26e4ccfb728c5b1a74678a83c883a3f6760c87dee8be35379200990"
+hash = "574159b2d1a2ee8e52b8ea3aa10eb273b61dfe5761514b17ef2efacc25b2daec"
 
 [[files]]
 file = "config/clientsort-server.json"
@@ -542,7 +562,7 @@ hash = "bb43fe53a613372ed31832c15bb5f37aaa90a682bc1815ed9fca8b52af3d9c2c"
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "56b1e6732e141ad6c9433de5ea08f19b929646aa8ecba326601feaa7ca589c3c"
+hash = "8decea4010adf262d8a0bb977a014db07c7fcde6db392b9233035ca3ddb7156d"
 
 [[files]]
 file = "config/egregiouscore-common.toml"
@@ -554,7 +574,7 @@ hash = "3861e1c9b5383e73030e33a4e00c34f64bce7a0f3f38dfb2be9c5ddedd2a7123"
 
 [[files]]
 file = "config/emi.css"
-hash = "9fa24b9307a960428865fddf89bf18ad0659141055e918cd113a3e510a2d2b7f"
+hash = "e4c99ea3573a8af9fb48cf1c807a09ae797757ce0dcc44a60f2b9a384733fa5e"
 
 [[files]]
 file = "config/emi_ores-client.json"
@@ -662,7 +682,7 @@ hash = "b662e890f6c9042543eac4cb672a09a78164abfbf790f8d139cdc7de52c59111"
 
 [[files]]
 file = "config/functionalstorage/functionalstorage-common.toml"
-hash = "03c1da18e660c0802ced976596105c2dfbbb75e01a706e946beadebb8c0634b8"
+hash = "ba054ec64b60d66fe9058e699a52f44905a61d991471892b7937e339928a4f9b"
 
 [[files]]
 file = "config/gtmogs.yaml"
@@ -818,7 +838,7 @@ hash = "18640d6e286219fd6c7d025de8ef3269a054e73dee05b37522629dff724be4be"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/nether_magnetite.json"
-hash = "e271a513ea3aa7f4ef3a9fc5921090be0be015bf0dd4d723ec7c246356358eb9"
+hash = "e43661009da9594edbc215efa7f4b0f29f2dd14502e46286b9c59bfb670a053e"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/nether_pentlandite.json"
@@ -898,7 +918,7 @@ hash = "3b14ae2ff29329148091182d386fda0ace6c085f7e3fd868b4862e5a731fec1c"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/overworld_magnetite.json"
-hash = "33a2d9897cb88d1aa7e2b73c1f312f7cade036196f47c414a919baa4c0ec36c3"
+hash = "135030ece2b49e919a91bf6ecb31593bfc308457615990a75ccd9240f2c70497"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/gtmogs/gtmogs/ore_vein/overworld_pentlandite.json"
@@ -918,7 +938,7 @@ hash = "b3fa1a55def2de8f91607574308799fbac7a685fda337dc69e29c9824da33575"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/blaze.json"
-hash = "94d957878b0523190fe619b9bcaf0cc9d7c7192dd5a13b3556a672cdf90ee44a"
+hash = "4cae0e1509ae506ede3a37960e0258b3b3b285c515f753c43fbc296d8b08c763"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/creeper.json"
@@ -930,19 +950,19 @@ hash = "42935690bdf8125f64988c70dee20106da364e08d15eb2edbc86de34e6dbfdf5"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/enderman.json"
-hash = "66d584d5a4d010f001f4098a48ea356d4b3d5c5495275fa2be13b7295c779a05"
+hash = "f27df69f438a46a59fa877b5a619829da5d295cd4ffcdd02b812c5db7a23e51e"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/ghast.json"
-hash = "fbc98380399983a28aab3f934c2cf65f19fee8991946e0e64843417c08df7a02"
+hash = "49c65a9317365190c550bdd6d6185ca91568cf688beeaa68a38ceb532bd654d6"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/guardian.json"
-hash = "f0e1de645fe2ce3caf572a8573a8df9d159774457cda1a246a3e1382f082f512"
+hash = "24ddb163d06ce7e0ed82988ad4da3993acbea5073e779ddebb5a783a83211241"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/shulker.json"
-hash = "a3860230ba50918ca92cd49c14c2d3fa804bb9ab103b0e3d15db44afdb5bc062"
+hash = "dd5b0abd66f5d79aa0604757afcd284eaaeab6344c37c6c6584b94a2dddb15ed"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/skeleton.json"
@@ -954,15 +974,15 @@ hash = "c6399d5677bbb361433b0fc82c01078dea903c1829e9ab764c62792eba7cffb6"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/spider.json"
-hash = "c9e6d0caa507fc6b9c33cfd7a227ad116d4b72508befbffbbf1a89cea20fcfaf"
+hash = "099600b873a293045b9f6bf72538b757d73cc1d13b645708090a819e2b9ade77"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/witch.json"
-hash = "01903b8f2f4d508eeb7cd1078e1f0839577591f044ce491a27eb2d5d39ec1091"
+hash = "8844dbd61ee1470cd889c8ca1ad9f18a6803165f5f5080d165e2d05b2763a4ef"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/wither_skeleton.json"
-hash = "e6223cf9675f7c928775d3d53fd4d0b91888c13a038213f09dbc17e3abe04a9a"
+hash = "4c688c3ce678f357fd6eb03d664214d265ec8f07a12905a209fb5d48c0cf09a3"
 
 [[files]]
 file = "config/openloader/packs/egregiousdata/data/hostilenetworks/data_models/zombie.json"
@@ -1202,7 +1222,7 @@ hash = "121b93764159be6fb7dab523b29a844e2bb78400ce8c48f52135a097e9b0006e"
 
 [[files]]
 file = "devdocs/CIRCUITS.md"
-hash = "054ffae046d5d5c35a7367926f226575f23617d66f3261045e3d6c90d905d7fc"
+hash = "de5e171a62b43a896f1c12b67367cc48ae05d7e34e671bcce4190e5388dd73e3"
 
 [[files]]
 file = "devdocs/OREPROC.md"
@@ -1214,7 +1234,7 @@ hash = "15ebd1c2ee2e2edc1b1087aeb07b91059d153c1f43ae57c5aa5a94ecf562952d"
 
 [[files]]
 file = "devdocs/TODO.md"
-hash = "27f53733f2c229d66124e59fa464ed69fa4fbbe2efbf219715daa303e5f0d311"
+hash = "80bc4ab039a8257088c2fc011e49416f87abff2286844a09c165b2368e67fb85"
 
 [[files]]
 file = "kubejs/README.txt"
@@ -1259,6 +1279,78 @@ hash = "c937224b75db799bb73755c76c7c531247300c33cbc6dadd0d74e51128d40d7a"
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/block/machines/chemical_bath/overlay_side_emissive.png"
 hash = "7cc66b7b035bd7389b36bfd9daabfcbcc7367038bbe76af7e87f7e14615ba539"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/circuit_assembler/overlay_front.png"
+hash = "2608cace3920945fbf0941440c0cfddf081d30c8cf6b3842782e2966c53e73e7"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/circuit_assembler/overlay_front_active.png"
+hash = "fc85bc29bbdea667b948aebf0ee27a48f5e34c456f2ded43fabee3bb09d51924"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/circuit_assembler/overlay_front_active.png.mcmeta"
+hash = "45aa5e7cf4cf8b62592b0e566b61fa0174c881cbf31228cdf349c286206715e3"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/circuit_assembler/overlay_front_active_emissive.png"
+hash = "0d2fee569e89717eb429e5ba898e1571b012bb48bfff4f909215d61ef399cb4f"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/circuit_assembler/overlay_front_active_emissive.png.mcmeta"
+hash = "45aa5e7cf4cf8b62592b0e566b61fa0174c881cbf31228cdf349c286206715e3"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/circuit_assembler/overlay_front_emissive.png"
+hash = "db874d828d9e42057ca9107cba88c88452d77600698683abfc58e71c1b5f23dc"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/circuit_assembler/overlay_front_paused.png"
+hash = "e8e2226244e0be83f1178955879731e781b3fa05a3337e4b86fc9a4dc8b21c92"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/circuit_assembler/overlay_front_paused_emissive.png"
+hash = "4688df1a3a2be5253672ec17e0f8d61147d10a4b371871bd94d966c0a188d71e"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/circuit_assembler/overlay_top.png"
+hash = "557f177e1e21818c5cec08d5e4a92e0b185919bd6cf83312495e8ad504fa3034"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/circuit_assembler/overlay_top_active.png"
+hash = "f7921e70f322261420bd636fd16e29e76e62694139bc63d199489eebd5bfd882"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/circuit_assembler/overlay_top_active_emissive.png"
+hash = "da110756154418c09c36121dae0eea6194f3bc0a46bf535d8ab45fecb466a2af"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/circuit_assembler/overlay_top_emissive.png"
+hash = "db874d828d9e42057ca9107cba88c88452d77600698683abfc58e71c1b5f23dc"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/laser_engraver/overlay_front.png"
+hash = "fff9f25a714252c5f658c992ebf765bb2dab855f36880cae2775013e212619f3"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/laser_engraver/overlay_front_active.png"
+hash = "5fa453a552a956b33b5bea3082194a05bf5cbd48bf3925fee7d5f1b6b8ca4b75"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/laser_engraver/overlay_front_active.png.mcmeta"
+hash = "4c00162fed7df9ed3f7763338d9a3197a90bba2aeb47cbe34812b9aaa4ae8c95"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/laser_engraver/overlay_front_active_emissive.png"
+hash = "d20a29295b442ea0662b89f3c28131849e0e45600db0a4a5d8d20e81864d4563"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/laser_engraver/overlay_front_active_emissive.png.mcmeta"
+hash = "4c00162fed7df9ed3f7763338d9a3197a90bba2aeb47cbe34812b9aaa4ae8c95"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/laser_engraver/overlay_front_emissive.png"
+hash = "e8a7d74196bcb6ec00a40a3d6b9b4672ad2fcecc2d9304885a804c7cf8e9ec95"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/block/machines/ore_washer/overlay_front.png"
@@ -1350,11 +1442,15 @@ hash = "bf3c8597df0521316f23f9412e02e076f925275dab3af1146a54fe008dfedcb1"
 
 [[files]]
 file = "kubejs/config/client.json"
-hash = "de241e99c33070805a1f039d6edb46c67cd92c93c7787e177fa38d15ed9007da"
+hash = "ab791585428cb5efa2dbc857cc8d3fecd741e803eb562a0cb878aee2d7e7ed34"
 
 [[files]]
 file = "kubejs/config/common.json"
 hash = "e00a67922942660d77c213379b5128a46c5abc894178b0be04006d325ff5f6b3"
+
+[[files]]
+file = "kubejs/config/packicon.png"
+hash = "da45fa729e6eca196c0be62c5730b17b3565955b21450f0f631126ad7b6fb37c"
 
 [[files]]
 file = "kubejs/config/probe-settings.json"
@@ -1370,7 +1466,7 @@ hash = "60cbcf33b66716891560766ba2aed17f5b66c218758929a14f8d66ce4251cecd"
 
 [[files]]
 file = "kubejs/server_scripts/EnchantmentNerfs.js"
-hash = "cb1c75873b886be19b13effac4c01c39fdd7f5707b69bd88bc376bd78ff9acb7"
+hash = "b588977af0248cf7b57caf87eba47133f3428cd1c8fc89247c8216eb50d19673"
 
 [[files]]
 file = "kubejs/server_scripts/OreProcessing.js"
@@ -1386,11 +1482,19 @@ hash = "bd5b7863272d9be14afa16ef33a502da777236b05af581d485a30193947070a1"
 
 [[files]]
 file = "kubejs/server_scripts/VanillaRecipes.js"
-hash = "7f5f462b78a890da66ecc5ef7279af84c7c2f2927e7ff1971c18872cd04c94ff"
+hash = "347347049e03bd38f9b0ad3db1a9e23a5b79e1c499b12ae36ab4072f487e6c42"
 
 [[files]]
 file = "kubejs/server_scripts/VeinDatagen.js"
-hash = "dceb2f71f60b31e161ebe790e9a17debe75ac7b84b12064d34cdfb1563a3dc0f"
+hash = "e459a270bb719168219fb9f3e6a783d1190355ae62453c8aeba6d1f880981a1a"
+
+[[files]]
+file = "kubejs/server_scripts/egregious/Circuits.js"
+hash = "1778d6abd082c6415b1ca62125411c83422bf410514a4e39bb58b6c8040cef56"
+
+[[files]]
+file = "kubejs/server_scripts/egregious/Misc.js"
+hash = "fdb13a26fd9413e4cd043a987c3d736040e78553dd8bde652ceefe71704d26e1"
 
 [[files]]
 file = "kubejs/server_scripts/jsconfig.json"
@@ -1410,7 +1514,7 @@ hash = "32a2e89879be3be1e45f85657dd407f98a46a05e28ab3ce3b3282db175a3b706"
 
 [[files]]
 file = "kubejs/server_scripts/mods/Egregious.js"
-hash = "c46349a773cd242712ca26ae956d9be40d196aba57d711902c2964a2e3c4fc2f"
+hash = "409f2875721e6a65f19af7f0b336849fcc890be3736c0ac08237c324324d4164"
 
 [[files]]
 file = "kubejs/server_scripts/mods/Elevators.js"
@@ -1434,7 +1538,7 @@ hash = "728f90d70ab5387fba5a9f2af498589d33b498a7c4a00d1181dfd59bb065e63f"
 
 [[files]]
 file = "kubejs/server_scripts/mods/HostileNeuralNetworks.js"
-hash = "2fed71948c8cd9cf9724012cbc7e46beb20dcdacdc5a7949cf00fa95d0532515"
+hash = "2c421b4d08077942a89d0d4a274914b43181e3cf93d5f8aa40e08d3ccca7a924"
 
 [[files]]
 file = "kubejs/server_scripts/mods/ImmersiveAircraft.js"
@@ -1442,7 +1546,7 @@ hash = "990c968e14a2ace7e1c00edb2c8bbcd62a93e0f79b3d5c84803925666ad0dc3f"
 
 [[files]]
 file = "kubejs/server_scripts/mods/JustHammers.js"
-hash = "786f78ec75a43d41cdf4784ce1aa09b2c6df3d54a459050543b5308557206857"
+hash = "8dfaa5cdd8aba4135019e927023c3e2b713d19f0e467a1c1526fb853074364ba"
 
 [[files]]
 file = "kubejs/server_scripts/mods/Pastel.js"
@@ -1462,7 +1566,11 @@ hash = "4d0ef9d3cf6eb5fbfe07cc9f4d27bed63ee368e43f95450bdda67be69d60ce6e"
 
 [[files]]
 file = "kubejs/server_scripts/nukes/Redundancies.js"
-hash = "053e5af201ff05ce29ef3e8f92d57900feff20be59080f9f0f9ae9395ad26c52"
+hash = "9239d96f6cbff3310882dc598dedb70c01d54a2271fa862328f7778df1d4f79d"
+
+[[files]]
+file = "kubejs/startup_scripts/EgregiousStartup.js"
+hash = "7cb37c11ea1e4db8bec3f7a57ef44c97b310110203bb06945dc25f4656168420"
 
 [[files]]
 file = "kubejs/startup_scripts/Fluids.js"
@@ -1471,6 +1579,10 @@ hash = "2b1582dcc6eb16b34b63887c4c302724365b245e74383d66b03d2f4eddcf4027"
 [[files]]
 file = "kubejs/startup_scripts/GTMOreBuilder.js"
 hash = "a58025a05793c04631f996a088a7ed5c4d681360336e79e42cd688a994839ea0"
+
+[[files]]
+file = "kubejs/startup_scripts/MIMachines/CircuitMachines.js"
+hash = "0e5fbf8c604ce511a0500bf51cebf606505298f9d61cf3259386fe695d2e5804"
 
 [[files]]
 file = "kubejs/startup_scripts/MIMachines/Keg.js"
@@ -1482,7 +1594,7 @@ hash = "b6ba0acbcdb55b8eb7291f1c84de2e55b77d51e642feece8f1ebb9cd3ec182b9"
 
 [[files]]
 file = "kubejs/startup_scripts/OreDefinitions.js"
-hash = "67632dbf42b5904573f60171e4040ab57fe85bb40554ad6e48de945e51bf588e"
+hash = "bfd611d6b8120b50740e2543a8290806f3b7ffeecbdb64a21f1ffb557f8fca02"
 
 [[files]]
 file = "kubejs/startup_scripts/jsconfig.json"
@@ -1491,6 +1603,18 @@ hash = "19c11c4004d8686b4b26e35026a5f8dd2bcb1f9164b2827d31625e2b02585aa7"
 [[files]]
 file = "modern_industrialization/extra_datagen_resources/assets/modern_industrialization/textures/materialsets/common/crushed_dust.png"
 hash = "9e665c48768910437bae8c22385d0050a363bf30e34b8d39a90a58d6e6b22f1c"
+
+[[files]]
+file = "modern_industrialization/extra_datagen_resources/assets/modern_industrialization/textures/materialsets/common/fine_wire.png"
+hash = "826937f3a797243f79e0a30e9803edc6a914ff1e743346dce6a7d7ab5bf26389"
+
+[[files]]
+file = "modern_industrialization/extra_datagen_resources/assets/modern_industrialization/textures/materialsets/common/fine_wire_overlay.png"
+hash = "56004b88d5adf2ba88a948279bb83c732b70c20f3c8de913263ef08189cc036b"
+
+[[files]]
+file = "modern_industrialization/extra_datagen_resources/assets/modern_industrialization/textures/materialsets/common/large_plate.png"
+hash = "27b2533fadc6536d14ca3742be931375616f65c887bd1a168b79c51c179ef144"
 
 [[files]]
 file = "modern_industrialization/extra_datagen_resources/assets/modern_industrialization/textures/materialsets/common/plate.png"
@@ -1694,11 +1818,6 @@ hash = "08b5fe6bbf5980820af8addc37e5ee41e48756400d86f9f554222f27b3ccecb5"
 metafile = true
 
 [[files]]
-file = "mods/enchantmentdisabler.pw.toml"
-hash = "68f2fbbf02b06c8a852082bd6bc71f3ed23bfab80b9b26e6d2a8dab1cc2bc0b3"
-metafile = true
-
-[[files]]
 file = "mods/entity-model-features.pw.toml"
 hash = "0042336abc94bae434faa534e9c2e1d1e477d5f984f9f993d92aa856143f3379"
 metafile = true
@@ -1761,11 +1880,6 @@ metafile = true
 [[files]]
 file = "mods/functional-storage.pw.toml"
 hash = "201b5f2a7c20c5f71b248b6dad8ce3e69a3bea07fc7a8f0fd0f7e8b2d494d8e4"
-metafile = true
-
-[[files]]
-file = "mods/fzzy-config.pw.toml"
-hash = "2c5b7fa8d10dfc8b515ee54050811b9f81cbf5d9058d0fc9f35294f334d70f74"
 metafile = true
 
 [[files]]
@@ -1901,11 +2015,6 @@ metafile = true
 [[files]]
 file = "mods/modonomicon.pw.toml"
 hash = "5fac1da5aa2701c81ee3a93be467c8812e3a15f9ce6bfc654719aa7b3e18f328"
-metafile = true
-
-[[files]]
-file = "mods/morejs.pw.toml"
-hash = "b1a1157abdc88e4b6e86f4ea3df6dc41f3e7c5aebd763b5fc7604d1704628886"
 metafile = true
 
 [[files]]

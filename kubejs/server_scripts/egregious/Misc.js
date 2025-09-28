@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
   // BASIC, ADVANCED, TURBO, HIGHLY_ADVANCED, QUANTUM
   const MI = (str) => {
-    `modern_industrialization:${str}`;
+    return `modern_industrialization:${str}`;
   };
   event.replaceInput(
     { output: MI("advanced_machine_casing") },

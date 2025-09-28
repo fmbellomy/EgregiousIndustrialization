@@ -38,8 +38,8 @@ ServerEvents.tags("item", (event) => {
   event.add("c:gems/lignite_coal", "modern_industrialization:lignite_coal");
 
   namespacedMats.forEach((mat) => {
-    let namespace = mat.split(":")[0];
-    let matName = mat.split(":")[1];
+    let namespace = mat.namespace;
+    let matName = mat.path;
     let rawOre = `${namespace}:raw_${matName}`;
     event.add("c:raw_materials", rawOre);
     event.add(`c:raw_materials/${matName}`, rawOre);
@@ -91,8 +91,8 @@ ServerEvents.tags("item", (event) => {
 });
 ServerEvents.tags("block", (event) => {
   unique(namespacedMats).forEach((mat) => {
-    let namespace = mat.split(":")[0];
-    let matName = mat.split(":")[1];
+    let namespace = mat.namespace;
+    let matName = mat.path;
     let rawOre = `${namespace}:raw_${matName}`;
     let block = `${rawOre}_block`;
     event.add("c:storage_blocks", block);
