@@ -2,6 +2,7 @@
   "entity": "minecraft:ghast",
   "name": { "translate": "entity.minecraft.ghast", "color": "#00D3D3D3" },
   "display": {
+    "y_offset": 4.0,
     "scale": 0.25
   },
   "sim_cost": 1024,
