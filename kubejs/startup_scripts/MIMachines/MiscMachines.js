@@ -4,6 +4,8 @@ MIMachineEvents.registerRecipeTypes((event) => {
 });
 
 MIMachineEvents.registerMachines((event) => {
+  let ANCHOR_X = 40;
+  let ANCHOR_Y = 30;
   event.craftingSingleBlock(
     "Extruder",
     "extruder",
