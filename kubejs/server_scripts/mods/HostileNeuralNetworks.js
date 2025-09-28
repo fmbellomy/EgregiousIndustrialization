@@ -136,7 +136,7 @@ ServerEvents.recipes((event) => {
   let dataModelData = [
     ["blaze", "minecraft:blaze_powder", "nether", true],
     ["creeper", "minecraft:gunpowder", "overworld", true],
-    ["enderman", "minecraft:ender_pearl", "end", true],
+    ["enderman", "minecraft:ender_pearl", "end", false],
     ["ghast", "minecraft:ghast_tear", "nether", true],
     ["guardian", "minecraft:prismarine_shard", "overworld", true],
     ["shulker", "minecraft:diamond", "end", true],
