@@ -461,20 +461,20 @@ file = "config/ars_nouveau/rewind.toml"
 hash = "cfba46b855cf3bef2c4792b313eb9bdfc28ecdf29792ab8996fb44840d8b3009"
 
 [[files]]
-file = "config/ars_nouveau/search_index/_1i.cfe"
-hash = "aed31fa03c17594d056908479a2439467ac80c6fce715c7ed7f6053df1f42b44"
+file = "config/ars_nouveau/search_index/_1k.cfe"
+hash = "9894b8e8eec33a343af15b8212996d149171c5400a6d017f5c259470cb8a61c8"
 
 [[files]]
-file = "config/ars_nouveau/search_index/_1i.cfs"
-hash = "809468e3ad4052ed6158900f62fa78eddfb38719d2119c412c8d7a8fc9a6582a"
+file = "config/ars_nouveau/search_index/_1k.cfs"
+hash = "a90cd7c16337a736abb2a8f16ee6c79f0eee87e713380932d645a92369366098"
 
 [[files]]
-file = "config/ars_nouveau/search_index/_1i.si"
-hash = "d395c7f5909d0839483a10a09552c83952546635afba38e484e89df0efc5c45c"
+file = "config/ars_nouveau/search_index/_1k.si"
+hash = "340dc6ea716f030e1d0c27cbee0b483901269cea3647973d83c56b3c855423b4"
 
 [[files]]
-file = "config/ars_nouveau/search_index/segments_1j"
-hash = "8f69f3725d071b9c962e635edc266ef14db73373e5ddda08c8fa6d9d5874e4d8"
+file = "config/ars_nouveau/search_index/segments_1l"
+hash = "1385c556e74bd4a6347904a44b9ceb52be482ccb794bcc106c679ecba713379d"
 
 [[files]]
 file = "config/ars_nouveau/search_index/write.lock"
@@ -1257,6 +1257,18 @@ file = "kubejs/assets/kubejs/textures/item/ilc_wafer.png"
 hash = "03b2cb22fc67d21df22d62c0b44569bbd5fd22807a8d5f1ef031faddc0c8dbbc"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/lens.png"
+hash = "4a22b873e76b48414a51167ed3efd4687c851932df0bdc78158a61d7c619fba2"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/lens_overlay.png"
+hash = "5535f537e51779052159dc247b2d3cd03cd12f982298bbdff188d5fa5704c542"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/lens_secondary.png"
+hash = "ee98a332aa9f1d864e61536ea4ebbe24a031962ff7651f109c07ee50477e0349"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/nand_chip.png"
 hash = "3c086d208f19ef32062ec9f0056b03bf6ad8cc715abb7eed36ff9239415decb9"
 
@@ -1666,7 +1678,7 @@ hash = "9239d96f6cbff3310882dc598dedb70c01d54a2271fa862328f7778df1d4f79d"
 
 [[files]]
 file = "kubejs/startup_scripts/EgregiousStartup.js"
-hash = "fb2ea474dd62074d69daecaca7bce89ceb204f2dc151563cba161c9b841518d5"
+hash = "63cf145a6faa407815c2a71a9b1341a9ca931fcc47481c90762227440b4a9bbb"
 
 [[files]]
 file = "kubejs/startup_scripts/Fluids.js"
