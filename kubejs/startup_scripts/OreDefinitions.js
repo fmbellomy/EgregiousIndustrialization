@@ -219,11 +219,11 @@ MIMaterialEvents.modifyMaterial("redstone", (event) => {
 });
 // iridium
 MIMaterialEvents.modifyMaterial("iridium", (event) => {
-  event.builder.addParts("drill", "drill_head").defaultRecipes();
+  event.builder.addParts("drill", "drill_head");
 });
 // gold
 MIMaterialEvents.modifyMaterial("gold", (event) => {
-  event.builder.addParts("wire", "fine_wire").cable("mv").defaultRecipes();
+  event.builder.addParts("wire", "fine_wire").cable("mv");
 });
 // lapis
 MIMaterialEvents.modifyMaterial("lapis", (event) => {

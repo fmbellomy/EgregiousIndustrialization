@@ -1,4 +1,5 @@
 ServerEvents.recipes((event) => {
+  // TODO: IRIDIUM DRILL/HEAD
   // replace battery alloy dust mixer recipe
   event.remove({
     mod: "modern_industrialization",
