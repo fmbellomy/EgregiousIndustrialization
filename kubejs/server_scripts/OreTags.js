@@ -36,20 +36,19 @@ ServerEvents.tags("item", (event) => {
   event.add("c:gems/coal", "minecraft:coal");
   event.add("c:gems", "modern_industrialization:lignite_coal");
   event.add("c:gems/lignite_coal", "modern_industrialization:lignite_coal");
+  // ruby has no ore so it's a little weird
+  event.add("c:gems", "modern_industrialization:ruby");
 
   namespacedMats.forEach((mat) => {
     let namespace = mat.namespace;
-    let matName = mat.path;
+    let matName = mat.split(":")[1];
     let rawOre = `${namespace}:raw_${matName}`;
     event.add("c:raw_materials", rawOre);
     event.add(`c:raw_materials/${matName}`, rawOre);
-    event.add("malum:prospectors_treasure", rawOre);
-    event.add("malum:void_soulstone_material", rawOre);
 
     let block = `${rawOre}_block`;
     event.add("c:storage_blocks", block);
     event.add(`c:storage_blocks/raw_${matName}`, block);
-    event.add("malum:prospectors_treasure", block);
     event.add("minecraft:incorrect_for_gold_tool", block);
     event.add("minecraft:incorrect_for_wooden_tool", block);
     event.add("minecraft:mineable/pickaxe", block);
