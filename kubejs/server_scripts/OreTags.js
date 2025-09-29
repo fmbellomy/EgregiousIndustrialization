@@ -68,7 +68,6 @@ ServerEvents.tags("item", (event) => {
     event.add("c:ores", stoneOre);
     event.add("c:ores_in_ground/stone", stoneOre);
     event.add(`c:ores/${matName}`, stoneOre);
-    event.add("malum:prospectors_treasure", stoneOre);
     event.add("minecraft:incorrect_for_gold_tool", stoneOre);
     event.add("minecraft:incorrect_for_wooden_tool", stoneOre);
     event.add("minecraft:mineable/pickaxe", stoneOre);
@@ -80,7 +79,6 @@ ServerEvents.tags("item", (event) => {
       event.add("c:ores", ore);
       event.add(`c:ores_in_ground/${prefix}`, ore);
       event.add(`c:ores/${matName}`, ore);
-      event.add("malum:prospectors_treasure", ore);
       event.add("minecraft:incorrect_for_gold_tool", ore);
       event.add("minecraft:incorrect_for_wooden_tool", ore);
       event.add("minecraft:mineable/pickaxe", ore);
@@ -96,7 +94,6 @@ ServerEvents.tags("block", (event) => {
     let block = `${rawOre}_block`;
     event.add("c:storage_blocks", block);
     event.add("c:storage_blocks/raw_" + matName, block);
-    event.add("malum:prospectors_treasure", block);
     event.add("minecraft:incorrect_for_gold_tool", block);
     event.add("minecraft:incorrect_for_wooden_tool", block);
     event.add("minecraft:mineable/pickaxe", block);
