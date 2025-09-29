@@ -53,7 +53,9 @@
 ### Circuits
 
 - [ ] Circuit Assembler Machine
+- [ ] Change RAM recipe to use RAM Chips instead of Silicon Wafers
 - [ ] Laser Engraver Machine
+- [ ] LE Recipes for each Wafer
 - [ ] Rebalance Boule Recipe
 - [ ] SMD Components behind HV assembler
 - [ ] Circuit Assembler recipes for each Circuit tier

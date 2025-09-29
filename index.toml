@@ -461,20 +461,20 @@ file = "config/ars_nouveau/rewind.toml"
 hash = "cfba46b855cf3bef2c4792b313eb9bdfc28ecdf29792ab8996fb44840d8b3009"
 
 [[files]]
-file = "config/ars_nouveau/search_index/_1k.cfe"
-hash = "9894b8e8eec33a343af15b8212996d149171c5400a6d017f5c259470cb8a61c8"
+file = "config/ars_nouveau/search_index/_1s.cfe"
+hash = "61393c396323478618798fc9f78de4ca1652dec7aca76cc630c2eec90e88578c"
 
 [[files]]
-file = "config/ars_nouveau/search_index/_1k.cfs"
-hash = "a90cd7c16337a736abb2a8f16ee6c79f0eee87e713380932d645a92369366098"
+file = "config/ars_nouveau/search_index/_1s.cfs"
+hash = "341367314eddb7014fd2363cea94a80cf86960654c340653fee374edfcf6c124"
 
 [[files]]
-file = "config/ars_nouveau/search_index/_1k.si"
-hash = "340dc6ea716f030e1d0c27cbee0b483901269cea3647973d83c56b3c855423b4"
+file = "config/ars_nouveau/search_index/_1s.si"
+hash = "8629a84e0f6933b985b576eae1ae6decf322d7156b95554d752921a6d755a7c2"
 
 [[files]]
-file = "config/ars_nouveau/search_index/segments_1l"
-hash = "1385c556e74bd4a6347904a44b9ceb52be482ccb794bcc106c679ecba713379d"
+file = "config/ars_nouveau/search_index/segments_1t"
+hash = "99c4c7b7f2e60e1636cb77328d4849c3e67e14562687b7dd10382293d80c566a"
 
 [[files]]
 file = "config/ars_nouveau/search_index/write.lock"
@@ -1234,7 +1234,7 @@ hash = "15ebd1c2ee2e2edc1b1087aeb07b91059d153c1f43ae57c5aa5a94ecf562952d"
 
 [[files]]
 file = "devdocs/TODO.md"
-hash = "80bc4ab039a8257088c2fc011e49416f87abff2286844a09c165b2368e67fb85"
+hash = "e1863948c06cc83d621cb1f6acc308cecfc5f8faecf4af5e0d4b1954f88bcd87"
 
 [[files]]
 file = "kubejs/README.txt"
@@ -1247,6 +1247,10 @@ hash = "9bb4bee886e5ad9711172d9e8d52c1ff4bf729991065bdc1a18e730f2df3fee8"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/cpu_wafer.png"
 hash = "f5f350e101d141014991e5416daf75a122a583ecfee569934811925f6611f65c"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/gem.png"
+hash = "f46d37e77a6aa73b5597875a0171574bbe7d7544d7d4b9c15cbc63f313010c2c"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/ilc_chip.png"
@@ -1291,6 +1295,26 @@ hash = "93c53de2ec089ef8a3a29dda74fad7057ece4f039b2bff6aef328f78b36ecc4b"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/ram_wafer.png"
 hash = "f140a1d43c0d60cbc87a1d09b2597f1d9cd7fef8eb29307b31d375e3c0bdf7a1"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/smd_capacitor.png"
+hash = "2c9822947cc0d6b05ecba24096620431277762bba34ba35d2a9a9a4c3bdcfe6d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/smd_diode.png"
+hash = "28623ef7d150b4c459103c184fa5055a6775766dd7b9d4a2011888509a503acf"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/smd_inductor.png"
+hash = "a75fdbf251cdc8902ff39802d065884cfcd0d19e36bb694eee719738713907c5"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/smd_resistor.png"
+hash = "b30b952441d5c0149709a5362fe53e8f46b81c81ea41d297ce6b0ea7256bde6c"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/smd_transistor.png"
+hash = "fb8bf66f35847a5c36b00cd0af51879d1bc91e40ecb0fed47d28291c02ba8161"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/soc_chip.png"
@@ -1541,6 +1565,30 @@ file = "kubejs/assets/modern_industrialization/textures/block/machines/sifter/ov
 hash = "e8a7d74196bcb6ec00a40a3d6b9b4672ad2fcecc2d9304885a804c7cf8e9ec95"
 
 [[files]]
+file = "kubejs/assets/modern_industrialization/textures/item/ruby.png"
+hash = "36df74d930dc68801bc665e79c3633df9cc6504c100985cea9c8eab8e0539dc1"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/item/ruby.png.mcmeta"
+hash = "b1a03b9cc0f6743057b5aea7a1bbbfa9baf2bcc8f79e1e0b6c4c216d47026997"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/item/ruby_overlay.png"
+hash = "9932c8e67896cde583befa722d8db3476c24740153c785e2a7a06156cfece0eb"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/item/ruby_overlay.png.mcmeta"
+hash = "b1a03b9cc0f6743057b5aea7a1bbbfa9baf2bcc8f79e1e0b6c4c216d47026997"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/item/ruby_secondary.png"
+hash = "e524031e91b09c363a1656db83706da9cd0c47ae468e8516752fec5252793950"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/item/ruby_secondary.png.mcmeta"
+hash = "b1a03b9cc0f6743057b5aea7a1bbbfa9baf2bcc8f79e1e0b6c4c216d47026997"
+
+[[files]]
 file = "kubejs/client_scripts/Lang.js"
 hash = "895804d889ae06c813a14a190059afb30adfa21952d54b098572784a4b4f332f"
 
@@ -1598,7 +1646,7 @@ hash = "e459a270bb719168219fb9f3e6a783d1190355ae62453c8aeba6d1f880981a1a"
 
 [[files]]
 file = "kubejs/server_scripts/egregious/Circuits.js"
-hash = "1778d6abd082c6415b1ca62125411c83422bf410514a4e39bb58b6c8040cef56"
+hash = "7bf3668dc9a716c9161c37577a15edfeb1f1cdd1500f4382192c4e4c770feb69"
 
 [[files]]
 file = "kubejs/server_scripts/egregious/Misc.js"
@@ -1678,7 +1726,7 @@ hash = "9239d96f6cbff3310882dc598dedb70c01d54a2271fa862328f7778df1d4f79d"
 
 [[files]]
 file = "kubejs/startup_scripts/EgregiousStartup.js"
-hash = "63cf145a6faa407815c2a71a9b1341a9ca931fcc47481c90762227440b4a9bbb"
+hash = "62c265cc1a094de1c5d1b5737bc3138679b0d9679151a36f1a961c3a67b8b1cd"
 
 [[files]]
 file = "kubejs/startup_scripts/Fluids.js"
@@ -1706,7 +1754,7 @@ hash = "b6ba0acbcdb55b8eb7291f1c84de2e55b77d51e642feece8f1ebb9cd3ec182b9"
 
 [[files]]
 file = "kubejs/startup_scripts/OreDefinitions.js"
-hash = "bfd611d6b8120b50740e2543a8290806f3b7ffeecbdb64a21f1ffb557f8fca02"
+hash = "9b7ead1acf2ecec92728be6bbc419b8caf976e23718924e3c9992b689225d405"
 
 [[files]]
 file = "kubejs/startup_scripts/jsconfig.json"

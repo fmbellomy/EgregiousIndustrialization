@@ -23,4 +23,9 @@ StartupEvents.registry("item", (event) => {
     event.create(`${wafer}_wafer`).displayName(wafer.toUpperCase() + " Wafer");
     event.create(`${wafer}_chip`).displayName(wafer.toUpperCase() + " Chip");
   });
+  const smds = ["Capacitor", "Diode", "Inductor", "Resistor", "Transistor"];
+
+  smds.forEach((smd) => {
+    event.create(`smd_${smd.toLowerCase()}`).displayName(`SMD ${smd}`);
+  });
 });

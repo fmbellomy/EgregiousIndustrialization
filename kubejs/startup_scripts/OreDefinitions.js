@@ -196,10 +196,10 @@ MIMaterialEvents.addMaterials((event) => {
   event.createMaterial(
     "Certus Quartz",
     "certus_quartz",
-    0x8abacc,
+    0xb2e7ff,
     (builder) => {
       builder
-        .addParts("crushed_dust")
+        .addParts("crushed_dust", "plate", "large_plate")
         .addExternalPart("gem", "ae2:certus_quartz")
         .addExternalPart("dust", "ae2:certus_quartz_dust")
         .customRegularPart("Washed Crushed Dust", "washed_crushed_dust")
@@ -235,7 +235,7 @@ MIMaterialEvents.modifyMaterial("diamond", (event) => {
 });
 // emerald
 MIMaterialEvents.modifyMaterial("emerald", (event) => {
-  event.builder.setMainPart("ingot").rawMetal("iron");
+  event.builder.addParts("large_plate").setMainPart("ingot").rawMetal("iron");
 });
 // quartz
 MIMaterialEvents.modifyMaterial("quartz", (event) => {
@@ -297,7 +297,7 @@ MIMaterialEvents.modifyMaterial("ruby", (event) => {
       { generate: false, ore_set: "copper", min_xp: 0, max_xp: 0 },
       "minecraft:netherrack"
     )
-    .addParts("crushed_dust")
+    .addParts("crushed_dust", "gem")
     .rawMetal("copper");
 });
 // uranium
