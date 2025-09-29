@@ -26,11 +26,15 @@ ServerEvents.recipes((event) => {
       );
     }
   );
-  event.replaceInput(
-    { output: "modern_industrialization:analog_circuit" },
-    "modern_industrialization:resistor",
-    "#egregious:resistor"
-  );
+
+  // we do need to make boules craftable sooner, so here's a recipe doable in MV
+
+  event.recipes.modern_industrialization
+    .blast_furnace(32, 3600)
+    .itemIn("64x modern_industrialization:silicon_dust")
+    .itemIn("modern_industrialization:antimony_tiny_dust")
+    .fluidIn("4000x modern_industrialization:oxygen")
+    .itemOut("modern_industrialization:monocrystalline_silicon");
 
   [("glass", "diamond", "emerald", "quartz")].forEach((gem) => {
     // a whole two minutes for each lens since they're super cheap and you don't need very many
@@ -53,12 +57,12 @@ ServerEvents.recipes((event) => {
     .registeredCondition({ "mi_tweaks:voltage": { voltage: "mv" } });
 
   let lensRecipes = [
-    { lens: "ruby", wafer: "ilc", tier: "mv", eu: 32 },
-    { lens: "glass", wafer: "soc", tier: "mv", eu: 32 },
-    { lens: "diamond", wafer: "cpu", tier: "hv", eu: 48 },
-    { lens: "emerald", wafer: "ram", tier: "hv", eu: 48 },
-    { lens: "quartz", wafer: "nand", tier: "ev", eu: 128 },
-    { lens: "certus", wafer: "nor", tier: "ev", eu: 128 },
+    { lens: "ruby", wafer: "ilc", tier: "mv", eu: 16 },
+    { lens: "glass", wafer: "soc", tier: "mv", eu: 16 },
+    { lens: "diamond", wafer: "cpu", tier: "hv", eu: 24 },
+    { lens: "emerald", wafer: "ram", tier: "hv", eu: 24 },
+    { lens: "quartz", wafer: "nand", tier: "ev", eu: 32 },
+    { lens: "certus", wafer: "nor", tier: "ev", eu: 32 },
   ];
   lensRecipes.forEach((pair) =>
     event.recipes.modern_industrialization
@@ -217,7 +221,7 @@ ServerEvents.recipes((event) => {
     .itemIn("2x kubejs:nor_chip")
     .itemIn("8x modern_industrialization:platinum_fine_wire")
     .fluidIn("120x modern_industrialization:soldering_alloy")
-    .itemOut("3x modern_industrialization:digital_circuit")
+    .itemOut("1x modern_industrialization:digital_circuit")
     .registeredCondition({ "mi_tweaks:voltage": { voltage: "ev" } });
 
   // EV PROCESSING UNIT
@@ -232,6 +236,8 @@ ServerEvents.recipes((event) => {
     .fluidIn("120x modern_industrialization:soldering_alloy")
     .itemOut("2x modern_industrialization:processing_unit")
     .registeredCondition({ "mi_tweaks:voltage": { voltage: "ev" } });
+
+  // SV/QV NOT YET IMPLEMENTED (WILL REQUIRE MULTIBLOCKS)
 
   // RAM
   event.remove({ output: "modern_industrialization:random_access_memory" });
