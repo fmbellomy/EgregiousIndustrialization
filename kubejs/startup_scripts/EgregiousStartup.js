@@ -7,6 +7,7 @@ StartupEvents.registry("item", (event) => {
     { mat: "emerald", color: "#40F082" },
     { mat: "certus", color: "#88B9EC" },
     { mat: "quartz", color: "#E2DCD3" },
+    { mat: "ruby", color: "#FC0B4D" },
   ];
   lenses.forEach((lens) => {
     event
@@ -16,7 +17,8 @@ StartupEvents.registry("item", (event) => {
         layer1: "kubejs:item/lens_secondary",
         layer2: "kubejs:item/lens_overlay",
       })
-      .color(0, lens.color);
+      .color(0, lens.color)
+      .color(1, lens.color);
   });
   const wafers = ["cpu", "ilc", "nand", "nor", "ram", "soc"];
   wafers.forEach((wafer) => {

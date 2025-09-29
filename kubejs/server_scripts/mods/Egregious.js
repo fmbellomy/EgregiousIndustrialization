@@ -1,5 +1,21 @@
 ServerEvents.recipes((event) => {
+  // silicon carbide
+  event.recipes.modern_industrialization
+    .mixer(8, 100)
+    .itemIn("modern_industrialization:carbon_dust")
+    .itemIn("modern_industrialization:silicon_dust")
+    .itemOut("2x modern_industrialization:silicon_carbide_dust");
+  event.smelting(
+    "modern_industrialization:silicon_carbide_ingot",
+    "modern_industrialization:silicon_carbide_dust"
+  );
+  event.blasting(
+    "modern_industrialization:silicon_carbide_ingot",
+    "modern_industrialization:silicon_carbide_dust"
+  );
+
   // TODO: IRIDIUM DRILL/HEAD
+
   // replace battery alloy dust mixer recipe
   event.remove({
     mod: "modern_industrialization",
@@ -113,6 +129,50 @@ ServerEvents.recipes((event) => {
     .itemIn("modern_industrialization:basic_machine_hull")
     .itemIn("modern_industrialization:electronic_circuit")
     .itemOut("modern_industrialization:chemical_bath");
+
+  // laser engraver
+  event.shaped(
+    "modern_industrialization:laser_engraver",
+    ["DLD", "CHC", "EPE"],
+    {
+      E: "modern_industrialization:electronic_circuit",
+      D: "modern_industrialization:diode",
+      L: "kubejs:glass_lens",
+      C: "modern_industrialization:electrum_cable",
+      H: "modern_industrialization:basic_machine_hull",
+      P: "minecraft:prismarine_crystals",
+    }
+  );
+  event.recipes.modern_industrialization
+    .assembler(8, 200)
+    .itemIn("modern_industrialization:basic_machine_hull")
+    .itemIn("2x modern_industrialization:electronic_circuit")
+    .itemIn("2x modern_industrialization:diode")
+    .itemIn("kubejs:glass_lens")
+    .itemIn("2x modern_industrialization:electrum_cable")
+    .itemIn("minecraft:prismarine_crystals")
+    .itemOut("modern_industrialization:laser_engraver");
+
+  // circuit assembler
+  event.shaped(
+    "modern_industrialization:circuit_assembler",
+    ["RPR", "MHM", "EPE"],
+    {
+      E: "modern_industrialization:electronic_circuit",
+      R: "modern_industrialization:robot_arm",
+      M: "modern_industrialization:large_motor",
+      H: "modern_industrialization:basic_machine_hull",
+      P: "modern_industrialization:large_pump",
+    }
+  );
+  event.recipes.modern_industrialization
+    .assembler(8, 200)
+    .itemIn("modern_industrialization:basic_machine_hull")
+    .itemIn("2x modern_industrialization:electronic_circuit")
+    .itemIn("2x modern_industrialization:large_pump")
+    .itemIn("2x modern_industrialization:robot_arm")
+    .itemIn("2x modern_industrialization:large_motor")
+    .itemOut("modern_industrialization:circuit_assembler");
 
   //Steel upgrade for custom ore washer
   event.shapeless("modern_industrialization:steel_ore_washer", [
