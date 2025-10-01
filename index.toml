@@ -1858,6 +1858,11 @@ hash = "20474e975cd0974217cf9a9899d44e9179afbae31e974b1ed7d9721be1920f1d"
 metafile = true
 
 [[files]]
+file = "mods/auth-me.pw.toml"
+hash = "cfaa2ff43f55856f317eb980915b502f3b2bd5c9ae4374d0ae166c5d75540a24"
+metafile = true
+
+[[files]]
 file = "mods/badpackets.pw.toml"
 hash = "4696bddb459f4dade3c1be79d05e53566a975ae675d2e80a6e2760edbe223a45"
 metafile = true
