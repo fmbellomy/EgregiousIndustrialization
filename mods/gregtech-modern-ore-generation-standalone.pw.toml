@@ -1,13 +1,13 @@
 name = "GregTech Modern Ore Generation: Standalone"
-filename = "gtmogs-1.21.1-1.0.5.jar"
+filename = "gtmogs-1.21.1-1.0.6.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "592c52953531cbe42c9bc3c48ec32804a76beb0e"
+hash = "8b8dbd6fff2048de6771a756ce58b7039101e8b0"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7007444
+file-id = 7059530
 project-id = 1340111

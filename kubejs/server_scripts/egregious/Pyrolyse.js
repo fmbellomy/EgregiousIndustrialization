@@ -1,5 +1,5 @@
 ServerEvents.recipes((e) => {
-  const { pyrolyse_oven, distillation_tower } =
+  const { pyrolyse_oven, distillation_tower, fluid_extractor } =
     e.recipes.modern_industrialization;
   // pyrolyse gaming
   pyrolyse_oven(16, 300)
@@ -10,7 +10,7 @@ ServerEvents.recipes((e) => {
     .itemIn("12x minecraft:coal")
     .fluidOut("3000x modern_industrialization:coal_tar")
     .itemOut("2x modern_industrialization:carbon_dust");
-  pyrolyse_oven(16, 60)
+  pyrolyse_oven(16, 600)
     .itemIn("16x #minecraft:logs_that_burn")
     .fluidOut("2000x modern_industrialization:wood_tar")
     .itemOut("20x minecraft:charcoal");
@@ -41,4 +41,7 @@ ServerEvents.recipes((e) => {
     .fluidOut("500x modern_industrialization:creosote")
     .fluidOut("300x modern_industrialization:sulfuric_acid")
     .fluidOut("200x modern_industrialization:phenol");
+  fluid_extractor(4, 200)
+    .itemIn("minecraft:charcoal")
+    .fluidOut("100x modern_industrialization:benzene");
 });

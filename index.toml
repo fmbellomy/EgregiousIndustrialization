@@ -461,20 +461,20 @@ file = "config/ars_nouveau/rewind.toml"
 hash = "cfba46b855cf3bef2c4792b313eb9bdfc28ecdf29792ab8996fb44840d8b3009"
 
 [[files]]
-file = "config/ars_nouveau/search_index/_1s.cfe"
-hash = "61393c396323478618798fc9f78de4ca1652dec7aca76cc630c2eec90e88578c"
+file = "config/ars_nouveau/search_index/_3e.cfe"
+hash = "e9edf8d7522c7e96818574dc8cdf4db89301d49f78e68e29b35ac5a774bbd65e"
 
 [[files]]
-file = "config/ars_nouveau/search_index/_1s.cfs"
-hash = "341367314eddb7014fd2363cea94a80cf86960654c340653fee374edfcf6c124"
+file = "config/ars_nouveau/search_index/_3e.cfs"
+hash = "d532512470ea3adddbdab236cbc1b0c7a77d3ef5aeb1ea5a5674a086f1496e62"
 
 [[files]]
-file = "config/ars_nouveau/search_index/_1s.si"
-hash = "8629a84e0f6933b985b576eae1ae6decf322d7156b95554d752921a6d755a7c2"
+file = "config/ars_nouveau/search_index/_3e.si"
+hash = "c2e1d20bb22a19190772802f31cd46622588c79e47a0caa175fe0d1ec36786f2"
 
 [[files]]
-file = "config/ars_nouveau/search_index/segments_1t"
-hash = "99c4c7b7f2e60e1636cb77328d4849c3e67e14562687b7dd10382293d80c566a"
+file = "config/ars_nouveau/search_index/segments_3f"
+hash = "edffef30ce62244e7d24f113338f9d311480c258afce09ee262b4f14efd0249a"
 
 [[files]]
 file = "config/ars_nouveau/search_index/write.lock"
@@ -483,6 +483,10 @@ hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 [[files]]
 file = "config/ars_nouveau/wololo.toml"
 hash = "2a6cdb9050080e2c86a7d1b67df0921e0c3470694500f561b33cc1bbb00fcca8"
+
+[[files]]
+file = "config/authme.jsonc"
+hash = "7be21b7617f2469822bee8c1d8060b89df32e05351c4599dedcb8de8d223d5ba"
 
 [[files]]
 file = "config/balm-client.toml"
@@ -1153,6 +1157,10 @@ file = "config/placebo.cfg"
 hash = "6bbc71c6dc18b1ba4952e1bc54ed2b98c3a90f04cec4257ec3f7566cdf0c0e2a"
 
 [[files]]
+file = "config/resourceful-config-web.json"
+hash = "51eb47d1d361d1d8c267a6cf338b9a8da3ab917b6895060f6d457799d78d4086"
+
+[[files]]
 file = "config/resourcify.json"
 hash = "e58371e7d636e557efde9fecf278417fd1b5290f025fe79564bc57030eca1566"
 
@@ -1461,6 +1469,106 @@ file = "kubejs/assets/modern_industrialization/textures/block/machines/extruder/
 hash = "ade6e723693b5360b3328e76d5f6030c1bc63e8aaba9f2a73d5f4b8243a0d7ed"
 
 [[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/fluid_extractor/overlay_front.png"
+hash = "c67cb52e5cf901ae06607ea59191291980746695e0a2dd44a22ba5bb2cc738ae"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/fluid_extractor/overlay_front_active.png"
+hash = "86111b1898ded45e8e566658a7d418a54b5ac18206acb219209fd0df8c6a6979"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/fluid_extractor/overlay_front_active.png.mcmeta"
+hash = "7dc16041541801a5bbfd3e98fc2e939ca860cc063a19393da16841eca4212b37"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/fluid_extractor/overlay_front_active_emissive.png"
+hash = "bdf2dae60801e19e744ae695ecef12cd928d72984ddbfa56a12f671978087082"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/fluid_extractor/overlay_front_active_emissive.png.mcmeta"
+hash = "7dc16041541801a5bbfd3e98fc2e939ca860cc063a19393da16841eca4212b37"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/fluid_extractor/overlay_front_emissive.png"
+hash = "7cc66b7b035bd7389b36bfd9daabfcbcc7367038bbe76af7e87f7e14615ba539"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/fluid_extractor/overlay_side.png"
+hash = "dc3d4f0dd69232abe810a2711d23182195a4edd2ad1201258b1ff0453491d1a1"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/fluid_extractor/overlay_side_active.png"
+hash = "662fb3288e70259bfec405b81b4f616b051a967d8ba4ebb83e05103ad6519d74"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/fluid_extractor/overlay_side_active_emissive.png"
+hash = "8489e5154f080e519281fa6d898a285bf579e6f83902f123d6c2723e063d4ff1"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/fluid_extractor/overlay_side_emissive.png"
+hash = "7cc66b7b035bd7389b36bfd9daabfcbcc7367038bbe76af7e87f7e14615ba539"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/fluid_extractor/overlay_top.png"
+hash = "b2b75e4fefb307596ebfb8d2f786e9cfd23cf299a5683e2adc80ef8e5b2a03f5"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/fluid_extractor/overlay_top_active.png"
+hash = "be6e12760d4a8815aa6ef158758af8a205c29cac988f6122e5c1a326f8313234"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/fluid_extractor/overlay_top_active_emissive.png"
+hash = "fdb4356e32a19bd06dc0806efb0fa18a94c9173392598718d54f2e5df96fbc28"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/fluid_extractor/overlay_top_emissive.png"
+hash = "7cc66b7b035bd7389b36bfd9daabfcbcc7367038bbe76af7e87f7e14615ba539"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/gas_turbine/overlay_side.png"
+hash = "90b9b8636957e2116efecd7923939b23b1e22224f13e615e7733aadb0c29431f"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/gas_turbine/overlay_side_active.png"
+hash = "c8ffe6502de7e532b31de70237eb63ddbd4103e832a43518be73c23f01d4f308"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/gas_turbine/overlay_side_active.png.mcmeta"
+hash = "8d2bc958c292165e59eaa0541db2d193636faa99839dc329b3218d44f23c1f7e"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/greenhouse/overlay_front.png"
+hash = "e6bacd64f6d46195d62b1c60332e542b481c780144d82aa9ddd4813d685dc410"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/greenhouse/overlay_front_active.png"
+hash = "76a11bcdf6aea9ebbe6d0209489c50ccd57a6cad3b37fb63e90a2afd498a4037"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/greenhouse/overlay_front_active.png.mcmeta"
+hash = "7dc16041541801a5bbfd3e98fc2e939ca860cc063a19393da16841eca4212b37"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/greenhouse/overlay_front_active_emissive.png"
+hash = "68b5f6165a684cdfec964d82831fd493fd61b84eb6a88dbdebb9e79d93a1ab20"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/greenhouse/overlay_front_active_emissive.png.mcmeta"
+hash = "7dc16041541801a5bbfd3e98fc2e939ca860cc063a19393da16841eca4212b37"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/greenhouse/overlay_front_emissive.png"
+hash = "e0f23d069beca1006dea8f8911dbd594b03df4e4bf54c1e9e0a5454c9e8e3a12"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/greenhouse/overlay_front_paused.png"
+hash = "4cfb942ee4afa1d986653d249eb9d6d76a86e654b3238981a3e63b3b3ceb17a8"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/greenhouse/overlay_front_paused_emissive.png"
+hash = "712fe05bc90f272b0581b0a87dd99911d8df2f05bf8dbe91aad9ed34bc9c4553"
+
+[[files]]
 file = "kubejs/assets/modern_industrialization/textures/block/machines/laser_engraver/overlay_front.png"
 hash = "fff9f25a714252c5f658c992ebf765bb2dab855f36880cae2775013e212619f3"
 
@@ -1523,6 +1631,38 @@ hash = "7cc66b7b035bd7389b36bfd9daabfcbcc7367038bbe76af7e87f7e14615ba539"
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/block/machines/ore_washer/overlay_side_emissive.png"
 hash = "7cc66b7b035bd7389b36bfd9daabfcbcc7367038bbe76af7e87f7e14615ba539"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/pyrolyse_oven/overlay_front.png"
+hash = "1f352731d587799d720c392de159aab6773b6b074ace2dfdfe2cf3e420217335"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/pyrolyse_oven/overlay_front_active.png"
+hash = "7daf6764193bcc40de8ae91df28afbf288b3ded53c4531639b293b6df181afa3"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/pyrolyse_oven/overlay_front_active.png.mcmeta"
+hash = "9290d0968f9777942810ebeaf23fa7326090038da5e1bf8f606e7e9a0b6aea4b"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/pyrolyse_oven/overlay_front_active_emissive.png"
+hash = "cd6f6a5c93966a73c64bda59e9f320dc7224836c60495ba00ec968be964ba81d"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/pyrolyse_oven/overlay_front_active_emissive.png.mcmeta"
+hash = "9290d0968f9777942810ebeaf23fa7326090038da5e1bf8f606e7e9a0b6aea4b"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/pyrolyse_oven/overlay_front_emissive.png"
+hash = "530847e91fbe43ee7e2e633ace5296dac46af64b265544ff94adb6e920c3e016"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/pyrolyse_oven/overlay_front_paused.png"
+hash = "c1dcd5cf645e75781ec0769dfe52d685bb3dd168b48dec8a4b7dfeeea5dff574"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/pyrolyse_oven/overlay_front_paused_emissive.png"
+hash = "c6ec1af5bf0bf12a8f3e37d37f1a217573f5207ae182b25c2b9b9f69f520db59"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/block/machines/sifter/overlay_front.png"
@@ -1589,6 +1729,46 @@ file = "kubejs/assets/modern_industrialization/textures/item/ruby_secondary.png.
 hash = "b1a03b9cc0f6743057b5aea7a1bbbfa9baf2bcc8f79e1e0b6c4c216d47026997"
 
 [[files]]
+file = "kubejs/assets/sophisticatedbackpacks/lang/en_us.json"
+hash = "11e813827cc19f5175406661f0ee520bfdcd104ae6a7e1d577c3ea762866204c"
+
+[[files]]
+file = "kubejs/assets/sophisticatedbackpacks/textures/block/copper_clips.png"
+hash = "93c1f025e9be8ba4afea46f592631cfcade2b8e7d54f28efcc9851c9461755d8"
+
+[[files]]
+file = "kubejs/assets/sophisticatedbackpacks/textures/block/diamond_clips.png"
+hash = "cd01d4649b700902651af80df649f0430eb611137940fcfe3da8a33e7e22aa4a"
+
+[[files]]
+file = "kubejs/assets/sophisticatedbackpacks/textures/block/gold_clips.png"
+hash = "a3aaf2a6860407fb7b1824def8fc461000bc7f63493f7d551f45746713537986"
+
+[[files]]
+file = "kubejs/assets/sophisticatedbackpacks/textures/block/iron_clips.png"
+hash = "a546abb796510f1cf8ffb6c913a5872673ecda24b90ef35bfb95281e4c65af82"
+
+[[files]]
+file = "kubejs/assets/sophisticatedbackpacks/textures/block/netherite_clips.png"
+hash = "7bbd01406b29f8193311b76646a962bd0217473f6fe1fe91f40b3d92203eb6ac"
+
+[[files]]
+file = "kubejs/assets/sophisticatedbackpacks/textures/item/stack_upgrade_tier_1.png"
+hash = "5ea4bf89fe57bf898c7cd5ecf968c8283853ac6946d95997aa5bc474f32097b0"
+
+[[files]]
+file = "kubejs/assets/sophisticatedbackpacks/textures/item/stack_upgrade_tier_2.png"
+hash = "b1b3eda42b72c365c5a071f5ce1b52192962fc646791acf0db2bc5aa50ada5cf"
+
+[[files]]
+file = "kubejs/assets/sophisticatedbackpacks/textures/item/stack_upgrade_tier_3.png"
+hash = "79233ae9de3c7693d5ad93fbd2158e4eebd00984d554ed032ae4011f88d58644"
+
+[[files]]
+file = "kubejs/assets/sophisticatedbackpacks/textures/item/stack_upgrade_tier_4.png"
+hash = "251cdec71420a9b7f45638d04ce00d978925336be7426187103564ff77ca0267"
+
+[[files]]
 file = "kubejs/client_scripts/Lang.js"
 hash = "895804d889ae06c813a14a190059afb30adfa21952d54b098572784a4b4f332f"
 
@@ -1626,11 +1806,11 @@ hash = "b588977af0248cf7b57caf87eba47133f3428cd1c8fc89247c8216eb50d19673"
 
 [[files]]
 file = "kubejs/server_scripts/OreProcessing.js"
-hash = "0c9bea5943b4e4e580d8ed0aa092b40275a1e7908a5a463a4ef931968a3947a4"
+hash = "b17db8fc83aa1c095cf856d3d3fcd9d2543278e8273587e3265e8925596b6ee7"
 
 [[files]]
 file = "kubejs/server_scripts/OreTags.js"
-hash = "6ab928dd39e8b45723b6bd7003f8802b25bfacb3510d9b5b7dba2c0718e65e5f"
+hash = "647f7b69a786ed85160452e3d3f6e025d2be48772d36c71807934d67c61f4bf1"
 
 [[files]]
 file = "kubejs/server_scripts/PeacefulAdapatations.js"
@@ -1645,12 +1825,24 @@ file = "kubejs/server_scripts/VeinDatagen.js"
 hash = "e459a270bb719168219fb9f3e6a783d1190355ae62453c8aeba6d1f880981a1a"
 
 [[files]]
+file = "kubejs/server_scripts/egregious/AssemblerBuffs.js"
+hash = "41a91fcff7103c808dcbf8756378bfb7d3b41128a10679793a9a08d7d08ae2a0"
+
+[[files]]
 file = "kubejs/server_scripts/egregious/Circuits.js"
-hash = "7bf3668dc9a716c9161c37577a15edfeb1f1cdd1500f4382192c4e4c770feb69"
+hash = "aa46215d5022afeb5f6ab7ae54fd9aecc67d328dfe4e1fc5b8b8c19c9ee8ef31"
+
+[[files]]
+file = "kubejs/server_scripts/egregious/Greenhouse.js"
+hash = "747e7323e090767ab81448c28eb385e7e2e2aa154675ac9e56099ea6d49c29f0"
 
 [[files]]
 file = "kubejs/server_scripts/egregious/Misc.js"
 hash = "f3c91b8dc98a56cca7fb1769f18a2ac71818b424b7ca5058863f641541b8ca71"
+
+[[files]]
+file = "kubejs/server_scripts/egregious/Pyrolyse.js"
+hash = "8735a341f3d1bd6dc3549b6183fe6d8083150ad484f80ce3b18c61788c394f04"
 
 [[files]]
 file = "kubejs/server_scripts/jsconfig.json"
@@ -1670,7 +1862,7 @@ hash = "32a2e89879be3be1e45f85657dd407f98a46a05e28ab3ce3b3282db175a3b706"
 
 [[files]]
 file = "kubejs/server_scripts/mods/Egregious.js"
-hash = "409f2875721e6a65f19af7f0b336849fcc890be3736c0ac08237c324324d4164"
+hash = "729a7d593783ab51e1ef390dfec188c7a237d0aa5fea648d24dc41f0485d00ad"
 
 [[files]]
 file = "kubejs/server_scripts/mods/Elevators.js"
@@ -1726,11 +1918,11 @@ hash = "9239d96f6cbff3310882dc598dedb70c01d54a2271fa862328f7778df1d4f79d"
 
 [[files]]
 file = "kubejs/startup_scripts/EgregiousStartup.js"
-hash = "62c265cc1a094de1c5d1b5737bc3138679b0d9679151a36f1a961c3a67b8b1cd"
+hash = "49fb56bd3c984545c607d3e26bed3e3ca5028ee1e62c1272517ad54793ba64e2"
 
 [[files]]
 file = "kubejs/startup_scripts/Fluids.js"
-hash = "2b1582dcc6eb16b34b63887c4c302724365b245e74383d66b03d2f4eddcf4027"
+hash = "9e1455ede2102fe031228a2da6562f7960d9c1164d872aeae8d47379beefed58"
 
 [[files]]
 file = "kubejs/startup_scripts/GTMOreBuilder.js"
@@ -1741,16 +1933,24 @@ file = "kubejs/startup_scripts/MIMachines/CircuitMachines.js"
 hash = "2a90be565d8ebeb1e619c5ea54756af4f928302bdcaae1b3cdcd2c4f9acbbce1"
 
 [[files]]
+file = "kubejs/startup_scripts/MIMachines/Greenhouse.js"
+hash = "6c9f5a33c8d1993c3d11eed758c74a4f181d7525ea9d9b253bb5bdf5d5569284"
+
+[[files]]
 file = "kubejs/startup_scripts/MIMachines/Keg.js"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
 file = "kubejs/startup_scripts/MIMachines/MiscMachines.js"
-hash = "e88b8055c208778701956bd97a979007a4cf0f5a6c85f776fc4587c70d6b7f69"
+hash = "a3a3e90bb5ed56e94f85698e6f890ba0e08118257b3a651c6c48db452447b155"
 
 [[files]]
 file = "kubejs/startup_scripts/MIMachines/OreProcMachines.js"
 hash = "b6ba0acbcdb55b8eb7291f1c84de2e55b77d51e642feece8f1ebb9cd3ec182b9"
+
+[[files]]
+file = "kubejs/startup_scripts/NonOreMIMats.js"
+hash = "4274acbfa943e067c21340caee4bf1da65c3967a8c281ffc7ae3c8dedcae7e5b"
 
 [[files]]
 file = "kubejs/startup_scripts/OreDefinitions.js"
@@ -1794,12 +1994,12 @@ hash = "4d9769bf56eeafd2fb91d3f8fe6cbca6920b218db50934bff3528d3d1e64dc57"
 
 [[files]]
 file = "mods/actually-harvest.pw.toml"
-hash = "4ee841cd5085b22f7f5f485db2517eac31ae590c28be1481f189cdb8a8a70318"
+hash = "f0a858606dcd4922c4dd9ce4d9061781b5b8c0bed93cdfc313221f4231ed1277"
 metafile = true
 
 [[files]]
 file = "mods/advancedae.pw.toml"
-hash = "032744979fcbdc77ba1e8e95dac913eb96a778ecc67e1d4b79ad47aadd2c1f35"
+hash = "2bacde0a4000556837c4bf1eca64ad657c8f5688c84fadf1df2e84ca00036466"
 metafile = true
 
 [[files]]
@@ -1809,7 +2009,7 @@ metafile = true
 
 [[files]]
 file = "mods/aileron.pw.toml"
-hash = "60ba2222fe00fe82a2ae4b24d9303ffff2d8570c53925a320b36d3f0c616a639"
+hash = "ab7f09184e83abf8da1ae27fcfad48f896963e23ae244b00eb6577fcce298bed"
 metafile = true
 
 [[files]]
@@ -1829,7 +2029,7 @@ metafile = true
 
 [[files]]
 file = "mods/applied-energistics-2.pw.toml"
-hash = "4fcb4658b6d9969e75a45ae2c45ccc1f9e085a7a252399f8e43deadbe2ca1898"
+hash = "afa4f499d946514c51f41f8f2202ac0946052b012570a210ebb31f0d0d627672"
 metafile = true
 
 [[files]]
@@ -1849,7 +2049,7 @@ metafile = true
 
 [[files]]
 file = "mods/ars-nouveau.pw.toml"
-hash = "ac1e99c85e3033176eb9a2b9e1ef2c01d6e8353fc2dac96242bb76cb22eff410"
+hash = "024b9d9fb6784505e57afca74656c8ec04c10a63103f82283f3cfc2d2b9c83ce"
 metafile = true
 
 [[files]]
@@ -1869,7 +2069,7 @@ metafile = true
 
 [[files]]
 file = "mods/balm.pw.toml"
-hash = "0c81a337b7e2d0a915b0789af42e5e044d6c04555c84606e305fd698d5fd4e00"
+hash = "4209acad31591a2c139519a63a7b817bb66b98c175994c60d4ff0121976702d9"
 metafile = true
 
 [[files]]
@@ -1879,7 +2079,7 @@ metafile = true
 
 [[files]]
 file = "mods/c2me.pw.toml"
-hash = "3af907cf922d61a52ac9752b2b37fec990f298e367baf23ccd7622796e98dd92"
+hash = "875c8d02fd53701c47871639b2296858842f999d79ab1c88d2772c4ed909151d"
 metafile = true
 
 [[files]]
@@ -1899,7 +2099,7 @@ metafile = true
 
 [[files]]
 file = "mods/clientsort.pw.toml"
-hash = "5ef48926e873dccff9d8265e0607e1e311511662bcf2770eb5c87a689a59e194"
+hash = "3fabe75997facf7545b4af4ef343621cbde6e6288fb2d1e37c6271c8f8e988a7"
 metafile = true
 
 [[files]]
@@ -1924,7 +2124,7 @@ metafile = true
 
 [[files]]
 file = "mods/corpse.pw.toml"
-hash = "d4e404f869a1ac64ca8447681c2e6c3c7c64c7b186aa2f9c929693d4db23cb47"
+hash = "e2edf339c98dbdcf04f46a15276e9b1b5bbdeee0f1ac8b7d9bddb1ee8e54b9a1"
 metafile = true
 
 [[files]]
@@ -1939,7 +2139,7 @@ metafile = true
 
 [[files]]
 file = "mods/cryonicconfig.pw.toml"
-hash = "bcac2313df03ef454650b888a365bec9b841b32a3c73ea33b967317ac760e9ac"
+hash = "a15861dc47c0604f3c1d6b1687d692760b572ed6797bff9c18413736107fcc3d"
 metafile = true
 
 [[files]]
@@ -1969,7 +2169,7 @@ metafile = true
 
 [[files]]
 file = "mods/egregiouscore.pw.toml"
-hash = "8e358b2880f4ab8ec386afdddcd203254527fb82c38e37a6501040e68218425e"
+hash = "15f36cc3d44beda62f1cd0b91c86646bddbe6d32f26fb287972aa57224c58369"
 metafile = true
 
 [[files]]
@@ -2024,17 +2224,17 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-chunks-forge.pw.toml"
-hash = "04722089ec266957f3756ebdf18153a74ecfad5cbb4b1678e39978294b7a9406"
+hash = "c0ba624dd96872da93db0765516e59c1dac13d2c8c4d31a4111594e9ba52a252"
 metafile = true
 
 [[files]]
 file = "mods/ftb-library-forge.pw.toml"
-hash = "3e4cbcc386934c6e4fe0c21db8634c0031cb22f18efd11930ec656be02b4899f"
+hash = "b6a4210fd736b2d48a436325842c428cc8aff3c8fc6e0fad5c6a2624514d24e3"
 metafile = true
 
 [[files]]
 file = "mods/ftb-quests-forge.pw.toml"
-hash = "0fe90f424d7ab05f4d173d0a3e96ab54109c3a5e6a179b20ecbcf68a7aa1be7d"
+hash = "6c038017372f42afd32c91d516013f8ea09b71d9a8ad4833d80bc0b25d99d26b"
 metafile = true
 
 [[files]]
@@ -2049,7 +2249,7 @@ metafile = true
 
 [[files]]
 file = "mods/geckolib.pw.toml"
-hash = "74adfcb4a066f83b8630768d4bfa3f44b53649f27b521cc64a23e5cf7781eebd"
+hash = "402ca5410076adcf4bff4211d5d734572e0549955d3613ea0942309ec29a409b"
 metafile = true
 
 [[files]]
@@ -2059,7 +2259,7 @@ metafile = true
 
 [[files]]
 file = "mods/gregtech-modern-ore-generation-standalone.pw.toml"
-hash = "690d78dc93a3e06ebc545d4ca46e69c3f6454f9c9cb1950c7bdb77cb99c57075"
+hash = "8d930ef6875990f91b1240f31e2d92efd6d5017fe2a4c342ca0bf2b7e1e2af86"
 metafile = true
 
 [[files]]
@@ -2074,7 +2274,7 @@ metafile = true
 
 [[files]]
 file = "mods/hostile-neural-industrialization.pw.toml"
-hash = "a221c495e2684e0a089dac835b61a9c578b1c6b6d114201efa7fbd0e6b2f4ffd"
+hash = "c15829e800b95b38ae3844a5fe84db1dada3e3b6a0456a18e30861f9abcf51f5"
 metafile = true
 
 [[files]]
@@ -2084,7 +2284,7 @@ metafile = true
 
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
-hash = "d778287f6af63f83571f2fb76ac46f1056ffc6c02243774a49b03a4df464b0fd"
+hash = "4c9abda63d99719987d4a461997f4e627256a23f6e605ebb06bc30752fae0099"
 metafile = true
 
 [[files]]
@@ -2139,7 +2339,7 @@ metafile = true
 
 [[files]]
 file = "mods/lithostitched.pw.toml"
-hash = "1c5a548cbbe406590f9702562acd0a11e435e89e6c95168645514eac62721bf1"
+hash = "57d191da060cee132d09be0cf96da819efc03d21f0a20b6a0d572565a8894f98"
 metafile = true
 
 [[files]]
@@ -2159,7 +2359,7 @@ metafile = true
 
 [[files]]
 file = "mods/mi-tweaks.pw.toml"
-hash = "32027a300782c810fd4b551c6345e126542bca97d29e7aabce6255d52f6f8276"
+hash = "0819dabb54692cdd3ed98922c36edb138ba4a007e58603b2b2de9b445d4caf9d"
 metafile = true
 
 [[files]]
@@ -2169,7 +2369,7 @@ metafile = true
 
 [[files]]
 file = "mods/modern-industrialization-sound-addon.pw.toml"
-hash = "4c557784ee90df2e92054a24721501cc5ac1284828f868d6f2188b552eca32a9"
+hash = "abe353a4c698635956adbed4a1f567e4b08a1649d6c392dbe34ea1ed8f856439"
 metafile = true
 
 [[files]]
@@ -2274,12 +2474,12 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "76a6bcba491f07bf52850ab10a1a20b974565f50cebfd17cf54857a7af52cd6a"
+hash = "bddf838f059950eb200de557a07947e0c01765f3f20a6c4c03b0b06763f86dfc"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "7393039adddc170dcb916a61f5f572fe1efbc03242da04ee30274afec83b61f7"
+hash = "292bf21adb81db41f2b9b953f88a131833073cfd830356984d59222b161f6be8"
 metafile = true
 
 [[files]]
@@ -2289,12 +2489,12 @@ metafile = true
 
 [[files]]
 file = "mods/tectonic.pw.toml"
-hash = "d0153263519d5d11f2a9c78987f3126e4e205e54e73f85cbce5f078c1e6dc2d9"
+hash = "ab77e9c7da9fc56a8afe355b33813ba9ff972cc58ccefae920a0d746ac577f5a"
 metafile = true
 
 [[files]]
 file = "mods/tesseract-api-neoforge.pw.toml"
-hash = "42f634cc421bdc97f7df3d96ed5a0d9301433499830c24e8449a99ab328c683d"
+hash = "858ac076b21d1487e5781862ff27c5b04ade5a36103fd5a5acfbec3bcd970081"
 metafile = true
 
 [[files]]
@@ -2314,7 +2514,7 @@ metafile = true
 
 [[files]]
 file = "mods/yacl.pw.toml"
-hash = "5aaab5c3140ac335cf0345f9f280fc5774a2834faecc290272b3d24b8a97274a"
+hash = "98b96e030686acf083fea4efc8082e68a8e74c4d63da639657e466abf36fd855"
 metafile = true
 
 [[files]]

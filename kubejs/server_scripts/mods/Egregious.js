@@ -189,4 +189,51 @@ ServerEvents.recipes((event) => {
     .itemIn("modern_industrialization:bronze_ore_washer")
     .itemIn("modern_industrialization:steel_upgrade")
     .itemOut("modern_industrialization:steel_ore_washer");
+
+  // gas turbines ( will not bother making assembler recipes for these)
+  event.shaped(
+    "modern_industrialization:lv_gas_turbine",
+    ["CRC", "RHR", "MWM"],
+    {
+      C: "modern_industrialization:analog_circuit",
+      R: "modern_industrialization:tin_rotor",
+      H: "modern_industrialization:basic_machine_hull",
+      M: "modern_industrialization:motor",
+      W: "modern_industrialization:tin_cable",
+    }
+  );
+  event.shaped(
+    "modern_industrialization:mv_gas_turbine",
+    ["CRC", "RHR", "MWM"],
+    {
+      C: "modern_industrialization:electronic_circuit",
+      R: "modern_industrialization:aluminum_rotor",
+      H: "modern_industrialization:advanced_machine_hull",
+      M: "modern_industrialization:large_motor",
+      W: "modern_industrialization:electrum_cable",
+    }
+  );
+  event.shaped(
+    "modern_industrialization:hv_gas_turbine",
+    ["CRC", "RHR", "MWM"],
+    {
+      C: "modern_industrialization:digital_circuit",
+      R: "modern_industrialization:stainless_steel_rotor",
+      H: "modern_industrialization:turbo_machine_hull",
+      M: "modern_industrialization:advanced_motor",
+      W: "modern_industrialization:aluminum_cable",
+    }
+  );
+  // pyrolyse oven controller
+  event.shaped(
+    "modern_industrialization:pyrolyse_oven",
+    ["PCT", "CHC", "PUT"],
+    {
+      P: "modern_industrialization:piston",
+      C: "modern_industrialization:analog_circuit",
+      T: "modern_industrialization:cupronickel_cable",
+      H: "modern_industrialization:basic_machine_hull",
+      U: "modern_industrialization:pump",
+    }
+  );
 });

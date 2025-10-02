@@ -22,8 +22,8 @@ ServerEvents.recipes((event) => {
   assembler(8, 200)
     .itemOut(itemStack("electronic_circuit_board", 2))
     .itemIn(itemStack("electrum_cable", 6))
-    .itemIn(itemStack("redstone_battery"), 1)
-    .itemIn(itemStack("analog_circuit_board"), 2)
+    .itemIn(itemStack("redstone_battery", 1))
+    .itemIn(itemStack("analog_circuit_board", 2))
     .itemIn("4x #c:plates/aluminum")
     .id(
       "modern_industrialization:assembler_generated/electric_age/circuit/craft/electronic_circuit_board"
@@ -41,10 +41,10 @@ ServerEvents.recipes((event) => {
     );
 
   assembler(8, 200)
-    .itemOut(itemStack("diode"), 2)
+    .itemOut(itemStack("diode", 2))
     .itemIn("1x #c:plates/silicon")
     .itemIn("3x #c:glass_blocks")
-    .itemIn(itemStack("electrum_fine_wire"), 3)
+    .itemIn(itemStack("electrum_fine_wire", 3))
     .itemIn("1x #c:plates/steel")
     .id(
       "modern_industrialization:assembler_generated/electric_age/component/craft/diode"
