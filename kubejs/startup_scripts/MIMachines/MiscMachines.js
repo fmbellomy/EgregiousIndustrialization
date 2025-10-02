@@ -90,7 +90,9 @@ MIMachineEvents.registerMachines((event) => {
           // WARNING: THE VALUES THAT SHOW UP IN THE RECIPE VIEWER FOR THESE ARE IN EgregiousCore, NOT HERE
           .fluid("modern_industrialization:benzene", 800)
           .fluid("modern_industrialization:methane", 500)
-          .fluid("modern_industrialiation:naphtha", 120);
+          .fluid("modern_industrialiation:naphtha", 120)
+          .fluid("modern_industrialization:phenol", 360)
+          .fluid("modern_industrialization:toluene", 400);
       },
       // ---- SAME AS FOR A SINGLE BLOCK CRAFTING MACHINE ----
       gen.internal, // the casing
