@@ -1,0 +1,53 @@
+{
+  "name": "Egregious Industrialization",
+  "version": "DEV",
+  "release_type": "alpha",
+  "description": "A minecraft modpack",
+  "author": "fmbellomy",
+  "overrides": [
+    "config",
+    "defaultconfigs",
+    "kubejs",
+    "modern_industrialization",
+    "!kubejs/probe/**"
+  ],
+  "server_overrides": [
+    "!kubejs/assets",
+    "forge-auto-install.txt",
+    "generate_auto_installation_file.bat",
+    "minecraft_server.jar",
+    "server.properties",
+    "server_starter.conf",
+    "server-icon.png",
+    "start_server.bat",
+    "README.md"
+  ],
+  "client_overrides": ["resourcepacks"],
+  "projects": {
+    "legendary-tooltips": {
+      "side": "CLIENT"
+    },
+    "zume": {
+      "side": "CLIENT"
+    },
+    "oculus": {
+      "side": "CLIENT"
+    },
+    "watermedia": {
+      "side": "CLIENT"
+    },
+    "embeddium": {
+      "side": "CLIENT"
+    },
+    "embeddiumplus": {
+      "side": "CLIENT"
+    },
+    "citresewn": {
+      "side": "CLIENT"
+    },
+    "probejs": {
+      "side": "CLIENT",
+      "export": false
+    }
+  }
+}
