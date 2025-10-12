@@ -79,6 +79,8 @@ config/emi.css
 config/darkmodeeverywhereshaders*
 config/ichunutil/themes/
 config/gtceu.yaml
+config/*.bak
+config/ars_nouveau/search_index
 defaultconfigs/ftbultimine/ftbultimine-*.snbt
 
 # Linux
