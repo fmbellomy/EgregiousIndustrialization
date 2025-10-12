@@ -8,6 +8,7 @@
     "config",
     "defaultconfigs",
     "kubejs",
+    "modern_industrialization",
     "!kubejs/probe/**"
   ],
   "server_overrides": [
@@ -21,9 +22,7 @@
     "start_server.bat",
     "README.md"
   ],
-  "client_overrides": [
-    "resourcepacks"
-  ],
+  "client_overrides": ["resourcepacks"],
   "projects": {
     "legendary-tooltips": {
       "side": "CLIENT"
