@@ -65,7 +65,7 @@ machine_namespace = "mi_tweaks"
 	#This only applies to electric machines. Also applies to multiblocks but uses the highest tier energy hatch's casing
 	#Note that when this is enabled, it will override any behavior relating to the max efficiency for the `hack` mode (for example, as in `USE_VOLTAGE`)
 	#Default: false
-	use_casing_max_overclock_overrides = true
+	use_casing_max_overclock_overrides = false
 	#Whether efficiency bar and multiblock efficiency data should be hidden or not
 	#Default: false
 	hide = false
@@ -80,11 +80,11 @@ machine_namespace = "mi_tweaks"
 	#The base max EU/t a machine can run at for a given casing
 	#Range: > 0
 	[efficiency.casing_max_overclock_overrides]
-		ev = 2048
-		mv = 128
-		superconductor = 8192
+		ev = 1024
+		mv = 64
+		superconductor = 4096
 		lv = 32
-		hv = 512
+		hv = 256
 
 [machine_blueprints]
 	#The list of machine ids (accepts regex) that require blueprints to place
