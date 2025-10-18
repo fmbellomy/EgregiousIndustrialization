@@ -15,6 +15,7 @@ ESM/
 journeymap/
 .mixin.out/
 modern_industrialization/
+waypoints/
 
 patchouli_data.json
 icon.png
