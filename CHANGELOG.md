@@ -1,10 +1,19 @@
 # Changelog
-## [Unreleased]
-### Changes
-## [0.4.8]
-### Changes
-- Fill this!
 
-## [0.4.7]
+## [Unreleased]
+
+## [0.6.0]
+
 ### Changes
-- Any text can go here, of course.
+
+- Replaced the Modern Industrialization dev-build override with the real CurseForge release
+- Added Yet Another Industrialization, Extended Industrialization, and Industrialization Overdrive
+- Switched to Pakku and Pansmith's PanPackTemplate
+
+### Changes
+
+## [0.5.0]
+
+### Changes
+
+- Last packwiz version.
