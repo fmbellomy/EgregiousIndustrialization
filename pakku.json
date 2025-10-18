@@ -1,6 +1,7 @@
 {
   "name": "egregious-industrialization",
   "version": "DEV",
+  "release_type": "alpha",
   "description": "A mildly gregged Modern Industrialization modpack",
   "author": "fmbellomy",
   "overrides": [
