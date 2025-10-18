@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [0.6.3]
+
+### Changes
+
+- Corrected github action secrets
+
 ## [0.6.2]
 
 ### Changes
