@@ -342,6 +342,11 @@ ServerEvents.recipes((event) => {
         .itemOut(set.washedCrushedDust)
         .itemOut(set.washByproduct, 0.1);
       event.recipes.modern_industrialization
+        .ore_washer(2, 80)
+        .itemIn(set.crushedDust)
+        .fluidIn("50x extendedindustrialization:distilled_water")
+        .itemOut(set.washByproduct, 0.3);
+      event.recipes.modern_industrialization
         .macerator(2, 100)
         .itemIn(set.washedCrushedDust)
         .itemOut(`ae2:${mat}_dust`)
@@ -399,13 +404,7 @@ ServerEvents.recipes((event) => {
       .fluidIn("1000x minecraft:water")
       .itemOut(set.washedCrushedDust)
       .itemOut(set.washByproduct, 0.1);
-    /* DISABLED UNTIL MI UPDATES AND EI ACTUALLY WORKS
-    event.recipes.modern_industrialization
-      .ore_washer(2, 80)
-      .itemIn(set.crushedDust)
-      .fluidIn("extendedindustrialization:distilled_water")
-      .itemOut(set.washByproduct, 0.3);
-      */
+
     if (mat !== "redstone") {
       event.recipes.modern_industrialization
         .macerator(2, 100)
