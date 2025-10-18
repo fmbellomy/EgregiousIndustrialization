@@ -12,6 +12,9 @@ downloads/
 modernfix/
 fancymenu_data/
 ESM/
+journeymap/
+.mixin.out/
+modern_industrialization/
 
 icon.png
 options.txt
