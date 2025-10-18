@@ -1,7 +1,6 @@
 {
   "name": "Egregious Industrialization",
   "version": "0.5.1",
-  "release_type": "alpha",
   "description": "A mildly gregged Modern Industrialization modpack",
   "author": "fmbellomy",
   "overrides": [
@@ -24,6 +23,13 @@
   ],
   "client_overrides": ["resourcepacks"],
   "projects": {
+    "kubejs": {
+      "update_strategy": "NONE"
+    },
+    "lootjs": {
+      "update_strategy": "NONE"
+    },
+
     "athena": {
       "side": "CLIENT"
     },

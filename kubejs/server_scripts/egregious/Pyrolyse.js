@@ -1,6 +1,15 @@
 ServerEvents.recipes((e) => {
-  const { pyrolyse_oven, distillation_tower, fluid_extractor } =
+  const { pyrolyse_oven } = e.recipes.industrialization_overdrive;
+  const { distillation_tower, fluid_extractor, distillery } =
     e.recipes.modern_industrialization;
+
+  let distillation = (input, outs) => {
+    let dt = distillation_tower(36, 200).fluidIn(input);
+    outs.forEach((out) => {
+      dt.fluidOut(out);
+      distillery(10, 200).fluidIn(input).fluidOut(out);
+    });
+  };
   // pyrolyse gaming
   pyrolyse_oven(16, 300)
     .itemIn("16x minecraft:coal")
@@ -22,25 +31,26 @@ ServerEvents.recipes((e) => {
     .itemIn("16x #minecraft:logs_that_burn")
     .fluidOut("4000x modern_industrialization:charcoal_byproducts")
     .itemOut("20x minecraft:charcoal");
-  // dt gaming
-  distillation_tower(36, 200)
-    .fluidIn("1000x modern_industrialization:charcoal_byproducts")
-    .fluidOut("400x modern_industrialization:wood_tar")
-    .fluidOut("200x modern_industrialization:benzene")
-    .fluidOut("200x modern_industrialization:creosote")
-    .fluidOut("150x minecraft:water")
-    .fluidOut("50x modern_industrialization:ethanol");
-  distillation_tower(36, 200)
-    .fluidIn("1000x modern_industrialization:wood_tar")
-    .fluidOut("500x modern_industrialization:benzene")
-    .fluidOut("300x modern_industrialization:creosote")
-    .fluidOut("100x modern_industrialization:phenol")
-    .fluidOut("100x modern_industrialization:toluene");
-  distillation_tower(36, 200)
-    .fluidIn("1000x modern_industrialization:coal_tar")
-    .fluidOut("500x modern_industrialization:creosote")
-    .fluidOut("300x modern_industrialization:sulfuric_acid")
-    .fluidOut("200x modern_industrialization:phenol");
+
+  distillation("1000x modern_industrialization:charcoal_byproducts", [
+    "400x modern_industrialization:wood_tar",
+    "200x modern_industrialization:benzene",
+    "200x modern_industrialization:creosote",
+    "150x minecraft:water",
+    "50x modern_industrialization:ethanol",
+  ]);
+  distillation("1000x modern_industrialization:wood_tar", [
+    "500x modern_industrialization:benzene",
+    "300x modern_industrialization:creosote",
+    "100x modern_industrialization:phenol",
+    "100x modern_industrialization:toluene",
+  ]);
+  distillation("1000x modern_industrialization:coal_tar", [
+    "500x modern_industrialization:creosote",
+    "300x modern_industrialization:sulfuric_acid",
+    "200x modern_industrialization:phenol",
+  ]);
+
   fluid_extractor(4, 200)
     .itemIn("minecraft:charcoal")
     .fluidOut("100x modern_industrialization:benzene");

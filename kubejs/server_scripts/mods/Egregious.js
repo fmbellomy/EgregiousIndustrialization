@@ -224,16 +224,4 @@ ServerEvents.recipes((event) => {
       W: "modern_industrialization:aluminum_cable",
     }
   );
-  // pyrolyse oven controller
-  event.shaped(
-    "modern_industrialization:pyrolyse_oven",
-    ["PCT", "CHC", "PUT"],
-    {
-      P: "modern_industrialization:piston",
-      C: "modern_industrialization:analog_circuit",
-      T: "modern_industrialization:cupronickel_cable",
-      H: "modern_industrialization:basic_machine_hull",
-      U: "modern_industrialization:pump",
-    }
-  );
 });

@@ -2419,7 +2419,10 @@
             ]
         },
         {
-            "pakku_id": "lyKCtROKSkAzONwQ",
+            "pakku_id": "OCAuS5BHNKUxm5DP",
+            "pakku_links": [
+                "S67DHTiqBRN2dIwN"
+            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "kubejs"
@@ -2430,6 +2433,7 @@
             "id": {
                 "curseforge": "238086"
             },
+            "update_strategy": "NONE",
             "files": [
                 {
                     "type": "curseforge",
@@ -2454,6 +2458,47 @@
                     ],
                     "size": 1913809,
                     "date_published": "2024-10-13T22:39:49.607Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "HZgDFQb1fwfEUbOe",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "lambdynamiclights"
+            },
+            "name": {
+                "curseforge": "LambDynamicLights"
+            },
+            "id": {
+                "curseforge": "393442"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "lambdynamiclights-4.8.5+1.21.1.jar",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "neoforge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7117/956/lambdynamiclights-4.8.5+1.21.1.jar",
+                    "id": "7117956",
+                    "parent_id": "393442",
+                    "hashes": {
+                        "sha1": "532a7d7c7b016b1a77bccbe8819ca16699e7df3a",
+                        "md5": "925a2e6da8d3f6de3a8c245918415d1f"
+                    },
+                    "required_dependencies": [
+                        "306612"
+                    ],
+                    "size": 2003786,
+                    "date_published": "2025-10-17T18:23:27.353Z"
                 }
             ]
         },
@@ -2604,9 +2649,9 @@
             ]
         },
         {
-            "pakku_id": "3FjOB8HTcanJHgHc",
+            "pakku_id": "0yr5LMAJXbkwJ4HM",
             "pakku_links": [
-                "lyKCtROKSkAzONwQ"
+                "OCAuS5BHNKUxm5DP"
             ],
             "type": "MOD",
             "slug": {
@@ -3552,50 +3597,6 @@
                     "required_dependencies": [],
                     "size": 1162994,
                     "date_published": "2025-04-04T00:13:49.467Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "1ZcoU3WfmXBTOGP9",
-            "pakku_links": [
-                "WiWYeORr0sk7yt89",
-                "WVwoNoiGvPjmJ3cj"
-            ],
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "dynamiclights-reforged"
-            },
-            "name": {
-                "curseforge": "Sodium/Embeddium Dynamic Lights"
-            },
-            "id": {
-                "curseforge": "551736"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "sodiumdynamiclights-neoforge-1.0.10-1.21.1.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6044/477/sodiumdynamiclights-neoforge-1.0.10-1.21.1.jar",
-                    "id": "6044477",
-                    "parent_id": "551736",
-                    "hashes": {
-                        "sha1": "02e9bc7ba28147cdf2d608ecf4f2c1eab34b4652",
-                        "md5": "daaa3a9e438fddffc1db19bf8a7dfba0"
-                    },
-                    "required_dependencies": [
-                        "1103431",
-                        "394468"
-                    ],
-                    "size": 299353,
-                    "date_published": "2025-01-02T01:22:42.973Z"
                 }
             ]
         },
