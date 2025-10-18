@@ -15,3 +15,7 @@ If you still want to use Distant Horizons server side, it is recommended that yo
 1.  Perform any desired Chunk Pregeneration w/ C2ME+Chunky
 2.  Remove C2ME+Chunky
 3.  Add Distant Horizons
+
+## Contributing
+
+This pack uses [PanPackTemplate](https://github.com/ThePansmith/PanPack), so check the readme _there_ for getting this set up locally for a dev environment.
