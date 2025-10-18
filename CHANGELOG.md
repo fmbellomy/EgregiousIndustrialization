@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [0.6.1]
+
+### Changes
+
+- Add shaderpacks as a client override
+
 ## [0.6.0]
 
 ### Changes

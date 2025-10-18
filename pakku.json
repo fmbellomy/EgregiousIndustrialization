@@ -22,7 +22,7 @@
     "start_server.bat",
     "README.md"
   ],
-  "client_overrides": ["resourcepacks"],
+  "client_overrides": ["resourcepacks", "shaderpacks"],
   "projects": {
     "kubejs": {
       "update_strategy": "NONE"
