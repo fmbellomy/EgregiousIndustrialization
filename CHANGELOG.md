@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [0.6.4]
+
+### Changes
+
+- Add discord webhook for new releases
+
 ## [0.6.3]
 
 ### Changes
