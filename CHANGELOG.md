@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [0.6.2]
+
+### Changes
+
+- There are actual real changes in this version. It only exists to get the github action to run. Look at older versions.
+
 ## [0.6.1]
 
 ### Changes
