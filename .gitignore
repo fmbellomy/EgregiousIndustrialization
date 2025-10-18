@@ -16,6 +16,7 @@ journeymap/
 .mixin.out/
 modern_industrialization/
 
+patchouli_data.json
 icon.png
 options.txt
 rhino.local.properties
