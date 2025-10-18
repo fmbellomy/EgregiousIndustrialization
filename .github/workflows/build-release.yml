@@ -292,7 +292,13 @@ jobs:
               core.setFailed(`PR check failed: ${error}`);
               core.setOutput('exists', true);
             }
-
+      - name: Create Milestone if tag not found
+        if: ${{ steps.check_existing_pr.outputs.exists == 'false' }}
+        uses: WyriHaximus/github-action-create-milestone@v1.1.2
+        with:
+          title: ${{ steps.changelog.outputs.version }}
+        env: 
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: Create Pull Request if tag not found
         if: ${{ steps.check_existing_pr.outputs.exists == 'false' }}
         uses: devops-infra/action-pull-request@v0.6.1

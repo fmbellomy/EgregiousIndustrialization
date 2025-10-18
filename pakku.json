@@ -1,6 +1,7 @@
 {
-  "name": "Egregious Industrialization",
-  "version": "0.5.1",
+  "name": "egregious-industrialization",
+  "version": "DEV",
+  "release_type": "alpha",
   "description": "A mildly gregged Modern Industrialization modpack",
   "author": "fmbellomy",
   "overrides": [
@@ -21,7 +22,7 @@
     "start_server.bat",
     "README.md"
   ],
-  "client_overrides": ["resourcepacks"],
+  "client_overrides": ["resourcepacks", "shaderpacks"],
   "projects": {
     "kubejs": {
       "update_strategy": "NONE"
