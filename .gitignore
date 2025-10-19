@@ -25,6 +25,7 @@ usercache.json
 usernamecache.json
 emi.json
 command_history.txt
+servers.dat
 
 # Pakku
 build/
