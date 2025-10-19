@@ -20,7 +20,7 @@ export default [
       "no-prototype-builtins": "warn",
       "no-var": "error",
       "no-useless-escape": "warn",
-      "@stylistic/js/indent": ["error", 4],
+      "@stylistic/js/indent": ["error", 2],
       "@stylistic/js/spaced-comment": "error",
       "@stylistic/js/linebreak-style": ["error", "unix"],
       "@stylistic/js/no-trailing-spaces": "error",
