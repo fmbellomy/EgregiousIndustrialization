@@ -1,600 +1,600 @@
-//priority: 2
+// priority: 2
 function matSet(oreMat, washByproductMat, smeltsTo) {
-  return {
-    smeltsTo: smeltsTo,
-    crushedDust: `modern_industrialization:${oreMat}_crushed_dust`,
-    washedCrushedDust: `modern_industrialization:${oreMat}_washed_crushed_dust`,
-    dust: `modern_industrialization:${oreMat}_dust`,
-    washByproduct: `modern_industrialization:${washByproductMat}_dust`,
-  };
+    return {
+        smeltsTo: smeltsTo,
+        crushedDust: `modern_industrialization:${oreMat}_crushed_dust`,
+        washedCrushedDust: `modern_industrialization:${oreMat}_washed_crushed_dust`,
+        dust: `modern_industrialization:${oreMat}_dust`,
+        washByproduct: `modern_industrialization:${washByproductMat}_dust`,
+    };
 }
 const MI = "modern_industrialization";
 const ORE_PRODUCTS = {
-  // vanilla materials
-  coal: matSet("coal", "coal", "minecraft:coal"),
-  copper: matSet("copper", "gold", "minecraft:copper_ingot"),
-  iron: matSet("iron", "nickel", "minecraft:iron_ingot"),
-  gold: matSet("gold", "silver", "minecraft:gold_ingot"),
-  quartz: matSet("quartz", "silicon", "minecraft:quartz"),
-  diamond: matSet("diamond", "carbon", "minecraft:diamond"),
-  emerald: matSet("emerald", "silicon", "minecraft:emerald"),
-  redstone: matSet("redstone", "silicon", "minecraft:redstone"),
-  lapis: matSet("lapis", "lapis", "minecraft:lapis_lazuli"),
+    // vanilla materials
+    coal: matSet("coal", "coal", "minecraft:coal"),
+    copper: matSet("copper", "gold", "minecraft:copper_ingot"),
+    iron: matSet("iron", "nickel", "minecraft:iron_ingot"),
+    gold: matSet("gold", "silver", "minecraft:gold_ingot"),
+    quartz: matSet("quartz", "silicon", "minecraft:quartz"),
+    diamond: matSet("diamond", "carbon", "minecraft:diamond"),
+    emerald: matSet("emerald", "silicon", "minecraft:emerald"),
+    redstone: matSet("redstone", "silicon", "minecraft:redstone"),
+    lapis: matSet("lapis", "lapis", "minecraft:lapis_lazuli"),
 
-  // base MI materials
-  antimony: matSet("antimony", "antimony", `${MI}:antimony_ingot`),
-  bauxite: matSet("bauxite", "aluminum"),
-  lead: matSet("lead", "lead", `${MI}:lead_ingot`),
-  silver: matSet("silver", "silver", `${MI}:silver_ingot`),
-  lignite_coal: matSet("lignite_coal", "sulfur", `${MI}:lignite_coal`),
-  monazite: matSet("monazite", "neodymium"),
-  nickel: matSet("nickel", "iron", `${MI}:nickel_ingot`),
-  salt: matSet("salt", "salt"),
-  tin: matSet("tin", "tin", `${MI}:tin_ingot`),
-  tungsten: matSet("tungsten", "scheelite"),
-  uranium: matSet("uranium", "thorium"),
-  ruby: matSet("ruby", "chromium"),
-  beryllium: matSet("beryllium", "thorium"),
-  sulfur: matSet("sulfur", "sulfur"),
-  titanium: matSet("titanium", "ilmenite"),
-  platinum: matSet("platinum", "platinum"),
-  iridium: matSet("iridium", "platinum", `${MI}:iridium_ingot`),
-  chromium: matSet("chromium", "chromium"),
-  manganese: matSet("manganese", "nickel"),
+    // base MI materials
+    antimony: matSet("antimony", "antimony", `${MI}:antimony_ingot`),
+    bauxite: matSet("bauxite", "aluminum"),
+    lead: matSet("lead", "lead", `${MI}:lead_ingot`),
+    silver: matSet("silver", "silver", `${MI}:silver_ingot`),
+    lignite_coal: matSet("lignite_coal", "sulfur", `${MI}:lignite_coal`),
+    monazite: matSet("monazite", "neodymium"),
+    nickel: matSet("nickel", "iron", `${MI}:nickel_ingot`),
+    salt: matSet("salt", "salt"),
+    tin: matSet("tin", "tin", `${MI}:tin_ingot`),
+    tungsten: matSet("tungsten", "scheelite"),
+    uranium: matSet("uranium", "thorium"),
+    ruby: matSet("ruby", "chromium"),
+    beryllium: matSet("beryllium", "thorium"),
+    sulfur: matSet("sulfur", "sulfur"),
+    titanium: matSet("titanium", "ilmenite"),
+    platinum: matSet("platinum", "platinum"),
+    iridium: matSet("iridium", "platinum", `${MI}:iridium_ingot`),
+    chromium: matSet("chromium", "chromium"),
+    manganese: matSet("manganese", "nickel"),
 
-  // egregious materials
-  tetrahedrite: matSet("tetrahedrite", "antimony", "minecraft:copper_ingot"), // bathe for antimony
-  stibnite: matSet("stibnite", "antimony", `${MI}:antimony_ingot`),
-  chalcopyrite: matSet("chalcopyrite", "pyrite", "minecraft:copper_ingot"),
-  pyrite: matSet("pyrite", "chalcopyrite", "minecraft:iron_ingot"),
-  cassiterite: matSet("cassiterite", "tin", `${MI}:tin_ingot`),
-  asbestos: matSet("asbestos", "tin", `${MI}:asbestos_dust`),
-  magnetite: matSet("magnetite", "iron", "minecraft:iron_ingot"),
-  garnierite: matSet("garnierite", "nickel", `${MI}:nickel_ingot`),
-  pentlandite: matSet("pentlandite", "nickel", `${MI}:nickel_ingot`),
-  graphite: matSet("graphite", "carbon"),
-  thorium: matSet("thorium", "uranium"),
-  galena: matSet("galena", "lead", `${MI}:lead_ingot`), // bathe for silver
-  pitchblende: matSet("pitchblende", "thorium"), // bathe for uranium
-  uraninite: matSet("uraninite", "uranium"),
-  scheelite: matSet("scheelite", "scheelite"),
-  ilmenite: matSet("ilmenite", "iron"),
-  chromite: matSet("chromite", "iron"),
-  uvarovite: matSet("uvarovite", "ruby"),
-  sheldonite: matSet("sheldonite", "platinum"),
-  sodalite: matSet("sodalite", "lazurite"),
-  lazurite: matSet("lazurite", "lapis"),
+    // egregious materials
+    tetrahedrite: matSet("tetrahedrite", "antimony", "minecraft:copper_ingot"), // bathe for antimony
+    stibnite: matSet("stibnite", "antimony", `${MI}:antimony_ingot`),
+    chalcopyrite: matSet("chalcopyrite", "pyrite", "minecraft:copper_ingot"),
+    pyrite: matSet("pyrite", "chalcopyrite", "minecraft:iron_ingot"),
+    cassiterite: matSet("cassiterite", "tin", `${MI}:tin_ingot`),
+    asbestos: matSet("asbestos", "tin", `${MI}:asbestos_dust`),
+    magnetite: matSet("magnetite", "iron", "minecraft:iron_ingot"),
+    garnierite: matSet("garnierite", "nickel", `${MI}:nickel_ingot`),
+    pentlandite: matSet("pentlandite", "nickel", `${MI}:nickel_ingot`),
+    graphite: matSet("graphite", "carbon"),
+    thorium: matSet("thorium", "uranium"),
+    galena: matSet("galena", "lead", `${MI}:lead_ingot`), // bathe for silver
+    pitchblende: matSet("pitchblende", "thorium"), // bathe for uranium
+    uraninite: matSet("uraninite", "uranium"),
+    scheelite: matSet("scheelite", "scheelite"),
+    ilmenite: matSet("ilmenite", "iron"),
+    chromite: matSet("chromite", "iron"),
+    uvarovite: matSet("uvarovite", "ruby"),
+    sheldonite: matSet("sheldonite", "platinum"),
+    sodalite: matSet("sodalite", "lazurite"),
+    lazurite: matSet("lazurite", "lapis"),
 
-  // OTHER
-  certus_quartz: matSet("certus_quartz", "quartz", "ae2:certus_quartz"),
+    // OTHER
+    certus_quartz: matSet("certus_quartz", "quartz", "ae2:certus_quartz"),
 };
 
 function unique(a) {
-  var prims = { boolean: {}, number: {}, string: {} },
-    objs = [];
+    let prims = { boolean: {}, number: {}, string: {} },
+        objs = [];
 
-  return a.filter(function (item) {
-    var type = typeof item;
-    if (type in prims)
-      return prims[type].hasOwnProperty(item)
-        ? false
-        : (prims[type][item] = true);
-    else return objs.indexOf(item) >= 0 ? false : objs.push(item);
-  });
+    return a.filter(function (item) {
+        let type = typeof item;
+        if (type in prims)
+            return prims[type].hasOwnProperty(item)
+                ? false
+                : (prims[type][item] = true);
+        else return objs.indexOf(item) >= 0 ? false : objs.push(item);
+    });
 }
 
 function keys(obj) {
-  let keys = [];
-  for (let key in obj) {
-    if (obj.hasOwnProperty(key)) {
-      keys.push(key);
+    let keys = [];
+    for (let key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            keys.push(key);
+        }
     }
-  }
-  return keys;
+    return keys;
 }
 
 ServerEvents.recipes((event) => {
-  // crafting recipes for the egregious oreproc machines
+    // crafting recipes for the egregious oreproc machines
 
-  // a lot of nuking
-  event.remove({
-    type: "modern_industrialization:macerator",
-    input: "#c:raw_materials",
-  });
-  event.remove({ input: "#c:raw_materials", output: "#c:storage_blocks" });
-  event.remove({ output: "#c:raw_materials", input: "#c:storage_blocks" });
-  event.remove({
-    type: "modern_industrialization:macerator",
-    input: "#egregious:crushed_dust",
-  });
-  event.remove({
-    type: "minecraft:blasting",
-    input: "#c:raw_materials",
-  });
-  event.remove({
-    type: "minecraft:smelting",
-    input: "#c:raw_materials",
-  });
-  event.remove({
-    type: "minecraft:blasting",
-    input: "#c:dusts",
-  });
-  event.remove({
-    type: "minecraft:smelting",
-    input: "#c:dusts",
-  });
-  event.remove({
-    type: "minecraft:blasting",
-    input: "#c:ores",
-  });
-  event.remove({
-    type: "minecraft:smelting",
-    input: "#c:ores",
-  });
-  event.remove({
-    type: "minecraft:blasting",
-    input: "#egregious:crushed_dust",
-  });
-  event.remove({
-    type: "minecraft:smelting",
-    input: "#egregious:crushed_dust",
-  });
-  event.remove({
-    type: "modern_industrialization:macerator",
-    input: "#c:ores",
-  });
-  event.remove({
-    type: "modern_industrialization:forge_hammer",
-    input: "#c:ores",
-  });
-  event.remove({
-    type: "modern_industrialization:forge_hammer",
-    input: "#c:raw_materials",
-  });
+    // a lot of nuking
+    event.remove({
+        type: "modern_industrialization:macerator",
+        input: "#c:raw_materials",
+    });
+    event.remove({ input: "#c:raw_materials", output: "#c:storage_blocks" });
+    event.remove({ output: "#c:raw_materials", input: "#c:storage_blocks" });
+    event.remove({
+        type: "modern_industrialization:macerator",
+        input: "#egregious:crushed_dust",
+    });
+    event.remove({
+        type: "minecraft:blasting",
+        input: "#c:raw_materials",
+    });
+    event.remove({
+        type: "minecraft:smelting",
+        input: "#c:raw_materials",
+    });
+    event.remove({
+        type: "minecraft:blasting",
+        input: "#c:dusts",
+    });
+    event.remove({
+        type: "minecraft:smelting",
+        input: "#c:dusts",
+    });
+    event.remove({
+        type: "minecraft:blasting",
+        input: "#c:ores",
+    });
+    event.remove({
+        type: "minecraft:smelting",
+        input: "#c:ores",
+    });
+    event.remove({
+        type: "minecraft:blasting",
+        input: "#egregious:crushed_dust",
+    });
+    event.remove({
+        type: "minecraft:smelting",
+        input: "#egregious:crushed_dust",
+    });
+    event.remove({
+        type: "modern_industrialization:macerator",
+        input: "#c:ores",
+    });
+    event.remove({
+        type: "modern_industrialization:forge_hammer",
+        input: "#c:ores",
+    });
+    event.remove({
+        type: "modern_industrialization:forge_hammer",
+        input: "#c:raw_materials",
+    });
 
-  // for some reason that i truly do not comprehend, ruby did not have a maceration recipe auto-generated by MI
-  event.recipes.modern_industrialization
-    .macerator(2, 400)
-    .itemIn("modern_industrialization:ruby")
-    .itemOut("modern_industrialization:ruby_dust");
-  // re add alloy dust smelting recipes
-  let MISmeltableDusts = [
-    "bronze",
-    "battery_alloy",
-    "invar",
-    "electrum",
-    "cupronickel",
-    "silicon",
-    "steel",
-    "cadmium",
-  ];
-  MISmeltableDusts.forEach((mat) => {
+    // for some reason that i truly do not comprehend, ruby did not have a maceration recipe auto-generated by MI
+    event.recipes.modern_industrialization
+        .macerator(2, 400)
+        .itemIn("modern_industrialization:ruby")
+        .itemOut("modern_industrialization:ruby_dust");
+    // re add alloy dust smelting recipes
+    let MISmeltableDusts = [
+        "bronze",
+        "battery_alloy",
+        "invar",
+        "electrum",
+        "cupronickel",
+        "silicon",
+        "steel",
+        "cadmium",
+    ];
+    MISmeltableDusts.forEach((mat) => {
+        event.smelting(
+            `modern_industrialization:${mat}_ingot`,
+            `modern_industrialization:${mat}_dust`
+        );
+        event.blasting(
+            `modern_industrialization:${mat}_ingot`,
+            `modern_industrialization:${mat}_dust`
+        );
+    });
     event.smelting(
-      `modern_industrialization:${mat}_ingot`,
-      `modern_industrialization:${mat}_dust`
+        `modern_industrialization:fire_clay_brick`,
+        `modern_industrialization:fire_clay_dust`
     );
     event.blasting(
-      `modern_industrialization:${mat}_ingot`,
-      `modern_industrialization:${mat}_dust`
+        `modern_industrialization:fire_clay_brick`,
+        `modern_industrialization:fire_clay_dust`
     );
-  });
-  event.smelting(
-    `modern_industrialization:fire_clay_brick`,
-    `modern_industrialization:fire_clay_dust`
-  );
-  event.blasting(
-    `modern_industrialization:fire_clay_brick`,
-    `modern_industrialization:fire_clay_dust`
-  );
 
-  // the like 2 or 3 chemical bath recipes:
+    // the like 2 or 3 chemical bath recipes:
 
-  event.recipes.modern_industrialization
-    .chemical_bath(4, 300)
-    .itemIn("modern_industrialization:tetrahedrite_crushed_dust")
-    .fluidIn("100x modern_industrialization:hydrochloric_acid")
-    .itemOut("modern_industrialization:tetrahedrite_washed_crushed_dust")
-    .itemOut("modern_industrialization:antimony_dust", 0.75);
-  event.recipes.modern_industrialization
-    .chemical_bath(4, 300)
-    .itemIn("modern_industrialization:galena_crushed_dust")
-    .fluidIn("100x modern_industrialization:hydrochloric_acid")
-    .itemOut("modern_industrialization:galena_washed_crushed_dust")
-    .itemOut("modern_industrialization:silver_dust", 0.75);
-  event.recipes.modern_industrialization
-    .chemical_bath(4, 300)
-    .itemIn("modern_industrialization:pitchblende_crushed_dust")
-    .fluidIn("100x modern_industrialization:sulfuric_acid")
-    .itemOut("modern_industrialization:pitchblende_washed_crushed_dust")
-    .itemOut("modern_industrialization:uranium_dust", 0.75);
-  // chromium and manganese are special cases that don't actually have ore blocks
-  let chromiumSet = ORE_PRODUCTS.chromium;
-  event.recipes.modern_industrialization
-    .ore_washer(2, 200)
-    .itemIn(chromiumSet.crushedDust)
-    .fluidIn("1000x minecraft:water")
-    .itemOut(chromiumSet.washedCrushedDust)
-    .itemOut(chromiumSet.washByproduct, 0.1);
-  event.recipes.modern_industrialization
-    .ore_washer(2, 80)
-    .itemIn(chromiumSet.crushedDust)
-    .fluidIn("125x extended_industrialization:distilled_water")
-    .itemOut(chromiumSet.washedCrushedDust)
-    .itemOut(chromiumSet.washByproduct, 0.3);
-
-  let manganeseSet = ORE_PRODUCTS.manganese;
-  event.recipes.modern_industrialization
-    .ore_washer(2, 200)
-    .itemIn(manganeseSet.crushedDust)
-    .fluidIn("1000x minecraft:water")
-    .itemOut(manganeseSet.washedCrushedDust)
-    .itemOut(manganeseSet.washByproduct, 0.1);
-  event.recipes.modern_industrialization
-    .ore_washer(2, 80)
-    .itemIn(manganeseSet.crushedDust)
-    .fluidIn("125x extended_industrialization:distilled_water")
-    .itemOut(manganeseSet.washedCrushedDust)
-    .itemOut(manganeseSet.washByproduct, 0.3);
-
-  // lapis is a special case because of course it is.
-  event.recipes.modern_industrialization
-    .sifter(4, 300)
-    .itemIn(`modern_industrialization:lapis_washed_crushed_dust`)
-    .itemOut(`minecraft:lapis_lazuli`)
-    .itemOut(`minecraft:lapis_lazuli`, 0.6)
-    .itemOut(`minecraft:lapis_lazuli`, 0.5)
-    .itemOut(`minecraft:lapis_lazuli`, 0.4)
-    .itemOut(`minecraft:lapis_lazuli`, 0.3)
-    .itemOut(`minecraft:lapis_lazuli`, 0.2)
-    .itemOut(`minecraft:lapis_lazuli`, 0.1)
-    .itemOut(`minecraft:lapis_lazuli`, 0.05)
-    .itemOut(`modern_industrialization:lapis_dust`, 0.9);
-
-  // i have NO idea why quartz isn't getting caught by the tag filter below, but i'll just do it here.
-  event.recipes.modern_industrialization
-    .sifter(4, 300)
-    .itemIn(`modern_industrialization:quartz_washed_crushed_dust`)
-    .itemOut(`minecraft:quartz`)
-    .itemOut(`minecraft:quartz`, 0.6)
-    .itemOut(`minecraft:quartz`, 0.5)
-    .itemOut(`minecraft:quartz`, 0.4)
-    .itemOut(`minecraft:quartz`, 0.3)
-    .itemOut(`minecraft:quartz`, 0.2)
-    .itemOut(`minecraft:quartz`, 0.1)
-    .itemOut(`minecraft:quartz`, 0.05)
-    .itemOut(`modern_industrialization:quartz_dust`, 0.9);
-
-  let items = Item.getList()
-    .toArray()
-    .map((item) => item.getItem().toString());
-
-  let namespacedMats = items
-    .filter((item) => item.includes("_ore") && !item.includes("washer"))
-    .map((item) => {
-      item = item
-        .replace("deepslate_", "")
-        .replace("end_stone_", "")
-        .replace("netherrack_", "")
-        .replace("nether_", "")
-        .replace("_ore", "");
-      return item;
-    });
-  let rawifiedVanillaMats = [
-    "emerald",
-    "lapis",
-    "diamond",
-    "redstone",
-    "coal",
-    "quartz",
-  ];
-  let vanillaRawOres = ["iron", "copper", "gold"];
-  let seen = [];
-  namespacedMats.forEach((nsMat) => {
-    let namespace = nsMat.split(":")[0];
-    if (namespace == "pastel") {
-      return;
-    }
-    let mat = nsMat.split(":")[1];
-    let set = ORE_PRODUCTS[mat];
-
-    if (seen.indexOf(mat) != -1) {
-      return;
-    }
-    seen.push(mat);
-
-    if (vanillaRawOres.includes(mat)) {
-      event.shapeless(Item.of(`minecraft:raw_${mat}_block`), [
-        `9x minecraft:raw_${mat}`,
-      ]);
-      event.shapeless(Item.of(`minecraft:raw_${mat}`, 9), [
-        `minecraft:raw_${mat}_block`,
-      ]);
-    } else if (!rawifiedVanillaMats.includes(mat)) {
-      event.shapeless(Item.of(`${namespace}:raw_${mat}_block`), [
-        `9x modern_industrialization:raw_${mat}`,
-      ]);
-      event.shapeless(Item.of(`modern_industrialization:raw_${mat}`, 9), [
-        `${namespace}:raw_${mat}_block`,
-      ]);
-    } else {
-      event.shapeless(Item.of(`modern_industrialization:raw_${mat}_block`), [
-        `9x modern_industrialization:raw_${mat}`,
-      ]);
-      event.shapeless(Item.of(`modern_industrialization:raw_${mat}`, 9), [
-        `modern_industrialization:raw_${mat}_block`,
-      ]);
-    }
-
-    if (mat == "certus_quartz") {
-      event.recipes.modern_industrialization
-        .sifter(4, 300)
-        .itemIn(`modern_industrialization:${mat}_washed_crushed_dust`)
-        .itemOut(`ae2:${mat}_crystal`)
-        .itemOut(`ae2:${mat}_crystal`, 0.6)
-        .itemOut(`ae2:${mat}_crystal`, 0.5)
-        .itemOut(`ae2:${mat}_crystal`, 0.4)
-        .itemOut(`ae2:${mat}_crystal`, 0.3)
-        .itemOut(`ae2:${mat}_crystal`, 0.2)
-        .itemOut(`ae2:${mat}_crystal`, 0.1)
-        .itemOut(`ae2:${mat}_crystal`, 0.05)
-        .itemOut(`ae2:${mat}_dust`, 0.9);
-      event.recipes.modern_industrialization
-        .macerator(2, 100)
-        .itemIn(`modern_industrialization:raw_${mat}`)
-        .itemOut(`modern_industrialization:${mat}_crushed_dust`)
-        .itemOut(`modern_industrialization:${mat}_crushed_dust`, 0.25);
-      event.recipes.modern_industrialization
-        .macerator(2, 100)
-        .itemIn(`modern_industrialization:${mat}_crushed_dust`)
-        .itemOut(`ae2:${mat}_dust`)
-        .itemOut(`ae2:${mat}_dust`, 0.5);
-
-      event.recipes.modern_industrialization
+    event.recipes.modern_industrialization
+        .chemical_bath(4, 300)
+        .itemIn("modern_industrialization:tetrahedrite_crushed_dust")
+        .fluidIn("100x modern_industrialization:hydrochloric_acid")
+        .itemOut("modern_industrialization:tetrahedrite_washed_crushed_dust")
+        .itemOut("modern_industrialization:antimony_dust", 0.75);
+    event.recipes.modern_industrialization
+        .chemical_bath(4, 300)
+        .itemIn("modern_industrialization:galena_crushed_dust")
+        .fluidIn("100x modern_industrialization:hydrochloric_acid")
+        .itemOut("modern_industrialization:galena_washed_crushed_dust")
+        .itemOut("modern_industrialization:silver_dust", 0.75);
+    event.recipes.modern_industrialization
+        .chemical_bath(4, 300)
+        .itemIn("modern_industrialization:pitchblende_crushed_dust")
+        .fluidIn("100x modern_industrialization:sulfuric_acid")
+        .itemOut("modern_industrialization:pitchblende_washed_crushed_dust")
+        .itemOut("modern_industrialization:uranium_dust", 0.75);
+    // chromium and manganese are special cases that don't actually have ore blocks
+    let chromiumSet = ORE_PRODUCTS.chromium;
+    event.recipes.modern_industrialization
         .ore_washer(2, 200)
-        .itemIn(set.crushedDust)
+        .itemIn(chromiumSet.crushedDust)
         .fluidIn("1000x minecraft:water")
-        .itemOut(set.washedCrushedDust)
-        .itemOut(set.washByproduct, 0.1);
-      event.recipes.modern_industrialization
+        .itemOut(chromiumSet.washedCrushedDust)
+        .itemOut(chromiumSet.washByproduct, 0.1);
+    event.recipes.modern_industrialization
         .ore_washer(2, 80)
-        .itemIn(set.crushedDust)
+        .itemIn(chromiumSet.crushedDust)
         .fluidIn("125x extended_industrialization:distilled_water")
-        .itemOut(set.washedCrushedDust)
-        .itemOut(set.washByproduct, 0.3);
+        .itemOut(chromiumSet.washedCrushedDust)
+        .itemOut(chromiumSet.washByproduct, 0.3);
 
-      event.recipes.modern_industrialization
-        .macerator(2, 100)
-        .itemIn(set.washedCrushedDust)
-        .itemOut(`ae2:${mat}_dust`)
-        .itemOut(`ae2:${mat}_dust`, 0.25);
+    let manganeseSet = ORE_PRODUCTS.manganese;
+    event.recipes.modern_industrialization
+        .ore_washer(2, 200)
+        .itemIn(manganeseSet.crushedDust)
+        .fluidIn("1000x minecraft:water")
+        .itemOut(manganeseSet.washedCrushedDust)
+        .itemOut(manganeseSet.washByproduct, 0.1);
+    event.recipes.modern_industrialization
+        .ore_washer(2, 80)
+        .itemIn(manganeseSet.crushedDust)
+        .fluidIn("125x extended_industrialization:distilled_water")
+        .itemOut(manganeseSet.washedCrushedDust)
+        .itemOut(manganeseSet.washByproduct, 0.3);
 
-      event.smelting(
-        `2x ${set.smeltsTo}_crystal`,
-        `modern_industrialization:raw_certus_quartz`
-      );
-      event.blasting(
-        `2x ${set.smeltsTo}_crystal`,
-        `modern_industrialization:raw_certus_quartz`
-      );
-
-      return;
-    }
-
-    // sifting
-    if (Item.getItem(`${nsMat}`).hasTag("c:gems") && mat !== "lapis") {
-      event.recipes.modern_industrialization
+    // lapis is a special case because of course it is.
+    event.recipes.modern_industrialization
         .sifter(4, 300)
-        .itemIn(`modern_industrialization:${mat}_washed_crushed_dust`)
-        .itemOut(`${nsMat}`)
-        .itemOut(`${nsMat}`, 0.6)
-        .itemOut(`${nsMat}`, 0.5)
-        .itemOut(`${nsMat}`, 0.4)
-        .itemOut(`${nsMat}`, 0.3)
-        .itemOut(`${nsMat}`, 0.2)
-        .itemOut(`${nsMat}`, 0.1)
-        .itemOut(`${nsMat}`, 0.05)
-        .itemOut(`modern_industrialization:${mat}_dust`, 0.9);
-    }
-    switch (mat) {
-      // abusing switch case fallthrough like a real gamer
-      case "iron":
-      case "gold":
-      case "copper":
+        .itemIn(`modern_industrialization:lapis_washed_crushed_dust`)
+        .itemOut(`minecraft:lapis_lazuli`)
+        .itemOut(`minecraft:lapis_lazuli`, 0.6)
+        .itemOut(`minecraft:lapis_lazuli`, 0.5)
+        .itemOut(`minecraft:lapis_lazuli`, 0.4)
+        .itemOut(`minecraft:lapis_lazuli`, 0.3)
+        .itemOut(`minecraft:lapis_lazuli`, 0.2)
+        .itemOut(`minecraft:lapis_lazuli`, 0.1)
+        .itemOut(`minecraft:lapis_lazuli`, 0.05)
+        .itemOut(`modern_industrialization:lapis_dust`, 0.9);
+
+    // i have NO idea why quartz isn't getting caught by the tag filter below, but i'll just do it here.
+    event.recipes.modern_industrialization
+        .sifter(4, 300)
+        .itemIn(`modern_industrialization:quartz_washed_crushed_dust`)
+        .itemOut(`minecraft:quartz`)
+        .itemOut(`minecraft:quartz`, 0.6)
+        .itemOut(`minecraft:quartz`, 0.5)
+        .itemOut(`minecraft:quartz`, 0.4)
+        .itemOut(`minecraft:quartz`, 0.3)
+        .itemOut(`minecraft:quartz`, 0.2)
+        .itemOut(`minecraft:quartz`, 0.1)
+        .itemOut(`minecraft:quartz`, 0.05)
+        .itemOut(`modern_industrialization:quartz_dust`, 0.9);
+
+    let items = Item.getList()
+        .toArray()
+        .map((item) => item.getItem().toString());
+
+    let namespacedMats = items
+        .filter((item) => item.includes("_ore") && !item.includes("washer"))
+        .map((item) => {
+            item = item
+                .replace("deepslate_", "")
+                .replace("end_stone_", "")
+                .replace("netherrack_", "")
+                .replace("nether_", "")
+                .replace("_ore", "");
+            return item;
+        });
+    let rawifiedVanillaMats = [
+        "emerald",
+        "lapis",
+        "diamond",
+        "redstone",
+        "coal",
+        "quartz",
+    ];
+    let vanillaRawOres = ["iron", "copper", "gold"];
+    let seen = [];
+    namespacedMats.forEach((nsMat) => {
+        let namespace = nsMat.split(":")[0];
+        if (namespace == "pastel") {
+            return;
+        }
+        let mat = nsMat.split(":")[1];
+        let set = ORE_PRODUCTS[mat];
+
+        if (seen.indexOf(mat) != -1) {
+            return;
+        }
+        seen.push(mat);
+
+        if (vanillaRawOres.includes(mat)) {
+            event.shapeless(Item.of(`minecraft:raw_${mat}_block`), [
+                `9x minecraft:raw_${mat}`,
+            ]);
+            event.shapeless(Item.of(`minecraft:raw_${mat}`, 9), [
+                `minecraft:raw_${mat}_block`,
+            ]);
+        } else if (!rawifiedVanillaMats.includes(mat)) {
+            event.shapeless(Item.of(`${namespace}:raw_${mat}_block`), [
+                `9x modern_industrialization:raw_${mat}`,
+            ]);
+            event.shapeless(Item.of(`modern_industrialization:raw_${mat}`, 9), [
+                `${namespace}:raw_${mat}_block`,
+            ]);
+        } else {
+            event.shapeless(Item.of(`modern_industrialization:raw_${mat}_block`), [
+                `9x modern_industrialization:raw_${mat}`,
+            ]);
+            event.shapeless(Item.of(`modern_industrialization:raw_${mat}`, 9), [
+                `modern_industrialization:raw_${mat}_block`,
+            ]);
+        }
+
+        if (mat == "certus_quartz") {
+            event.recipes.modern_industrialization
+                .sifter(4, 300)
+                .itemIn(`modern_industrialization:${mat}_washed_crushed_dust`)
+                .itemOut(`ae2:${mat}_crystal`)
+                .itemOut(`ae2:${mat}_crystal`, 0.6)
+                .itemOut(`ae2:${mat}_crystal`, 0.5)
+                .itemOut(`ae2:${mat}_crystal`, 0.4)
+                .itemOut(`ae2:${mat}_crystal`, 0.3)
+                .itemOut(`ae2:${mat}_crystal`, 0.2)
+                .itemOut(`ae2:${mat}_crystal`, 0.1)
+                .itemOut(`ae2:${mat}_crystal`, 0.05)
+                .itemOut(`ae2:${mat}_dust`, 0.9);
+            event.recipes.modern_industrialization
+                .macerator(2, 100)
+                .itemIn(`modern_industrialization:raw_${mat}`)
+                .itemOut(`modern_industrialization:${mat}_crushed_dust`)
+                .itemOut(`modern_industrialization:${mat}_crushed_dust`, 0.25);
+            event.recipes.modern_industrialization
+                .macerator(2, 100)
+                .itemIn(`modern_industrialization:${mat}_crushed_dust`)
+                .itemOut(`ae2:${mat}_dust`)
+                .itemOut(`ae2:${mat}_dust`, 0.5);
+
+            event.recipes.modern_industrialization
+                .ore_washer(2, 200)
+                .itemIn(set.crushedDust)
+                .fluidIn("1000x minecraft:water")
+                .itemOut(set.washedCrushedDust)
+                .itemOut(set.washByproduct, 0.1);
+            event.recipes.modern_industrialization
+                .ore_washer(2, 80)
+                .itemIn(set.crushedDust)
+                .fluidIn("125x extended_industrialization:distilled_water")
+                .itemOut(set.washedCrushedDust)
+                .itemOut(set.washByproduct, 0.3);
+
+            event.recipes.modern_industrialization
+                .macerator(2, 100)
+                .itemIn(set.washedCrushedDust)
+                .itemOut(`ae2:${mat}_dust`)
+                .itemOut(`ae2:${mat}_dust`, 0.25);
+
+            event.smelting(
+                `2x ${set.smeltsTo}_crystal`,
+                `modern_industrialization:raw_certus_quartz`
+            );
+            event.blasting(
+                `2x ${set.smeltsTo}_crystal`,
+                `modern_industrialization:raw_certus_quartz`
+            );
+
+            return;
+        }
+
+        // sifting
+        if (Item.getItem(`${nsMat}`).hasTag("c:gems") && mat !== "lapis") {
+            event.recipes.modern_industrialization
+                .sifter(4, 300)
+                .itemIn(`modern_industrialization:${mat}_washed_crushed_dust`)
+                .itemOut(`${nsMat}`)
+                .itemOut(`${nsMat}`, 0.6)
+                .itemOut(`${nsMat}`, 0.5)
+                .itemOut(`${nsMat}`, 0.4)
+                .itemOut(`${nsMat}`, 0.3)
+                .itemOut(`${nsMat}`, 0.2)
+                .itemOut(`${nsMat}`, 0.1)
+                .itemOut(`${nsMat}`, 0.05)
+                .itemOut(`modern_industrialization:${mat}_dust`, 0.9);
+        }
+        switch (mat) {
+        // abusing switch case fallthrough like a real gamer
+        case "iron":
+        case "gold":
+        case "copper":
+            event.recipes.modern_industrialization
+                .macerator(2, 100)
+                .itemIn(`minecraft:raw_${mat}`)
+                .itemOut(set.crushedDust)
+                .itemOut(set.crushedDust, 0.25);
+            break;
+        default:
+            event.recipes.modern_industrialization
+                .macerator(2, 100)
+                .itemIn(`modern_industrialization:raw_${mat}`)
+                .itemOut(set.crushedDust)
+                .itemOut(set.crushedDust, 0.25);
+            break;
+        }
+
         event.recipes.modern_industrialization
-          .macerator(2, 100)
-          .itemIn(`minecraft:raw_${mat}`)
-          .itemOut(set.crushedDust)
-          .itemOut(set.crushedDust, 0.25);
-        break;
-      default:
+            .ore_washer(2, 200)
+            .itemIn(set.crushedDust)
+            .fluidIn("1000x minecraft:water")
+            .itemOut(set.washedCrushedDust)
+            .itemOut(set.washByproduct, 0.1);
         event.recipes.modern_industrialization
-          .macerator(2, 100)
-          .itemIn(`modern_industrialization:raw_${mat}`)
-          .itemOut(set.crushedDust)
-          .itemOut(set.crushedDust, 0.25);
-        break;
-    }
+            .ore_washer(2, 80)
+            .itemIn(set.crushedDust)
+            .fluidIn("125x extended_industrialization:distilled_water")
+            .itemOut(set.washedCrushedDust)
+            .itemOut(set.washByproduct, 0.3);
+
+        if (mat !== "redstone") {
+            event.recipes.modern_industrialization
+                .macerator(2, 100)
+                .itemIn(set.washedCrushedDust)
+                .itemOut(set.dust)
+                .itemOut(set.dust, 0.25);
+            event.recipes.modern_industrialization
+                .macerator(2, 100)
+                .itemIn(set.crushedDust)
+                .itemOut(set.dust)
+                .itemOut(set.dust, 0.5);
+        } else {
+            event.recipes.modern_industrialization
+                .macerator(2, 100)
+                .itemIn(set.washedCrushedDust)
+                .itemOut("minecraft:redstone")
+                .itemOut("minecraft:redstone", 0.25);
+            event.recipes.modern_industrialization
+                .macerator(2, 100)
+                .itemIn(set.crushedDust)
+                .itemOut("minecraft:redstone")
+                .itemOut("minecraft:redstone", 0.5);
+        }
+
+        let smeltNamespace = "modern_industrialization";
+        if (mat == "iron" || mat == "gold" || mat == "copper") {
+            smeltNamespace = "minecraft";
+        }
+        if (set.smeltsTo !== undefined) {
+            if (set.smeltsTo.indexOf("ingot") !== -1) {
+                event.smelting(set.smeltsTo, set.washedCrushedDust);
+                event.smelting(set.smeltsTo, set.crushedDust);
+                event.smelting(set.smeltsTo, set.dust);
+                event.smelting(set.smeltsTo, `${smeltNamespace}:raw_${mat}`);
+
+                event.blasting(set.smeltsTo, set.washedCrushedDust);
+                event.blasting(set.smeltsTo, set.crushedDust);
+                event.blasting(set.smeltsTo, set.dust);
+                event.blasting(set.smeltsTo, `${smeltNamespace}:raw_${mat}`);
+            } else {
+                event.smelting(set.smeltsTo, `${smeltNamespace}:raw_${mat}`);
+                event.blasting(set.smeltsTo, `${smeltNamespace}:raw_${mat}`);
+            }
+        }
+    });
+
+    event.replaceInput(
+        {
+            type: "modern_industrialization:chemical_reactor",
+        },
+        "modern_industrialization:chromium_crushed_dust",
+        "modern_industrialization:chromium_washed_crushed_dust"
+    );
+
+    event.replaceInput(
+        {
+            type: "modern_industrialization:chemical_reactor",
+        },
+        "modern_industrialization:manganese_crushed_dust",
+        "modern_industrialization:manganese_washed_crushed_dust"
+    );
 
     event.recipes.modern_industrialization
-      .ore_washer(2, 200)
-      .itemIn(set.crushedDust)
-      .fluidIn("1000x minecraft:water")
-      .itemOut(set.washedCrushedDust)
-      .itemOut(set.washByproduct, 0.1);
+        .electrolyzer(16, 500)
+        .itemIn("20x modern_industrialization:tetrahedrite_dust")
+        .itemOut("15x modern_industrialization:copper_dust")
+        .itemOut("4x modern_industrialization:sulfur_dust")
+        .itemOut("modern_industrialization:antimony_dust");
     event.recipes.modern_industrialization
-      .ore_washer(2, 80)
-      .itemIn(set.crushedDust)
-      .fluidIn("125x extended_industrialization:distilled_water")
-      .itemOut(set.washedCrushedDust)
-      .itemOut(set.washByproduct, 0.3);
+        .electrolyzer(16, 200)
+        .itemIn("4x modern_industrialization:chalcopyrite_dust")
+        .itemOut("2x modern_industrialization:sulfur_dust")
+        .itemOut("modern_industrialization:copper_dust")
+        .itemOut("modern_industrialization:iron_dust");
+    event.recipes.modern_industrialization
+        .electrolyzer(16, 200)
+        .itemIn("3x modern_industrialization:pyrite_dust")
+        .itemOut("2x modern_industrialization:sulfur_dust")
+        .itemOut("modern_industrialization:iron_dust");
+    event.recipes.modern_industrialization
+        .electrolyzer(16, 200)
+        .itemIn("3x modern_industrialization:cassiterite_dust")
+        .itemOut("modern_industrialization:tin_dust")
+        .fluidOut("2000x modern_industrialization:oxygen");
+    event.recipes.modern_industrialization
+        .electrolyzer(16, 200)
+        .itemIn("18x modern_industrialization:asbestos_dust")
+        .itemOut("4x modern_industrialization:iron_dust")
+        .itemOut("4x modern_industrialization:silicon_dust")
+        .fluidOut("10000x modern_industrialization:oxygen");
+    event.recipes.modern_industrialization
+        .electrolyzer(16, 200)
+        .itemIn("3x modern_industrialization:magnetite_dust")
+        .itemOut("modern_industrialization:iron_dust")
+        .fluidOut("2000x modern_industrialization:oxygen");
+    event.recipes.modern_industrialization
+        .electrolyzer(16, 200)
+        .itemIn("7x modern_industrialization:garnierite_dust")
+        .itemOut("4x modern_industrialization:nickel_dust")
+        .itemOut("2x modern_industrialization:iron_dust")
+        .itemOut("modern_industrialization:silicon_dust");
+    event.recipes.modern_industrialization
+        .electrolyzer(16, 280)
+        .itemIn("26x modern_industrialization:pentlandite_dust")
+        .itemOut("9x modern_industrialization:nickel_dust")
+        .itemOut("9x modern_industrialization:iron_dust")
+        .itemOut("8x modern_industrialization:sulfur_dust");
+    event.recipes.modern_industrialization
+        .centrifuge(16, 200)
+        .itemIn("2x modern_industrialization:galena_dust")
+        .itemOut("modern_industrialization:lead_dust")
+        .itemOut("modern_industrialization:silver_dust");
+    event.recipes.modern_industrialization
+        .electrolyzer(16, 3000)
+        .itemIn("3x modern_industrialization:pitchblende_dust")
+        .itemOut("modern_industrialization:uranium_dust")
+        .fluidOut("2000x modern_industrialization:oxygen");
+    event.recipes.modern_industrialization
+        .electrolyzer(16, 3000)
+        .itemIn("3x modern_industrialization:uraninite_dust")
+        .itemOut("modern_industrialization:uranium_dust")
+        .fluidOut("2000x modern_industrialization:oxygen");
+    event.recipes.modern_industrialization
+        .electrolyzer(16, 3600)
+        .itemIn("5x modern_industrialization:scheelite_dust")
+        .itemOut("modern_industrialization:tungsten_dust")
+        .fluidOut("4000x modern_industrialization:oxygen");
+    event.recipes.modern_industrialization
+        .electrolyzer(16, 3600)
+        .itemIn("5x modern_industrialization:ilmenite_dust")
+        .itemOut("modern_industrialization:iron_dust")
+        .itemOut("modern_industrialization:titanium_dust")
+        .fluidOut("3000x modern_industrialization:oxygen");
+    event.recipes.modern_industrialization
+        .electrolyzer(16, 2400)
+        .itemIn("7x modern_industrialization:chromite_dust")
+        .itemOut("modern_industrialization:iron_dust")
+        .itemOut("2x modern_industrialization:chromium_dust")
+        .fluidOut("4000x modern_industrialization:oxygen");
+    event.recipes.modern_industrialization
+        .electrolyzer(16, 2800)
+        .itemIn("17x modern_industrialization:uvarovite_dust")
+        .itemOut("2x modern_industrialization:chromium_dust")
+        .itemOut("3x modern_industrialization:silicon_dust")
+        .fluidOut("12000x modern_industrialization:oxygen");
+    event.recipes.modern_industrialization
+        .electrolyzer(16, 2800)
+        .itemIn("11x modern_industrialization:sodalite_dust")
+        .itemOut("3x modern_industrialization:aluminum_dust")
+        .itemOut("3x modern_industrialization:silicon_dust")
+        .itemOut("4x modern_industrialization:sodium_dust")
+        .fluidOut("1000x modern_industrialization:chlorine");
+    event.recipes.modern_industrialization
+        .electrolyzer(16, 2800)
+        .itemIn("14x modern_industrialization:lazurite_dust")
+        .itemOut("3x modern_industrialization:aluminum_dust")
+        .itemOut("3x modern_industrialization:silicon_dust")
+        .itemOut("4x modern_industrialization:sulfur_dust")
+        .itemOut("4x modern_industrialization:sodium_dust");
 
-    if (mat !== "redstone") {
-      event.recipes.modern_industrialization
-        .macerator(2, 100)
-        .itemIn(set.washedCrushedDust)
-        .itemOut(set.dust)
-        .itemOut(set.dust, 0.25);
-      event.recipes.modern_industrialization
-        .macerator(2, 100)
-        .itemIn(set.crushedDust)
-        .itemOut(set.dust)
-        .itemOut(set.dust, 0.5);
-    } else {
-      event.recipes.modern_industrialization
-        .macerator(2, 100)
-        .itemIn(set.washedCrushedDust)
-        .itemOut("minecraft:redstone")
-        .itemOut("minecraft:redstone", 0.25);
-      event.recipes.modern_industrialization
-        .macerator(2, 100)
-        .itemIn(set.crushedDust)
-        .itemOut("minecraft:redstone")
-        .itemOut("minecraft:redstone", 0.5);
-    }
-
-    let smeltNamespace = "modern_industrialization";
-    if (mat == "iron" || mat == "gold" || mat == "copper") {
-      smeltNamespace = "minecraft";
-    }
-    if (set.smeltsTo !== undefined) {
-      if (set.smeltsTo.indexOf("ingot") !== -1) {
-        event.smelting(set.smeltsTo, set.washedCrushedDust);
-        event.smelting(set.smeltsTo, set.crushedDust);
-        event.smelting(set.smeltsTo, set.dust);
-        event.smelting(set.smeltsTo, `${smeltNamespace}:raw_${mat}`);
-
-        event.blasting(set.smeltsTo, set.washedCrushedDust);
-        event.blasting(set.smeltsTo, set.crushedDust);
-        event.blasting(set.smeltsTo, set.dust);
-        event.blasting(set.smeltsTo, `${smeltNamespace}:raw_${mat}`);
-      } else {
-        event.smelting(set.smeltsTo, `${smeltNamespace}:raw_${mat}`);
-        event.blasting(set.smeltsTo, `${smeltNamespace}:raw_${mat}`);
-      }
-    }
-  });
-
-  event.replaceInput(
-    {
-      type: "modern_industrialization:chemical_reactor",
-    },
-    "modern_industrialization:chromium_crushed_dust",
-    "modern_industrialization:chromium_washed_crushed_dust"
-  );
-
-  event.replaceInput(
-    {
-      type: "modern_industrialization:chemical_reactor",
-    },
-    "modern_industrialization:manganese_crushed_dust",
-    "modern_industrialization:manganese_washed_crushed_dust"
-  );
-
-  event.recipes.modern_industrialization
-    .electrolyzer(16, 500)
-    .itemIn("20x modern_industrialization:tetrahedrite_dust")
-    .itemOut("15x modern_industrialization:copper_dust")
-    .itemOut("4x modern_industrialization:sulfur_dust")
-    .itemOut("modern_industrialization:antimony_dust");
-  event.recipes.modern_industrialization
-    .electrolyzer(16, 200)
-    .itemIn("4x modern_industrialization:chalcopyrite_dust")
-    .itemOut("2x modern_industrialization:sulfur_dust")
-    .itemOut("modern_industrialization:copper_dust")
-    .itemOut("modern_industrialization:iron_dust");
-  event.recipes.modern_industrialization
-    .electrolyzer(16, 200)
-    .itemIn("3x modern_industrialization:pyrite_dust")
-    .itemOut("2x modern_industrialization:sulfur_dust")
-    .itemOut("modern_industrialization:iron_dust");
-  event.recipes.modern_industrialization
-    .electrolyzer(16, 200)
-    .itemIn("3x modern_industrialization:cassiterite_dust")
-    .itemOut("modern_industrialization:tin_dust")
-    .fluidOut("2000x modern_industrialization:oxygen");
-  event.recipes.modern_industrialization
-    .electrolyzer(16, 200)
-    .itemIn("18x modern_industrialization:asbestos_dust")
-    .itemOut("4x modern_industrialization:iron_dust")
-    .itemOut("4x modern_industrialization:silicon_dust")
-    .fluidOut("10000x modern_industrialization:oxygen");
-  event.recipes.modern_industrialization
-    .electrolyzer(16, 200)
-    .itemIn("3x modern_industrialization:magnetite_dust")
-    .itemOut("modern_industrialization:iron_dust")
-    .fluidOut("2000x modern_industrialization:oxygen");
-  event.recipes.modern_industrialization
-    .electrolyzer(16, 200)
-    .itemIn("7x modern_industrialization:garnierite_dust")
-    .itemOut("4x modern_industrialization:nickel_dust")
-    .itemOut("2x modern_industrialization:iron_dust")
-    .itemOut("modern_industrialization:silicon_dust");
-  event.recipes.modern_industrialization
-    .electrolyzer(16, 280)
-    .itemIn("26x modern_industrialization:pentlandite_dust")
-    .itemOut("9x modern_industrialization:nickel_dust")
-    .itemOut("9x modern_industrialization:iron_dust")
-    .itemOut("8x modern_industrialization:sulfur_dust");
-  event.recipes.modern_industrialization
-    .centrifuge(16, 200)
-    .itemIn("2x modern_industrialization:galena_dust")
-    .itemOut("modern_industrialization:lead_dust")
-    .itemOut("modern_industrialization:silver_dust");
-  event.recipes.modern_industrialization
-    .electrolyzer(16, 3000)
-    .itemIn("3x modern_industrialization:pitchblende_dust")
-    .itemOut("modern_industrialization:uranium_dust")
-    .fluidOut("2000x modern_industrialization:oxygen");
-  event.recipes.modern_industrialization
-    .electrolyzer(16, 3000)
-    .itemIn("3x modern_industrialization:uraninite_dust")
-    .itemOut("modern_industrialization:uranium_dust")
-    .fluidOut("2000x modern_industrialization:oxygen");
-  event.recipes.modern_industrialization
-    .electrolyzer(16, 3600)
-    .itemIn("5x modern_industrialization:scheelite_dust")
-    .itemOut("modern_industrialization:tungsten_dust")
-    .fluidOut("4000x modern_industrialization:oxygen");
-  event.recipes.modern_industrialization
-    .electrolyzer(16, 3600)
-    .itemIn("5x modern_industrialization:ilmenite_dust")
-    .itemOut("modern_industrialization:iron_dust")
-    .itemOut("modern_industrialization:titanium_dust")
-    .fluidOut("3000x modern_industrialization:oxygen");
-  event.recipes.modern_industrialization
-    .electrolyzer(16, 2400)
-    .itemIn("7x modern_industrialization:chromite_dust")
-    .itemOut("modern_industrialization:iron_dust")
-    .itemOut("2x modern_industrialization:chromium_dust")
-    .fluidOut("4000x modern_industrialization:oxygen");
-  event.recipes.modern_industrialization
-    .electrolyzer(16, 2800)
-    .itemIn("17x modern_industrialization:uvarovite_dust")
-    .itemOut("2x modern_industrialization:chromium_dust")
-    .itemOut("3x modern_industrialization:silicon_dust")
-    .fluidOut("12000x modern_industrialization:oxygen");
-  event.recipes.modern_industrialization
-    .electrolyzer(16, 2800)
-    .itemIn("11x modern_industrialization:sodalite_dust")
-    .itemOut("3x modern_industrialization:aluminum_dust")
-    .itemOut("3x modern_industrialization:silicon_dust")
-    .itemOut("4x modern_industrialization:sodium_dust")
-    .fluidOut("1000x modern_industrialization:chlorine");
-  event.recipes.modern_industrialization
-    .electrolyzer(16, 2800)
-    .itemIn("14x modern_industrialization:lazurite_dust")
-    .itemOut("3x modern_industrialization:aluminum_dust")
-    .itemOut("3x modern_industrialization:silicon_dust")
-    .itemOut("4x modern_industrialization:sulfur_dust")
-    .itemOut("4x modern_industrialization:sodium_dust");
-
-  event.shapeless(Item.of("minecraft:blue_dye"), [
-    "modern_industrialization:lapis_dust",
-  ]);
-  event.shapeless(Item.of("minecraft:blue_dye"), [
-    "modern_industrialization:sodalite_dust",
-  ]);
-  event.shapeless(Item.of("minecraft:blue_dye"), [
-    "modern_industrialization:lazurite_dust",
-  ]);
+    event.shapeless(Item.of("minecraft:blue_dye"), [
+        "modern_industrialization:lapis_dust",
+    ]);
+    event.shapeless(Item.of("minecraft:blue_dye"), [
+        "modern_industrialization:sodalite_dust",
+    ]);
+    event.shapeless(Item.of("minecraft:blue_dye"), [
+        "modern_industrialization:lazurite_dust",
+    ]);
 });
