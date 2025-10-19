@@ -48,17 +48,13 @@ ServerEvents.recipes((event) => {
     .itemIn("modern_industrialization:steel_machine_casing")
     .itemIn("2x #modern_industrialization:item_pipes")
     .itemOut("modern_industrialization:steel_sifter");
-  event.shaped(
-    "modern_industrialization:electric_sifter",
-    ["BBB", "GCG", "PRP"],
-    {
-      R: "modern_industrialization:analog_circuit",
-      B: "minecraft:iron_bars",
-      G: "modern_industrialization:tin_rotor",
-      C: "modern_industrialization:basic_machine_hull",
-      P: "modern_industrialization:motor",
-    }
-  );
+  event.shaped("modern_industrialization:electric_sifter", ["BBB", "GCG", "PRP"], {
+    R: "modern_industrialization:analog_circuit",
+    B: "minecraft:iron_bars",
+    G: "modern_industrialization:tin_rotor",
+    C: "modern_industrialization:basic_machine_hull",
+    P: "modern_industrialization:motor",
+  });
   event.recipes.modern_industrialization
     .assembler(8, 200)
     .itemIn("modern_industrialization:analog_circuit")
@@ -69,16 +65,12 @@ ServerEvents.recipes((event) => {
     .itemOut("modern_industrialization:electric_sifter");
 
   // ore washers
-  event.shaped(
-    "modern_industrialization:bronze_ore_washer",
-    ["PRP", "GCG", "PPP"],
-    {
-      R: "modern_industrialization:copper_rotor",
-      G: "modern_industrialization:copper_gear",
-      C: "modern_industrialization:bronze_machine_casing",
-      P: "#modern_industrialization:fluid_pipes",
-    }
-  );
+  event.shaped("modern_industrialization:bronze_ore_washer", ["PRP", "GCG", "PPP"], {
+    R: "modern_industrialization:copper_rotor",
+    G: "modern_industrialization:copper_gear",
+    C: "modern_industrialization:bronze_machine_casing",
+    P: "#modern_industrialization:fluid_pipes",
+  });
 
   event.recipes.modern_industrialization
     .assembler(8, 200)
@@ -88,17 +80,13 @@ ServerEvents.recipes((event) => {
     .itemIn("5x #modern_industrialization:fluid_pipes")
     .itemOut("modern_industrialization:bronze_ore_washer");
 
-  event.shaped(
-    "modern_industrialization:electric_ore_washer",
-    ["URU", "PCP", "PAP"],
-    {
-      U: "modern_industrialization:pump",
-      R: "modern_industrialization:tin_rotor",
-      C: "modern_industrialization:basic_machine_hull",
-      P: "#modern_industrialization:fluid_pipes",
-      A: "modern_industrialization:analog_circuit",
-    }
-  );
+  event.shaped("modern_industrialization:electric_ore_washer", ["URU", "PCP", "PAP"], {
+    U: "modern_industrialization:pump",
+    R: "modern_industrialization:tin_rotor",
+    C: "modern_industrialization:basic_machine_hull",
+    P: "#modern_industrialization:fluid_pipes",
+    A: "modern_industrialization:analog_circuit",
+  });
 
   event.recipes.modern_industrialization
     .assembler(8, 200)
@@ -110,17 +98,13 @@ ServerEvents.recipes((event) => {
     .itemOut("modern_industrialization:electric_ore_washer");
 
   // chemical bath
-  event.shaped(
-    "modern_industrialization:chemical_bath",
-    ["BMB", "GCG", "MRM"],
-    {
-      R: "modern_industrialization:electronic_circuit",
-      B: "modern_industrialization:pump",
-      M: "modern_industrialization:motor",
-      G: "#modern_industrialization:fluid_pipes",
-      C: "modern_industrialization:basic_machine_hull",
-    }
-  );
+  event.shaped("modern_industrialization:chemical_bath", ["BMB", "GCG", "MRM"], {
+    R: "modern_industrialization:electronic_circuit",
+    B: "modern_industrialization:pump",
+    M: "modern_industrialization:motor",
+    G: "#modern_industrialization:fluid_pipes",
+    C: "modern_industrialization:basic_machine_hull",
+  });
   event.recipes.modern_industrialization
     .assembler(8, 200)
     .itemIn("2x modern_industrialization:pump")
@@ -131,18 +115,14 @@ ServerEvents.recipes((event) => {
     .itemOut("modern_industrialization:chemical_bath");
 
   // laser engraver
-  event.shaped(
-    "modern_industrialization:laser_engraver",
-    ["DLD", "CHC", "EPE"],
-    {
-      E: "modern_industrialization:electronic_circuit",
-      D: "modern_industrialization:diode",
-      L: "kubejs:glass_lens",
-      C: "modern_industrialization:electrum_cable",
-      H: "modern_industrialization:basic_machine_hull",
-      P: "minecraft:prismarine_crystals",
-    }
-  );
+  event.shaped("modern_industrialization:laser_engraver", ["DLD", "CHC", "EPE"], {
+    E: "modern_industrialization:electronic_circuit",
+    D: "modern_industrialization:diode",
+    L: "kubejs:glass_lens",
+    C: "modern_industrialization:electrum_cable",
+    H: "modern_industrialization:basic_machine_hull",
+    P: "minecraft:prismarine_crystals",
+  });
   event.recipes.modern_industrialization
     .assembler(8, 200)
     .itemIn("modern_industrialization:basic_machine_hull")
@@ -154,17 +134,13 @@ ServerEvents.recipes((event) => {
     .itemOut("modern_industrialization:laser_engraver");
 
   // circuit assembler
-  event.shaped(
-    "modern_industrialization:circuit_assembler",
-    ["RPR", "MHM", "EPE"],
-    {
-      E: "modern_industrialization:electronic_circuit",
-      R: "modern_industrialization:robot_arm",
-      M: "modern_industrialization:large_motor",
-      H: "modern_industrialization:basic_machine_hull",
-      P: "modern_industrialization:large_pump",
-    }
-  );
+  event.shaped("modern_industrialization:circuit_assembler", ["RPR", "MHM", "EPE"], {
+    E: "modern_industrialization:electronic_circuit",
+    R: "modern_industrialization:robot_arm",
+    M: "modern_industrialization:large_motor",
+    H: "modern_industrialization:basic_machine_hull",
+    P: "modern_industrialization:large_pump",
+  });
   event.recipes.modern_industrialization
     .assembler(8, 200)
     .itemIn("modern_industrialization:basic_machine_hull")
@@ -174,7 +150,7 @@ ServerEvents.recipes((event) => {
     .itemIn("2x modern_industrialization:large_motor")
     .itemOut("modern_industrialization:circuit_assembler");
 
-  //Steel upgrade for custom ore washer
+  // Steel upgrade for custom ore washer
   event.shapeless("modern_industrialization:steel_ore_washer", [
     "modern_industrialization:bronze_ore_washer",
     "modern_industrialization:steel_upgrade",
@@ -191,37 +167,25 @@ ServerEvents.recipes((event) => {
     .itemOut("modern_industrialization:steel_ore_washer");
 
   // gas turbines ( will not bother making assembler recipes for these)
-  event.shaped(
-    "modern_industrialization:lv_gas_turbine",
-    ["CRC", "RHR", "MWM"],
-    {
-      C: "modern_industrialization:analog_circuit",
-      R: "modern_industrialization:tin_rotor",
-      H: "modern_industrialization:basic_machine_hull",
-      M: "modern_industrialization:motor",
-      W: "modern_industrialization:tin_cable",
-    }
-  );
-  event.shaped(
-    "modern_industrialization:mv_gas_turbine",
-    ["CRC", "RHR", "MWM"],
-    {
-      C: "modern_industrialization:electronic_circuit",
-      R: "modern_industrialization:aluminum_rotor",
-      H: "modern_industrialization:advanced_machine_hull",
-      M: "modern_industrialization:large_motor",
-      W: "modern_industrialization:electrum_cable",
-    }
-  );
-  event.shaped(
-    "modern_industrialization:hv_gas_turbine",
-    ["CRC", "RHR", "MWM"],
-    {
-      C: "modern_industrialization:digital_circuit",
-      R: "modern_industrialization:stainless_steel_rotor",
-      H: "modern_industrialization:turbo_machine_hull",
-      M: "modern_industrialization:advanced_motor",
-      W: "modern_industrialization:aluminum_cable",
-    }
-  );
+  event.shaped("modern_industrialization:lv_gas_turbine", ["CRC", "RHR", "MWM"], {
+    C: "modern_industrialization:analog_circuit",
+    R: "modern_industrialization:tin_rotor",
+    H: "modern_industrialization:basic_machine_hull",
+    M: "modern_industrialization:motor",
+    W: "modern_industrialization:tin_cable",
+  });
+  event.shaped("modern_industrialization:mv_gas_turbine", ["CRC", "RHR", "MWM"], {
+    C: "modern_industrialization:electronic_circuit",
+    R: "modern_industrialization:aluminum_rotor",
+    H: "modern_industrialization:advanced_machine_hull",
+    M: "modern_industrialization:large_motor",
+    W: "modern_industrialization:electrum_cable",
+  });
+  event.shaped("modern_industrialization:hv_gas_turbine", ["CRC", "RHR", "MWM"], {
+    C: "modern_industrialization:digital_circuit",
+    R: "modern_industrialization:stainless_steel_rotor",
+    H: "modern_industrialization:turbo_machine_hull",
+    M: "modern_industrialization:advanced_motor",
+    W: "modern_industrialization:aluminum_cable",
+  });
 });

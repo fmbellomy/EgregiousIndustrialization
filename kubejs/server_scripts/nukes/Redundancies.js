@@ -11,7 +11,7 @@ RecipeViewerEvents.removeEntriesCompletely("item", (event) => {
   event.remove("minecraft:nether_gold_ore");
   event.remove("sophisticatedbackpacks:stack_upgrade_starter_tier");
 
-  //HNN nuking unused data models
+  // HNN nuking unused data models
   function nukeHNNdataPredictions(mob) {
     event.remove(
       `hostilenetworks:data_model[hostilenetworks:data_model="hostilenetworks:${mob}"]`

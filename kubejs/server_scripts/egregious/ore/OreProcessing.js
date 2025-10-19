@@ -1,4 +1,4 @@
-//priority: 2
+// priority: 2
 function matSet(oreMat, washByproductMat, smeltsTo) {
   return {
     smeltsTo: smeltsTo,
@@ -70,11 +70,11 @@ const ORE_PRODUCTS = {
 };
 
 function unique(a) {
-  var prims = { boolean: {}, number: {}, string: {} },
+  let prims = { boolean: {}, number: {}, string: {} },
     objs = [];
 
   return a.filter(function (item) {
-    var type = typeof item;
+    let type = typeof item;
     if (type in prims)
       return prims[type].hasOwnProperty(item)
         ? false
@@ -215,6 +215,13 @@ ServerEvents.recipes((event) => {
     .fluidIn("1000x minecraft:water")
     .itemOut(chromiumSet.washedCrushedDust)
     .itemOut(chromiumSet.washByproduct, 0.1);
+  event.recipes.modern_industrialization
+    .ore_washer(2, 80)
+    .itemIn(chromiumSet.crushedDust)
+    .fluidIn("125x extended_industrialization:distilled_water")
+    .itemOut(chromiumSet.washedCrushedDust)
+    .itemOut(chromiumSet.washByproduct, 0.3);
+
   let manganeseSet = ORE_PRODUCTS.manganese;
   event.recipes.modern_industrialization
     .ore_washer(2, 200)
@@ -222,6 +229,12 @@ ServerEvents.recipes((event) => {
     .fluidIn("1000x minecraft:water")
     .itemOut(manganeseSet.washedCrushedDust)
     .itemOut(manganeseSet.washByproduct, 0.1);
+  event.recipes.modern_industrialization
+    .ore_washer(2, 80)
+    .itemIn(manganeseSet.crushedDust)
+    .fluidIn("125x extended_industrialization:distilled_water")
+    .itemOut(manganeseSet.washedCrushedDust)
+    .itemOut(manganeseSet.washByproduct, 0.3);
 
   // lapis is a special case because of course it is.
   event.recipes.modern_industrialization
@@ -335,12 +348,20 @@ ServerEvents.recipes((event) => {
         .itemIn(`modern_industrialization:${mat}_crushed_dust`)
         .itemOut(`ae2:${mat}_dust`)
         .itemOut(`ae2:${mat}_dust`, 0.5);
+
       event.recipes.modern_industrialization
         .ore_washer(2, 200)
         .itemIn(set.crushedDust)
         .fluidIn("1000x minecraft:water")
         .itemOut(set.washedCrushedDust)
         .itemOut(set.washByproduct, 0.1);
+      event.recipes.modern_industrialization
+        .ore_washer(2, 80)
+        .itemIn(set.crushedDust)
+        .fluidIn("125x extended_industrialization:distilled_water")
+        .itemOut(set.washedCrushedDust)
+        .itemOut(set.washByproduct, 0.3);
+
       event.recipes.modern_industrialization
         .macerator(2, 100)
         .itemIn(set.washedCrushedDust)
@@ -375,37 +396,38 @@ ServerEvents.recipes((event) => {
         .itemOut(`modern_industrialization:${mat}_dust`, 0.9);
     }
     switch (mat) {
-      // abusing switch case fallthrough like a real gamer
-      case "iron":
-      case "gold":
-      case "copper":
-        event.recipes.modern_industrialization
-          .macerator(2, 100)
-          .itemIn(`minecraft:raw_${mat}`)
-          .itemOut(set.crushedDust)
-          .itemOut(set.crushedDust, 0.25);
-        break;
-      default:
-        event.recipes.modern_industrialization
-          .macerator(2, 100)
-          .itemIn(`modern_industrialization:raw_${mat}`)
-          .itemOut(set.crushedDust)
-          .itemOut(set.crushedDust, 0.25);
-        break;
+    // abusing switch case fallthrough like a real gamer
+    case "iron":
+    case "gold":
+    case "copper":
+      event.recipes.modern_industrialization
+        .macerator(2, 100)
+        .itemIn(`minecraft:raw_${mat}`)
+        .itemOut(set.crushedDust)
+        .itemOut(set.crushedDust, 0.25);
+      break;
+    default:
+      event.recipes.modern_industrialization
+        .macerator(2, 100)
+        .itemIn(`modern_industrialization:raw_${mat}`)
+        .itemOut(set.crushedDust)
+        .itemOut(set.crushedDust, 0.25);
+      break;
     }
+
     event.recipes.modern_industrialization
       .ore_washer(2, 200)
       .itemIn(set.crushedDust)
       .fluidIn("1000x minecraft:water")
       .itemOut(set.washedCrushedDust)
       .itemOut(set.washByproduct, 0.1);
-    /* DISABLED UNTIL MI UPDATES AND EI ACTUALLY WORKS
     event.recipes.modern_industrialization
       .ore_washer(2, 80)
       .itemIn(set.crushedDust)
-      .fluidIn("extendedindustrialization:distilled_water")
+      .fluidIn("125x extended_industrialization:distilled_water")
+      .itemOut(set.washedCrushedDust)
       .itemOut(set.washByproduct, 0.3);
-      */
+
     if (mat !== "redstone") {
       event.recipes.modern_industrialization
         .macerator(2, 100)

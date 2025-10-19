@@ -12,13 +12,20 @@ downloads/
 modernfix/
 fancymenu_data/
 ESM/
+journeymap/
+.mixin.out/
+modern_industrialization/
+waypoints/
 
+patchouli_data.json
 icon.png
 options.txt
 rhino.local.properties
 usercache.json
 usernamecache.json
 emi.json
+command_history.txt
+servers.dat
 
 # Pakku
 build/

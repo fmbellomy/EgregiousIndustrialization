@@ -11,19 +11,19 @@ import multiblockDeclaration from "./multiblock-declaration.mjs"
  * @param {Record<string, *>} rules Plugin rules
  */
 function customPluginWithAllRulesError(name, rules) {
-    return {
-        plugins: {
-            [name]: { rules }
-        },
-        rules: Object.fromEntries(
-            Object.entries(rules).map(([rule]) =>
-                [`${name}/${rule}`, "error"]
-            )
-        )
-    }
+  return {
+    plugins: {
+      [name]: { rules }
+    },
+    rules: Object.fromEntries(
+      Object.entries(rules).map(([rule]) =>
+        [`${name}/${rule}`, "error"]
+      )
+    )
+  }
 }
 
 export const PanPack = customPluginWithAllRulesError("PanPack", {
-    "recipe-spacing": recipeSpacing,
-    "multiblock-declaration": multiblockDeclaration
+  "recipe-spacing": recipeSpacing,
+  "multiblock-declaration": multiblockDeclaration
 })
