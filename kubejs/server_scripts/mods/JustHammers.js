@@ -31,33 +31,21 @@ ServerEvents.recipes((event) => {
       C: "justhammers:impact_core",
       S: "modern_industrialization:steel_rod",
     });
-    event.shaped(
-      `justhammers:${tier}_reinforced_hammer`,
-      ["PCP", "PPP", " S "],
-      {
-        P: mat2,
-        C: "justhammers:reinforced_core",
-        S: "modern_industrialization:steel_rod",
-      }
-    );
-    event.shaped(
-      `justhammers:${tier}_reinforced_impact_hammer`,
-      ["PCP", "PPP", " S "],
-      {
-        P: mat2,
-        C: "justhammers:reinforced_impact_core",
-        S: "modern_industrialization:steel_rod",
-      }
-    );
-    event.shaped(
-      `justhammers:${tier}_destructor_hammer`,
-      ["PCP", "PPP", " S "],
-      {
-        P: mat2,
-        C: "justhammers:destructor_core",
-        S: "modern_industrialization:steel_rod",
-      }
-    );
+    event.shaped(`justhammers:${tier}_reinforced_hammer`, ["PCP", "PPP", " S "], {
+      P: mat2,
+      C: "justhammers:reinforced_core",
+      S: "modern_industrialization:steel_rod",
+    });
+    event.shaped(`justhammers:${tier}_reinforced_impact_hammer`, ["PCP", "PPP", " S "], {
+      P: mat2,
+      C: "justhammers:reinforced_impact_core",
+      S: "modern_industrialization:steel_rod",
+    });
+    event.shaped(`justhammers:${tier}_destructor_hammer`, ["PCP", "PPP", " S "], {
+      P: mat2,
+      C: "justhammers:destructor_core",
+      S: "modern_industrialization:steel_rod",
+    });
   }
   hammerRecipes(
     "iron",

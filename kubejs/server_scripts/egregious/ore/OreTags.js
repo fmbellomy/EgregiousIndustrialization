@@ -1,9 +1,9 @@
 function unique(a) {
-  var prims = { boolean: {}, number: {}, string: {} },
+  let prims = { boolean: {}, number: {}, string: {} },
     objs = [];
 
   return a.filter(function (item) {
-    var type = typeof item;
+    let type = typeof item;
     if (type in prims)
       return prims[type].hasOwnProperty(item)
         ? false
