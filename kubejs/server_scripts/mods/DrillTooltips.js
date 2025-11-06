@@ -8,10 +8,10 @@ function makeDrill(material, cost, mult, breakChance) {
     breakProbability: breakChance,
   };
 }
-drills.bronze = makeDrill("bronze", 4, 1.25, 5);
-drills.steel = makeDrill("steel", 16, 1.75, 5);
-drills.aluminum = makeDrill("aluminum", 64, 2.25, 5);
-drills.stainless_steel = makeDrill("stainless_steel", 256, 3, 3);
+drills.bronze = makeDrill("bronze", 2, 1.25, 5);
+drills.steel = makeDrill("steel", 8, 1.75, 5);
+drills.aluminum = makeDrill("aluminum", 32, 2.25, 5);
+drills.stainless_steel = makeDrill("stainless_steel", 128, 3, 3);
 drills.titanium = makeDrill("titanium", 512, 5.0, 2);
 drills.iridium = makeDrill("iridium", 2048, 7.5, 0.5);
 

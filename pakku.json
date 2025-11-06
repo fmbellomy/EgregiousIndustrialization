@@ -1,100 +1,95 @@
 {
-  "name": "egregious-industrialization",
-  "version": "DEV",
-  "release_type": "alpha",
-  "description": "A mildly gregged Modern Industrialization modpack",
-  "author": "fmbellomy",
-  "overrides": [
-    "config",
-    "defaultconfigs",
-    "kubejs",
-    "modern_industrialization",
-    "!kubejs/probe/**"
-  ],
-  "server_overrides": [
-    "!kubejs/assets",
-    "forge-auto-install.txt",
-    "generate_auto_installation_file.bat",
-    "minecraft_server.jar",
-    "server.properties",
-    "server_starter.conf",
-    "server-icon.png",
-    "start_server.bat",
-    "README.md"
-  ],
-  "client_overrides": ["resourcepacks", "shaderpacks"],
-  "projects": {
-    "kubejs": {
-      "update_strategy": "NONE"
-    },
-    "lootjs": {
-      "update_strategy": "NONE"
-    },
-
-    "athena": {
-      "side": "CLIENT"
-    },
-    "c2me": {
-      "side": "SERVER"
-    },
-    "citresewn": {
-      "side": "CLIENT"
-    },
-    "chloride": {
-      "side": "CLIENT"
-    },
-    "chunky-pregenerator": {
-      "side": "SERVER"
-    },
-    "clientsort": {
-      "side": "CLIENT"
-    },
-    "dynamiclights-reforged": {
-      "side": "CLIENT"
-    },
-    "entity-model-features": {
-      "side": "CLIENT"
-    },
-    "entityculling": {
-      "side": "CLIENT"
-    },
-    "immediatelyfast": {
-      "side": "CLIENT"
-    },
-    "irisshaders": {
-      "side": "CLIENT"
-    },
-    "rebind-narrator": {
-      "side": "CLIENT"
-    },
-    "reeses-sodium-options": {
-      "side": "CLIENT"
-    },
-    "resourcify": {
-      "side": "CLIENT"
-    },
-    "skin-layers-3d": {
-      "side": "CLIENT"
-    },
-    "sodium-options-api": {
-      "side": "CLIENT"
-    },
-    "sodium": {
-      "side": "CLIENT"
-    },
-    "watermedia": {
-      "side": "CLIENT"
-    },
-    "zume": {
-      "side": "CLIENT"
-    },
-    "distant-horizons": {
-      "side": "CLIENT",
-      "export": false
-    },
-    "probejs": {
-      "side": "CLIENT",
-      "export": false
+    "name": "egregious-industrialization",
+    "version": "DEV",
+    "description": "A mildly gregged Modern Industrialization modpack",
+    "author": "fmbellomy",
+    "overrides": [
+        "config",
+        "defaultconfigs",
+        "kubejs",
+        "modern_industrialization",
+        "!kubejs/probe/**"
+    ],
+    "server_overrides": [
+        "!kubejs/assets",
+        "forge-auto-install.txt",
+        "generate_auto_installation_file.bat",
+        "minecraft_server.jar",
+        "server.properties",
+        "server_starter.conf",
+        "server-icon.png",
+        "start_server.bat",
+        "README.md"
+    ],
+    "client_overrides": [
+        "resourcepacks",
+        "shaderpacks"
+    ],
+    "projects": {
+        "athena": {
+            "side": "CLIENT"
+        },
+        "c2me": {
+            "side": "SERVER"
+        },
+        "citresewn": {
+            "side": "CLIENT"
+        },
+        "chloride": {
+            "side": "CLIENT"
+        },
+        "chunky-pregenerator": {
+            "side": "SERVER"
+        },
+        "clientsort": {
+            "side": "CLIENT"
+        },
+        "dynamiclights-reforged": {
+            "side": "CLIENT"
+        },
+        "entity-model-features": {
+            "side": "CLIENT"
+        },
+        "entityculling": {
+            "side": "CLIENT"
+        },
+        "immediatelyfast": {
+            "side": "CLIENT"
+        },
+        "irisshaders": {
+            "side": "CLIENT"
+        },
+        "rebind-narrator": {
+            "side": "CLIENT"
+        },
+        "reeses-sodium-options": {
+            "side": "CLIENT"
+        },
+        "resourcify": {
+            "side": "CLIENT"
+        },
+        "skin-layers-3d": {
+            "side": "CLIENT"
+        },
+        "sodium-options-api": {
+            "side": "CLIENT"
+        },
+        "sodium": {
+            "side": "CLIENT"
+        },
+        "watermedia": {
+            "side": "CLIENT"
+        },
+        "zume": {
+            "side": "CLIENT"
+        },
+        "distant-horizons": {
+            "side": "CLIENT",
+            "export": false
+        },
+        "probejs": {
+            "side": "CLIENT",
+            "export": false
+        }
     }
-  }
 }
