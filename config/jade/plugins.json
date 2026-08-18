@@ -59,6 +59,9 @@
   "ars_nouveau": {
     "mob_jar": true
   },
+  "hostilenetworks": {
+    "io_port_mode": true
+  },
   "jade_access": {
     "held_item": true,
     "sign": true,

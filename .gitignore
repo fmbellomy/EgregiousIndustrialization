@@ -19,6 +19,10 @@ rhino.local.properties
 usercache.json
 usernamecache.json
 emi.json
+command_history.txt
+journeymap/
+
+.mixin.out/
 
 # Pakku
 build/
@@ -27,6 +31,9 @@ build/
 !pakku.json
 !pakku-lock.json
 
+# MI
+runtime_datagen/
+generated_resources/
 # Node.js
 **/node_modules/
 
@@ -42,6 +49,8 @@ build/
 /kubejs/config/probejs.json
 /kubejs/config/probe-settings.json
 /kubejs/*/jsconfig.json
+
+!kubejs/server_scripts/mods
 
 # Client configs (with exceptions below)
 /config/**/*client.*

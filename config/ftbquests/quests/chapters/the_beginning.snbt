@@ -8,6 +8,7 @@
 		id: "justhammers:diamond_hammer"
 	}
 	id: "24020C46B71198C7"
+	images: [ ]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -40,7 +41,10 @@
 			can_repeat: true
 			dependencies: ["7EBEE51E2975FADC"]
 			icon: {
-				id: "egregiouscore:prospector"
+				components: {
+					"ftbquests:missing_item": "egregiouscore:prospector"
+				}
+				id: "ftbquests:missing_item"
 			}
 			id: "4E1F9630B410D8D9"
 			optional: true
@@ -48,10 +52,10 @@
 				id: "32D6DEBD28E3F55A"
 				item: {
 					components: {
-						"modern_industrialization:energy": 1048576L
+						"ftbquests:missing_item": "egregiouscore:prospector"
 					}
 					count: 1
-					id: "egregiouscore:prospector"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]

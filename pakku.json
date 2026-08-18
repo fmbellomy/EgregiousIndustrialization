@@ -23,13 +23,6 @@
   ],
   "client_overrides": ["resourcepacks"],
   "projects": {
-    "kubejs": {
-      "update_strategy": "NONE"
-    },
-    "lootjs": {
-      "update_strategy": "NONE"
-    },
-
     "athena": {
       "side": "CLIENT"
     },

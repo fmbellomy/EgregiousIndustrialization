@@ -4,11 +4,11 @@ let hnnNukes = [
   "hostilenetworks:deep_learner",
   {
     mod: "hostile_neural_industrialization",
-    input: "hostilenetworks:sim_chamber",
+    item: "hostilenetworks:sim_chamber",
   },
   {
     mod: "hostile_neural_industrialization",
-    input: "hostilenetworks:loot_fabricator",
+    item: "hostilenetworks:loot_fabricator",
   },
 ];
 ItemEvents.rightClicked((event) => {
@@ -167,9 +167,9 @@ ServerEvents.recipes((event) => {
 
     event.shapeless(
       Item.of(
-        `hostilenetworks:data_model[hostilenetworks:data_model="hostilenetworks:${modeldata[0]}",hostilenetworks:data=6]`
+        `hostilenetworks:data_model[hostilenetworks:data_model="hostilenetworks:${modeldata[0]}",hostilenetworks:data=6]`,
       ),
-      recipeIngredients
+      recipeIngredients,
     );
   });
 });

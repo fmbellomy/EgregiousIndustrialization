@@ -49,3 +49,5 @@
 	allowFakePlayer = true
 	#List of held items to blacklist from right-click harvest. Format: "modid:item"
 	blacklistHeldItems = []
+	#Automatically replant crops after harvesting.
+	replantCrops = true

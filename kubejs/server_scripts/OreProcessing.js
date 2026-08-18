@@ -171,20 +171,20 @@ ServerEvents.recipes((event) => {
   MISmeltableDusts.forEach((mat) => {
     event.smelting(
       `modern_industrialization:${mat}_ingot`,
-      `modern_industrialization:${mat}_dust`
+      `modern_industrialization:${mat}_dust`,
     );
     event.blasting(
       `modern_industrialization:${mat}_ingot`,
-      `modern_industrialization:${mat}_dust`
+      `modern_industrialization:${mat}_dust`,
     );
   });
   event.smelting(
     `modern_industrialization:fire_clay_brick`,
-    `modern_industrialization:fire_clay_dust`
+    `modern_industrialization:fire_clay_dust`,
   );
   event.blasting(
     `modern_industrialization:fire_clay_brick`,
-    `modern_industrialization:fire_clay_dust`
+    `modern_industrialization:fire_clay_dust`,
   );
 
   // the like 2 or 3 chemical bath recipes:
@@ -263,6 +263,7 @@ ServerEvents.recipes((event) => {
         .replace("end_stone_", "")
         .replace("netherrack_", "")
         .replace("nether_", "")
+        .replace("blackslag_", "")
         .replace("_ore", "");
       return item;
     });
@@ -278,7 +279,7 @@ ServerEvents.recipes((event) => {
   let seen = [];
   namespacedMats.forEach((nsMat) => {
     let namespace = nsMat.split(":")[0];
-    if (namespace == "pastel") {
+    if (namespace == "spectrum") {
       return;
     }
     let mat = nsMat.split(":")[1];
@@ -349,11 +350,11 @@ ServerEvents.recipes((event) => {
 
       event.smelting(
         `2x ${set.smeltsTo}_crystal`,
-        `modern_industrialization:raw_certus_quartz`
+        `modern_industrialization:raw_certus_quartz`,
       );
       event.blasting(
         `2x ${set.smeltsTo}_crystal`,
-        `modern_industrialization:raw_certus_quartz`
+        `modern_industrialization:raw_certus_quartz`,
       );
 
       return;
@@ -457,7 +458,7 @@ ServerEvents.recipes((event) => {
       type: "modern_industrialization:chemical_reactor",
     },
     "modern_industrialization:chromium_crushed_dust",
-    "modern_industrialization:chromium_washed_crushed_dust"
+    "modern_industrialization:chromium_washed_crushed_dust",
   );
 
   event.replaceInput(
@@ -465,7 +466,7 @@ ServerEvents.recipes((event) => {
       type: "modern_industrialization:chemical_reactor",
     },
     "modern_industrialization:manganese_crushed_dust",
-    "modern_industrialization:manganese_washed_crushed_dust"
+    "modern_industrialization:manganese_washed_crushed_dust",
   );
 
   event.recipes.modern_industrialization

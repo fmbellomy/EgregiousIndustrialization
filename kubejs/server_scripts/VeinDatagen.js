@@ -1,4 +1,4 @@
-function keys(obj) {
+/*function keys(obj) {
   let keys = [];
   for (let key in obj) {
     if (obj.hasOwnProperty(key)) {
@@ -7,18 +7,9 @@ function keys(obj) {
   }
   return keys;
 }
-
-ServerEvents.generateData("before_mods", (_) => {
+*/
+/*ServerEvents.generateData("before_mods", (_) => {
   const GTMOGS = global.GTMOGS;
-  /**
-   * @param {string} name
-   * @param {int} weight
-   * @param {int} minY
-   * @param {int} maxY
-   * @param {int} minSize
-   * @param {int} maxSize
-   * @returns {Function<GTMOGS.VeinGenerator>>}
-   */
   const egregiousUniformVein = GTMOGS.makeVeinTemplate(0.75, "uniform", 0.75);
   const shallowCopy = (arr) => {
     let copy = [];
@@ -282,12 +273,6 @@ ServerEvents.generateData("before_mods", (_) => {
     ores: ["lapis", "lapis", "sodalite", "lazurite"],
     veinType: classic,
   };
-  veins.lapis = {
-    generator: egregiousUniformVein("lapis", 35, 50, 100, 32, 36),
-    dim: GTMOGS.OVERWORLD,
-    ores: ["lapis", "lapis", "sodalite", "lazurite"],
-    veinType: classic,
-  };
 
   keys(veins).forEach((key) => {
     let vein = veins[key];
@@ -320,3 +305,4 @@ ServerEvents.generateData("before_mods", (_) => {
     GTMOGS.lang
   );
 });
+*/
