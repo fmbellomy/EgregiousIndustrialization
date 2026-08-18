@@ -164,7 +164,7 @@ jobs:
         id: webhook
         shell: bash
         run: |
-          if [ "${{ secrets.discord-webhook }}" == '' ]; then
+          if [ "${{ secrets.DISCORD_WEBHOOK }}" == '' ]; then
           echo "present=false" >> $GITHUB_OUTPUT
           else
           echo "present=true" >> $GITHUB_OUTPUT
@@ -292,7 +292,13 @@ jobs:
               core.setFailed(`PR check failed: ${error}`);
               core.setOutput('exists', true);
             }
-
+      - name: Create Milestone if tag not found
+        if: ${{ steps.check_existing_pr.outputs.exists == 'false' }}
+        uses: WyriHaximus/github-action-create-milestone@v1.1.2
+        with:
+          title: ${{ steps.changelog.outputs.version }}
+        env: 
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: Create Pull Request if tag not found
         if: ${{ steps.check_existing_pr.outputs.exists == 'false' }}
         uses: devops-infra/action-pull-request@v0.6.1
@@ -647,7 +653,7 @@ jobs:
       - name: Send Discord message
         uses: hugoalh/send-discord-webhook-ghaction@v7.0.5
         with:
-          key: ${{ secrets.discord-webhook  }}
+          key: ${{ secrets.DISCORD_WEBHOOK  }}
           username: "fmbellomy"
           avatar_url: "https://media.forgecdn.net/avatars/thumbnails/1443/373/64/64/638935858462018093.png"
           content_links_no_embed: .+

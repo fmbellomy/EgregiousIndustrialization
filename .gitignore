@@ -12,7 +12,12 @@ downloads/
 modernfix/
 fancymenu_data/
 ESM/
+journeymap/
+.mixin.out/
+modern_industrialization/
+waypoints/
 
+patchouli_data.json
 icon.png
 options.txt
 rhino.local.properties
@@ -21,8 +26,8 @@ usernamecache.json
 emi.json
 command_history.txt
 journeymap/
-
 .mixin.out/
+servers.dat
 
 # Pakku
 build/
@@ -49,8 +54,6 @@ generated_resources/
 /kubejs/config/probejs.json
 /kubejs/config/probe-settings.json
 /kubejs/*/jsconfig.json
-
-!kubejs/server_scripts/mods
 
 # Client configs (with exceptions below)
 /config/**/*client.*

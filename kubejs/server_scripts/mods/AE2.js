@@ -128,7 +128,7 @@ ServerEvents.recipes((event) => {
     .itemIn("minecraft:glowstone_dust")
     .itemOut("8x ae2:fluix_smart_dense_cable");
 
-  //Adding processor press recipes
+  // Adding processor press recipes
   function addPackerPress(output) {
     event.recipes.modern_industrialization
       .packer(16, 200)

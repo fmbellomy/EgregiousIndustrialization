@@ -274,6 +274,11 @@ _version = 4
 		# This can be useful for troubleshooting performance.
 		generationProgressIncludeChunksPerSecond = true
 		#
+		# When logging generation progress also include the rate at which chunks 
+		# are being generated. 
+		# This can be useful for troubleshooting performance.
+		generationProgressIncludeChunksPerSecond = true
+		#
 		# For how many seconds should instructions for disabling the distant generator progress be displayed? 
 		# Setting this to 0 hides the instructional message so the world gen progress is shown immediately when it starts.
 		generationProgressDisableMessageDisplayTimeInSeconds = 20
